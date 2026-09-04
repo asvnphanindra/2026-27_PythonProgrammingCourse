@@ -12,6 +12,7 @@ Put a `README.md` in the root of your course repository. The Student Progress Da
 - Course: Python Programming
 - Section: Sec-21
 - Serial Number: 1
+- Student Name: Krishna
 ```
 
 ## Rules
