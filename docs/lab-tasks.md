@@ -17,6 +17,8 @@ Create **one Python file per task**. Use the file names below so faculty can fin
 | 11 | Write a python program to demonstrate logical operators (and, or, not) | `Unit-1_Task-11_Logical_Operators.py` |
 | 12 | Write a python program to demonstrate identity operators (is, is not) | `Unit-1_Task-12_Identity_Operators.py` |
 | 13 | Write a python program to demonstrate membership operators (in, not in) | `Unit-1_Task-13_Membership_Operators.py` |
+| 14 | Write a python program to demonstrate operator precedence and associativity | `Unit-1_Task-14_Operator_Precedence_Associativity.py` |
+| 15 | Write a python program to demonstrate type conversion (int, float, string) | `Unit-1_Task-15_Type_Conversion.py` |
 
 ## Notes
 
