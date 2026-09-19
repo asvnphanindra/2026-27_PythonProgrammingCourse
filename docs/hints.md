@@ -48,6 +48,8 @@ print(f"Perimeter of the rectangle is {perimeter_in_cm} cm")
 
 > **Note on units:** State the unit clearly in your `input()` message. This example uses **cm** for length/breadth, **cm** for perimeter, and **square cm** for area. You may choose any other appropriate unit (m, mm, inches, and so on), but keep input and output units consistent.
 
+Back to [Lab tasks](lab-tasks.md).
+
 ---
 
 <a id="unit-1-task-4"></a>
@@ -88,6 +90,8 @@ print(f"Temperature in Fahrenheit is {temperature_in_fahrenheit}")
 
 > **Note on units:** Make the unit clear in your `input()` prompt. Output should also show Fahrenheit clearly in `print()`.
 
+Back to [Lab tasks](lab-tasks.md).
+
 ---
 
 <a id="unit-1-task-5"></a>
@@ -127,6 +131,8 @@ number2 = float(input("Enter second number: "))
 ```python
 print(f"After swapping, first number is {number1} and second number is {number2}")
 ```
+
+Back to [Lab tasks](lab-tasks.md).
 
 ---
 
@@ -175,6 +181,8 @@ print(f"Simple interest is {simple_interest_in_rupees} rupees")
 >
 > Use clear units such as rupees, percent, and years so the user knows exactly what to enter.
 
+Back to [Lab tasks](lab-tasks.md).
+
 ---
 
 <a id="unit-1-task-7"></a>
@@ -218,6 +226,8 @@ print(f"Compound interest is {compound_interest_in_rupees} rupees")
 
 > **Note on units:** State each unit in your `input()` message (rupees, percent, years). Keep the output unit consistent (rupees) in `print()`.
 
+Back to [Lab tasks](lab-tasks.md).
+
 ---
 
 <a id="unit-1-task-8"></a>
@@ -255,3 +265,5 @@ n = int(input("Enter the value of n: "))
 ```python
 print(f"Sum of first {n} natural numbers is {sum_of_natural_numbers}")
 ```
+
+Back to [Lab tasks](lab-tasks.md).
