@@ -10,7 +10,7 @@ Click **View hint** for input, process, output, and a worked example (where avai
 |------|----------------|-----------|------|
 | 1 | Write a python program to read two numbers and display their sum | `Unit-1_Task-1_Sum_of_Two_Numbers.py` | — |
 | 2 | Write a python program to display the square of a number | `Unit-1_Task-2_Square_of_a_Number.py` | — |
-| 3 | Write a python program to calculate area and perimeter of a rectangle | `Unit-1_Task-3_Rectangle_Area_Perimeter.py` | — |
+| 3 | Write a python program to calculate area and perimeter of a rectangle | `Unit-1_Task-3_Rectangle_Area_Perimeter.py` | [View hint](hints.md#unit-1-task-3) |
 | 4 | Write a python program to convert temperature from Celsius to Fahrenheit | `Unit-1_Task-4_Celsius_to_Fahrenheit.py` | [View hint](hints.md#unit-1-task-4) |
 | 5 | Write a python program to swap two numbers without using a third variable | `Unit-1_Task-5_Swap_Two_Numbers.py` | [View hint](hints.md#unit-1-task-5) |
 | 6 | Write a python program to calculate simple interest | `Unit-1_Task-6_Simple_Interest.py` | [View hint](hints.md#unit-1-task-6) |

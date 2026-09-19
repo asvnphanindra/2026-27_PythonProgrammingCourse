@@ -1,4 +1,14 @@
-# Quick verification of Unit 1 Task 4-8 sample inputs/outputs from docs/hints.md
+# Quick verification of Unit 1 Task 3-8 sample inputs/outputs from docs/hints.md
+
+print("=== Task 3: Area and perimeter of a rectangle ===")
+length_in_cm = 10
+breadth_in_cm = 5
+area_in_square_cm = length_in_cm * breadth_in_cm
+perimeter_in_cm = 2 * (length_in_cm + breadth_in_cm)
+print(f"Input:  length_in_cm = {length_in_cm}, breadth_in_cm = {breadth_in_cm}")
+print(f"Output: area_in_square_cm = {area_in_square_cm}, perimeter_in_cm = {perimeter_in_cm}")
+print(f"Expected: area=50, perimeter=30 | Match: {area_in_square_cm == 50 and perimeter_in_cm == 30}")
+print()
 
 print("=== Task 4: Celsius to Fahrenheit ===")
 temperature_in_celsius = 25
