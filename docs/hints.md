@@ -8,7 +8,7 @@ Jump to a task:
 
 **Unit 1:** [Task 1](#unit-1-task-1) · [Task 2](#unit-1-task-2) · [Task 3](#unit-1-task-3) · [Task 4](#unit-1-task-4) · [Task 5](#unit-1-task-5) · [Task 6](#unit-1-task-6) · [Task 7](#unit-1-task-7) · [Task 8](#unit-1-task-8) · [Task 9](#unit-1-task-9) · [Task 10](#unit-1-task-10) · [Task 11](#unit-1-task-11) · [Task 12](#unit-1-task-12) · [Task 13](#unit-1-task-13) · [Task 14](#unit-1-task-14) · [Task 15](#unit-1-task-15)
 
-**Unit 2A:** [Task 1](#unit-2a-task-1) · [Task 2](#unit-2a-task-2) · [Task 3](#unit-2a-task-3)
+**Unit 2A:** [Task 1](#unit-2a-task-1) · [Task 2](#unit-2a-task-2) · [Task 3](#unit-2a-task-3) · [Task 7 Approach 1](#unit-2a-task-7-approach-1) · [Task 7 Approach 2](#unit-2a-task-7-approach-2) · [Task 7 Approach 3](#unit-2a-task-7-approach-3)
 
 ---
 
@@ -787,6 +787,151 @@ elif number < 0:
     print(f"The number {number} is negative")
 else:
     print(f"The number {number} is zero")
+```
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2a-task-7-approach-1"></a>
+
+## Unit 2A Task 7: Leap year — Approach 1 (nested if-else)
+
+Checks whether a year is a leap year using nested `if-else`.
+
+### Analyse the problem: Identify Input, Process and Output
+
+| Item | Details |
+|------|---------|
+| **Input** | `year` |
+| **Process** | Nested checks: divisible by 400 → leap; else if divisible by 100 → not leap; else if divisible by 4 → leap; else → not leap |
+| **Output** | Message stating whether the year is a leap year or not |
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `year = 2000` |
+| **Example calculation** | `2000 % 400 == 0` → True → Leap year |
+| **Example output** | `2000 is a leap year` |
+
+**Other examples:** `1900` → Not a leap year; `2024` → Leap year; `2023` → Not a leap year
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+year = int(input("Enter a year: "))
+```
+
+**Output messages** (use with `print()`):
+
+```python
+if year % 400 == 0:
+    print(f"{year} is a leap year")
+else:
+    if year % 100 == 0:
+        print(f"{year} is not a leap year")
+    else:
+        if year % 4 == 0:
+            print(f"{year} is a leap year")
+        else:
+            print(f"{year} is not a leap year")
+```
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2a-task-7-approach-2"></a>
+
+## Unit 2A Task 7: Leap year — Approach 2 (if-elif-else ladder)
+
+Checks whether a year is a leap year using an `if-elif-else` ladder.
+
+### Analyse the problem: Identify Input, Process and Output
+
+| Item | Details |
+|------|---------|
+| **Input** | `year` |
+| **Process** | `if year % 400 == 0` → leap; `elif year % 100 == 0` → not leap; `elif year % 4 == 0` → leap; `else` → not leap |
+| **Output** | Message stating whether the year is a leap year or not |
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `year = 1900` |
+| **Example calculation** | `1900 % 400 != 0`<br>`1900 % 100 == 0` → Not a leap year |
+| **Example output** | `1900 is not a leap year` |
+
+**Other examples:** `2000` → Leap year; `2024` → Leap year; `2023` → Not a leap year
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+year = int(input("Enter a year: "))
+```
+
+**Output messages** (use with `print()`):
+
+```python
+if year % 400 == 0:
+    print(f"{year} is a leap year")
+elif year % 100 == 0:
+    print(f"{year} is not a leap year")
+elif year % 4 == 0:
+    print(f"{year} is a leap year")
+else:
+    print(f"{year} is not a leap year")
+```
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2a-task-7-approach-3"></a>
+
+## Unit 2A Task 7: Leap year — Approach 3 (single if condition)
+
+Checks whether a year is a leap year using one combined condition with `or` / `and`.
+
+### Analyse the problem: Identify Input, Process and Output
+
+| Item | Details |
+|------|---------|
+| **Input** | `year` |
+| **Process** | If `year % 400 == 0 or (year % 4 == 0 and year % 100 != 0)` → leap; else → not leap |
+| **Output** | Message stating whether the year is a leap year or not |
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `year = 2024` |
+| **Example calculation** | `2024 % 400 != 0`<br>`2024 % 4 == 0` and `2024 % 100 != 0` → True → Leap year |
+| **Example output** | `2024 is a leap year` |
+
+**Other examples:** `2000` → Leap year; `1900` → Not a leap year; `2023` → Not a leap year
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+year = int(input("Enter a year: "))
+```
+
+**Output messages** (use with `print()`):
+
+```python
+if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
+    print(f"{year} is a leap year")
+else:
+    print(f"{year} is not a leap year")
 ```
 
 Back to [Lab tasks](lab-tasks.md).

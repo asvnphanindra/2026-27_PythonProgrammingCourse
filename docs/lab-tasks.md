@@ -33,10 +33,10 @@ Click **View hint** for input, process, output, and a worked example (where avai
 | 1 | Write a python program to check whether a triangle is valid given its three angles | `Unit-2A_Task-1_Valid_Triangle_Angles.py` | [View hint](hints.md#unit-2a-task-1) |
 | 2 | Write a python program to check eligibility for voting using if-else | `Unit-2A_Task-2_Voting_Eligibility.py` | [View hint](hints.md#unit-2a-task-2) |
 | 3 | Write a python program to check whether a number is positive, negative, or zero | `Unit-2A_Task-3_Positive_Negative_Zero.py` | [View hint](hints.md#unit-2a-task-3) |
-| 4 | Write a python program to check whether a given year is a leap year | `Unit-2A_Task-4_Leap_Year.py` | — |
-| 5 | Write a python program to print the grade of a student using an elif ladder (Marks >= 90 → Grade A; >= 80 and < 90 → Grade B; >= 70 and < 80 → Grade C; < 70 → Grade D) | `Unit-2A_Task-5_Student_Grade_Elif_Ladder.py` | — |
-| 6 | Write a python program to find the largest of three numbers using nested if | `Unit-2A_Task-6_Largest_of_Three_Nested_If.py` | — |
-| 7 | Write a python program to find the smallest of three numbers using nested if | `Unit-2A_Task-7_Smallest_of_Three_Nested_If.py` | — |
+| 4 | Write a python program to print the grade of a student using an elif ladder (Marks >= 90 → Grade A; >= 80 and < 90 → Grade B; >= 70 and < 80 → Grade C; < 70 → Grade D) | `Unit-2A_Task-4_Student_Grade_Elif_Ladder.py` | — |
+| 5 | Write a python program to find the largest of three numbers using nested if | `Unit-2A_Task-5_Largest_of_Three_Nested_If.py` | — |
+| 6 | Write a python program to find the smallest of three numbers using nested if | `Unit-2A_Task-6_Smallest_of_Three_Nested_If.py` | — |
+| 7 | Write a python program to check whether a given year is a leap year | `Unit-2A_Task-7_Leap_Year.py` | [Approach 1](hints.md#unit-2a-task-7-approach-1) · [Approach 2](hints.md#unit-2a-task-7-approach-2) · [Approach 3](hints.md#unit-2a-task-7-approach-3) |
 | 8 | Write a python program to check whether a given number is prime | `Unit-2A_Task-8_Prime_Number.py` | — |
 
 ## Notes

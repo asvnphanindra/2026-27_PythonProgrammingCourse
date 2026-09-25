@@ -169,3 +169,40 @@ print("=== Unit 2A Task 3: Positive, negative, or zero ===")
 number = 15
 label = "positive" if number > 0 else "negative" if number < 0 else "zero"
 print(f"Expected positive | Match: {label == 'positive'}")
+print()
+
+print("=== Unit 2A Task 7: Leap year (3 approaches) ===")
+
+def leap_approach1(year):
+    if year % 400 == 0:
+        return True
+    else:
+        if year % 100 == 0:
+            return False
+        else:
+            if year % 4 == 0:
+                return True
+            else:
+                return False
+
+def leap_approach2(year):
+    if year % 400 == 0:
+        return True
+    elif year % 100 == 0:
+        return False
+    elif year % 4 == 0:
+        return True
+    else:
+        return False
+
+def leap_approach3(year):
+    return year % 400 == 0 or (year % 4 == 0 and year % 100 != 0)
+
+samples = {2000: True, 1900: False, 2024: True, 2023: False}
+ok = all(
+    leap_approach1(y) == expected
+    and leap_approach2(y) == expected
+    and leap_approach3(y) == expected
+    for y, expected in samples.items()
+)
+print(f"Expected all approaches agree on samples | Match: {ok}")
