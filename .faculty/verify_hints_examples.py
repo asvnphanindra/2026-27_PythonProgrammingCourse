@@ -99,13 +99,36 @@ print("=== Task 12: Identity operators ===")
 list_a = [1, 2, 3]
 list_b = list_a
 list_c = [1, 2, 3]
-ok = (list_a is list_b) is True and (list_a is list_c) is False and (list_a is not list_c) is True
+ok = (
+    (list_a is list_b) is True
+    and (list_a is list_c) is False
+    and (list_a is not list_c) is True
+    and (list_a is not list_b) is False
+)
 print(f"Expected identity results match | Match: {ok}")
 print()
 
 print("=== Task 13: Membership operators ===")
 text = "python"
-ok = ("th" in text) is True and ("xyz" not in text) is True
+number_list = [10, 20, 30]
+float_list = [1.5, 2.5, 3.5]
+bool_list = [True, False]
+string_list = ["hi", "bye"]
+number_tuple = (1, 2, 3)
+number_set = {1, 5, 9}
+student = {"name": "Ada", "age": 20}
+ok = (
+    ("th" in text) is True
+    and ("xyz" not in text) is True
+    and (10 in number_list) is True
+    and (3.5 in float_list) is True
+    and (True in bool_list) is True
+    and ("hi" in string_list) is True
+    and (2 in number_tuple) is True
+    and (5 in number_set) is True
+    and ("name" in student) is True
+    and ("Ada" not in student) is True
+)
 print(f"Expected membership results match | Match: {ok}")
 print()
 

@@ -454,9 +454,9 @@ number2 = float(input("Enter second number: "))
 **Output messages** (use with `print()`):
 
 ```python
-print(f"(number1 > 5) and (number2 > 15) is {(number1 > 5) and (number2 > 15)}")
-print(f"(number1 > 50) or (number2 > 15) is {(number1 > 50) or (number2 > 15)}")
-print(f"not (number1 > 50) is {not (number1 > 50)}")
+print(f"({number1} > 5) and ({number2} > 15) is {(number1 > 5) and (number2 > 15)}")
+print(f"({number1} > 50) or ({number2} > 15) is {(number1 > 50) or (number2 > 15)}")
+print(f"not ({number1} > 50) is {not (number1 > 50)}")
 ```
 
 Back to [Lab tasks](lab-tasks.md).
@@ -467,15 +467,24 @@ Back to [Lab tasks](lab-tasks.md).
 
 ## Unit 1 Task 12: Identity operators
 
-Demonstrates identity operators `is` and `is not` (whether two names refer to the same object).
+Demonstrates identity operators `is` and `is not` (whether two names refer to the same object), with both `True` and `False` cases for each operator.
 
 ### Example
 
-| Item | Details |
-|------|---------|
-| **Example input** | `list_a = [1, 2, 3]`<br>`list_b = list_a`<br>`list_c = [1, 2, 3]` |
-| **Example calculation** | `list_a is list_b → True` (same object)<br>`list_a is list_c → False` (same values, different objects)<br>`list_a is not list_c → True` |
-| **Example output** | `True`, `False`, `True` |
+| Operator | Case | Example | Result |
+|----------|------|---------|--------|
+| `is` | True | `list_a is list_b` (same object) | `True` |
+| `is` | False | `list_a is list_c` (different objects) | `False` |
+| `is not` | True | `list_a is not list_c` (different objects) | `True` |
+| `is not` | False | `list_a is not list_b` (same object) | `False` |
+
+Where:
+
+```python
+list_a = [1, 2, 3]
+list_b = list_a      # same object as list_a
+list_c = [1, 2, 3]   # same values, but a different object
+```
 
 ### Sample input and output messages
 
@@ -486,9 +495,10 @@ list_a = [1, 2, 3]
 list_b = list_a
 list_c = [1, 2, 3]
 
-print(f"list_a is list_b: {list_a is list_b}")
-print(f"list_a is list_c: {list_a is list_c}")
-print(f"list_a is not list_c: {list_a is not list_c}")
+print(f"list_a is list_b: {list_a is list_b}")          # True
+print(f"list_a is list_c: {list_a is list_c}")          # False
+print(f"list_a is not list_c: {list_a is not list_c}")  # True
+print(f"list_a is not list_b: {list_a is not list_b}")  # False
 ```
 
 > **Note:** `==` checks value equality. `is` checks whether both names refer to the **same object** in memory.
@@ -501,31 +511,59 @@ Back to [Lab tasks](lab-tasks.md).
 
 ## Unit 1 Task 13: Membership operators
 
-Demonstrates membership operators `in` and `not in` with a sequence such as a string or list.
+Demonstrates membership operators `in` and `not in` with the basic Python data types that support membership checks: **string**, **list**, **tuple**, **set**, and **dictionary**.
 
 ### Example
 
-| Item | Details |
-|------|---------|
-| **Example input** | `text = "python"`<br>`item1 = "th"`<br>`item2 = "xyz"` |
-| **Example calculation** | `"th" in "python" → True`<br>`"xyz" not in "python" → True` |
-| **Example output** | `True`, `True` |
+| Data type | Example | Result |
+|-----------|---------|--------|
+| **string (`str`)** | `"th" in "python"` | `True` |
+| **string (`str`)** | `"xyz" not in "python"` | `True` |
+| **list** | `10 in [10, 20, 30]` | `True` |
+| **list** | `3.5 in [1.5, 2.5, 3.5]` | `True` |
+| **list** | `True in [True, False]` | `True` |
+| **tuple** | `2 in (1, 2, 3)` | `True` |
+| **set** | `5 in {1, 5, 9}` | `True` |
+| **dictionary (`dict`)** | `"name" in {"name": "Ada", "age": 20}` | `True` (checks **keys**) |
+| **dictionary (`dict`)** | `"Ada" not in {"name": "Ada", "age": 20}` | `True` (values are not checked by default) |
 
 ### Sample input and output messages
 
-**Input messages** (use with `input()`):
+This task is usually demonstrated with fixed examples covering each data type.
 
 ```python
-text = input("Enter a text: ")
-item = input("Enter the item to search: ")
+# string
+text = "python"
+print(f"'th' in '{text}' is {'th' in text}")
+print(f"'xyz' not in '{text}' is {'xyz' not in text}")
+
+# list (int, float, bool, str values)
+number_list = [10, 20, 30]
+float_list = [1.5, 2.5, 3.5]
+bool_list = [True, False]
+string_list = ["hi", "bye"]
+print(f"10 in {number_list} is {10 in number_list}")
+print(f"3.5 in {float_list} is {3.5 in float_list}")
+print(f"True in {bool_list} is {True in bool_list}")
+print(f"'hi' in {string_list} is {'hi' in string_list}")
+
+# tuple
+number_tuple = (1, 2, 3)
+print(f"2 in {number_tuple} is {2 in number_tuple}")
+
+# set
+number_set = {1, 5, 9}
+print(f"5 in {number_set} is {5 in number_set}")
+
+# dictionary (membership checks keys)
+student = {"name": "Ada", "age": 20}
+print(f"'name' in {student} is {'name' in student}")
+print(f"'Ada' not in {student} is {'Ada' not in student}")
 ```
 
-**Output messages** (use with `print()`):
-
-```python
-print(f"'{item}' in '{text}' is {item in text}")
-print(f"'{item}' not in '{text}' is {item not in text}")
-```
+> **Note:** Use `in` / `not in` with containers such as `str`, `list`, `tuple`, `set`, and `dict`. You can search for basic values (`int`, `float`, `bool`, `str`) **inside** these containers. For a dictionary, `in` checks the **keys**, not the values.
+>
+> `int`, `float`, and `bool` themselves are not containers, so expressions like `2 in 10` are invalid.
 
 Back to [Lab tasks](lab-tasks.md).
 
