@@ -4,6 +4,9 @@ Use these hints to plan each program (input, process, output) and to check your 
 
 Back to [Lab tasks](lab-tasks.md).
 
+> **Important:** In the **Process** section and in sample code, hints show only the **structure** (for example `if` / `else` shape). They do **not** give the full logic.  
+> Look for placeholders such as `<condition>` or comments like `# TODO: add your logic here` and write your own code in those places. Use the **Example** values to check whether your logic is correct.
+
 Jump to a task:
 
 **Unit 1:** [Task 1](#unit-1-task-1) · [Task 2](#unit-1-task-2) · [Task 3](#unit-1-task-3) · [Task 4](#unit-1-task-4) · [Task 5](#unit-1-task-5) · [Task 6](#unit-1-task-6) · [Task 7](#unit-1-task-7) · [Task 8](#unit-1-task-8) · [Task 9](#unit-1-task-9) · [Task 10](#unit-1-task-10) · [Task 11](#unit-1-task-11) · [Task 12](#unit-1-task-12) · [Task 13](#unit-1-task-13) · [Task 14](#unit-1-task-14) · [Task 15](#unit-1-task-15)
@@ -649,14 +652,14 @@ Back to [Lab tasks](lab-tasks.md).
 
 ## Unit 2A Task 1: Valid triangle (three angles)
 
-Checks whether a triangle is valid when its three angles are given. A triangle is valid if each angle is greater than 0 and the sum of the three angles is 180 degrees.
+Checks whether a triangle is valid when its three angles are given. Think about the rules a valid triangle must satisfy (use class notes and the example below).
 
 ### Analyse the problem: Identify Input, Process and Output
 
 | Item | Details |
 |------|---------|
 | **Input** | `angle1_in_degrees`, `angle2_in_degrees`, `angle3_in_degrees` |
-| **Process** | Check `angle1_in_degrees > 0 and angle2_in_degrees > 0 and angle3_in_degrees > 0` and `angle1_in_degrees + angle2_in_degrees + angle3_in_degrees == 180` |
+| **Process** | Use an `if-else` structure. Write your own condition to decide whether the triangle is valid. |
 | **Output** | Message stating whether the triangle is valid or not |
 
 ### Example
@@ -679,15 +682,10 @@ angle2_in_degrees = float(input("Enter second angle in degrees: "))
 angle3_in_degrees = float(input("Enter third angle in degrees: "))
 ```
 
-**Output messages** (use with `print()`):
+**Program structure** (fill in the blanks — do not copy a finished condition):
 
 ```python
-if (
-    angle1_in_degrees > 0
-    and angle2_in_degrees > 0
-    and angle3_in_degrees > 0
-    and angle1_in_degrees + angle2_in_degrees + angle3_in_degrees == 180
-):
+if <condition>:  # TODO: add your logic here to check if the triangle is valid
     print(f"The triangle with angles {angle1_in_degrees}, {angle2_in_degrees}, and {angle3_in_degrees} is valid")
 else:
     print(f"The triangle with angles {angle1_in_degrees}, {angle2_in_degrees}, and {angle3_in_degrees} is not valid")
@@ -703,14 +701,14 @@ Back to [Lab tasks](lab-tasks.md).
 
 ## Unit 2A Task 2: Voting eligibility
 
-Checks whether a person is eligible to vote using if-else. A person is eligible if age is 18 years or more.
+Checks whether a person is eligible to vote using if-else. Decide the eligibility rule from the problem statement and class notes.
 
 ### Analyse the problem: Identify Input, Process and Output
 
 | Item | Details |
 |------|---------|
 | **Input** | `age_in_years` |
-| **Process** | If `age_in_years >= 18`, eligible; otherwise not eligible |
+| **Process** | Use an `if-else` structure. Write your own condition to decide eligibility. |
 | **Output** | Message stating whether the person is eligible to vote or not |
 
 ### Example
@@ -731,10 +729,10 @@ Checks whether a person is eligible to vote using if-else. A person is eligible 
 age_in_years = int(input("Enter age in years: "))
 ```
 
-**Output messages** (use with `print()`):
+**Program structure** (fill in the blanks — do not copy a finished condition):
 
 ```python
-if age_in_years >= 18:
+if <condition>:  # TODO: add your logic here to check voting eligibility
     print(f"Age {age_in_years} years: Eligible to vote")
 else:
     print(f"Age {age_in_years} years: Not eligible to vote")
@@ -757,7 +755,7 @@ Checks whether a given number is positive, negative, or zero.
 | Item | Details |
 |------|---------|
 | **Input** | `number` |
-| **Process** | If `number > 0` → positive; elif `number < 0` → negative; else → zero |
+| **Process** | Use an `if-elif-else` structure. Write your own conditions for positive, negative, and zero. |
 | **Output** | Message stating whether the number is positive, negative, or zero |
 
 ### Example
@@ -778,14 +776,15 @@ Checks whether a given number is positive, negative, or zero.
 number = float(input("Enter a number: "))
 ```
 
-**Output messages** (use with `print()`):
+**Program structure** (fill in the blanks — do not copy finished conditions):
 
 ```python
-if number > 0:
+if <condition_1>:  # TODO: add your logic for a positive number
     print(f"The number {number} is positive")
-elif number < 0:
+elif <condition_2>:  # TODO: add your logic for a negative number
     print(f"The number {number} is negative")
 else:
+    # TODO: handle the remaining case (zero)
     print(f"The number {number} is zero")
 ```
 
@@ -797,14 +796,14 @@ Back to [Lab tasks](lab-tasks.md).
 
 ## Unit 2A Task 7: Leap year — Approach 1 (nested if-else)
 
-Checks whether a year is a leap year using nested `if-else`.
+Checks whether a year is a leap year using nested `if-else`. Write the conditions yourself; only the nesting structure is shown.
 
 ### Analyse the problem: Identify Input, Process and Output
 
 | Item | Details |
 |------|---------|
 | **Input** | `year` |
-| **Process** | Nested checks: divisible by 400 → leap; else if divisible by 100 → not leap; else if divisible by 4 → leap; else → not leap |
+| **Process** | Use nested `if-else`. Fill in each condition using the leap-year rules from class notes. |
 | **Output** | Message stating whether the year is a leap year or not |
 
 ### Example
@@ -825,16 +824,16 @@ Checks whether a year is a leap year using nested `if-else`.
 year = int(input("Enter a year: "))
 ```
 
-**Output messages** (use with `print()`):
+**Program structure** (fill in the blanks — nested if-else):
 
 ```python
-if year % 400 == 0:
+if <condition_1>:  # TODO: add your logic here
     print(f"{year} is a leap year")
 else:
-    if year % 100 == 0:
+    if <condition_2>:  # TODO: add your logic here
         print(f"{year} is not a leap year")
     else:
-        if year % 4 == 0:
+        if <condition_3>:  # TODO: add your logic here
             print(f"{year} is a leap year")
         else:
             print(f"{year} is not a leap year")
@@ -848,14 +847,14 @@ Back to [Lab tasks](lab-tasks.md).
 
 ## Unit 2A Task 7: Leap year — Approach 2 (if-elif-else ladder)
 
-Checks whether a year is a leap year using an `if-elif-else` ladder.
+Checks whether a year is a leap year using an `if-elif-else` ladder. Write each condition yourself.
 
 ### Analyse the problem: Identify Input, Process and Output
 
 | Item | Details |
 |------|---------|
 | **Input** | `year` |
-| **Process** | `if year % 400 == 0` → leap; `elif year % 100 == 0` → not leap; `elif year % 4 == 0` → leap; `else` → not leap |
+| **Process** | Use `if` / `elif` / `else`. Fill in each condition using the leap-year rules from class notes. |
 | **Output** | Message stating whether the year is a leap year or not |
 
 ### Example
@@ -876,14 +875,14 @@ Checks whether a year is a leap year using an `if-elif-else` ladder.
 year = int(input("Enter a year: "))
 ```
 
-**Output messages** (use with `print()`):
+**Program structure** (fill in the blanks — if-elif-else ladder):
 
 ```python
-if year % 400 == 0:
+if <condition_1>:  # TODO: add your logic here
     print(f"{year} is a leap year")
-elif year % 100 == 0:
+elif <condition_2>:  # TODO: add your logic here
     print(f"{year} is not a leap year")
-elif year % 4 == 0:
+elif <condition_3>:  # TODO: add your logic here
     print(f"{year} is a leap year")
 else:
     print(f"{year} is not a leap year")
@@ -897,14 +896,14 @@ Back to [Lab tasks](lab-tasks.md).
 
 ## Unit 2A Task 7: Leap year — Approach 3 (single if condition)
 
-Checks whether a year is a leap year using one combined condition with `or` / `and`.
+Checks whether a year is a leap year using one combined condition with `or` / `and`. Write that condition yourself.
 
 ### Analyse the problem: Identify Input, Process and Output
 
 | Item | Details |
 |------|---------|
 | **Input** | `year` |
-| **Process** | If `year % 400 == 0 or (year % 4 == 0 and year % 100 != 0)` → leap; else → not leap |
+| **Process** | Use a single `if-else`. Fill in one combined condition using the leap-year rules from class notes. |
 | **Output** | Message stating whether the year is a leap year or not |
 
 ### Example
@@ -925,10 +924,10 @@ Checks whether a year is a leap year using one combined condition with `or` / `a
 year = int(input("Enter a year: "))
 ```
 
-**Output messages** (use with `print()`):
+**Program structure** (fill in the blanks — single if condition):
 
 ```python
-if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
+if <condition>:  # TODO: add your combined leap-year logic here (use and / or as needed)
     print(f"{year} is a leap year")
 else:
     print(f"{year} is not a leap year")
