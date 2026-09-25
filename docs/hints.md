@@ -4,7 +4,88 @@ Use these hints to plan each program (input, process, output) and to check your 
 
 Back to [Lab tasks](lab-tasks.md).
 
-Jump to a task: [Unit 1 Task 3](#unit-1-task-3) · [Task 4](#unit-1-task-4) · [Task 5](#unit-1-task-5) · [Task 6](#unit-1-task-6) · [Task 7](#unit-1-task-7) · [Task 8](#unit-1-task-8)
+Jump to a task: [Task 1](#unit-1-task-1) · [Task 2](#unit-1-task-2) · [Task 3](#unit-1-task-3) · [Task 4](#unit-1-task-4) · [Task 5](#unit-1-task-5) · [Task 6](#unit-1-task-6) · [Task 7](#unit-1-task-7) · [Task 8](#unit-1-task-8) · [Task 9](#unit-1-task-9) · [Task 10](#unit-1-task-10) · [Task 11](#unit-1-task-11) · [Task 12](#unit-1-task-12) · [Task 13](#unit-1-task-13) · [Task 14](#unit-1-task-14) · [Task 15](#unit-1-task-15)
+
+---
+
+<a id="unit-1-task-1"></a>
+
+## Unit 1 Task 1: Sum of two numbers
+
+Reads two numbers from the user and displays their sum.
+
+### Analyse the problem: Identify Input, Process and Output
+
+| Item | Details |
+|------|---------|
+| **Input** | `number1`, `number2` |
+| **Process** | `sum_of_numbers = number1 + number2` |
+| **Output** | `sum_of_numbers` |
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number1 = 10`, `number2 = 20` |
+| **Example calculation** | `sum_of_numbers = 10 + 20 = 30` |
+| **Example output** | `sum_of_numbers = 30` |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number1 = float(input("Enter first number: "))
+number2 = float(input("Enter second number: "))
+```
+
+**Output messages** (use with `print()`):
+
+```python
+print(f"Sum of the two numbers is {sum_of_numbers}")
+```
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-1-task-2"></a>
+
+## Unit 1 Task 2: Square of a number
+
+Reads a number and displays its square.
+
+### Analyse the problem: Identify Input, Process and Output
+
+| Item | Details |
+|------|---------|
+| **Input** | `number` |
+| **Process** | `square_of_number = number ** 2` |
+| **Output** | `square_of_number` |
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 5` |
+| **Example calculation** | `square_of_number = 5 ** 2 = 25` |
+| **Example output** | `square_of_number = 25` |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number = float(input("Enter a number: "))
+```
+
+**Output messages** (use with `print()`):
+
+```python
+print(f"Square of the number is {square_of_number}")
+```
+
+Back to [Lab tasks](lab-tasks.md).
 
 ---
 
@@ -265,5 +346,257 @@ n = int(input("Enter the value of n: "))
 ```python
 print(f"Sum of first {n} natural numbers is {sum_of_natural_numbers}")
 ```
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-1-task-9"></a>
+
+## Unit 1 Task 9: Arithmetic operators
+
+Performs arithmetic operations (`+`, `-`, `*`, `/`, `//`, `%`, `**`) on two numbers and displays the results.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number1 = 10`, `number2 = 3` |
+| **Example calculation** | `10 + 3 = 13`<br>`10 - 3 = 7`<br>`10 * 3 = 30`<br>`10 / 3 = 3.333...`<br>`10 // 3 = 3`<br>`10 % 3 = 1`<br>`10 ** 3 = 1000` |
+| **Example output** | `13`, `7`, `30`, `3.333...`, `3`, `1`, `1000` |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number1 = float(input("Enter first number: "))
+number2 = float(input("Enter second number: "))
+```
+
+**Output messages** (use with `print()`):
+
+```python
+print(f"Addition: {addition}")
+print(f"Subtraction: {subtraction}")
+print(f"Multiplication: {multiplication}")
+print(f"Division: {division}")
+print(f"Floor division: {floor_division}")
+print(f"Modulus: {modulus}")
+print(f"Exponent: {exponent}")
+```
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-1-task-10"></a>
+
+## Unit 1 Task 10: Relational operators
+
+Compares two numbers using relational operators and prints the Boolean results.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number1 = 10`, `number2 = 20` |
+| **Example calculation** | `10 == 20 → False`<br>`10 != 20 → True`<br>`10 > 20 → False`<br>`10 < 20 → True`<br>`10 >= 20 → False`<br>`10 <= 20 → True` |
+| **Example output** | `False`, `True`, `False`, `True`, `False`, `True` |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number1 = float(input("Enter first number: "))
+number2 = float(input("Enter second number: "))
+```
+
+**Output messages** (use with `print()`):
+
+```python
+print(f"{number1} == {number2} is {number1 == number2}")
+print(f"{number1} != {number2} is {number1 != number2}")
+print(f"{number1} > {number2} is {number1 > number2}")
+print(f"{number1} < {number2} is {number1 < number2}")
+print(f"{number1} >= {number2} is {number1 >= number2}")
+print(f"{number1} <= {number2} is {number1 <= number2}")
+```
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-1-task-11"></a>
+
+## Unit 1 Task 11: Logical operators
+
+Demonstrates logical operators `and`, `or`, and `not` using Boolean conditions.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number1 = 10`, `number2 = 20` |
+| **Example calculation** | `(10 > 5) and (20 > 15) → True`<br>`(10 > 50) or (20 > 15) → True`<br>`not (10 > 50) → True` |
+| **Example output** | `True`, `True`, `True` |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number1 = float(input("Enter first number: "))
+number2 = float(input("Enter second number: "))
+```
+
+**Output messages** (use with `print()`):
+
+```python
+print(f"(number1 > 5) and (number2 > 15) is {(number1 > 5) and (number2 > 15)}")
+print(f"(number1 > 50) or (number2 > 15) is {(number1 > 50) or (number2 > 15)}")
+print(f"not (number1 > 50) is {not (number1 > 50)}")
+```
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-1-task-12"></a>
+
+## Unit 1 Task 12: Identity operators
+
+Demonstrates identity operators `is` and `is not` (whether two names refer to the same object).
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `list_a = [1, 2, 3]`<br>`list_b = list_a`<br>`list_c = [1, 2, 3]` |
+| **Example calculation** | `list_a is list_b → True` (same object)<br>`list_a is list_c → False` (same values, different objects)<br>`list_a is not list_c → True` |
+| **Example output** | `True`, `False`, `True` |
+
+### Sample input and output messages
+
+This task is usually demonstrated with variables in code (lists need not come from `input()`).
+
+```python
+list_a = [1, 2, 3]
+list_b = list_a
+list_c = [1, 2, 3]
+
+print(f"list_a is list_b: {list_a is list_b}")
+print(f"list_a is list_c: {list_a is list_c}")
+print(f"list_a is not list_c: {list_a is not list_c}")
+```
+
+> **Note:** `==` checks value equality. `is` checks whether both names refer to the **same object** in memory.
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-1-task-13"></a>
+
+## Unit 1 Task 13: Membership operators
+
+Demonstrates membership operators `in` and `not in` with a sequence such as a string or list.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `text = "python"`<br>`item1 = "th"`<br>`item2 = "xyz"` |
+| **Example calculation** | `"th" in "python" → True`<br>`"xyz" not in "python" → True` |
+| **Example output** | `True`, `True` |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+text = input("Enter a text: ")
+item = input("Enter the item to search: ")
+```
+
+**Output messages** (use with `print()`):
+
+```python
+print(f"'{item}' in '{text}' is {item in text}")
+print(f"'{item}' not in '{text}' is {item not in text}")
+```
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-1-task-14"></a>
+
+## Unit 1 Task 14: Operator precedence and associativity
+
+Shows how operator precedence and associativity decide the order of evaluation in an expression.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example expressions** | `2 + 3 * 4`<br>`2 ** 3 ** 2`<br>`10 - 4 - 2` |
+| **Example calculation** | `2 + 3 * 4 = 2 + 12 = 14` (`*` before `+`)<br>`2 ** 3 ** 2 = 2 ** 9 = 512` (`**` is right-associative)<br>`10 - 4 - 2 = 6 - 2 = 4` (`-` is left-associative) |
+| **Example output** | `14`, `512`, `4` |
+
+### Sample input and output messages
+
+This task is usually demonstrated with fixed expressions in code.
+
+```python
+print(f"2 + 3 * 4 = {2 + 3 * 4}")
+print(f"2 ** 3 ** 2 = {2 ** 3 ** 2}")
+print(f"10 - 4 - 2 = {10 - 4 - 2}")
+```
+
+> **Note:** Higher-precedence operators are evaluated first. For the same precedence, associativity decides the order (`**` is right-to-left; most others are left-to-right).
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-1-task-15"></a>
+
+## Unit 1 Task 15: Type conversion (int, float, string)
+
+Demonstrates converting values between `int`, `float`, and `str` using the variable names `str_num`, `float_num`, and `int_num`.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `str_num = "25"` |
+| **Example calculation** | `int_num = int("25") → 25`<br>`float_num = float("25") → 25.0`<br>`str_num = str(25) → "25"` |
+| **Example output** | `int_num = 25`, `float_num = 25.0`, `str_num = "25"` |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+str_num = input("Enter a numeric value as text: ")
+```
+
+**Output messages** (use with `print()`):
+
+```python
+int_num = int(str_num)
+float_num = float(str_num)
+str_num = str(int_num)
+
+print(f"Integer value: {int_num}, type: {type(int_num)}")
+print(f"Float value: {float_num}, type: {type(float_num)}")
+print(f"String value: {str_num}, type: {type(str_num)}")
+```
+
+> **Note:** `input()` always returns a string. Convert with `int()` or `float()` before doing arithmetic.
+>
+> Refer to the **class notes** and try executing the examples discussed in the class to strengthen your understanding of type conversion.
 
 Back to [Lab tasks](lab-tasks.md).

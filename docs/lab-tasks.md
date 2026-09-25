@@ -8,21 +8,21 @@ Click **View hint** for input, process, output, and a worked example (where avai
 
 | Task | What to write | File name | Hint |
 |------|----------------|-----------|------|
-| 1 | Write a python program to read two numbers and display their sum | `Unit-1_Task-1_Sum_of_Two_Numbers.py` | — |
-| 2 | Write a python program to display the square of a number | `Unit-1_Task-2_Square_of_a_Number.py` | — |
+| 1 | Write a python program to read two numbers and display their sum | `Unit-1_Task-1_Sum_of_Two_Numbers.py` | [View hint](hints.md#unit-1-task-1) |
+| 2 | Write a python program to display the square of a number | `Unit-1_Task-2_Square_of_a_Number.py` | [View hint](hints.md#unit-1-task-2) |
 | 3 | Write a python program to calculate area and perimeter of a rectangle | `Unit-1_Task-3_Rectangle_Area_Perimeter.py` | [View hint](hints.md#unit-1-task-3) |
 | 4 | Write a python program to convert temperature from Celsius to Fahrenheit | `Unit-1_Task-4_Celsius_to_Fahrenheit.py` | [View hint](hints.md#unit-1-task-4) |
 | 5 | Write a python program to swap two numbers without using a third variable | `Unit-1_Task-5_Swap_Two_Numbers.py` | [View hint](hints.md#unit-1-task-5) |
 | 6 | Write a python program to calculate simple interest | `Unit-1_Task-6_Simple_Interest.py` | [View hint](hints.md#unit-1-task-6) |
 | 7 | Write a python program to calculate compound interest | `Unit-1_Task-7_Compound_Interest.py` | [View hint](hints.md#unit-1-task-7) |
 | 8 | Write a python program to find the sum of first N natural numbers using a formula | `Unit-1_Task-8_Sum_of_N_Natural_Numbers.py` | [View hint](hints.md#unit-1-task-8) |
-| 9 | Write a python program to perform arithmetic operations (+, -, *, /, //, %, **) on two numbers | `Unit-1_Task-9_Arithmetic_Operators.py` | — |
-| 10 | Write a python program to demonstrate relational operators (print comparison results) | `Unit-1_Task-10_Relational_Operators.py` | — |
-| 11 | Write a python program to demonstrate logical operators (and, or, not) | `Unit-1_Task-11_Logical_Operators.py` | — |
-| 12 | Write a python program to demonstrate identity operators (is, is not) | `Unit-1_Task-12_Identity_Operators.py` | — |
-| 13 | Write a python program to demonstrate membership operators (in, not in) | `Unit-1_Task-13_Membership_Operators.py` | — |
-| 14 | Write a python program to demonstrate operator precedence and associativity | `Unit-1_Task-14_Operator_Precedence_Associativity.py` | — |
-| 15 | Write a python program to demonstrate type conversion (int, float, string) | `Unit-1_Task-15_Type_Conversion.py` | — |
+| 9 | Write a python program to perform arithmetic operations (+, -, *, /, //, %, **) on two numbers | `Unit-1_Task-9_Arithmetic_Operators.py` | [View hint](hints.md#unit-1-task-9) |
+| 10 | Write a python program to demonstrate relational operators (print comparison results) | `Unit-1_Task-10_Relational_Operators.py` | [View hint](hints.md#unit-1-task-10) |
+| 11 | Write a python program to demonstrate logical operators (and, or, not) | `Unit-1_Task-11_Logical_Operators.py` | [View hint](hints.md#unit-1-task-11) |
+| 12 | Write a python program to demonstrate identity operators (is, is not) | `Unit-1_Task-12_Identity_Operators.py` | [View hint](hints.md#unit-1-task-12) |
+| 13 | Write a python program to demonstrate membership operators (in, not in) | `Unit-1_Task-13_Membership_Operators.py` | [View hint](hints.md#unit-1-task-13) |
+| 14 | Write a python program to demonstrate operator precedence and associativity | `Unit-1_Task-14_Operator_Precedence_Associativity.py` | [View hint](hints.md#unit-1-task-14) |
+| 15 | Write a python program to demonstrate type conversion (int, float, string) | `Unit-1_Task-15_Type_Conversion.py` | [View hint](hints.md#unit-1-task-15) |
 
 ## Unit 2
 
