@@ -144,3 +144,28 @@ float_num = float(str_num)
 str_num = str(int_num)
 ok = int_num == 25 and float_num == 25.0 and str_num == "25"
 print(f"Expected conversions match | Match: {ok}")
+print()
+
+print("=== Unit 2A Task 1: Valid triangle ===")
+angle1_in_degrees, angle2_in_degrees, angle3_in_degrees = 60, 60, 60
+is_valid = (
+    angle1_in_degrees > 0
+    and angle2_in_degrees > 0
+    and angle3_in_degrees > 0
+    and angle1_in_degrees + angle2_in_degrees + angle3_in_degrees == 180
+)
+invalid_sum = 90 + 90 + 90
+print(f"Expected valid True, invalid sum 270 | Match: {is_valid is True and invalid_sum == 270}")
+print()
+
+print("=== Unit 2A Task 2: Voting eligibility ===")
+age_in_years = 20
+eligible = age_in_years >= 18
+not_eligible = 16 >= 18
+print(f"Expected eligible True / 16 False | Match: {eligible is True and not_eligible is False}")
+print()
+
+print("=== Unit 2A Task 3: Positive, negative, or zero ===")
+number = 15
+label = "positive" if number > 0 else "negative" if number < 0 else "zero"
+print(f"Expected positive | Match: {label == 'positive'}")

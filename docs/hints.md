@@ -4,7 +4,11 @@ Use these hints to plan each program (input, process, output) and to check your 
 
 Back to [Lab tasks](lab-tasks.md).
 
-Jump to a task: [Task 1](#unit-1-task-1) · [Task 2](#unit-1-task-2) · [Task 3](#unit-1-task-3) · [Task 4](#unit-1-task-4) · [Task 5](#unit-1-task-5) · [Task 6](#unit-1-task-6) · [Task 7](#unit-1-task-7) · [Task 8](#unit-1-task-8) · [Task 9](#unit-1-task-9) · [Task 10](#unit-1-task-10) · [Task 11](#unit-1-task-11) · [Task 12](#unit-1-task-12) · [Task 13](#unit-1-task-13) · [Task 14](#unit-1-task-14) · [Task 15](#unit-1-task-15)
+Jump to a task:
+
+**Unit 1:** [Task 1](#unit-1-task-1) · [Task 2](#unit-1-task-2) · [Task 3](#unit-1-task-3) · [Task 4](#unit-1-task-4) · [Task 5](#unit-1-task-5) · [Task 6](#unit-1-task-6) · [Task 7](#unit-1-task-7) · [Task 8](#unit-1-task-8) · [Task 9](#unit-1-task-9) · [Task 10](#unit-1-task-10) · [Task 11](#unit-1-task-11) · [Task 12](#unit-1-task-12) · [Task 13](#unit-1-task-13) · [Task 14](#unit-1-task-14) · [Task 15](#unit-1-task-15)
+
+**Unit 2A:** [Task 1](#unit-2a-task-1) · [Task 2](#unit-2a-task-2) · [Task 3](#unit-2a-task-3)
 
 ---
 
@@ -636,5 +640,153 @@ print(f"String value: {str_num}, type: {type(str_num)}")
 > **Note:** `input()` always returns a string. Convert with `int()` or `float()` before doing arithmetic.
 >
 > Refer to the **class notes** and try executing the examples discussed in the class to strengthen your understanding of type conversion.
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2a-task-1"></a>
+
+## Unit 2A Task 1: Valid triangle (three angles)
+
+Checks whether a triangle is valid when its three angles are given. A triangle is valid if each angle is greater than 0 and the sum of the three angles is 180 degrees.
+
+### Analyse the problem: Identify Input, Process and Output
+
+| Item | Details |
+|------|---------|
+| **Input** | `angle1_in_degrees`, `angle2_in_degrees`, `angle3_in_degrees` |
+| **Process** | Check `angle1_in_degrees > 0 and angle2_in_degrees > 0 and angle3_in_degrees > 0` and `angle1_in_degrees + angle2_in_degrees + angle3_in_degrees == 180` |
+| **Output** | Message stating whether the triangle is valid or not |
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `angle1_in_degrees = 60`, `angle2_in_degrees = 60`, `angle3_in_degrees = 60` |
+| **Example calculation** | All angles > 0 → True<br>`60 + 60 + 60 = 180` → True<br>So the triangle is valid |
+| **Example output** | The triangle is valid |
+
+**Another example (invalid):** `angle1_in_degrees = 90`, `angle2_in_degrees = 90`, `angle3_in_degrees = 90` → sum = 270 ≠ 180 → The triangle is not valid
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+angle1_in_degrees = float(input("Enter first angle in degrees: "))
+angle2_in_degrees = float(input("Enter second angle in degrees: "))
+angle3_in_degrees = float(input("Enter third angle in degrees: "))
+```
+
+**Output messages** (use with `print()`):
+
+```python
+if (
+    angle1_in_degrees > 0
+    and angle2_in_degrees > 0
+    and angle3_in_degrees > 0
+    and angle1_in_degrees + angle2_in_degrees + angle3_in_degrees == 180
+):
+    print(f"The triangle with angles {angle1_in_degrees}, {angle2_in_degrees}, and {angle3_in_degrees} is valid")
+else:
+    print(f"The triangle with angles {angle1_in_degrees}, {angle2_in_degrees}, and {angle3_in_degrees} is not valid")
+```
+
+> **Note on units:** Ask for angles in **degrees** in the `input()` message.
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2a-task-2"></a>
+
+## Unit 2A Task 2: Voting eligibility
+
+Checks whether a person is eligible to vote using if-else. A person is eligible if age is 18 years or more.
+
+### Analyse the problem: Identify Input, Process and Output
+
+| Item | Details |
+|------|---------|
+| **Input** | `age_in_years` |
+| **Process** | If `age_in_years >= 18`, eligible; otherwise not eligible |
+| **Output** | Message stating whether the person is eligible to vote or not |
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `age_in_years = 20` |
+| **Example calculation** | `20 >= 18` → True → Eligible to vote |
+| **Example output** | Eligible to vote |
+
+**Another example:** `age_in_years = 16` → `16 >= 18` → False → Not eligible to vote
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+age_in_years = int(input("Enter age in years: "))
+```
+
+**Output messages** (use with `print()`):
+
+```python
+if age_in_years >= 18:
+    print(f"Age {age_in_years} years: Eligible to vote")
+else:
+    print(f"Age {age_in_years} years: Not eligible to vote")
+```
+
+> **Note on units:** Ask for age in **years** in the `input()` message.
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2a-task-3"></a>
+
+## Unit 2A Task 3: Positive, negative, or zero
+
+Checks whether a given number is positive, negative, or zero.
+
+### Analyse the problem: Identify Input, Process and Output
+
+| Item | Details |
+|------|---------|
+| **Input** | `number` |
+| **Process** | If `number > 0` → positive; elif `number < 0` → negative; else → zero |
+| **Output** | Message stating whether the number is positive, negative, or zero |
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 15` |
+| **Example calculation** | `15 > 0` → True → Positive |
+| **Example output** | The number is positive |
+
+**Other examples:** `number = -7` → The number is negative; `number = 0` → The number is zero
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number = float(input("Enter a number: "))
+```
+
+**Output messages** (use with `print()`):
+
+```python
+if number > 0:
+    print(f"The number {number} is positive")
+elif number < 0:
+    print(f"The number {number} is negative")
+else:
+    print(f"The number {number} is zero")
+```
 
 Back to [Lab tasks](lab-tasks.md).
