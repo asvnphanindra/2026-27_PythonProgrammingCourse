@@ -71,6 +71,19 @@ Click **View hint** for input, process, output, and a worked example (where avai
 | 5 | Write a python program to print Pascal's triangle | `Unit-2C_Task-5_Pascals_Triangle.py` | — |
 | 6 | Write a python program to print a number pattern (e.g., Floyd's triangle) | `Unit-2C_Task-6_Floyds_Triangle_Number_Pattern.py` | — |
 
+### D. String Manipulation Programs
+
+| Task | What to write | File name | Hint |
+|------|----------------|-----------|------|
+| 1 | Write a python program to demonstrate string creation and basic operations (concatenation, repetition, slicing) | `Unit-2D_Task-1_String_Creation_Basic_Operations.py` | — |
+| 2 | Write a python program to demonstrate string methods (upper, lower, strip, split, join, replace, find) | `Unit-2D_Task-2_String_Methods.py` | — |
+| 3 | Write a python program to check whether a string is a palindrome | `Unit-2D_Task-3_String_Palindrome.py` | — |
+| 4 | Write a python program to reverse a string | `Unit-2D_Task-4_Reverse_a_String.py` | — |
+| 5 | Write a python program to count vowels, consonants, digits and spaces in a string | `Unit-2D_Task-5_Count_Vowels_Consonants_Digits_Spaces.py` | — |
+| 6 | Write a python program to demonstrate string formatting (format(), f-strings, % operator) | `Unit-2D_Task-6_String_Formatting.py` | — |
+| 7 | Write a python program to count the frequency of each character in a string | `Unit-2D_Task-7_Character_Frequency.py` | — |
+| 8 | Write a python program to check whether two strings are anagrams | `Unit-2D_Task-8_Anagram_Check.py` | — |
+
 ## Notes
 
 - Keep these file names exactly as shown (including hyphens and underscores).
