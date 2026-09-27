@@ -56,6 +56,9 @@ Click **View hint** for input, process, output, and a worked example (where avai
 | 11 | Write a python program to check whether a number is a palindrome | `Unit-2B_Task-11_Palindrome_Number.py` | — |
 | 12 | Write a python program to display the multiplication table using while loop | `Unit-2B_Task-12_Multiplication_Table_While_Loop.py` | — |
 | 13 | Write a python program to count the number of digits in a number | `Unit-2B_Task-13_Count_Digits.py` | — |
+| 14 | Write a python program to demonstrate use of break statement in a loop | `Unit-2B_Task-14_Break_Statement.py` | — |
+| 15 | Write a python program to demonstrate use of continue statement in a loop | `Unit-2B_Task-15_Continue_Statement.py` | — |
+| 16 | Write a python program to demonstrate use of pass statement in a loop | `Unit-2B_Task-16_Pass_Statement.py` | — |
 
 ### C. Pattern Generation Programs
 
