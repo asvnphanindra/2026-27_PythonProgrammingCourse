@@ -39,6 +39,24 @@ Click **View hint** for input, process, output, and a worked example (where avai
 | 7 | Write a python program to check whether a given year is a leap year | `Unit-2A_Task-7_Leap_Year.py` | [Approach 1](hints.md#unit-2a-task-7-approach-1) · [Approach 2](hints.md#unit-2a-task-7-approach-2) · [Approach 3](hints.md#unit-2a-task-7-approach-3) |
 | 8 | Write a python program to check whether a given number is prime | `Unit-2A_Task-8_Prime_Number.py` | — |
 
+### B. Iterative Statement Programs
+
+| Task | What to write | File name | Hint |
+|------|----------------|-----------|------|
+| 1 | Write a python program to print numbers from 1 to N using for loop | `Unit-2B_Task-1_Print_Numbers_1_to_N_For_Loop.py` | — |
+| 2 | Write a python program to find the sum of digits of a number | `Unit-2B_Task-2_Sum_of_Digits.py` | — |
+| 3 | Write a python program to reverse a given number | `Unit-2B_Task-3_Reverse_a_Number.py` | — |
+| 4 | Write a python program to print the multiplication table of a number | `Unit-2B_Task-4_Multiplication_Table.py` | — |
+| 5 | Write a python program to find the factorial of a number | `Unit-2B_Task-5_Factorial.py` | — |
+| 6 | Write a python program to print all prime numbers between 1 and N | `Unit-2B_Task-6_Prime_Numbers_1_to_N.py` | — |
+| 7 | Write a python program to find the largest number in a series of N numbers entered by the user | `Unit-2B_Task-7_Largest_in_Series_of_N_Numbers.py` | — |
+| 8 | Write a python program to find the sum and average of N numbers | `Unit-2B_Task-8_Sum_and_Average_of_N_Numbers.py` | — |
+| 9 | Write a python program to print Fibonacci series up to N terms | `Unit-2B_Task-9_Fibonacci_Series_N_Terms.py` | — |
+| 10 | Write a python program to check whether a number is an Armstrong number | `Unit-2B_Task-10_Armstrong_Number.py` | — |
+| 11 | Write a python program to check whether a number is a palindrome | `Unit-2B_Task-11_Palindrome_Number.py` | — |
+| 12 | Write a python program to display the multiplication table using while loop | `Unit-2B_Task-12_Multiplication_Table_While_Loop.py` | — |
+| 13 | Write a python program to count the number of digits in a number | `Unit-2B_Task-13_Count_Digits.py` | — |
+
 ## Notes
 
 - Keep these file names exactly as shown (including hyphens and underscores).
