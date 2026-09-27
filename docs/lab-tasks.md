@@ -84,6 +84,35 @@ Click **View hint** for input, process, output, and a worked example (where avai
 | 7 | Write a python program to count the frequency of each character in a string | `Unit-2D_Task-7_Character_Frequency.py` | — |
 | 8 | Write a python program to check whether two strings are anagrams | `Unit-2D_Task-8_Anagram_Check.py` | — |
 
+## Unit 3
+
+### A. List Programs
+
+| Task | What to write | File name | Hint |
+|------|----------------|-----------|------|
+| 1 | Write a python program to create, traverse and display elements of a list | `Unit-3A_Task-1_Create_Traverse_Display_List.py` | — |
+| 2 | Write a python program to perform list operations (insert, append, remove, sort, reverse) | `Unit-3A_Task-2_List_Operations.py` | — |
+| 3 | Write a python program to find the largest and smallest element in a list | `Unit-3A_Task-3_Largest_Smallest_in_List.py` | — |
+| 4 | Write a python program to remove duplicate elements from a list | `Unit-3A_Task-4_Remove_Duplicates_from_List.py` | — |
+| 5 | Write a python program to perform matrix operations using nested lists | `Unit-3A_Task-5_Matrix_Operations_Nested_Lists.py` | — |
+
+### B. Tuple Programs
+
+| Task | What to write | File name | Hint |
+|------|----------------|-----------|------|
+| 1 | Write a python program to create and access elements of a tuple | `Unit-3B_Task-1_Create_Access_Tuple.py` | — |
+| 2 | Write a python program to demonstrate tuple operations (concatenation, slicing, unpacking) | `Unit-3B_Task-2_Tuple_Operations.py` | — |
+| 3 | Write a python program to swap two variables using tuple unpacking | `Unit-3B_Task-3_Swap_Using_Tuple_Unpacking.py` | — |
+| 4 | Write a python program to find the maximum and minimum in a tuple | `Unit-3B_Task-4_Max_Min_in_Tuple.py` | — |
+
+### C. Set Programs
+
+| Task | What to write | File name | Hint |
+|------|----------------|-----------|------|
+| 1 | Write a python program to demonstrate set creation and basic set operations (union, intersection, difference) | `Unit-3C_Task-1_Set_Creation_Basic_Operations.py` | — |
+| 2 | Write a python program to demonstrate set membership testing and methods (add, remove, discard) | `Unit-3C_Task-2_Set_Membership_and_Methods.py` | — |
+| 3 | Write a python program to remove duplicates from a list using sets | `Unit-3C_Task-3_Remove_Duplicates_Using_Sets.py` | — |
+
 ## Notes
 
 - Keep these file names exactly as shown (including hyphens and underscores).
