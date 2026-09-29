@@ -13,7 +13,7 @@ Jump to a task:
 
 **Unit 2A:** [Task 1](#unit-2a-task-1) · [Task 2](#unit-2a-task-2) · [Task 3](#unit-2a-task-3) · [Task 7 Approach 1](#unit-2a-task-7-approach-1) · [Task 7 Approach 2](#unit-2a-task-7-approach-2) · [Task 7 Approach 3](#unit-2a-task-7-approach-3)
 
-**Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2) · [Task 2 Approach 1](#unit-2b-task-2-approach-1) · [Task 2 Approach 2](#unit-2b-task-2-approach-2)
+**Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2) · [Task 2 Approach 1](#unit-2b-task-2-approach-1) · [Task 2 Approach 2](#unit-2b-task-2-approach-2) · [Task 3](#unit-2b-task-3)
 
 ---
 
@@ -983,6 +983,8 @@ for <variable> in <sequence>:  # TODO: use range(...) to generate numbers from 1
 
 > **Hint:** The sequence of numbers from 1 to N can be generated using the `range` function.
 
+[View solution](../.faculty/solutions/k7m2xq.md) (try the task first)
+
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -1032,6 +1034,8 @@ while <condition>:  # TODO: continue while counter is within 1 to n
     print(f"{<counter>}")  # TODO: print the current number
     <counter> = <update>  # TODO: move to the next number
 ```
+
+[View solution](../.faculty/solutions/k7m2xq.md) (try the task first)
 
 Back to [Lab tasks](lab-tasks.md).
 
@@ -1134,5 +1138,66 @@ while <condition>:  # TODO: continue while counter is within 1 to 10
     print(f"{number} x {<counter>} = {<product>}")
     <counter> = <update>  # TODO: move to the next multiplier
 ```
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2b-task-3"></a>
+
+## Unit 2B Task 3: Sum and average of N numbers (for loop)
+
+Finds the sum and average of several numbers entered by the user using a `for` loop.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read how many numbers to take (`total_input_numbers`)
+- Read `total_input_numbers` numbers from the user, one by one
+
+**Process**
+- Set `total_sum` to `0` at the start
+- Use a `for` loop that runs `total_input_numbers` times (you can use the `range` function)
+- Inside the loop:
+  - Read one number
+  - Add that number to `total_sum`
+- After the loop, find the average: `average = total_sum / total_input_numbers`
+
+**Output**
+- Show the sum of the numbers
+- Show the average of the numbers
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `total_input_numbers = 3`<br>numbers: `10`, `20`, `30` |
+| **Example calculation** | `total_sum = 10 + 20 + 30 = 60`<br>`average = 60 / 3 = 20` |
+| **Example output** | `Sum = 60`<br>`Average = 20` |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+total_input_numbers = int(input("Enter how many numbers: "))
+```
+
+**Program structure** (fill in the blanks — for loop):
+
+```python
+total_sum = 0  # start with zero
+
+for <variable> in <sequence>:  # TODO: use range(...) to repeat total_input_numbers times
+    <number> = float(input("Enter a number: "))  # TODO: read each number
+    total_sum = <update_sum>  # TODO: add the number to total_sum
+
+average = <expression>  # TODO: divide total_sum by total_input_numbers
+
+print(f"Sum = {total_sum}")
+print(f"Average = {average}")
+```
+
+> **Hint:** The loop can run `total_input_numbers` times using the `range` function.
 
 Back to [Lab tasks](lab-tasks.md).

@@ -45,7 +45,7 @@ Click **View hint** for input, process, output, and a worked example (where avai
 |------|----------------|-----------|------|
 | 1 | Write a python program to print numbers from 1 to N<br>1. using for loop<br>2. using while loop | `Unit-2B_Task-1_Print_Numbers_1_to_N.py` | [Approach 1](hints.md#unit-2b-task-1-approach-1) · [Approach 2](hints.md#unit-2b-task-1-approach-2) |
 | 2 | Write a python program to print the multiplication table of a number<br>1. using for loop<br>2. using while loop | `Unit-2B_Task-2_Multiplication_Table.py` | [Approach 1](hints.md#unit-2b-task-2-approach-1) · [Approach 2](hints.md#unit-2b-task-2-approach-2) |
-| 3 | Write a python program to find the sum and average of N numbers using for loop | `Unit-2B_Task-3_Sum_and_Average_of_N_Numbers_For_Loop.py` | — |
+| 3 | Write a python program to find the sum and average of N numbers using for loop | `Unit-2B_Task-3_Sum_and_Average_of_N_Numbers_For_Loop.py` | [View hint](hints.md#unit-2b-task-3) |
 | 4 | Write a python program to find the largest number in a series of N numbers entered by the user using for loop | `Unit-2B_Task-4_Largest_in_Series_of_N_Numbers_For_Loop.py` | — |
 | 5 | Write a python program to find the factorial of a number using for loop | `Unit-2B_Task-5_Factorial_For_Loop.py` | — |
 | 6 | Write a python program to print all prime numbers between 1 and N using for loop | `Unit-2B_Task-6_Prime_Numbers_1_to_N_For_Loop.py` | — |
