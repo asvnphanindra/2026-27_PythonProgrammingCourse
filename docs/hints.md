@@ -13,6 +13,8 @@ Jump to a task:
 
 **Unit 2A:** [Task 1](#unit-2a-task-1) · [Task 2](#unit-2a-task-2) · [Task 3](#unit-2a-task-3) · [Task 7 Approach 1](#unit-2a-task-7-approach-1) · [Task 7 Approach 2](#unit-2a-task-7-approach-2) · [Task 7 Approach 3](#unit-2a-task-7-approach-3)
 
+**Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2)
+
 ---
 
 <a id="unit-1-task-1"></a>
@@ -931,6 +933,93 @@ if <condition>:  # TODO: add your combined leap-year logic here (use and / or as
     print(f"{year} is a leap year")
 else:
     print(f"{year} is not a leap year")
+```
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2b-task-1-approach-1"></a>
+
+## Unit 2B Task 1: Print numbers from 1 to N — Approach 1 (for loop)
+
+Prints all integers from 1 to N using a `for` loop.
+
+### Analyse the problem: Identify Input, Process and Output
+
+| Item | Details |
+|------|---------|
+| **Input** | `n` (the last number to print) |
+| **Process** | Use a `for` loop to go from 1 to `n` and print each number. The sequence of numbers can be generated using the `range` function. Fill in the loop yourself. |
+| **Output** | Numbers from 1 to `n` printed one by one |
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 5` |
+| **Example calculation** | Print `1`, then `2`, then `3`, then `4`, then `5` |
+| **Example output** | `1`<br>`2`<br>`3`<br>`4`<br>`5` |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+n = int(input("Enter the value of N: "))
+```
+
+**Program structure** (fill in the blanks — for loop):
+
+```python
+for <variable> in <sequence>:  # TODO: use range(...) to generate numbers from 1 to n
+    print(f"{<variable>}")  # TODO: print the current number
+```
+
+> **Hint:** The sequence of numbers from 1 to N can be generated using the `range` function.
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2b-task-1-approach-2"></a>
+
+## Unit 2B Task 1: Print numbers from 1 to N — Approach 2 (while loop)
+
+Prints all integers from 1 to N using a `while` loop.
+
+### Analyse the problem: Identify Input, Process and Output
+
+| Item | Details |
+|------|---------|
+| **Input** | `n` (the last number to print) |
+| **Process** | Start a counter at 1. Use a `while` loop to print and increase the counter until you reach `n`. Fill in the condition and update yourself. |
+| **Output** | Numbers from 1 to `n` printed one by one |
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 5` |
+| **Example calculation** | Counter goes `1 → 2 → 3 → 4 → 5`, printing each value |
+| **Example output** | `1`<br>`2`<br>`3`<br>`4`<br>`5` |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+n = int(input("Enter the value of N: "))
+```
+
+**Program structure** (fill in the blanks — while loop):
+
+```python
+<counter> = 1  # TODO: start from 1
+
+while <condition>:  # TODO: continue while counter is within 1 to n
+    print(f"{<counter>}")  # TODO: print the current number
+    <counter> = <update>  # TODO: move to the next number
 ```
 
 Back to [Lab tasks](lab-tasks.md).
