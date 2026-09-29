@@ -13,7 +13,7 @@ Jump to a task:
 
 **Unit 2A:** [Task 1](#unit-2a-task-1) · [Task 2](#unit-2a-task-2) · [Task 3](#unit-2a-task-3) · [Task 7 Approach 1](#unit-2a-task-7-approach-1) · [Task 7 Approach 2](#unit-2a-task-7-approach-2) · [Task 7 Approach 3](#unit-2a-task-7-approach-3)
 
-**Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2) · [Task 2 Approach 1](#unit-2b-task-2-approach-1) · [Task 2 Approach 2](#unit-2b-task-2-approach-2) · [Task 3](#unit-2b-task-3) · [Task 4](#unit-2b-task-4) · [Task 5](#unit-2b-task-5) · [Task 6](#unit-2b-task-6) · [Task 8](#unit-2b-task-8)
+**Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2) · [Task 2 Approach 1](#unit-2b-task-2-approach-1) · [Task 2 Approach 2](#unit-2b-task-2-approach-2) · [Task 3](#unit-2b-task-3) · [Task 4](#unit-2b-task-4) · [Task 5](#unit-2b-task-5) · [Task 6](#unit-2b-task-6) · [Task 7](#unit-2b-task-7) · [Task 8](#unit-2b-task-8)
 
 ---
 
@@ -1376,6 +1376,65 @@ for <number> in <sequence>:  # TODO: use range(...) for candidates from 2 to n
 > **Hint:** A prime number is greater than `1` and has no divisors other than `1` and itself. Use nested `for` loops: one for each candidate, one to test divisors.
 
 <a href="../.faculty/solutions/r5t1zk.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2b-task-7"></a>
+
+## Unit 2B Task 7: Fibonacci series up to N terms (for loop)
+
+Prints the Fibonacci series for the first N terms using a `for` loop.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read how many terms to print (`n`)
+
+**Process**
+- Start with the first two Fibonacci values: `0` and `1`
+- Use a `for` loop that runs `n` times
+- In each iteration:
+  - Print the current first value
+  - Compute the next term as the sum of the two current values
+  - Shift the pair forward for the next iteration
+
+**Output**
+- Show the first `n` Fibonacci terms
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 7` |
+| **Example calculation** | `0`, `1`, `0+1=1`, `1+1=2`, `1+2=3`, `2+3=5`, `3+5=8` |
+| **Example output** | `Term 1 of 7 is 0`<br>`Term 2 of 7 is 1`<br>`Term 3 of 7 is 1`<br>`Term 4 of 7 is 2`<br>`Term 5 of 7 is 3`<br>`Term 6 of 7 is 5`<br>`Term 7 of 7 is 8` |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+n = int(input("Enter how many terms: "))
+```
+
+**Program structure** (fill in the blanks — for loop):
+
+```python
+first = 0
+second = 1
+
+for <variable> in <sequence>:  # TODO: use range(...) to repeat n times
+    print(f"Term {<term_number>} of {n} is {first}")
+    <next_term> = <expression>  # TODO: add first and second
+    first = second
+    second = <next_term>
+```
+
+> **Hint:** Keep two variables for the current pair. After printing `first`, move the pair forward: `first` becomes the old `second`, and `second` becomes their sum.
+
+<a href="../.faculty/solutions/b6j2qm.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](lab-tasks.md).
 

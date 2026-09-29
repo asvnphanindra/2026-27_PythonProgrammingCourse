@@ -10,4 +10,5 @@ Not linked from student docs. Map task → cryptic file.
 | Unit 2B Task 4 — Largest in a series of N numbers | `h2v6ys.md` |
 | Unit 2B Task 5 — Factorial of a number | `m9q4bd.md` |
 | Unit 2B Task 6 — Prime numbers from 1 to N | `r5t1zk.md` |
+| Unit 2B Task 7 — Fibonacci series up to N terms | `b6j2qm.md` |
 | Unit 2B Task 8 — Sum of digits | `v3n8wp.md` |

@@ -49,7 +49,7 @@ Click **View hint** for input, process, output, and a worked example (where avai
 | 4 | Write a python program to find the largest number in a series of N numbers entered by the user using for loop | `Unit-2B_Task-4_Largest_in_Series_of_N_Numbers_For_Loop.py` | [View hint](hints.md#unit-2b-task-4) |
 | 5 | Write a python program to find the factorial of a number using for loop | `Unit-2B_Task-5_Factorial_For_Loop.py` | [View hint](hints.md#unit-2b-task-5) |
 | 6 | Write a python program to print all prime numbers between 1 and N using for loop | `Unit-2B_Task-6_Prime_Numbers_1_to_N_For_Loop.py` | [View hint](hints.md#unit-2b-task-6) |
-| 7 | Write a python program to print Fibonacci series up to N terms using for loop | `Unit-2B_Task-7_Fibonacci_Series_N_Terms_For_Loop.py` | — |
+| 7 | Write a python program to print Fibonacci series up to N terms using for loop | `Unit-2B_Task-7_Fibonacci_Series_N_Terms_For_Loop.py` | [View hint](hints.md#unit-2b-task-7) |
 | 8 | Write a python program to find the sum of digits of a number using while loop | `Unit-2B_Task-8_Sum_of_Digits_While_Loop.py` | [View hint](hints.md#unit-2b-task-8) |
 | 9 | Write a python program to count the number of digits in a number using while loop | `Unit-2B_Task-9_Count_Digits_While_Loop.py` | — |
 | 10 | Write a python program to reverse a given number using while loop | `Unit-2B_Task-10_Reverse_a_Number_While_Loop.py` | — |
