@@ -14,6 +14,6 @@ for count in range(total_input_numbers):
 
 average = total_sum / total_input_numbers
 
-print(f"Sum = {total_sum}")
-print(f"Average = {average}")
+print(f"Sum of {total_input_numbers} numbers is {total_sum}")
+print(f"Average of {total_input_numbers} numbers (sum {total_sum}) is {average}")
 ```

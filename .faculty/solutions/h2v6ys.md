@@ -13,5 +13,5 @@ for count in range(total_input_numbers - 1):
     if number > largest:
         largest = number
 
-print(f"Largest = {largest}")
+print(f"Largest among {total_input_numbers} numbers is {largest}")
 ```

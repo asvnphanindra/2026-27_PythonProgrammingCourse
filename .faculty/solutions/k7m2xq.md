@@ -9,7 +9,7 @@ Print numbers from 1 to N. Both approaches below.
 n = int(input("Enter the value of N: "))
 
 for number in range(1, n + 1):
-    print(f"{number}")
+    print(f"Number = {number} (from 1 to {n})")
 ```
 
 ## Approach 2: while loop
@@ -20,6 +20,6 @@ n = int(input("Enter the value of N: "))
 
 number = 1
 while number <= n:
-    print(f"{number}")
+    print(f"Number = {number} (from 1 to {n})")
     number = number + 1
 ```

@@ -13,7 +13,7 @@ Jump to a task:
 
 **Unit 2A:** [Task 1](#unit-2a-task-1) · [Task 2](#unit-2a-task-2) · [Task 3](#unit-2a-task-3) · [Task 7 Approach 1](#unit-2a-task-7-approach-1) · [Task 7 Approach 2](#unit-2a-task-7-approach-2) · [Task 7 Approach 3](#unit-2a-task-7-approach-3)
 
-**Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2) · [Task 2 Approach 1](#unit-2b-task-2-approach-1) · [Task 2 Approach 2](#unit-2b-task-2-approach-2) · [Task 3](#unit-2b-task-3) · [Task 4](#unit-2b-task-4)
+**Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2) · [Task 2 Approach 1](#unit-2b-task-2-approach-1) · [Task 2 Approach 2](#unit-2b-task-2-approach-2) · [Task 3](#unit-2b-task-3) · [Task 4](#unit-2b-task-4) · [Task 5](#unit-2b-task-5)
 
 ---
 
@@ -964,7 +964,7 @@ Prints all integers from 1 to N using a `for` loop.
 |------|---------|
 | **Example input** | `n = 5` |
 | **Example calculation** | Print `1`, then `2`, then `3`, then `4`, then `5` |
-| **Example output** | `1`<br>`2`<br>`3`<br>`4`<br>`5` |
+| **Example output** | `Number = 1 (from 1 to 5)`<br>`Number = 2 (from 1 to 5)`<br>`Number = 3 (from 1 to 5)`<br>`Number = 4 (from 1 to 5)`<br>`Number = 5 (from 1 to 5)` |
 
 ### Sample input and output messages
 
@@ -978,7 +978,7 @@ n = int(input("Enter the value of N: "))
 
 ```python
 for <variable> in <sequence>:  # TODO: use range(...) to generate numbers from 1 to n
-    print(f"{<variable>}")  # TODO: print the current number
+    print(f"Number = {<variable>} (from 1 to {n})")  # TODO: print the current number and N
 ```
 
 > **Hint:** The sequence of numbers from 1 to N can be generated using the `range` function.
@@ -1015,7 +1015,7 @@ Prints all integers from 1 to N using a `while` loop.
 |------|---------|
 | **Example input** | `n = 5` |
 | **Example calculation** | Counter goes `1 → 2 → 3 → 4 → 5`, printing each value |
-| **Example output** | `1`<br>`2`<br>`3`<br>`4`<br>`5` |
+| **Example output** | `Number = 1 (from 1 to 5)`<br>`Number = 2 (from 1 to 5)`<br>`Number = 3 (from 1 to 5)`<br>`Number = 4 (from 1 to 5)`<br>`Number = 5 (from 1 to 5)` |
 
 ### Sample input and output messages
 
@@ -1031,7 +1031,7 @@ n = int(input("Enter the value of N: "))
 <counter> = 1  # TODO: start from 1
 
 while <condition>:  # TODO: continue while counter is within 1 to n
-    print(f"{<counter>}")  # TODO: print the current number
+    print(f"Number = {<counter>} (from 1 to {n})")  # TODO: print the current number and N
     <counter> = <update>  # TODO: move to the next number
 ```
 
@@ -1177,7 +1177,7 @@ Finds the sum and average of several numbers entered by the user using a `for` l
 |------|---------|
 | **Example input** | `total_input_numbers = 3`<br>numbers: `10`, `20`, `30` |
 | **Example calculation** | `total_sum = 10 + 20 + 30 = 60`<br>`average = 60 / 3 = 20` |
-| **Example output** | `Sum = 60`<br>`Average = 20` |
+| **Example output** | `Sum of 3 numbers is 60`<br>`Average of 3 numbers (sum 60) is 20` |
 
 ### Sample input and output messages
 
@@ -1198,8 +1198,8 @@ for <variable> in <sequence>:  # TODO: use range(...) to repeat total_input_numb
 
 average = <expression>  # TODO: divide total_sum by total_input_numbers
 
-print(f"Sum = {total_sum}")
-print(f"Average = {average}")
+print(f"Sum of {total_input_numbers} numbers is {total_sum}")
+print(f"Average of {total_input_numbers} numbers (sum {total_sum}) is {average}")
 ```
 
 > **Hint:** The loop can run `total_input_numbers` times using the `range` function.
@@ -1238,7 +1238,7 @@ Finds the largest number among several numbers entered by the user using a `for`
 |------|---------|
 | **Example input** | `total_input_numbers = 4`<br>numbers: `10`, `25`, `7`, `18` |
 | **Example calculation** | Start with `largest = 10`<br>Compare `25` → update to `25`<br>Compare `7` → keep `25`<br>Compare `18` → keep `25` |
-| **Example output** | `Largest = 25` |
+| **Example output** | `Largest among 4 numbers is 25` |
 
 ### Sample input and output messages
 
@@ -1258,11 +1258,65 @@ for <variable> in <sequence>:  # TODO: use range(...) for the remaining numbers
     if <condition>:  # TODO: check whether number is greater than largest
         largest = <number>  # TODO: update largest
 
-print(f"Largest = {largest}")
+print(f"Largest among {total_input_numbers} numbers is {largest}")
 ```
 
 > **Hint:** After storing the first number in `largest`, the loop only needs to run for the remaining `total_input_numbers - 1` values.
 
 <a href="../.faculty/solutions/h2v6ys.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2b-task-5"></a>
+
+## Unit 2B Task 5: Factorial of a number (for loop)
+
+Finds the factorial of a number using a `for` loop.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number from the user
+
+**Process**
+- Set `factorial` to `1` at the start
+- Use a `for` loop to multiply by each integer from `1` to the given number
+- After the loop, `factorial` holds the result
+
+**Output**
+- Show the factorial of the number
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 5` |
+| **Example calculation** | `1 × 2 × 3 × 4 × 5 = 120` |
+| **Example output** | `Factorial of 5 is 120` |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number = int(input("Enter a number: "))
+```
+
+**Program structure** (fill in the blanks — for loop):
+
+```python
+factorial = 1  # start with 1
+
+for <variable> in <sequence>:  # TODO: use range(...) for values from 1 to number
+    factorial = <update>  # TODO: multiply factorial by the current value
+
+print(f"Factorial of {number} is {factorial}")
+```
+
+> **Hint:** The numbers to multiply can be generated with `range` from `1` to `number` (inclusive).
+
+<a href="../.faculty/solutions/m9q4bd.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](lab-tasks.md).
