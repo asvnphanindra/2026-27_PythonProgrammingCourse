@@ -13,7 +13,7 @@ Jump to a task:
 
 **Unit 2A:** [Task 1](#unit-2a-task-1) · [Task 2](#unit-2a-task-2) · [Task 3](#unit-2a-task-3) · [Task 7 Approach 1](#unit-2a-task-7-approach-1) · [Task 7 Approach 2](#unit-2a-task-7-approach-2) · [Task 7 Approach 3](#unit-2a-task-7-approach-3)
 
-**Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2) · [Task 2 Approach 1](#unit-2b-task-2-approach-1) · [Task 2 Approach 2](#unit-2b-task-2-approach-2) · [Task 3](#unit-2b-task-3) · [Task 4](#unit-2b-task-4) · [Task 5](#unit-2b-task-5) · [Task 6](#unit-2b-task-6) · [Task 7](#unit-2b-task-7) · [Task 8](#unit-2b-task-8)
+**Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2) · [Task 2 Approach 1](#unit-2b-task-2-approach-1) · [Task 2 Approach 2](#unit-2b-task-2-approach-2) · [Task 3](#unit-2b-task-3) · [Task 4](#unit-2b-task-4) · [Task 5](#unit-2b-task-5) · [Task 6](#unit-2b-task-6) · [Task 7](#unit-2b-task-7) · [Task 8](#unit-2b-task-8) · [Task 9](#unit-2b-task-9) · [Task 10](#unit-2b-task-10) · [Task 11](#unit-2b-task-11) · [Task 12](#unit-2b-task-12) · [Task 13 Approach 1](#unit-2b-task-13-approach-1) · [Task 13 Approach 2](#unit-2b-task-13-approach-2) · [Task 14 Approach 1](#unit-2b-task-14-approach-1) · [Task 14 Approach 2](#unit-2b-task-14-approach-2) · [Task 15 Approach 1](#unit-2b-task-15-approach-1) · [Task 15 Approach 2](#unit-2b-task-15-approach-2)
 
 ---
 
@@ -1496,5 +1496,603 @@ print(f"Sum of digits of {original_number} is {digit_sum}")
 > **Hint:** Peel digits with arithmetic only: `% 10` for the last digit and `// 10` to shorten the number. Avoid string methods for this task.
 
 <a href="../.faculty/solutions/v3n8wp.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2b-task-9"></a>
+
+## Unit 2B Task 9: Count digits (while loop)
+
+Counts how many digits a number has using a `while` loop.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number from the user
+
+**Process**
+- Keep a copy of the original number (for the final message)
+- Set `digit_count` to `0`
+- Special case: if the number is `0`, it has `1` digit
+- Otherwise, while the number is greater than `0`:
+  - Add `1` to `digit_count`
+  - Remove the last digit using `// 10`
+- Do **not** convert the number to a string to count digits
+
+**Output**
+- Show how many digits the number has
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 1234` |
+| **Example calculation** | `1234 → 123 → 12 → 1 → 0` (four steps) |
+| **Example output** | `Number of digits in 1234 is 4` |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number = int(input("Enter a number: "))
+```
+
+**Program structure** (fill in the blanks — while loop):
+
+```python
+original_number = number
+digit_count = 0
+
+if number == 0:
+    digit_count = 1
+else:
+    while <condition>:  # TODO: continue while number still has digits
+        digit_count = <update>  # TODO: increase the count by 1
+        number = <update>  # TODO: remove the last digit with // 10
+
+print(f"Number of digits in {original_number} is {digit_count}")
+```
+
+> **Hint:** Each `// 10` shortens the number by one digit. Count how many times you can do that until the number becomes `0`.
+
+<a href="../.faculty/solutions/c4x7la.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2b-task-10"></a>
+
+## Unit 2B Task 10: Reverse a number (while loop)
+
+Reverses the digits of a number using a `while` loop.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number from the user
+
+**Process**
+- Keep a copy of the original number
+- Set `reversed_number` to `0`
+- While the number is greater than `0`:
+  - Take the last digit using `% 10`
+  - Attach it to `reversed_number` (multiply current reverse by `10`, then add the digit)
+  - Remove the last digit using `// 10`
+- Do **not** reverse with string slicing
+
+**Output**
+- Show the reversed number
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 1234` |
+| **Example calculation** | `0 → 4 → 43 → 432 → 4321` |
+| **Example output** | `Reverse of 1234 is 4321` |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number = int(input("Enter a number: "))
+```
+
+**Program structure** (fill in the blanks — while loop):
+
+```python
+original_number = number
+reversed_number = 0
+
+while <condition>:  # TODO: continue while number still has digits
+    <digit> = <expression>  # TODO: get the last digit with % 10
+    reversed_number = <update>  # TODO: build reverse as reversed_number * 10 + digit
+    number = <update>  # TODO: remove the last digit with // 10
+
+print(f"Reverse of {original_number} is {reversed_number}")
+```
+
+> **Hint:** Build the reverse from right to left: each new digit becomes the new ones place of `reversed_number`.
+
+<a href="../.faculty/solutions/d9f2mh.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2b-task-11"></a>
+
+## Unit 2B Task 11: Armstrong number (while loop)
+
+Checks whether a number is an Armstrong number using a `while` loop.
+
+An Armstrong number equals the sum of its digits each raised to the power of the digit count (example: `153 = 1³ + 5³ + 3³`).
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number from the user
+
+**Process**
+- Keep a copy of the original number
+- Count the digits (same idea as Task 9) → store as `digit_count`
+- Set `armstrong_sum` to `0`
+- Peel each digit again with `% 10` / `// 10`
+- Add `digit ** digit_count` to `armstrong_sum`
+- Compare `armstrong_sum` with the original number
+
+**Output**
+- Say whether the number is an Armstrong number, and show the computed sum
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 153` |
+| **Example calculation** | Digits = `3`<br>`1³ + 5³ + 3³ = 1 + 125 + 27 = 153` |
+| **Example output** | `153 is an Armstrong number (sum of digits to power 3 is 153)` |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number = int(input("Enter a number: "))
+```
+
+**Program structure** (fill in the blanks — while loop):
+
+```python
+original_number = number
+
+# Step 1: count digits into digit_count (see Task 9 idea)
+digit_count = 0
+temp = number
+# TODO: count digits of temp into digit_count
+
+# Step 2: sum each digit raised to digit_count
+armstrong_sum = 0
+temp = number
+while <condition>:  # TODO: peel digits from temp
+    <digit> = <expression>  # TODO: last digit with % 10
+    armstrong_sum = <update>  # TODO: add digit ** digit_count
+    temp = <update>  # TODO: remove last digit with // 10
+
+if <condition>:  # TODO: compare armstrong_sum with original_number
+    print(
+        f"{original_number} is an Armstrong number "
+        f"(sum of digits to power {digit_count} is {armstrong_sum})"
+    )
+else:
+    print(
+        f"{original_number} is not an Armstrong number "
+        f"(sum of digits to power {digit_count} is {armstrong_sum})"
+    )
+```
+
+> **Hint:** You usually need two while-loop passes: one to count digits (the power), one to build the powered digit sum. Use `%` and `//` only — no strings.
+
+<a href="../.faculty/solutions/e1g5nk.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2b-task-12"></a>
+
+## Unit 2B Task 12: Palindrome number (while loop)
+
+Checks whether a number is a palindrome using a `while` loop.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number from the user
+
+**Process**
+- Keep a copy of the original number
+- Reverse the number (same idea as Task 10)
+- If the reversed value equals the original, it is a palindrome
+
+**Output**
+- Say whether the number is a palindrome, and show the reversed value
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 121` |
+| **Example calculation** | Reverse of `121` is `121` → equal → palindrome |
+| **Example output** | `121 is a palindrome (reversed value is 121)` |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number = int(input("Enter a number: "))
+```
+
+**Program structure** (fill in the blanks — while loop):
+
+```python
+original_number = number
+reversed_number = 0
+
+while <condition>:  # TODO: reverse digits into reversed_number (see Task 10)
+    <digit> = <expression>
+    reversed_number = <update>
+    number = <update>
+
+if <condition>:  # TODO: compare reversed_number with original_number
+    print(
+        f"{original_number} is a palindrome "
+        f"(reversed value is {reversed_number})"
+    )
+else:
+    print(
+        f"{original_number} is not a palindrome "
+        f"(reversed value is {reversed_number})"
+    )
+```
+
+> **Hint:** A palindrome number reads the same forwards and backwards. Reverse with `%` / `//`, then compare.
+
+<a href="../.faculty/solutions/f8h3pj.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2b-task-13-approach-1"></a>
+
+## Unit 2B Task 13: Break statement — Approach 1 (for loop)
+
+Demonstrates `break` to leave a `for` loop early.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number `n` (upper limit)
+
+**Process**
+- Loop from `1` to `n`
+- When the current number becomes `5`, print a break message and stop the loop with `break`
+- Otherwise print the current number
+
+**Output**
+- Numbers printed before breaking, plus a message that shows where the loop stopped
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 8` |
+| **Example calculation** | Print `1`–`4`, then break at `5` (do not print `6`–`8`) |
+| **Example output** | `for loop number = 1 (up to 8)` … `for loop number = 4 (up to 8)`<br>`Breaking for loop at number 5 (N was 8)` |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+n = int(input("Enter N (print until N, stop early at 5): "))
+```
+
+**Program structure** (fill in the blanks — for loop):
+
+```python
+for <variable> in <sequence>:  # TODO: range from 1 to n
+    if <condition>:  # TODO: stop when the number is 5
+        print(f"Breaking for loop at number {<variable>} (N was {n})")
+        break
+    print(f"for loop number = {<variable>} (up to {n})")
+```
+
+> **Hint:** `break` exits the loop immediately. Code after `break` inside that loop body does not run for later values.
+
+<a href="../.faculty/solutions/g2k6qs.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2b-task-13-approach-2"></a>
+
+## Unit 2B Task 13: Break statement — Approach 2 (while loop)
+
+Demonstrates `break` to leave a `while` loop early.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number `n` (upper limit)
+
+**Process**
+- Start a counter at `1`
+- While the counter is less than or equal to `n`:
+  - If the counter is `5`, print a break message and `break`
+  - Otherwise print the counter and add `1`
+
+**Output**
+- Numbers printed before breaking, plus a message that shows where the loop stopped
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 8` |
+| **Example calculation** | Print `1`–`4`, then break at `5` |
+| **Example output** | `while loop number = 1 (up to 8)` … `while loop number = 4 (up to 8)`<br>`Breaking while loop at number 5 (N was 8)` |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+n = int(input("Enter N (print until N, stop early at 5): "))
+```
+
+**Program structure** (fill in the blanks — while loop):
+
+```python
+<counter> = 1
+
+while <condition>:  # TODO: continue while counter <= n
+    if <stop_condition>:  # TODO: stop when counter is 5
+        print(f"Breaking while loop at number {<counter>} (N was {n})")
+        break
+    print(f"while loop number = {<counter>} (up to {n})")
+    <counter> = <update>
+```
+
+> **Hint:** Same idea as the for-loop version: `break` ends the while loop right away.
+
+<a href="../.faculty/solutions/g2k6qs.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2b-task-14-approach-1"></a>
+
+## Unit 2B Task 14: Continue statement — Approach 1 (for loop)
+
+Demonstrates `continue` to skip the rest of one `for` loop iteration.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number `n`
+
+**Process**
+- Loop from `1` to `n`
+- If the number is even, print a skip message and `continue`
+- Otherwise print the odd number
+
+**Output**
+- Odd numbers from `1` to `n`, plus skip messages for even values
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 5` |
+| **Example calculation** | Print odds `1`, `3`, `5`; skip evens `2`, `4` |
+| **Example output** | `for loop odd number = 1 (up to 5)`<br>`Skipping even number 2 with continue (N is 5)` … |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+n = int(input("Enter N (print 1 to N, skip even numbers): "))
+```
+
+**Program structure** (fill in the blanks — for loop):
+
+```python
+for <variable> in <sequence>:  # TODO: range from 1 to n
+    if <condition>:  # TODO: detect an even number
+        print(f"Skipping even number {<variable>} with continue (N is {n})")
+        continue
+    print(f"for loop odd number = {<variable>} (up to {n})")
+```
+
+> **Hint:** `continue` jumps to the next iteration. The print for odd numbers is skipped for that even value.
+
+<a href="../.faculty/solutions/h7m1rt.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2b-task-14-approach-2"></a>
+
+## Unit 2B Task 14: Continue statement — Approach 2 (while loop)
+
+Demonstrates `continue` to skip the rest of one `while` loop iteration.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number `n`
+
+**Process**
+- Start a counter at `1`
+- While the counter is less than or equal to `n`:
+  - If even: print skip message, increase the counter, then `continue`
+  - If odd: print the number, then increase the counter
+
+**Output**
+- Odd numbers from `1` to `n`, plus skip messages for even values
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 5` |
+| **Example calculation** | Same as Approach 1, using a while loop |
+| **Example output** | `while loop odd number = 1 (up to 5)` … |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+n = int(input("Enter N (print 1 to N, skip even numbers): "))
+```
+
+**Program structure** (fill in the blanks — while loop):
+
+```python
+<counter> = 1
+
+while <condition>:  # TODO: counter <= n
+    if <even_condition>:  # TODO: even check
+        print(f"Skipping even number {<counter>} with continue (N is {n})")
+        <counter> = <update>  # TODO: important before continue
+        continue
+    print(f"while loop odd number = {<counter>} (up to {n})")
+    <counter> = <update>
+```
+
+> **Hint:** In a while loop, update the counter **before** `continue`, or the loop may never move past that even value.
+
+<a href="../.faculty/solutions/h7m1rt.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2b-task-15-approach-1"></a>
+
+## Unit 2B Task 15: Pass statement — Approach 1 (for loop)
+
+Demonstrates `pass` as a placeholder inside a `for` loop.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number `n`
+
+**Process**
+- Loop from `1` to `n`
+- If the number is a multiple of `3`, use `pass` (no special logic yet) and print that `pass` was used
+- Otherwise print the number normally
+
+**Output**
+- A message for multiples of `3` showing `pass`, and normal messages for other numbers
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 6` |
+| **Example calculation** | `3` and `6` use `pass`; other values print normally |
+| **Example output** | `for loop number = 1 (up to 6)` … `Used pass for multiple of 3: 3 (N is 6)` … |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+n = int(input("Enter N (use pass for multiples of 3): "))
+```
+
+**Program structure** (fill in the blanks — for loop):
+
+```python
+for <variable> in <sequence>:  # TODO: range from 1 to n
+    if <condition>:  # TODO: multiple of 3
+        pass  # placeholder: do nothing here yet
+        print(f"Used pass for multiple of 3: {<variable>} (N is {n})")
+    else:
+        print(f"for loop number = {<variable>} (up to {n})")
+```
+
+> **Hint:** `pass` is a no-op. It keeps the `if` block valid when you are not ready to write real logic yet.
+
+<a href="../.faculty/solutions/i4n9su.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2b-task-15-approach-2"></a>
+
+## Unit 2B Task 15: Pass statement — Approach 2 (while loop)
+
+Demonstrates `pass` as a placeholder inside a `while` loop.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number `n`
+
+**Process**
+- Same idea as Approach 1, using a while loop and a counter
+
+**Output**
+- A message for multiples of `3` showing `pass`, and normal messages for other numbers
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 6` |
+| **Example calculation** | Same behaviour as the for-loop version |
+| **Example output** | `while loop number = 1 (up to 6)` … `Used pass for multiple of 3: 3 (N is 6)` … |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+n = int(input("Enter N (use pass for multiples of 3): "))
+```
+
+**Program structure** (fill in the blanks — while loop):
+
+```python
+<counter> = 1
+
+while <condition>:  # TODO: counter <= n
+    if <condition>:  # TODO: multiple of 3
+        pass
+        print(f"Used pass for multiple of 3: {<counter>} (N is {n})")
+    else:
+        print(f"while loop number = {<counter>} (up to {n})")
+    <counter> = <update>
+```
+
+> **Hint:** `pass` does not skip the rest of the loop by itself — unlike `continue`. Here it only fills an empty branch.
+
+<a href="../.faculty/solutions/i4n9su.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](lab-tasks.md).

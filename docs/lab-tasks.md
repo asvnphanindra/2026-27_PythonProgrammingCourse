@@ -51,13 +51,13 @@ Click **View hint** for input, process, output, and a worked example (where avai
 | 6 | Write a python program to print all prime numbers between 1 and N using for loop | `Unit-2B_Task-6_Prime_Numbers_1_to_N_For_Loop.py` | [View hint](hints.md#unit-2b-task-6) |
 | 7 | Write a python program to print Fibonacci series up to N terms using for loop | `Unit-2B_Task-7_Fibonacci_Series_N_Terms_For_Loop.py` | [View hint](hints.md#unit-2b-task-7) |
 | 8 | Write a python program to find the sum of digits of a number using while loop | `Unit-2B_Task-8_Sum_of_Digits_While_Loop.py` | [View hint](hints.md#unit-2b-task-8) |
-| 9 | Write a python program to count the number of digits in a number using while loop | `Unit-2B_Task-9_Count_Digits_While_Loop.py` | — |
-| 10 | Write a python program to reverse a given number using while loop | `Unit-2B_Task-10_Reverse_a_Number_While_Loop.py` | — |
-| 11 | Write a python program to check whether a number is an Armstrong number using while loop | `Unit-2B_Task-11_Armstrong_Number_While_Loop.py` | — |
-| 12 | Write a python program to check whether a number is a palindrome using while loop | `Unit-2B_Task-12_Palindrome_Number_While_Loop.py` | — |
-| 13 | Write a python program to demonstrate use of break statement<br>1. using for loop<br>2. using while loop | `Unit-2B_Task-13_Break_Statement.py` | — |
-| 14 | Write a python program to demonstrate use of continue statement<br>1. using for loop<br>2. using while loop | `Unit-2B_Task-14_Continue_Statement.py` | — |
-| 15 | Write a python program to demonstrate use of pass statement<br>1. using for loop<br>2. using while loop | `Unit-2B_Task-15_Pass_Statement.py` | — |
+| 9 | Write a python program to count the number of digits in a number using while loop | `Unit-2B_Task-9_Count_Digits_While_Loop.py` | [View hint](hints.md#unit-2b-task-9) |
+| 10 | Write a python program to reverse a given number using while loop | `Unit-2B_Task-10_Reverse_a_Number_While_Loop.py` | [View hint](hints.md#unit-2b-task-10) |
+| 11 | Write a python program to check whether a number is an Armstrong number using while loop | `Unit-2B_Task-11_Armstrong_Number_While_Loop.py` | [View hint](hints.md#unit-2b-task-11) |
+| 12 | Write a python program to check whether a number is a palindrome using while loop | `Unit-2B_Task-12_Palindrome_Number_While_Loop.py` | [View hint](hints.md#unit-2b-task-12) |
+| 13 | Write a python program to demonstrate use of break statement<br>1. using for loop<br>2. using while loop | `Unit-2B_Task-13_Break_Statement.py` | [Approach 1](hints.md#unit-2b-task-13-approach-1) · [Approach 2](hints.md#unit-2b-task-13-approach-2) |
+| 14 | Write a python program to demonstrate use of continue statement<br>1. using for loop<br>2. using while loop | `Unit-2B_Task-14_Continue_Statement.py` | [Approach 1](hints.md#unit-2b-task-14-approach-1) · [Approach 2](hints.md#unit-2b-task-14-approach-2) |
+| 15 | Write a python program to demonstrate use of pass statement<br>1. using for loop<br>2. using while loop | `Unit-2B_Task-15_Pass_Statement.py` | [Approach 1](hints.md#unit-2b-task-15-approach-1) · [Approach 2](hints.md#unit-2b-task-15-approach-2) |
 
 ### C. Pattern Generation Programs
 

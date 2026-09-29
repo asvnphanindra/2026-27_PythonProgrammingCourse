@@ -12,3 +12,10 @@ Not linked from student docs. Map task → cryptic file.
 | Unit 2B Task 6 — Prime numbers from 1 to N | `r5t1zk.md` |
 | Unit 2B Task 7 — Fibonacci series up to N terms | `b6j2qm.md` |
 | Unit 2B Task 8 — Sum of digits | `v3n8wp.md` |
+| Unit 2B Task 9 — Count digits | `c4x7la.md` |
+| Unit 2B Task 10 — Reverse a number | `d9f2mh.md` |
+| Unit 2B Task 11 — Armstrong number | `e1g5nk.md` |
+| Unit 2B Task 12 — Palindrome number | `f8h3pj.md` |
+| Unit 2B Task 13 — Break statement | `g2k6qs.md` |
+| Unit 2B Task 14 — Continue statement | `h7m1rt.md` |
+| Unit 2B Task 15 — Pass statement | `i4n9su.md` |
