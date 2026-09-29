@@ -983,7 +983,7 @@ for <variable> in <sequence>:  # TODO: use range(...) to generate numbers from 1
 
 > **Hint:** The sequence of numbers from 1 to N can be generated using the `range` function.
 
-[View solution](../.faculty/solutions/k7m2xq.md) (try the task first)
+<a href="../.faculty/solutions/k7m2xq.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](lab-tasks.md).
 
@@ -1035,7 +1035,7 @@ while <condition>:  # TODO: continue while counter is within 1 to n
     <counter> = <update>  # TODO: move to the next number
 ```
 
-[View solution](../.faculty/solutions/k7m2xq.md) (try the task first)
+<a href="../.faculty/solutions/k7m2xq.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](lab-tasks.md).
 
@@ -1086,6 +1086,8 @@ for <variable> in <sequence>:  # TODO: use range(...) for multipliers (e.g. 1 to
 ```
 
 > **Hint:** The sequence of multipliers can be generated using the `range` function.
+
+<a href="../.faculty/solutions/p4n9rw.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](lab-tasks.md).
 
@@ -1138,6 +1140,8 @@ while <condition>:  # TODO: continue while counter is within 1 to 10
     print(f"{number} x {<counter>} = {<product>}")
     <counter> = <update>  # TODO: move to the next multiplier
 ```
+
+<a href="../.faculty/solutions/p4n9rw.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](lab-tasks.md).
 
