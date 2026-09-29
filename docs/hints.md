@@ -1409,7 +1409,7 @@ Prints the Fibonacci series for the first N terms using a `for` loop.
 |------|---------|
 | **Example input** | `n = 7` |
 | **Example calculation** | `0`, `1`, `0+1=1`, `1+1=2`, `1+2=3`, `2+3=5`, `3+5=8` |
-| **Example output** | `Term 1 of 7 is 0`<br>`Term 2 of 7 is 1`<br>`Term 3 of 7 is 1`<br>`Term 4 of 7 is 2`<br>`Term 5 of 7 is 3`<br>`Term 6 of 7 is 5`<br>`Term 7 of 7 is 8` |
+| **Example output** | `Fibonacci series term 1 of 7 terms = 0`<br>`Fibonacci series term 2 of 7 terms = 1`<br>`Fibonacci series term 3 of 7 terms = 1`<br>`Fibonacci series term 4 of 7 terms = 2`<br>`Fibonacci series term 5 of 7 terms = 3`<br>`Fibonacci series term 6 of 7 terms = 5`<br>`Fibonacci series term 7 of 7 terms = 8` |
 
 ### Sample input and output messages
 
@@ -1426,7 +1426,7 @@ first = 0
 second = 1
 
 for <variable> in <sequence>:  # TODO: use range(...) to repeat n times
-    print(f"Term {<term_number>} of {n} is {first}")
+    print(f"Fibonacci series term {<term_number>} of {n} terms = {first}")
     <next_term> = <expression>  # TODO: add first and second
     first = second
     second = <next_term>
