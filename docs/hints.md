@@ -13,7 +13,7 @@ Jump to a task:
 
 **Unit 2A:** [Task 1](#unit-2a-task-1) · [Task 2](#unit-2a-task-2) · [Task 3](#unit-2a-task-3) · [Task 7 Approach 1](#unit-2a-task-7-approach-1) · [Task 7 Approach 2](#unit-2a-task-7-approach-2) · [Task 7 Approach 3](#unit-2a-task-7-approach-3)
 
-**Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2) · [Task 2 Approach 1](#unit-2b-task-2-approach-1) · [Task 2 Approach 2](#unit-2b-task-2-approach-2) · [Task 3](#unit-2b-task-3) · [Task 4](#unit-2b-task-4) · [Task 5](#unit-2b-task-5) · [Task 6](#unit-2b-task-6)
+**Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2) · [Task 2 Approach 1](#unit-2b-task-2-approach-1) · [Task 2 Approach 2](#unit-2b-task-2-approach-2) · [Task 3](#unit-2b-task-3) · [Task 4](#unit-2b-task-4) · [Task 5](#unit-2b-task-5) · [Task 6](#unit-2b-task-6) · [Task 8](#unit-2b-task-8)
 
 ---
 
@@ -1376,5 +1376,66 @@ for <number> in <sequence>:  # TODO: use range(...) for candidates from 2 to n
 > **Hint:** A prime number is greater than `1` and has no divisors other than `1` and itself. Use nested `for` loops: one for each candidate, one to test divisors.
 
 <a href="../.faculty/solutions/r5t1zk.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2b-task-8"></a>
+
+## Unit 2B Task 8: Sum of digits (while loop)
+
+Finds the sum of digits of a number using a `while` loop.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number from the user
+
+**Process**
+- Keep a copy of the original number (for the final message)
+- Set `digit_sum` to `0`
+- While the number is greater than `0`:
+  - Take the last digit using `% 10`
+  - Add that digit to `digit_sum`
+  - Remove the last digit using `// 10`
+- Do **not** convert the number to a string to get digits
+
+**Output**
+- Show the sum of the digits
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 123` |
+| **Example calculation** | Last digit `3` → sum `3`, number becomes `12`<br>Last digit `2` → sum `5`, number becomes `1`<br>Last digit `1` → sum `6`, number becomes `0` |
+| **Example output** | `Sum of digits of 123 is 6` |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number = int(input("Enter a number: "))
+```
+
+**Program structure** (fill in the blanks — while loop):
+
+```python
+original_number = number  # keep a copy for the output message
+digit_sum = 0
+
+while <condition>:  # TODO: continue while number still has digits
+    <digit> = <expression>  # TODO: get the last digit with % 10
+    digit_sum = <update>  # TODO: add the digit to digit_sum
+    number = <update>  # TODO: remove the last digit with // 10
+
+print(f"Sum of digits of {original_number} is {digit_sum}")
+```
+
+> **Hint:** Peel digits with arithmetic only: `% 10` for the last digit and `// 10` to shorten the number. Avoid string methods for this task.
+
+<a href="../.faculty/solutions/v3n8wp.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](lab-tasks.md).
