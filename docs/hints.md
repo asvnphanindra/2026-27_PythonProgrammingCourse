@@ -13,7 +13,7 @@ Jump to a task:
 
 **Unit 2A:** [Task 1](#unit-2a-task-1) · [Task 2](#unit-2a-task-2) · [Task 3](#unit-2a-task-3) · [Task 7 Approach 1](#unit-2a-task-7-approach-1) · [Task 7 Approach 2](#unit-2a-task-7-approach-2) · [Task 7 Approach 3](#unit-2a-task-7-approach-3)
 
-**Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2) · [Task 2 Approach 1](#unit-2b-task-2-approach-1) · [Task 2 Approach 2](#unit-2b-task-2-approach-2) · [Task 3](#unit-2b-task-3) · [Task 4](#unit-2b-task-4) · [Task 5](#unit-2b-task-5)
+**Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2) · [Task 2 Approach 1](#unit-2b-task-2-approach-1) · [Task 2 Approach 2](#unit-2b-task-2-approach-2) · [Task 3](#unit-2b-task-3) · [Task 4](#unit-2b-task-4) · [Task 5](#unit-2b-task-5) · [Task 6](#unit-2b-task-6)
 
 ---
 
@@ -1318,5 +1318,63 @@ print(f"Factorial of {number} is {factorial}")
 > **Hint:** The numbers to multiply can be generated with `range` from `1` to `number` (inclusive).
 
 <a href="../.faculty/solutions/m9q4bd.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2b-task-6"></a>
+
+## Unit 2B Task 6: Prime numbers from 1 to N (for loop)
+
+Prints all prime numbers between 1 and N using `for` loops.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number `n` from the user
+
+**Process**
+- Take each candidate number from `2` to `n` (1 is not a prime number)
+- For each candidate, check whether it has any divisor other than `1` and itself
+- If it has no such divisor, it is prime
+
+**Output**
+- Show each prime number between 1 and `n`
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 10` |
+| **Example calculation** | Check `2`, `3`, `4`, …, `10`<br>Primes: `2`, `3`, `5`, `7` |
+| **Example output** | `2 is a prime number between 1 and 10`<br>`3 is a prime number between 1 and 10`<br>`5 is a prime number between 1 and 10`<br>`7 is a prime number between 1 and 10` |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+n = int(input("Enter the value of N: "))
+```
+
+**Program structure** (fill in the blanks — for loop):
+
+```python
+for <number> in <sequence>:  # TODO: use range(...) for candidates from 2 to n
+    is_prime = True  # assume prime until a divisor is found
+
+    for <divisor> in <inner_sequence>:  # TODO: try possible divisors (e.g. from 2 up to number - 1)
+        if <condition>:  # TODO: check whether number is divisible by divisor
+            is_prime = False
+            break
+
+    if is_prime:
+        print(f"{<number>} is a prime number between 1 and {n}")
+```
+
+> **Hint:** A prime number is greater than `1` and has no divisors other than `1` and itself. Use nested `for` loops: one for each candidate, one to test divisors.
+
+<a href="../.faculty/solutions/r5t1zk.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](lab-tasks.md).

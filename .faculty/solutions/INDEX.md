@@ -9,3 +9,4 @@ Not linked from student docs. Map task → cryptic file.
 | Unit 2B Task 3 — Sum and average of N numbers | `w8c3jt.md` |
 | Unit 2B Task 4 — Largest in a series of N numbers | `h2v6ys.md` |
 | Unit 2B Task 5 — Factorial of a number | `m9q4bd.md` |
+| Unit 2B Task 6 — Prime numbers from 1 to N | `r5t1zk.md` |
