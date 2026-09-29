@@ -3,6 +3,7 @@
 Sum and average of N numbers using a `for` loop.
 
 ```python
+# Example solution: sum and average of N numbers using a for loop
 total_input_numbers = int(input("Enter how many numbers: "))
 
 total_sum = 0

@@ -13,7 +13,7 @@ Jump to a task:
 
 **Unit 2A:** [Task 1](#unit-2a-task-1) · [Task 2](#unit-2a-task-2) · [Task 3](#unit-2a-task-3) · [Task 7 Approach 1](#unit-2a-task-7-approach-1) · [Task 7 Approach 2](#unit-2a-task-7-approach-2) · [Task 7 Approach 3](#unit-2a-task-7-approach-3)
 
-**Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2) · [Task 2 Approach 1](#unit-2b-task-2-approach-1) · [Task 2 Approach 2](#unit-2b-task-2-approach-2) · [Task 3](#unit-2b-task-3)
+**Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2) · [Task 2 Approach 1](#unit-2b-task-2-approach-1) · [Task 2 Approach 2](#unit-2b-task-2-approach-2) · [Task 3](#unit-2b-task-3) · [Task 4](#unit-2b-task-4)
 
 ---
 
@@ -1205,5 +1205,64 @@ print(f"Average = {average}")
 > **Hint:** The loop can run `total_input_numbers` times using the `range` function.
 
 <a href="../.faculty/solutions/w8c3jt.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2b-task-4"></a>
+
+## Unit 2B Task 4: Largest in a series of N numbers (for loop)
+
+Finds the largest number among several numbers entered by the user using a `for` loop.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read how many numbers to take (`total_input_numbers`)
+- Read `total_input_numbers` numbers from the user, one by one
+
+**Process**
+- Read the first number and store it in `largest`
+- Use a `for` loop for the remaining numbers (`total_input_numbers - 1` times)
+- Inside the loop:
+  - Read the next number
+  - If it is greater than `largest`, update `largest`
+
+**Output**
+- Show the largest number
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `total_input_numbers = 4`<br>numbers: `10`, `25`, `7`, `18` |
+| **Example calculation** | Start with `largest = 10`<br>Compare `25` → update to `25`<br>Compare `7` → keep `25`<br>Compare `18` → keep `25` |
+| **Example output** | `Largest = 25` |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+total_input_numbers = int(input("Enter how many numbers: "))
+```
+
+**Program structure** (fill in the blanks — for loop):
+
+```python
+largest = float(input("Enter a number: "))  # start with the first number
+
+for <variable> in <sequence>:  # TODO: use range(...) for the remaining numbers
+    <number> = float(input("Enter a number: "))  # TODO: read the next number
+    if <condition>:  # TODO: check whether number is greater than largest
+        largest = <number>  # TODO: update largest
+
+print(f"Largest = {largest}")
+```
+
+> **Hint:** After storing the first number in `largest`, the loop only needs to run for the remaining `total_input_numbers - 1` values.
+
+<a href="../.faculty/solutions/h2v6ys.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](lab-tasks.md).

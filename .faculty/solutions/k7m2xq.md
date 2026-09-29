@@ -5,6 +5,7 @@ Print numbers from 1 to N. Both approaches below.
 ## Approach 1: for loop
 
 ```python
+# Example solution: print numbers from 1 to N using a for loop
 n = int(input("Enter the value of N: "))
 
 for number in range(1, n + 1):
@@ -14,6 +15,7 @@ for number in range(1, n + 1):
 ## Approach 2: while loop
 
 ```python
+# Example solution: print numbers from 1 to N using a while loop
 n = int(input("Enter the value of N: "))
 
 number = 1
