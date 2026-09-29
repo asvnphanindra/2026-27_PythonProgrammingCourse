@@ -13,7 +13,7 @@ Jump to a task:
 
 **Unit 2A:** [Task 1](#unit-2a-task-1) · [Task 2](#unit-2a-task-2) · [Task 3](#unit-2a-task-3) · [Task 7 Approach 1](#unit-2a-task-7-approach-1) · [Task 7 Approach 2](#unit-2a-task-7-approach-2) · [Task 7 Approach 3](#unit-2a-task-7-approach-3)
 
-**Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2)
+**Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2) · [Task 2 Approach 1](#unit-2b-task-2-approach-1) · [Task 2 Approach 2](#unit-2b-task-2-approach-2)
 
 ---
 
@@ -947,11 +947,16 @@ Prints all integers from 1 to N using a `for` loop.
 
 ### Analyse the problem: Identify Input, Process and Output
 
-| Item | Details |
-|------|---------|
-| **Input** | `n` (the last number to print) |
-| **Process** | Use a `for` loop to go from 1 to `n` and print each number. The sequence of numbers can be generated using the `range` function. Fill in the loop yourself. |
-| **Output** | Numbers from 1 to `n` printed one by one |
+**Input**
+- Read a number `n` from the user
+
+**Process**
+- Make a list of numbers from 1 to `n` using the `range` function
+- Use a `for` loop to take each number from that list
+- Print each number
+
+**Output**
+- Show all numbers from 1 to `n`, one on each line
 
 ### Example
 
@@ -990,11 +995,17 @@ Prints all integers from 1 to N using a `while` loop.
 
 ### Analyse the problem: Identify Input, Process and Output
 
-| Item | Details |
-|------|---------|
-| **Input** | `n` (the last number to print) |
-| **Process** | Start a counter at 1. Use a `while` loop to print and increase the counter until you reach `n`. Fill in the condition and update yourself. |
-| **Output** | Numbers from 1 to `n` printed one by one |
+**Input**
+- Read a number `n` from the user
+
+**Process**
+- Start a counter with value `1`
+- Repeat these steps using a `while` loop while the counter is less than or equal to `n`:
+  - Print the counter
+  - Add `1` to the counter
+
+**Output**
+- Show all numbers from 1 to `n`, one on each line
 
 ### Example
 
@@ -1020,6 +1031,108 @@ n = int(input("Enter the value of N: "))
 while <condition>:  # TODO: continue while counter is within 1 to n
     print(f"{<counter>}")  # TODO: print the current number
     <counter> = <update>  # TODO: move to the next number
+```
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2b-task-2-approach-1"></a>
+
+## Unit 2B Task 2: Multiplication table — Approach 1 (for loop)
+
+Prints the multiplication table of a given number using a `for` loop (usually from 1 to 10).
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number from the user (the number for the table)
+
+**Process**
+- Make a list of multipliers from 1 to 10 using the `range` function
+- Use a `for` loop to take each multiplier from that list
+- Multiply the given number by the multiplier
+- Print the result in the form: `number x multiplier = product`
+
+**Output**
+- Show the multiplication table of the given number from 1 to 10
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 5` |
+| **Example calculation** | `5 × 1 = 5`<br>`5 × 2 = 10`<br>…<br>`5 × 10 = 50` |
+| **Example output** | `5 x 1 = 5`<br>`5 x 2 = 10`<br>`5 x 3 = 15`<br>`5 x 4 = 20`<br>`5 x 5 = 25`<br>`5 x 6 = 30`<br>`5 x 7 = 35`<br>`5 x 8 = 40`<br>`5 x 9 = 45`<br>`5 x 10 = 50` |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number = int(input("Enter a number: "))
+```
+
+**Program structure** (fill in the blanks — for loop):
+
+```python
+for <variable> in <sequence>:  # TODO: use range(...) for multipliers (e.g. 1 to 10)
+    <product> = <expression>  # TODO: multiply number by the current multiplier
+    print(f"{number} x {<variable>} = {<product>}")
+```
+
+> **Hint:** The sequence of multipliers can be generated using the `range` function.
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2b-task-2-approach-2"></a>
+
+## Unit 2B Task 2: Multiplication table — Approach 2 (while loop)
+
+Prints the multiplication table of a given number using a `while` loop (usually from 1 to 10).
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number from the user (the number for the table)
+
+**Process**
+- Start a counter with value `1`
+- Repeat these steps using a `while` loop while the counter is less than or equal to `10`:
+  - Multiply the given number by the counter
+  - Print the result in the form: `number x counter = product`
+  - Add `1` to the counter
+
+**Output**
+- Show the multiplication table of the given number from 1 to 10
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 5` |
+| **Example calculation** | Counter goes `1 → 2 → … → 10`, printing `5 x counter = product` each time |
+| **Example output** | `5 x 1 = 5`<br>`5 x 2 = 10`<br>`5 x 3 = 15`<br>`5 x 4 = 20`<br>`5 x 5 = 25`<br>`5 x 6 = 30`<br>`5 x 7 = 35`<br>`5 x 8 = 40`<br>`5 x 9 = 45`<br>`5 x 10 = 50` |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number = int(input("Enter a number: "))
+```
+
+**Program structure** (fill in the blanks — while loop):
+
+```python
+<counter> = 1  # TODO: start from 1
+
+while <condition>:  # TODO: continue while counter is within 1 to 10
+    <product> = <expression>  # TODO: multiply number by the current counter
+    print(f"{number} x {<counter>} = {<product>}")
+    <counter> = <update>  # TODO: move to the next multiplier
 ```
 
 Back to [Lab tasks](lab-tasks.md).
