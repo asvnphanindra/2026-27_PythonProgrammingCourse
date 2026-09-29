@@ -1204,4 +1204,6 @@ print(f"Average = {average}")
 
 > **Hint:** The loop can run `total_input_numbers` times using the `range` function.
 
+<a href="../.faculty/solutions/w8c3jt.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
 Back to [Lab tasks](lab-tasks.md).
