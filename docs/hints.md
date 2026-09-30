@@ -1269,6 +1269,12 @@ Back to [Lab tasks](lab-tasks.md).
 
 Finds the factorial of a number using a `for` loop.
 
+**What is a factorial?**
+- The factorial of a whole number `n` is written as `n!`
+- It means: multiply all whole numbers from `1` up to `n`
+- Example: `5! = 1 × 2 × 3 × 4 × 5 = 120`
+- Special case: `0! = 1` (by definition)
+
 ### Analyse the problem: Identify Input, Process and Output
 
 **Input**
@@ -1322,6 +1328,13 @@ Back to [Lab tasks](lab-tasks.md).
 ## Unit 2B Task 6: Prime numbers from 1 to N (for loop)
 
 Prints all prime numbers between 1 and N using `for` loops.
+
+**What is a prime number?**
+- A prime number is a whole number greater than `1`
+- It can be divided evenly only by `1` and by itself
+- It has no other positive divisors
+- Examples: `2`, `3`, `5`, `7`, `11`
+- Not prime: `1` (too small), `4` (divisible by `2`), `9` (divisible by `3`)
 
 ### Analyse the problem: Identify Input, Process and Output
 
@@ -1380,6 +1393,13 @@ Back to [Lab tasks](lab-tasks.md).
 ## Unit 2B Task 7: Fibonacci series up to N terms (for loop)
 
 Prints the Fibonacci series for the first N terms using a `for` loop.
+
+**What is the Fibonacci series?**
+- It is a list of numbers that follows a simple rule
+- Start with the first two numbers: `0` and `1`
+- Each next number is the sum of the two numbers before it
+- So: `0`, `1`, then `0 + 1 = 1`, then `1 + 1 = 2`, then `1 + 2 = 3`, and so on
+- Example (first 7 terms): `0`, `1`, `1`, `2`, `3`, `5`, `8`
 
 ### Analyse the problem: Identify Input, Process and Output
 
@@ -1625,7 +1645,13 @@ Back to [Lab tasks](lab-tasks.md).
 
 Checks whether a number is an Armstrong number using a `while` loop.
 
-An Armstrong number equals the sum of its digits each raised to the power of the digit count (example: `153 = 1³ + 5³ + 3³`).
+**What is an Armstrong number?**
+- Take each digit of the number
+- Raise each digit to the power of how many digits the number has
+- Add those powered values together
+- If that sum equals the original number, it is an Armstrong number
+- Example: `153` has `3` digits, so check `1³ + 5³ + 3³ = 1 + 125 + 27 = 153` → Armstrong
+- Another example: `9474` has `4` digits, so each digit is raised to the power `4`
 
 ### Analyse the problem: Identify Input, Process and Output
 
@@ -1681,7 +1707,11 @@ else:
     )
 ```
 
-> **Hint:** You usually need two while-loop passes: one to count digits (the power), one to build the powered digit sum. Use `%` and `//` only — no strings.
+> **Hint:**
+> - First, use a `while` loop only to **count how many digits** the number has. That count becomes the power (for `153`, the power is `3`).
+> - Then, use another `while` loop to **take each digit**, raise it to that power, and **add** the results.
+> - You need two loops because you must know the digit count **before** you start raising digits to that power.
+> - Use `% 10` and `// 10` only — do not use strings.
 
 ### Example
 
@@ -1702,6 +1732,13 @@ Back to [Lab tasks](lab-tasks.md).
 ## Unit 2B Task 12: Palindrome number (while loop)
 
 Checks whether a number is a palindrome using a `while` loop.
+
+**What is a palindrome number?**
+- A palindrome reads the same from left to right and from right to left
+- For a number, reverse its digits and compare with the original
+- If both are the same, the number is a palindrome
+- Example: `121` → reverse is `121` → palindrome
+- Example: `123` → reverse is `321` → not a palindrome
 
 ### Analyse the problem: Identify Input, Process and Output
 
