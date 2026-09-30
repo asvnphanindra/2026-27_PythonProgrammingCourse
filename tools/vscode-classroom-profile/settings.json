@@ -1,0 +1,39 @@
+{
+  "window.zoomLevel": 0,
+  "workbench.startupEditor": "none",
+  "workbench.sideBar.location": "left",
+  "workbench.activityBar.location": "default",
+  "workbench.editor.enablePreview": false,
+  "workbench.statusBar.visible": true,
+
+  "editor.fontSize": 24,
+  "editor.lineHeight": 36,
+  "editor.fontFamily": "Consolas, 'Courier New', monospace",
+  "editor.mouseWheelZoom": true,
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "on",
+  "editor.stickyScroll.enabled": false,
+
+  "terminal.integrated.fontSize": 24,
+  "terminal.integrated.cursorBlinking": true,
+  "debug.console.fontSize": 24,
+
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+
+  "explorer.compactFolders": false,
+  "explorer.autoReveal": true,
+
+  "extensions.ignoreRecommendations": true,
+  "update.mode": "manual",
+  "telemetry.telemetryLevel": "off",
+
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "off",
+  "python.terminal.activateEnvironment": true,
+
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  }
+}
