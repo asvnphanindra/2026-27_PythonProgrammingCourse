@@ -5,7 +5,7 @@ Use these hints to plan each program (input, process, output) and to check your 
 Back to [Lab tasks](lab-tasks.md).
 
 > **Important:** In the **Process** section and in sample code, hints show only the **structure** (for example `if` / `else` shape). They do **not** give the full logic.  
-> Look for placeholders such as `<condition>` or comments like `# TODO: add your logic here` and write your own code in those places. Use the **Example** values to check whether your logic is correct.
+> Look for blanks such as `____` and fill in your own code. A short comment next to each blank tells you what to write there. Use the **Example** values to check whether your logic is correct.
 
 Jump to a task:
 
@@ -677,7 +677,7 @@ angle3_in_degrees = float(input("Enter third angle in degrees: "))
 **Program structure** (fill in the blanks — do not copy a finished condition):
 
 ```python
-if <condition>:  # TODO: add your logic here to check if the triangle is valid
+if ____:  # check whether the triangle is valid
     print(f"The triangle with angles {angle1_in_degrees}, {angle2_in_degrees}, and {angle3_in_degrees} is valid")
 else:
     print(f"The triangle with angles {angle1_in_degrees}, {angle2_in_degrees}, and {angle3_in_degrees} is not valid")
@@ -723,7 +723,7 @@ age_in_years = int(input("Enter age in years: "))
 **Program structure** (fill in the blanks — do not copy a finished condition):
 
 ```python
-if <condition>:  # TODO: add your logic here to check voting eligibility
+if ____:  # check voting eligibility (use age_in_years)
     print(f"Age {age_in_years} years: Eligible to vote")
 else:
     print(f"Age {age_in_years} years: Not eligible to vote")
@@ -769,13 +769,12 @@ number = float(input("Enter a number: "))
 **Program structure** (fill in the blanks — do not copy finished conditions):
 
 ```python
-if <condition_1>:  # TODO: add your logic for a positive number
+if ____:  # positive number?
     print(f"The number {number} is positive")
-elif <condition_2>:  # TODO: add your logic for a negative number
+elif ____:  # negative number?
     print(f"The number {number} is negative")
 else:
-    # TODO: handle the remaining case (zero)
-    print(f"The number {number} is zero")
+    print(f"The number {number} is zero")  # remaining case
 ```
 
 ### Example
@@ -816,13 +815,13 @@ year = int(input("Enter a year: "))
 **Program structure** (fill in the blanks — nested if-else):
 
 ```python
-if <condition_1>:  # TODO: add your logic here
+if ____:  # outer leap-year check
     print(f"{year} is a leap year")
 else:
-    if <condition_2>:  # TODO: add your logic here
+    if ____:  # nested check
         print(f"{year} is not a leap year")
     else:
-        if <condition_3>:  # TODO: add your logic here
+        if ____:  # innermost check
             print(f"{year} is a leap year")
         else:
             print(f"{year} is not a leap year")
@@ -866,11 +865,11 @@ year = int(input("Enter a year: "))
 **Program structure** (fill in the blanks — if-elif-else ladder):
 
 ```python
-if <condition_1>:  # TODO: add your logic here
+if ____:  # first leap-year condition
     print(f"{year} is a leap year")
-elif <condition_2>:  # TODO: add your logic here
+elif ____:  # second condition
     print(f"{year} is not a leap year")
-elif <condition_3>:  # TODO: add your logic here
+elif ____:  # third condition
     print(f"{year} is a leap year")
 else:
     print(f"{year} is not a leap year")
@@ -914,7 +913,7 @@ year = int(input("Enter a year: "))
 **Program structure** (fill in the blanks — single if condition):
 
 ```python
-if <condition>:  # TODO: add your combined leap-year logic here (use and / or as needed)
+if ____:  # one combined leap-year condition (use and / or)
     print(f"{year} is a leap year")
 else:
     print(f"{year} is not a leap year")
@@ -963,8 +962,8 @@ n = int(input("Enter the value of N: "))
 **Program structure** (fill in the blanks — for loop):
 
 ```python
-for <variable> in <sequence>:  # TODO: use range(...) to generate numbers from 1 to n
-    print(f"{<variable>}")  # TODO: print the current number
+for ____ in ____:  # loop variable; use range(...) from 1 to n
+    print(f"{____}")  # print the current number
 ```
 
 > **Hint:** The sequence of numbers from 1 to N can be generated using the `range` function.
@@ -1014,11 +1013,11 @@ n = int(input("Enter the value of N: "))
 **Program structure** (fill in the blanks — while loop):
 
 ```python
-<counter> = 1  # TODO: start from 1
+____ = 1  # start a counter from 1
 
-while <condition>:  # TODO: continue while counter is within 1 to n
-    print(f"{<counter>}")  # TODO: print the current number
-    <counter> = <update>  # TODO: move to the next number
+while ____:  # continue while the counter is within 1 to n
+    print(f"{____}")  # print the current number
+    ____ = ____  # move to the next number
 ```
 
 ### Example
@@ -1066,9 +1065,9 @@ number = int(input("Enter a number: "))
 **Program structure** (fill in the blanks — for loop):
 
 ```python
-for <variable> in <sequence>:  # TODO: use range(...) for multipliers (e.g. 1 to 10)
-    <product> = <expression>  # TODO: multiply number by the current multiplier
-    print(f"{number} x {<variable>} = {<product>}")
+for ____ in ____:  # multiplier; use range(...) for 1 to 10
+    ____ = ____  # multiply number by the current multiplier
+    print(f"{number} x {____} = {____}")  # show number, multiplier, and product
 ```
 
 > **Hint:** The sequence of multipliers can be generated using the `range` function.
@@ -1119,12 +1118,12 @@ number = int(input("Enter a number: "))
 **Program structure** (fill in the blanks — while loop):
 
 ```python
-<counter> = 1  # TODO: start from 1
+____ = 1  # start multiplier from 1
 
-while <condition>:  # TODO: continue while counter is within 1 to 10
-    <product> = <expression>  # TODO: multiply number by the current counter
-    print(f"{number} x {<counter>} = {<product>}")
-    <counter> = <update>  # TODO: move to the next multiplier
+while ____:  # continue while multiplier is within 1 to 10
+    ____ = ____  # multiply number by the current multiplier
+    print(f"{number} x {____} = {____}")  # show number, multiplier, and product
+    ____ = ____  # move to the next multiplier
 ```
 
 ### Example
@@ -1178,11 +1177,11 @@ total_input_numbers = int(input("Enter how many numbers: "))
 ```python
 total_sum = 0  # start with zero
 
-for <variable> in <sequence>:  # TODO: use range(...) to repeat total_input_numbers times
-    <number> = float(input("Enter a number: "))  # TODO: read each number
-    total_sum = <update_sum>  # TODO: add the number to total_sum
+for ____ in ____:  # repeat total_input_numbers times (use range)
+    ____ = float(input("Enter a number: "))  # read each number
+    total_sum = ____  # add the number to total_sum
 
-average = <expression>  # TODO: divide total_sum by total_input_numbers
+average = ____  # divide total_sum by total_input_numbers
 
 print(f"Sum of {total_input_numbers} numbers is {total_sum}")
 print(f"Average of {total_input_numbers} numbers (sum {total_sum}) is {average}")
@@ -1239,10 +1238,10 @@ total_input_numbers = int(input("Enter how many numbers: "))
 ```python
 largest = float(input("Enter a number: "))  # start with the first number
 
-for <variable> in <sequence>:  # TODO: use range(...) for the remaining numbers
-    <number> = float(input("Enter a number: "))  # TODO: read the next number
-    if <condition>:  # TODO: check whether number is greater than largest
-        largest = <number>  # TODO: update largest
+for ____ in ____:  # remaining numbers only (total_input_numbers - 1 times)
+    ____ = float(input("Enter a number: "))  # read the next number
+    if ____:  # is this number greater than largest?
+        largest = ____  # update largest
 
 print(f"Largest among {total_input_numbers} numbers is {largest}")
 ```
@@ -1301,8 +1300,8 @@ number = int(input("Enter a number: "))
 ```python
 factorial = 1  # start with 1
 
-for <variable> in <sequence>:  # TODO: use range(...) for values from 1 to number
-    factorial = <update>  # TODO: multiply factorial by the current value
+for ____ in ____:  # values from 1 to number (use range)
+    factorial = ____  # multiply factorial by the current value
 
 print(f"Factorial of {number} is {factorial}")
 ```
@@ -1360,16 +1359,16 @@ n = int(input("Enter the value of N: "))
 **Program structure** (fill in the blanks — for loop):
 
 ```python
-for <number> in <sequence>:  # TODO: use range(...) for candidates from 2 to n
+for ____ in ____:  # each candidate from 2 to n
     is_prime = True  # assume prime until a divisor is found
 
-    for <divisor> in <inner_sequence>:  # TODO: try possible divisors (e.g. from 2 up to number - 1)
-        if <condition>:  # TODO: check whether number is divisible by divisor
+    for ____ in ____:  # try possible divisors (e.g. 2 to number - 1)
+        if ____:  # is number divisible by this divisor?
             is_prime = False
             break
 
     if is_prime:
-        print(f"{<number>} is a prime number between 1 and {n}")
+        print(f"{____} is a prime number between 1 and {n}")  # print the prime candidate
 ```
 
 > **Hint:** A prime number is greater than `1` and has no divisors other than `1` and itself. Use nested `for` loops: one for each candidate, one to test divisors.
@@ -1431,11 +1430,11 @@ n = int(input("Enter how many terms: "))
 first = 0
 second = 1
 
-for <variable> in <sequence>:  # TODO: use range(...) to repeat n times
-    print(f"Fibonacci series term {<term_number>} of {n} terms = {first}")
-    <next_term> = <expression>  # TODO: add first and second
+for ____ in ____:  # repeat n times (use range)
+    print(f"Fibonacci series term {____} of {n} terms = {first}")  # term number (1 to n)
+    ____ = ____  # next term = first + second
     first = second
-    second = <next_term>
+    second = ____  # store the next term
 ```
 
 > **Hint:** Keep two variables for the current pair. After printing `first`, move the pair forward: `first` becomes the old `second`, and `second` becomes their sum.
@@ -1491,10 +1490,10 @@ number = int(input("Enter a number: "))
 original_number = number  # keep a copy for the output message
 digit_sum = 0
 
-while <condition>:  # TODO: continue while number still has digits
-    <digit> = <expression>  # TODO: get the last digit with % 10
-    digit_sum = <update>  # TODO: add the digit to digit_sum
-    number = <update>  # TODO: remove the last digit with // 10
+while ____:  # continue while number still has digits
+    ____ = ____  # get the last digit with % 10
+    digit_sum = ____  # add the digit to digit_sum
+    number = ____  # remove the last digit with // 10
 
 print(f"Sum of digits of {original_number} is {digit_sum}")
 ```
@@ -1555,9 +1554,9 @@ digit_count = 0
 if number == 0:
     digit_count = 1
 else:
-    while <condition>:  # TODO: continue while number still has digits
-        digit_count = <update>  # TODO: increase the count by 1
-        number = <update>  # TODO: remove the last digit with // 10
+    while ____:  # continue while number still has digits
+        digit_count = ____  # increase the count by 1
+        number = ____  # remove the last digit with // 10
 
 print(f"Number of digits in {original_number} is {digit_count}")
 ```
@@ -1615,10 +1614,10 @@ number = int(input("Enter a number: "))
 original_number = number
 reversed_number = 0
 
-while <condition>:  # TODO: continue while number still has digits
-    <digit> = <expression>  # TODO: get the last digit with % 10
-    reversed_number = <update>  # TODO: build reverse as reversed_number * 10 + digit
-    number = <update>  # TODO: remove the last digit with // 10
+while ____:  # continue while number still has digits
+    ____ = ____  # get the last digit with % 10
+    reversed_number = ____  # build reverse: reversed_number * 10 + digit
+    number = ____  # remove the last digit with // 10
 
 print(f"Reverse of {original_number} is {reversed_number}")
 ```
@@ -1685,17 +1684,17 @@ original_number = number
 # Step 1: count digits into digit_count (see Task 9 idea)
 digit_count = 0
 temp = number
-# TODO: count digits of temp into digit_count
+____  # write a while loop here to count digits of temp
 
 # Step 2: sum each digit raised to digit_count
 armstrong_sum = 0
 temp = number
-while <condition>:  # TODO: peel digits from temp
-    <digit> = <expression>  # TODO: last digit with % 10
-    armstrong_sum = <update>  # TODO: add digit ** digit_count
-    temp = <update>  # TODO: remove last digit with // 10
+while ____:  # peel digits from temp
+    ____ = ____  # last digit with % 10
+    armstrong_sum = ____  # add digit ** digit_count
+    temp = ____  # remove last digit with // 10
 
-if <condition>:  # TODO: compare armstrong_sum with original_number
+if ____:  # compare armstrong_sum with original_number
     print(
         f"{original_number} is an Armstrong number "
         f"(sum of digits to power {digit_count} is {armstrong_sum})"
@@ -1767,12 +1766,12 @@ number = int(input("Enter a number: "))
 original_number = number
 reversed_number = 0
 
-while <condition>:  # TODO: reverse digits into reversed_number (see Task 10)
-    <digit> = <expression>
-    reversed_number = <update>
-    number = <update>
+while ____:  # reverse digits into reversed_number (see Task 10)
+    ____ = ____  # last digit with % 10
+    reversed_number = ____  # build reverse: reversed_number * 10 + digit
+    number = ____  # remove last digit with // 10
 
-if <condition>:  # TODO: compare reversed_number with original_number
+if ____:  # compare reversed_number with original_number
     print(
         f"{original_number} is a palindrome "
         f"(reversed value is {reversed_number})"
@@ -1830,11 +1829,11 @@ n = int(input("Enter N (print until N, stop early at 5): "))
 **Program structure** (fill in the blanks — for loop):
 
 ```python
-for <variable> in <sequence>:  # TODO: range from 1 to n
-    if <condition>:  # TODO: stop when the number is 5
-        print(f"Breaking for loop at number {<variable>} (N was {n})")
+for ____ in ____:  # numbers from 1 to n (use range)
+    if ____:  # stop when the number is 5
+        print(f"Breaking for loop at number {____} (N was {n})")  # current number
         break
-    print(f"for loop number = {<variable>} (up to {n})")
+    print(f"for loop number = {____} (up to {n})")  # current number
 ```
 
 > **Hint:** `break` exits the loop immediately. Code after `break` inside that loop body does not run for later values.
@@ -1884,14 +1883,14 @@ n = int(input("Enter N (print until N, stop early at 5): "))
 **Program structure** (fill in the blanks — while loop):
 
 ```python
-<counter> = 1
+____ = 1  # start a counter from 1
 
-while <condition>:  # TODO: continue while counter <= n
-    if <stop_condition>:  # TODO: stop when counter is 5
-        print(f"Breaking while loop at number {<counter>} (N was {n})")
+while ____:  # continue while counter <= n
+    if ____:  # stop when counter is 5
+        print(f"Breaking while loop at number {____} (N was {n})")  # current counter
         break
-    print(f"while loop number = {<counter>} (up to {n})")
-    <counter> = <update>
+    print(f"while loop number = {____} (up to {n})")  # current counter
+    ____ = ____  # move to the next number
 ```
 
 > **Hint:** Same idea as the for-loop version: `break` ends the while loop right away.
@@ -1940,11 +1939,11 @@ n = int(input("Enter N (print 1 to N, skip even numbers): "))
 **Program structure** (fill in the blanks — for loop):
 
 ```python
-for <variable> in <sequence>:  # TODO: range from 1 to n
-    if <condition>:  # TODO: detect an even number
-        print(f"Skipping even number {<variable>} with continue (N is {n})")
+for ____ in ____:  # numbers from 1 to n (use range)
+    if ____:  # is the number even?
+        print(f"Skipping even number {____} with continue (N is {n})")  # current number
         continue
-    print(f"for loop odd number = {<variable>} (up to {n})")
+    print(f"for loop odd number = {____} (up to {n})")  # current number
 ```
 
 > **Hint:** `continue` jumps to the next iteration. The print for odd numbers is skipped for that even value.
@@ -1994,15 +1993,15 @@ n = int(input("Enter N (print 1 to N, skip even numbers): "))
 **Program structure** (fill in the blanks — while loop):
 
 ```python
-<counter> = 1
+____ = 1  # start a counter from 1
 
-while <condition>:  # TODO: counter <= n
-    if <even_condition>:  # TODO: even check
-        print(f"Skipping even number {<counter>} with continue (N is {n})")
-        <counter> = <update>  # TODO: important before continue
+while ____:  # continue while counter <= n
+    if ____:  # is the counter even?
+        print(f"Skipping even number {____} with continue (N is {n})")  # current counter
+        ____ = ____  # increase counter before continue
         continue
-    print(f"while loop odd number = {<counter>} (up to {n})")
-    <counter> = <update>
+    print(f"while loop odd number = {____} (up to {n})")  # current counter
+    ____ = ____  # move to the next number
 ```
 
 > **Hint:** In a while loop, update the counter **before** `continue`, or the loop may never move past that even value.
@@ -2051,12 +2050,12 @@ n = int(input("Enter N (use pass for multiples of 3): "))
 **Program structure** (fill in the blanks — for loop):
 
 ```python
-for <variable> in <sequence>:  # TODO: range from 1 to n
-    if <condition>:  # TODO: multiple of 3
-        pass  # placeholder: do nothing here yet
-        print(f"Used pass for multiple of 3: {<variable>} (N is {n})")
+for ____ in ____:  # numbers from 1 to n (use range)
+    if ____:  # is it a multiple of 3?
+        pass  # do nothing here yet
+        print(f"Used pass for multiple of 3: {____} (N is {n})")  # current number
     else:
-        print(f"for loop number = {<variable>} (up to {n})")
+        print(f"for loop number = {____} (up to {n})")  # current number
 ```
 
 > **Hint:** `pass` is a no-op. It keeps the `if` block valid when you are not ready to write real logic yet.
@@ -2103,15 +2102,15 @@ n = int(input("Enter N (use pass for multiples of 3): "))
 **Program structure** (fill in the blanks — while loop):
 
 ```python
-<counter> = 1
+____ = 1  # start a counter from 1
 
-while <condition>:  # TODO: counter <= n
-    if <condition>:  # TODO: multiple of 3
-        pass
-        print(f"Used pass for multiple of 3: {<counter>} (N is {n})")
+while ____:  # continue while counter <= n
+    if ____:  # is it a multiple of 3?
+        pass  # do nothing here yet
+        print(f"Used pass for multiple of 3: {____} (N is {n})")  # current counter
     else:
-        print(f"while loop number = {<counter>} (up to {n})")
-    <counter> = <update>
+        print(f"while loop number = {____} (up to {n})")  # current counter
+    ____ = ____  # move to the next number
 ```
 
 > **Hint:** `pass` does not skip the rest of the loop by itself — unlike `continue`. Here it only fills an empty branch.
