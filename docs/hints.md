@@ -31,14 +31,6 @@ Reads two numbers from the user and displays their sum.
 | **Process** | `sum_of_numbers = number1 + number2` |
 | **Output** | `sum_of_numbers` |
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `number1 = 10`, `number2 = 20` |
-| **Example calculation** | `sum_of_numbers = 10 + 20 = 30` |
-| **Example output** | `sum_of_numbers = 30` |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -53,6 +45,14 @@ number2 = float(input("Enter second number: "))
 ```python
 print(f"Sum of the two numbers is {sum_of_numbers}")
 ```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number1 = 10`, `number2 = 20` |
+| **Example calculation** | `sum_of_numbers = 10 + 20 = 30` |
+| **Example output** | `sum_of_numbers = 30` |
 
 Back to [Lab tasks](lab-tasks.md).
 
@@ -72,14 +72,6 @@ Reads a number and displays its square.
 | **Process** | `square_of_number = number ** 2` |
 | **Output** | `square_of_number` |
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `number = 5` |
-| **Example calculation** | `square_of_number = 5 ** 2 = 25` |
-| **Example output** | `square_of_number = 25` |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -93,6 +85,14 @@ number = float(input("Enter a number: "))
 ```python
 print(f"Square of the number is {square_of_number}")
 ```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 5` |
+| **Example calculation** | `square_of_number = 5 ** 2 = 25` |
+| **Example output** | `square_of_number = 25` |
 
 Back to [Lab tasks](lab-tasks.md).
 
@@ -112,14 +112,6 @@ Calculates the area and perimeter of a rectangle from its length and breadth.
 | **Process** | `area_in_square_cm = length_in_cm * breadth_in_cm`<br>`perimeter_in_cm = 2 * (length_in_cm + breadth_in_cm)` |
 | **Output** | `area_in_square_cm`, `perimeter_in_cm` |
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `length_in_cm = 10`, `breadth_in_cm = 5` |
-| **Example calculation** | `area_in_square_cm = 10 * 5 = 50`<br>`perimeter_in_cm = 2 * (10 + 5) = 30` |
-| **Example output** | `area_in_square_cm = 50`, `perimeter_in_cm = 30` |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -137,6 +129,14 @@ print(f"Perimeter of the rectangle is {perimeter_in_cm} cm")
 ```
 
 > **Note on units:** State the unit clearly in your `input()` message. This example uses **cm** for length/breadth, **cm** for perimeter, and **square cm** for area. You may choose any other appropriate unit (m, mm, inches, and so on), but keep input and output units consistent.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `length_in_cm = 10`, `breadth_in_cm = 5` |
+| **Example calculation** | `area_in_square_cm = 10 * 5 = 50`<br>`perimeter_in_cm = 2 * (10 + 5) = 30` |
+| **Example output** | `area_in_square_cm = 50`, `perimeter_in_cm = 30` |
 
 Back to [Lab tasks](lab-tasks.md).
 
@@ -156,14 +156,6 @@ Converts a Celsius temperature to Fahrenheit using the standard conversion formu
 | **Process** | `temperature_in_fahrenheit = (temperature_in_celsius * 9 / 5) + 32` |
 | **Output** | `temperature_in_fahrenheit` |
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `temperature_in_celsius = 25` |
-| **Example calculation** | `(25 * 9 / 5) + 32 = 77` |
-| **Example output** | `temperature_in_fahrenheit = 77` |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -179,6 +171,14 @@ print(f"Temperature in Fahrenheit is {temperature_in_fahrenheit}")
 ```
 
 > **Note on units:** Make the unit clear in your `input()` prompt. Output should also show Fahrenheit clearly in `print()`.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `temperature_in_celsius = 25` |
+| **Example calculation** | `(25 * 9 / 5) + 32 = 77` |
+| **Example output** | `temperature_in_fahrenheit = 77` |
 
 Back to [Lab tasks](lab-tasks.md).
 
@@ -199,14 +199,6 @@ Exchanges the values of two variables. Approach 1 is the Python way; Approach 2 
 | **Process (Approach 2)** | `number1 = number1 + number2`<br>`number2 = number1 - number2`<br>`number1 = number1 - number2` |
 | **Output** | `number1`, `number2` (after swap) |
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `number1 = 10`, `number2 = 20` |
-| **Example calculation (Approach 2)** | `number1 = 10 + 20 = 30`<br>`number2 = 30 - 20 = 10`<br>`number1 = 30 - 10 = 20` |
-| **Example output** | `number1 = 20`, `number2 = 10` |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -221,6 +213,14 @@ number2 = float(input("Enter second number: "))
 ```python
 print(f"After swapping, first number is {number1} and second number is {number2}")
 ```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number1 = 10`, `number2 = 20` |
+| **Example calculation (Approach 2)** | `number1 = 10 + 20 = 30`<br>`number2 = 30 - 20 = 10`<br>`number1 = 30 - 10 = 20` |
+| **Example output** | `number1 = 20`, `number2 = 10` |
 
 Back to [Lab tasks](lab-tasks.md).
 
@@ -239,14 +239,6 @@ Finds interest earned on a fixed principal over time. Interest is calculated onl
 | **Input** | `principal_amount_in_rupees`, `rate_of_interest_in_percent`, `time_in_years` |
 | **Process** | `simple_interest_in_rupees = (principal_amount_in_rupees * rate_of_interest_in_percent * time_in_years) / 100` |
 | **Output** | `simple_interest_in_rupees` |
-
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `principal_amount_in_rupees = 10000`, `rate_of_interest_in_percent = 5`, `time_in_years = 2` |
-| **Example calculation** | `(10000 * 5 * 2) / 100 = 1000` |
-| **Example output** | `simple_interest_in_rupees = 1000` |
 
 ### Sample input and output messages
 
@@ -271,6 +263,14 @@ print(f"Simple interest is {simple_interest_in_rupees} rupees")
 >
 > Use clear units such as rupees, percent, and years so the user knows exactly what to enter.
 
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `principal_amount_in_rupees = 10000`, `rate_of_interest_in_percent = 5`, `time_in_years = 2` |
+| **Example calculation** | `(10000 * 5 * 2) / 100 = 1000` |
+| **Example output** | `simple_interest_in_rupees = 1000` |
+
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -288,14 +288,6 @@ Finds interest where each year’s interest is added to the principal. Next year
 | **Input** | `principal_amount_in_rupees`, `rate_of_interest_in_percent`, `time_in_years` |
 | **Process** | `total_amount_in_rupees = principal_amount_in_rupees * (1 + rate_of_interest_in_percent / 100) ** time_in_years`<br>`compound_interest_in_rupees = total_amount_in_rupees - principal_amount_in_rupees` |
 | **Output** | `compound_interest_in_rupees` (optionally `total_amount_in_rupees`) |
-
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `principal_amount_in_rupees = 10000`, `rate_of_interest_in_percent = 5`, `time_in_years = 2` |
-| **Example calculation** | `10000 * (1.05) ** 2 = 11025`<br>`11025 - 10000 = 1025` |
-| **Example output** | `total_amount_in_rupees = 11025`, `compound_interest_in_rupees = 1025` |
 
 ### Sample input and output messages
 
@@ -316,6 +308,14 @@ print(f"Compound interest is {compound_interest_in_rupees} rupees")
 
 > **Note on units:** State each unit in your `input()` message (rupees, percent, years). Keep the output unit consistent (rupees) in `print()`.
 
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `principal_amount_in_rupees = 10000`, `rate_of_interest_in_percent = 5`, `time_in_years = 2` |
+| **Example calculation** | `10000 * (1.05) ** 2 = 11025`<br>`11025 - 10000 = 1025` |
+| **Example output** | `total_amount_in_rupees = 11025`, `compound_interest_in_rupees = 1025` |
+
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -334,14 +334,6 @@ Adds the first `n` natural numbers using a formula, so a loop is not needed.
 | **Process** | `sum_of_natural_numbers = n * (n + 1) / 2`<br>`# Formula: sum_of_natural_numbers = n * (n + 1) / 2` |
 | **Output** | `sum_of_natural_numbers` |
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `n = 10` |
-| **Example calculation** | `10 * (10 + 1) / 2 = 55` |
-| **Example output** | `sum_of_natural_numbers = 55` |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -356,6 +348,14 @@ n = int(input("Enter the value of n: "))
 print(f"Sum of first {n} natural numbers is {sum_of_natural_numbers}")
 ```
 
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 10` |
+| **Example calculation** | `10 * (10 + 1) / 2 = 55` |
+| **Example output** | `sum_of_natural_numbers = 55` |
+
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -365,14 +365,6 @@ Back to [Lab tasks](lab-tasks.md).
 ## Unit 1 Task 9: Arithmetic operators
 
 Performs arithmetic operations (`+`, `-`, `*`, `/`, `//`, `%`, `**`) on two numbers and displays the results.
-
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `number1 = 10`, `number2 = 3` |
-| **Example calculation** | `10 + 3 = 13`<br>`10 - 3 = 7`<br>`10 * 3 = 30`<br>`10 / 3 = 3.333...`<br>`10 // 3 = 3`<br>`10 % 3 = 1`<br>`10 ** 3 = 1000` |
-| **Example output** | `13`, `7`, `30`, `3.333...`, `3`, `1`, `1000` |
 
 ### Sample input and output messages
 
@@ -395,6 +387,14 @@ print(f"Modulus: {modulus}")
 print(f"Exponent: {exponent}")
 ```
 
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number1 = 10`, `number2 = 3` |
+| **Example calculation** | `10 + 3 = 13`<br>`10 - 3 = 7`<br>`10 * 3 = 30`<br>`10 / 3 = 3.333...`<br>`10 // 3 = 3`<br>`10 % 3 = 1`<br>`10 ** 3 = 1000` |
+| **Example output** | `13`, `7`, `30`, `3.333...`, `3`, `1`, `1000` |
+
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -404,14 +404,6 @@ Back to [Lab tasks](lab-tasks.md).
 ## Unit 1 Task 10: Relational operators
 
 Compares two numbers using relational operators and prints the Boolean results.
-
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `number1 = 10`, `number2 = 20` |
-| **Example calculation** | `10 == 20 → False`<br>`10 != 20 → True`<br>`10 > 20 → False`<br>`10 < 20 → True`<br>`10 >= 20 → False`<br>`10 <= 20 → True` |
-| **Example output** | `False`, `True`, `False`, `True`, `False`, `True` |
 
 ### Sample input and output messages
 
@@ -433,6 +425,14 @@ print(f"{number1} >= {number2} is {number1 >= number2}")
 print(f"{number1} <= {number2} is {number1 <= number2}")
 ```
 
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number1 = 10`, `number2 = 20` |
+| **Example calculation** | `10 == 20 → False`<br>`10 != 20 → True`<br>`10 > 20 → False`<br>`10 < 20 → True`<br>`10 >= 20 → False`<br>`10 <= 20 → True` |
+| **Example output** | `False`, `True`, `False`, `True`, `False`, `True` |
+
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -442,14 +442,6 @@ Back to [Lab tasks](lab-tasks.md).
 ## Unit 1 Task 11: Logical operators
 
 Demonstrates logical operators `and`, `or`, and `not` using Boolean conditions.
-
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `number1 = 10`, `number2 = 20` |
-| **Example calculation** | `(10 > 5) and (20 > 15) → True`<br>`(10 > 50) or (20 > 15) → True`<br>`not (10 > 50) → True` |
-| **Example output** | `True`, `True`, `True` |
 
 ### Sample input and output messages
 
@@ -468,6 +460,14 @@ print(f"({number1} > 50) or ({number2} > 15) is {(number1 > 50) or (number2 > 15
 print(f"not ({number1} > 50) is {not (number1 > 50)}")
 ```
 
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number1 = 10`, `number2 = 20` |
+| **Example calculation** | `(10 > 5) and (20 > 15) → True`<br>`(10 > 50) or (20 > 15) → True`<br>`not (10 > 50) → True` |
+| **Example output** | `True`, `True`, `True` |
+
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -477,23 +477,6 @@ Back to [Lab tasks](lab-tasks.md).
 ## Unit 1 Task 12: Identity operators
 
 Demonstrates identity operators `is` and `is not` (whether two names refer to the same object), with both `True` and `False` cases for each operator.
-
-### Example
-
-| Operator | Case | Example | Result |
-|----------|------|---------|--------|
-| `is` | True | `list_a is list_b` (same object) | `True` |
-| `is` | False | `list_a is list_c` (different objects) | `False` |
-| `is not` | True | `list_a is not list_c` (different objects) | `True` |
-| `is not` | False | `list_a is not list_b` (same object) | `False` |
-
-Where:
-
-```python
-list_a = [1, 2, 3]
-list_b = list_a      # same object as list_a
-list_c = [1, 2, 3]   # same values, but a different object
-```
 
 ### Sample input and output messages
 
@@ -512,6 +495,23 @@ print(f"list_a is not list_b: {list_a is not list_b}")  # False
 
 > **Note:** `==` checks value equality. `is` checks whether both names refer to the **same object** in memory.
 
+### Example
+
+| Operator | Case | Example | Result |
+|----------|------|---------|--------|
+| `is` | True | `list_a is list_b` (same object) | `True` |
+| `is` | False | `list_a is list_c` (different objects) | `False` |
+| `is not` | True | `list_a is not list_c` (different objects) | `True` |
+| `is not` | False | `list_a is not list_b` (same object) | `False` |
+
+Where:
+
+```python
+list_a = [1, 2, 3]
+list_b = list_a      # same object as list_a
+list_c = [1, 2, 3]   # same values, but a different object
+```
+
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -521,20 +521,6 @@ Back to [Lab tasks](lab-tasks.md).
 ## Unit 1 Task 13: Membership operators
 
 Demonstrates membership operators `in` and `not in` with the basic Python data types that support membership checks: **string**, **list**, **tuple**, **set**, and **dictionary**.
-
-### Example
-
-| Data type | Example | Result |
-|-----------|---------|--------|
-| **string (`str`)** | `"th" in "python"` | `True` |
-| **string (`str`)** | `"xyz" not in "python"` | `True` |
-| **list** | `10 in [10, 20, 30]` | `True` |
-| **list** | `3.5 in [1.5, 2.5, 3.5]` | `True` |
-| **list** | `True in [True, False]` | `True` |
-| **tuple** | `2 in (1, 2, 3)` | `True` |
-| **set** | `5 in {1, 5, 9}` | `True` |
-| **dictionary (`dict`)** | `"name" in {"name": "Ada", "age": 20}` | `True` (checks **keys**) |
-| **dictionary (`dict`)** | `"Ada" not in {"name": "Ada", "age": 20}` | `True` (values are not checked by default) |
 
 ### Sample input and output messages
 
@@ -574,6 +560,20 @@ print(f"'Ada' not in {student} is {'Ada' not in student}")
 >
 > `int`, `float`, and `bool` themselves are not containers, so expressions like `2 in 10` are invalid.
 
+### Example
+
+| Data type | Example | Result |
+|-----------|---------|--------|
+| **string (`str`)** | `"th" in "python"` | `True` |
+| **string (`str`)** | `"xyz" not in "python"` | `True` |
+| **list** | `10 in [10, 20, 30]` | `True` |
+| **list** | `3.5 in [1.5, 2.5, 3.5]` | `True` |
+| **list** | `True in [True, False]` | `True` |
+| **tuple** | `2 in (1, 2, 3)` | `True` |
+| **set** | `5 in {1, 5, 9}` | `True` |
+| **dictionary (`dict`)** | `"name" in {"name": "Ada", "age": 20}` | `True` (checks **keys**) |
+| **dictionary (`dict`)** | `"Ada" not in {"name": "Ada", "age": 20}` | `True` (values are not checked by default) |
+
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -583,14 +583,6 @@ Back to [Lab tasks](lab-tasks.md).
 ## Unit 1 Task 14: Operator precedence and associativity
 
 Shows how operator precedence and associativity decide the order of evaluation in an expression.
-
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example expressions** | `2 + 3 * 4`<br>`2 ** 3 ** 2`<br>`10 - 4 - 2` |
-| **Example calculation** | `2 + 3 * 4 = 2 + 12 = 14` (`*` before `+`)<br>`2 ** 3 ** 2 = 2 ** 9 = 512` (`**` is right-associative)<br>`10 - 4 - 2 = 6 - 2 = 4` (`-` is left-associative) |
-| **Example output** | `14`, `512`, `4` |
 
 ### Sample input and output messages
 
@@ -604,6 +596,14 @@ print(f"10 - 4 - 2 = {10 - 4 - 2}")
 
 > **Note:** Higher-precedence operators are evaluated first. For the same precedence, associativity decides the order (`**` is right-to-left; most others are left-to-right).
 
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example expressions** | `2 + 3 * 4`<br>`2 ** 3 ** 2`<br>`10 - 4 - 2` |
+| **Example calculation** | `2 + 3 * 4 = 2 + 12 = 14` (`*` before `+`)<br>`2 ** 3 ** 2 = 2 ** 9 = 512` (`**` is right-associative)<br>`10 - 4 - 2 = 6 - 2 = 4` (`-` is left-associative) |
+| **Example output** | `14`, `512`, `4` |
+
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -613,14 +613,6 @@ Back to [Lab tasks](lab-tasks.md).
 ## Unit 1 Task 15: Type conversion (int, float, string)
 
 Demonstrates converting values between `int`, `float`, and `str` using the variable names `str_num`, `float_num`, and `int_num`.
-
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `str_num = "25"` |
-| **Example calculation** | `int_num = int("25") → 25`<br>`float_num = float("25") → 25.0`<br>`str_num = str(25) → "25"` |
-| **Example output** | `int_num = 25`, `float_num = 25.0`, `str_num = "25"` |
 
 ### Sample input and output messages
 
@@ -646,6 +638,14 @@ print(f"String value: {str_num}, type: {type(str_num)}")
 >
 > Refer to the **class notes** and try executing the examples discussed in the class to strengthen your understanding of type conversion.
 
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `str_num = "25"` |
+| **Example calculation** | `int_num = int("25") → 25`<br>`float_num = float("25") → 25.0`<br>`str_num = str(25) → "25"` |
+| **Example output** | `int_num = 25`, `float_num = 25.0`, `str_num = "25"` |
+
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -663,16 +663,6 @@ Checks whether a triangle is valid when its three angles are given. Think about 
 | **Input** | `angle1_in_degrees`, `angle2_in_degrees`, `angle3_in_degrees` |
 | **Process** | Use an `if-else` structure. Write your own condition to decide whether the triangle is valid. |
 | **Output** | Message stating whether the triangle is valid or not |
-
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `angle1_in_degrees = 60`, `angle2_in_degrees = 60`, `angle3_in_degrees = 60` |
-| **Example calculation** | All angles > 0 → True<br>`60 + 60 + 60 = 180` → True<br>So the triangle is valid |
-| **Example output** | The triangle is valid |
-
-**Another example (invalid):** `angle1_in_degrees = 90`, `angle2_in_degrees = 90`, `angle3_in_degrees = 90` → sum = 270 ≠ 180 → The triangle is not valid
 
 ### Sample input and output messages
 
@@ -695,6 +685,15 @@ else:
 
 > **Note on units:** Ask for angles in **degrees** in the `input()` message.
 
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `angle1_in_degrees = 60`, `angle2_in_degrees = 60`, `angle3_in_degrees = 60` |
+| **Example calculation** | All angles > 0 → True<br>`60 + 60 + 60 = 180` → True<br>So the triangle is valid |
+| **Example output** | The triangle is valid |
+
+**Another example (invalid):** `angle1_in_degrees = 90`, `angle2_in_degrees = 90`, `angle3_in_degrees = 90` → sum = 270 ≠ 180 → The triangle is not valid
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -712,16 +711,6 @@ Checks whether a person is eligible to vote using if-else. Decide the eligibilit
 | **Input** | `age_in_years` |
 | **Process** | Use an `if-else` structure. Write your own condition to decide eligibility. |
 | **Output** | Message stating whether the person is eligible to vote or not |
-
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `age_in_years = 20` |
-| **Example calculation** | `20 >= 18` → True → Eligible to vote |
-| **Example output** | Eligible to vote |
-
-**Another example:** `age_in_years = 16` → `16 >= 18` → False → Not eligible to vote
 
 ### Sample input and output messages
 
@@ -742,6 +731,15 @@ else:
 
 > **Note on units:** Ask for age in **years** in the `input()` message.
 
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `age_in_years = 20` |
+| **Example calculation** | `20 >= 18` → True → Eligible to vote |
+| **Example output** | Eligible to vote |
+
+**Another example:** `age_in_years = 16` → `16 >= 18` → False → Not eligible to vote
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -759,16 +757,6 @@ Checks whether a given number is positive, negative, or zero.
 | **Input** | `number` |
 | **Process** | Use an `if-elif-else` structure. Write your own conditions for positive, negative, and zero. |
 | **Output** | Message stating whether the number is positive, negative, or zero |
-
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `number = 15` |
-| **Example calculation** | `15 > 0` → True → Positive |
-| **Example output** | The number is positive |
-
-**Other examples:** `number = -7` → The number is negative; `number = 0` → The number is zero
 
 ### Sample input and output messages
 
@@ -790,6 +778,15 @@ else:
     print(f"The number {number} is zero")
 ```
 
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 15` |
+| **Example calculation** | `15 > 0` → True → Positive |
+| **Example output** | The number is positive |
+
+**Other examples:** `number = -7` → The number is negative; `number = 0` → The number is zero
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -807,16 +804,6 @@ Checks whether a year is a leap year using nested `if-else`. Write the condition
 | **Input** | `year` |
 | **Process** | Use nested `if-else`. Fill in each condition using the leap-year rules from class notes. |
 | **Output** | Message stating whether the year is a leap year or not |
-
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `year = 2000` |
-| **Example calculation** | `2000 % 400 == 0` → True → Leap year |
-| **Example output** | `2000 is a leap year` |
-
-**Other examples:** `1900` → Not a leap year; `2024` → Leap year; `2023` → Not a leap year
 
 ### Sample input and output messages
 
@@ -841,6 +828,15 @@ else:
             print(f"{year} is not a leap year")
 ```
 
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `year = 2000` |
+| **Example calculation** | `2000 % 400 == 0` → True → Leap year |
+| **Example output** | `2000 is a leap year` |
+
+**Other examples:** `1900` → Not a leap year; `2024` → Leap year; `2023` → Not a leap year
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -858,16 +854,6 @@ Checks whether a year is a leap year using an `if-elif-else` ladder. Write each 
 | **Input** | `year` |
 | **Process** | Use `if` / `elif` / `else`. Fill in each condition using the leap-year rules from class notes. |
 | **Output** | Message stating whether the year is a leap year or not |
-
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `year = 1900` |
-| **Example calculation** | `1900 % 400 != 0`<br>`1900 % 100 == 0` → Not a leap year |
-| **Example output** | `1900 is not a leap year` |
-
-**Other examples:** `2000` → Leap year; `2024` → Leap year; `2023` → Not a leap year
 
 ### Sample input and output messages
 
@@ -890,6 +876,15 @@ else:
     print(f"{year} is not a leap year")
 ```
 
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `year = 1900` |
+| **Example calculation** | `1900 % 400 != 0`<br>`1900 % 100 == 0` → Not a leap year |
+| **Example output** | `1900 is not a leap year` |
+
+**Other examples:** `2000` → Leap year; `2024` → Leap year; `2023` → Not a leap year
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -908,16 +903,6 @@ Checks whether a year is a leap year using one combined condition with `or` / `a
 | **Process** | Use a single `if-else`. Fill in one combined condition using the leap-year rules from class notes. |
 | **Output** | Message stating whether the year is a leap year or not |
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `year = 2024` |
-| **Example calculation** | `2024 % 400 != 0`<br>`2024 % 4 == 0` and `2024 % 100 != 0` → True → Leap year |
-| **Example output** | `2024 is a leap year` |
-
-**Other examples:** `2000` → Leap year; `1900` → Not a leap year; `2023` → Not a leap year
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -935,6 +920,15 @@ else:
     print(f"{year} is not a leap year")
 ```
 
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `year = 2024` |
+| **Example calculation** | `2024 % 400 != 0`<br>`2024 % 4 == 0` and `2024 % 100 != 0` → True → Leap year |
+| **Example output** | `2024 is a leap year` |
+
+**Other examples:** `2000` → Leap year; `1900` → Not a leap year; `2023` → Not a leap year
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -958,14 +952,6 @@ Prints all integers from 1 to N using a `for` loop.
 **Output**
 - Show all numbers from 1 to `n`, one on each line
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `n = 5` |
-| **Example calculation** | Print `1`, then `2`, then `3`, then `4`, then `5` |
-| **Example output** | `Number = 1 (from 1 to 5)`<br>`Number = 2 (from 1 to 5)`<br>`Number = 3 (from 1 to 5)`<br>`Number = 4 (from 1 to 5)`<br>`Number = 5 (from 1 to 5)` |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -978,10 +964,18 @@ n = int(input("Enter the value of N: "))
 
 ```python
 for <variable> in <sequence>:  # TODO: use range(...) to generate numbers from 1 to n
-    print(f"Number = {<variable>} (from 1 to {n})")  # TODO: print the current number and N
+    print(f"{<variable>}")  # TODO: print the current number
 ```
 
 > **Hint:** The sequence of numbers from 1 to N can be generated using the `range` function.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 5` |
+| **Example calculation** | Print `1`, then `2`, then `3`, then `4`, then `5` |
+| **Example output** | `1`<br>`2`<br>`3`<br>`4`<br>`5` |
 
 <a href="../.faculty/solutions/k7m2xq.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
@@ -1009,14 +1003,6 @@ Prints all integers from 1 to N using a `while` loop.
 **Output**
 - Show all numbers from 1 to `n`, one on each line
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `n = 5` |
-| **Example calculation** | Counter goes `1 → 2 → 3 → 4 → 5`, printing each value |
-| **Example output** | `Number = 1 (from 1 to 5)`<br>`Number = 2 (from 1 to 5)`<br>`Number = 3 (from 1 to 5)`<br>`Number = 4 (from 1 to 5)`<br>`Number = 5 (from 1 to 5)` |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -1031,9 +1017,17 @@ n = int(input("Enter the value of N: "))
 <counter> = 1  # TODO: start from 1
 
 while <condition>:  # TODO: continue while counter is within 1 to n
-    print(f"Number = {<counter>} (from 1 to {n})")  # TODO: print the current number and N
+    print(f"{<counter>}")  # TODO: print the current number
     <counter> = <update>  # TODO: move to the next number
 ```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 5` |
+| **Example calculation** | Counter goes `1 → 2 → 3 → 4 → 5`, printing each value |
+| **Example output** | `1`<br>`2`<br>`3`<br>`4`<br>`5` |
 
 <a href="../.faculty/solutions/k7m2xq.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
@@ -1061,14 +1055,6 @@ Prints the multiplication table of a given number using a `for` loop (usually fr
 **Output**
 - Show the multiplication table of the given number from 1 to 10
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `number = 5` |
-| **Example calculation** | `5 × 1 = 5`<br>`5 × 2 = 10`<br>…<br>`5 × 10 = 50` |
-| **Example output** | `5 x 1 = 5`<br>`5 x 2 = 10`<br>`5 x 3 = 15`<br>`5 x 4 = 20`<br>`5 x 5 = 25`<br>`5 x 6 = 30`<br>`5 x 7 = 35`<br>`5 x 8 = 40`<br>`5 x 9 = 45`<br>`5 x 10 = 50` |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -1086,6 +1072,14 @@ for <variable> in <sequence>:  # TODO: use range(...) for multipliers (e.g. 1 to
 ```
 
 > **Hint:** The sequence of multipliers can be generated using the `range` function.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 5` |
+| **Example calculation** | `5 × 1 = 5`<br>`5 × 2 = 10`<br>…<br>`5 × 10 = 50` |
+| **Example output** | `5 x 1 = 5`<br>`5 x 2 = 10`<br>`5 x 3 = 15`<br>`5 x 4 = 20`<br>`5 x 5 = 25`<br>`5 x 6 = 30`<br>`5 x 7 = 35`<br>`5 x 8 = 40`<br>`5 x 9 = 45`<br>`5 x 10 = 50` |
 
 <a href="../.faculty/solutions/p4n9rw.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
@@ -1114,14 +1108,6 @@ Prints the multiplication table of a given number using a `while` loop (usually 
 **Output**
 - Show the multiplication table of the given number from 1 to 10
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `number = 5` |
-| **Example calculation** | Counter goes `1 → 2 → … → 10`, printing `5 x counter = product` each time |
-| **Example output** | `5 x 1 = 5`<br>`5 x 2 = 10`<br>`5 x 3 = 15`<br>`5 x 4 = 20`<br>`5 x 5 = 25`<br>`5 x 6 = 30`<br>`5 x 7 = 35`<br>`5 x 8 = 40`<br>`5 x 9 = 45`<br>`5 x 10 = 50` |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -1140,6 +1126,14 @@ while <condition>:  # TODO: continue while counter is within 1 to 10
     print(f"{number} x {<counter>} = {<product>}")
     <counter> = <update>  # TODO: move to the next multiplier
 ```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 5` |
+| **Example calculation** | Counter goes `1 → 2 → … → 10`, printing `5 x counter = product` each time |
+| **Example output** | `5 x 1 = 5`<br>`5 x 2 = 10`<br>`5 x 3 = 15`<br>`5 x 4 = 20`<br>`5 x 5 = 25`<br>`5 x 6 = 30`<br>`5 x 7 = 35`<br>`5 x 8 = 40`<br>`5 x 9 = 45`<br>`5 x 10 = 50` |
 
 <a href="../.faculty/solutions/p4n9rw.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
@@ -1171,14 +1165,6 @@ Finds the sum and average of several numbers entered by the user using a `for` l
 - Show the sum of the numbers
 - Show the average of the numbers
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `total_input_numbers = 3`<br>numbers: `10`, `20`, `30` |
-| **Example calculation** | `total_sum = 10 + 20 + 30 = 60`<br>`average = 60 / 3 = 20` |
-| **Example output** | `Sum of 3 numbers is 60`<br>`Average of 3 numbers (sum 60) is 20` |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -1203,6 +1189,14 @@ print(f"Average of {total_input_numbers} numbers (sum {total_sum}) is {average}"
 ```
 
 > **Hint:** The loop can run `total_input_numbers` times using the `range` function.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `total_input_numbers = 3`<br>numbers: `10`, `20`, `30` |
+| **Example calculation** | `total_sum = 10 + 20 + 30 = 60`<br>`average = 60 / 3 = 20` |
+| **Example output** | `Sum of 3 numbers is 60`<br>`Average of 3 numbers (sum 60) is 20` |
 
 <a href="../.faculty/solutions/w8c3jt.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
@@ -1232,14 +1226,6 @@ Finds the largest number among several numbers entered by the user using a `for`
 **Output**
 - Show the largest number
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `total_input_numbers = 4`<br>numbers: `10`, `25`, `7`, `18` |
-| **Example calculation** | Start with `largest = 10`<br>Compare `25` → update to `25`<br>Compare `7` → keep `25`<br>Compare `18` → keep `25` |
-| **Example output** | `Largest among 4 numbers is 25` |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -1262,6 +1248,14 @@ print(f"Largest among {total_input_numbers} numbers is {largest}")
 ```
 
 > **Hint:** After storing the first number in `largest`, the loop only needs to run for the remaining `total_input_numbers - 1` values.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `total_input_numbers = 4`<br>numbers: `10`, `25`, `7`, `18` |
+| **Example calculation** | Start with `largest = 10`<br>Compare `25` → update to `25`<br>Compare `7` → keep `25`<br>Compare `18` → keep `25` |
+| **Example output** | `Largest among 4 numbers is 25` |
 
 <a href="../.faculty/solutions/h2v6ys.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
@@ -1288,14 +1282,6 @@ Finds the factorial of a number using a `for` loop.
 **Output**
 - Show the factorial of the number
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `number = 5` |
-| **Example calculation** | `1 × 2 × 3 × 4 × 5 = 120` |
-| **Example output** | `Factorial of 5 is 120` |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -1316,6 +1302,14 @@ print(f"Factorial of {number} is {factorial}")
 ```
 
 > **Hint:** The numbers to multiply can be generated with `range` from `1` to `number` (inclusive).
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 5` |
+| **Example calculation** | `1 × 2 × 3 × 4 × 5 = 120` |
+| **Example output** | `Factorial of 5 is 120` |
 
 <a href="../.faculty/solutions/m9q4bd.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
@@ -1342,14 +1336,6 @@ Prints all prime numbers between 1 and N using `for` loops.
 **Output**
 - Show each prime number between 1 and `n`
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `n = 10` |
-| **Example calculation** | Check `2`, `3`, `4`, …, `10`<br>Primes: `2`, `3`, `5`, `7` |
-| **Example output** | `2 is a prime number between 1 and 10`<br>`3 is a prime number between 1 and 10`<br>`5 is a prime number between 1 and 10`<br>`7 is a prime number between 1 and 10` |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -1374,6 +1360,14 @@ for <number> in <sequence>:  # TODO: use range(...) for candidates from 2 to n
 ```
 
 > **Hint:** A prime number is greater than `1` and has no divisors other than `1` and itself. Use nested `for` loops: one for each candidate, one to test divisors.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 10` |
+| **Example calculation** | Check `2`, `3`, `4`, …, `10`<br>Primes: `2`, `3`, `5`, `7` |
+| **Example output** | `2 is a prime number between 1 and 10`<br>`3 is a prime number between 1 and 10`<br>`5 is a prime number between 1 and 10`<br>`7 is a prime number between 1 and 10` |
 
 <a href="../.faculty/solutions/r5t1zk.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
@@ -1403,14 +1397,6 @@ Prints the Fibonacci series for the first N terms using a `for` loop.
 **Output**
 - Show the first `n` Fibonacci terms
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `n = 7` |
-| **Example calculation** | `0`, `1`, `0+1=1`, `1+1=2`, `1+2=3`, `2+3=5`, `3+5=8` |
-| **Example output** | `Fibonacci series term 1 of 7 terms = 0`<br>`Fibonacci series term 2 of 7 terms = 1`<br>`Fibonacci series term 3 of 7 terms = 1`<br>`Fibonacci series term 4 of 7 terms = 2`<br>`Fibonacci series term 5 of 7 terms = 3`<br>`Fibonacci series term 6 of 7 terms = 5`<br>`Fibonacci series term 7 of 7 terms = 8` |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -1433,6 +1419,14 @@ for <variable> in <sequence>:  # TODO: use range(...) to repeat n times
 ```
 
 > **Hint:** Keep two variables for the current pair. After printing `first`, move the pair forward: `first` becomes the old `second`, and `second` becomes their sum.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 7` |
+| **Example calculation** | `0`, `1`, `0+1=1`, `1+1=2`, `1+2=3`, `2+3=5`, `3+5=8` |
+| **Example output** | `Fibonacci series term 1 of 7 terms = 0`<br>`Fibonacci series term 2 of 7 terms = 1`<br>`Fibonacci series term 3 of 7 terms = 1`<br>`Fibonacci series term 4 of 7 terms = 2`<br>`Fibonacci series term 5 of 7 terms = 3`<br>`Fibonacci series term 6 of 7 terms = 5`<br>`Fibonacci series term 7 of 7 terms = 8` |
 
 <a href="../.faculty/solutions/b6j2qm.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
@@ -1463,14 +1457,6 @@ Finds the sum of digits of a number using a `while` loop.
 **Output**
 - Show the sum of the digits
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `number = 123` |
-| **Example calculation** | Last digit `3` → sum `3`, number becomes `12`<br>Last digit `2` → sum `5`, number becomes `1`<br>Last digit `1` → sum `6`, number becomes `0` |
-| **Example output** | `Sum of digits of 123 is 6` |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -1494,6 +1480,14 @@ print(f"Sum of digits of {original_number} is {digit_sum}")
 ```
 
 > **Hint:** Peel digits with arithmetic only: `% 10` for the last digit and `// 10` to shorten the number. Avoid string methods for this task.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 123` |
+| **Example calculation** | Last digit `3` → sum `3`, number becomes `12`<br>Last digit `2` → sum `5`, number becomes `1`<br>Last digit `1` → sum `6`, number becomes `0` |
+| **Example output** | `Sum of digits of 123 is 6` |
 
 <a href="../.faculty/solutions/v3n8wp.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
@@ -1524,14 +1518,6 @@ Counts how many digits a number has using a `while` loop.
 **Output**
 - Show how many digits the number has
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `number = 1234` |
-| **Example calculation** | `1234 → 123 → 12 → 1 → 0` (four steps) |
-| **Example output** | `Number of digits in 1234 is 4` |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -1557,6 +1543,14 @@ print(f"Number of digits in {original_number} is {digit_count}")
 ```
 
 > **Hint:** Each `// 10` shortens the number by one digit. Count how many times you can do that until the number becomes `0`.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 1234` |
+| **Example calculation** | `1234 → 123 → 12 → 1 → 0` (four steps) |
+| **Example output** | `Number of digits in 1234 is 4` |
 
 <a href="../.faculty/solutions/c4x7la.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
@@ -1587,14 +1581,6 @@ Reverses the digits of a number using a `while` loop.
 **Output**
 - Show the reversed number
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `number = 1234` |
-| **Example calculation** | `0 → 4 → 43 → 432 → 4321` |
-| **Example output** | `Reverse of 1234 is 4321` |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -1618,6 +1604,14 @@ print(f"Reverse of {original_number} is {reversed_number}")
 ```
 
 > **Hint:** Build the reverse from right to left: each new digit becomes the new ones place of `reversed_number`.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 1234` |
+| **Example calculation** | `0 → 4 → 43 → 432 → 4321` |
+| **Example output** | `Reverse of 1234 is 4321` |
 
 <a href="../.faculty/solutions/d9f2mh.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
@@ -1648,14 +1642,6 @@ An Armstrong number equals the sum of its digits each raised to the power of the
 
 **Output**
 - Say whether the number is an Armstrong number, and show the computed sum
-
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `number = 153` |
-| **Example calculation** | Digits = `3`<br>`1³ + 5³ + 3³ = 1 + 125 + 27 = 153` |
-| **Example output** | `153 is an Armstrong number (sum of digits to power 3 is 153)` |
 
 ### Sample input and output messages
 
@@ -1697,6 +1683,14 @@ else:
 
 > **Hint:** You usually need two while-loop passes: one to count digits (the power), one to build the powered digit sum. Use `%` and `//` only — no strings.
 
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 153` |
+| **Example calculation** | Digits = `3`<br>`1³ + 5³ + 3³ = 1 + 125 + 27 = 153` |
+| **Example output** | `153 is an Armstrong number (sum of digits to power 3 is 153)` |
+
 <a href="../.faculty/solutions/e1g5nk.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](lab-tasks.md).
@@ -1721,14 +1715,6 @@ Checks whether a number is a palindrome using a `while` loop.
 
 **Output**
 - Say whether the number is a palindrome, and show the reversed value
-
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `number = 121` |
-| **Example calculation** | Reverse of `121` is `121` → equal → palindrome |
-| **Example output** | `121 is a palindrome (reversed value is 121)` |
 
 ### Sample input and output messages
 
@@ -1763,6 +1749,14 @@ else:
 
 > **Hint:** A palindrome number reads the same forwards and backwards. Reverse with `%` / `//`, then compare.
 
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 121` |
+| **Example calculation** | Reverse of `121` is `121` → equal → palindrome |
+| **Example output** | `121 is a palindrome (reversed value is 121)` |
+
 <a href="../.faculty/solutions/f8h3pj.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](lab-tasks.md).
@@ -1788,14 +1782,6 @@ Demonstrates `break` to leave a `for` loop early.
 **Output**
 - Numbers printed before breaking, plus a message that shows where the loop stopped
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `n = 8` |
-| **Example calculation** | Print `1`–`4`, then break at `5` (do not print `6`–`8`) |
-| **Example output** | `for loop number = 1 (up to 8)` … `for loop number = 4 (up to 8)`<br>`Breaking for loop at number 5 (N was 8)` |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -1815,6 +1801,14 @@ for <variable> in <sequence>:  # TODO: range from 1 to n
 ```
 
 > **Hint:** `break` exits the loop immediately. Code after `break` inside that loop body does not run for later values.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 8` |
+| **Example calculation** | Print `1`–`4`, then break at `5` (do not print `6`–`8`) |
+| **Example output** | `for loop number = 1 (up to 8)` … `for loop number = 4 (up to 8)`<br>`Breaking for loop at number 5 (N was 8)` |
 
 <a href="../.faculty/solutions/g2k6qs.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
@@ -1842,14 +1836,6 @@ Demonstrates `break` to leave a `while` loop early.
 **Output**
 - Numbers printed before breaking, plus a message that shows where the loop stopped
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `n = 8` |
-| **Example calculation** | Print `1`–`4`, then break at `5` |
-| **Example output** | `while loop number = 1 (up to 8)` … `while loop number = 4 (up to 8)`<br>`Breaking while loop at number 5 (N was 8)` |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -1872,6 +1858,14 @@ while <condition>:  # TODO: continue while counter <= n
 ```
 
 > **Hint:** Same idea as the for-loop version: `break` ends the while loop right away.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 8` |
+| **Example calculation** | Print `1`–`4`, then break at `5` |
+| **Example output** | `while loop number = 1 (up to 8)` … `while loop number = 4 (up to 8)`<br>`Breaking while loop at number 5 (N was 8)` |
 
 <a href="../.faculty/solutions/g2k6qs.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
@@ -1898,14 +1892,6 @@ Demonstrates `continue` to skip the rest of one `for` loop iteration.
 **Output**
 - Odd numbers from `1` to `n`, plus skip messages for even values
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `n = 5` |
-| **Example calculation** | Print odds `1`, `3`, `5`; skip evens `2`, `4` |
-| **Example output** | `for loop odd number = 1 (up to 5)`<br>`Skipping even number 2 with continue (N is 5)` … |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -1925,6 +1911,14 @@ for <variable> in <sequence>:  # TODO: range from 1 to n
 ```
 
 > **Hint:** `continue` jumps to the next iteration. The print for odd numbers is skipped for that even value.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 5` |
+| **Example calculation** | Print odds `1`, `3`, `5`; skip evens `2`, `4` |
+| **Example output** | `for loop odd number = 1 (up to 5)`<br>`Skipping even number 2 with continue (N is 5)` … |
 
 <a href="../.faculty/solutions/h7m1rt.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
@@ -1952,14 +1946,6 @@ Demonstrates `continue` to skip the rest of one `while` loop iteration.
 **Output**
 - Odd numbers from `1` to `n`, plus skip messages for even values
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `n = 5` |
-| **Example calculation** | Same as Approach 1, using a while loop |
-| **Example output** | `while loop odd number = 1 (up to 5)` … |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -1983,6 +1969,14 @@ while <condition>:  # TODO: counter <= n
 ```
 
 > **Hint:** In a while loop, update the counter **before** `continue`, or the loop may never move past that even value.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 5` |
+| **Example calculation** | Same as Approach 1, using a while loop |
+| **Example output** | `while loop odd number = 1 (up to 5)` … |
 
 <a href="../.faculty/solutions/h7m1rt.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
@@ -2009,14 +2003,6 @@ Demonstrates `pass` as a placeholder inside a `for` loop.
 **Output**
 - A message for multiples of `3` showing `pass`, and normal messages for other numbers
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `n = 6` |
-| **Example calculation** | `3` and `6` use `pass`; other values print normally |
-| **Example output** | `for loop number = 1 (up to 6)` … `Used pass for multiple of 3: 3 (N is 6)` … |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -2037,6 +2023,14 @@ for <variable> in <sequence>:  # TODO: range from 1 to n
 ```
 
 > **Hint:** `pass` is a no-op. It keeps the `if` block valid when you are not ready to write real logic yet.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 6` |
+| **Example calculation** | `3` and `6` use `pass`; other values print normally |
+| **Example output** | `for loop number = 1 (up to 6)` … `Used pass for multiple of 3: 3 (N is 6)` … |
 
 <a href="../.faculty/solutions/i4n9su.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
@@ -2061,14 +2055,6 @@ Demonstrates `pass` as a placeholder inside a `while` loop.
 **Output**
 - A message for multiples of `3` showing `pass`, and normal messages for other numbers
 
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `n = 6` |
-| **Example calculation** | Same behaviour as the for-loop version |
-| **Example output** | `while loop number = 1 (up to 6)` … `Used pass for multiple of 3: 3 (N is 6)` … |
-
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
@@ -2092,6 +2078,14 @@ while <condition>:  # TODO: counter <= n
 ```
 
 > **Hint:** `pass` does not skip the rest of the loop by itself — unlike `continue`. Here it only fills an empty branch.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 6` |
+| **Example calculation** | Same behaviour as the for-loop version |
+| **Example output** | `while loop number = 1 (up to 6)` … `Used pass for multiple of 3: 3 (N is 6)` … |
 
 <a href="../.faculty/solutions/i4n9su.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
