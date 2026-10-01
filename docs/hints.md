@@ -11,7 +11,7 @@ Jump to a task:
 
 **Unit 1:** [Task 1](#unit-1-task-1) · [Task 2](#unit-1-task-2) · [Task 3](#unit-1-task-3) · [Task 4](#unit-1-task-4) · [Task 5](#unit-1-task-5) · [Task 6](#unit-1-task-6) · [Task 7](#unit-1-task-7) · [Task 8](#unit-1-task-8) · [Task 9](#unit-1-task-9) · [Task 10](#unit-1-task-10) · [Task 11](#unit-1-task-11) · [Task 12](#unit-1-task-12) · [Task 13](#unit-1-task-13) · [Task 14](#unit-1-task-14) · [Task 15](#unit-1-task-15)
 
-**Unit 2A:** [Task 1](#unit-2a-task-1) · [Task 2](#unit-2a-task-2) · [Task 3](#unit-2a-task-3) · [Task 7 Approach 1](#unit-2a-task-7-approach-1) · [Task 7 Approach 2](#unit-2a-task-7-approach-2) · [Task 7 Approach 3](#unit-2a-task-7-approach-3)
+**Unit 2A:** [Task 1](#unit-2a-task-1) · [Task 2](#unit-2a-task-2) · [Task 3](#unit-2a-task-3) · [Task 5](#unit-2a-task-5) · [Task 7 Approach 1](#unit-2a-task-7-approach-1) · [Task 7 Approach 2](#unit-2a-task-7-approach-2) · [Task 7 Approach 3](#unit-2a-task-7-approach-3)
 
 **Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2) · [Task 2 Approach 1](#unit-2b-task-2-approach-1) · [Task 2 Approach 2](#unit-2b-task-2-approach-2) · [Task 3](#unit-2b-task-3) · [Task 4](#unit-2b-task-4) · [Task 5](#unit-2b-task-5) · [Task 6](#unit-2b-task-6) · [Task 7](#unit-2b-task-7) · [Task 8](#unit-2b-task-8) · [Task 9](#unit-2b-task-9) · [Task 10](#unit-2b-task-10) · [Task 11](#unit-2b-task-11) · [Task 12](#unit-2b-task-12) · [Task 13 Approach 1](#unit-2b-task-13-approach-1) · [Task 13 Approach 2](#unit-2b-task-13-approach-2) · [Task 14 Approach 1](#unit-2b-task-14-approach-1) · [Task 14 Approach 2](#unit-2b-task-14-approach-2) · [Task 15 Approach 1](#unit-2b-task-15-approach-1) · [Task 15 Approach 2](#unit-2b-task-15-approach-2)
 
@@ -786,6 +786,68 @@ else:
 | **Example output** | The number is positive |
 
 **Other examples:** `number = -7` → The number is negative; `number = 0` → The number is zero
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2a-task-5"></a>
+
+## Unit 2A Task 5: Largest of three numbers (nested if)
+
+Finds the largest of three numbers using nested `if`. Only one inner block runs — the side that won the outer compare.
+
+### Analyse the problem: Identify Input, Process and Output
+
+| Item | Details |
+|------|---------|
+| **Input** | three numbers `x`, `y`, `z` |
+| **Process** | **Outer if:** compare `x` and `y` (`x >= y`).<br>**Outer else:** when `x < y`.<br>**Inner under if:** compare `x` with `z` → `largest = x` or `z`.<br>**Inner under else:** compare `y` with `z` → `largest = y` or `z`.<br>Store that winner in `largest`, then print it. |
+| **Output** | `Largest = … (among x, y, z)` |
+
+**Process columns** (nested structure):
+
+| If `x >= y` | Else (`x < y`) |
+|-------------|----------------|
+| Compare `x` with `z` (`x >= z`). | Compare `y` with `z` (`y >= z`). |
+| True → `largest = x`. | True → `largest = y`. |
+| False → `largest = z`. | False → `largest = z`. |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+x = int(input("Enter first number: "))
+y = int(input("Enter second number: "))
+z = int(input("Enter third number: "))
+```
+
+**Program structure** (fill in the blanks — nested if):
+
+```python
+if ____:  # outer: compare x with y
+    if ____:  # inner under if: compare x with z
+        largest = ____  # x wins
+    else:
+        largest = ____  # z wins on this side
+else:
+    if ____:  # inner under else: compare y with z
+        largest = ____  # y wins
+    else:
+        largest = ____  # z wins on this side
+
+print(f"Largest = {largest} (among {x}, {y}, {z})")
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `x = 10`, `y = 25`, `z = 7` |
+| **Example calculation** | `10 >= 25` → False → outer else → `25 >= 7` → True → `largest = 25` |
+| **Example output** | `Largest = 25 (among 10, 25, 7)` |
+
+**Another example:** `x = 9`, `y = 9`, `z = 4` → `9 >= 9` → True → `9 >= 4` → True → `Largest = 9 (among 9, 9, 4)`
 Back to [Lab tasks](lab-tasks.md).
 
 ---
