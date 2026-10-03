@@ -15,6 +15,8 @@ Jump to a task:
 
 **Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2) · [Task 2 Approach 1](#unit-2b-task-2-approach-1) · [Task 2 Approach 2](#unit-2b-task-2-approach-2) · [Task 3](#unit-2b-task-3) · [Task 4](#unit-2b-task-4) · [Task 5](#unit-2b-task-5) · [Task 6](#unit-2b-task-6) · [Task 7](#unit-2b-task-7) · [Task 8](#unit-2b-task-8) · [Task 9](#unit-2b-task-9) · [Task 10](#unit-2b-task-10) · [Task 11](#unit-2b-task-11) · [Task 12](#unit-2b-task-12) · [Task 13 Approach 1](#unit-2b-task-13-approach-1) · [Task 13 Approach 2](#unit-2b-task-13-approach-2) · [Task 14 Approach 1](#unit-2b-task-14-approach-1) · [Task 14 Approach 2](#unit-2b-task-14-approach-2) · [Task 15 Approach 1](#unit-2b-task-15-approach-1) · [Task 15 Approach 2](#unit-2b-task-15-approach-2)
 
+**Unit 2C:** [Task 7](#unit-2c-task-7)
+
 ---
 
 <a id="unit-1-task-1"></a>
@@ -1031,7 +1033,9 @@ Back to [Lab tasks](lab-tasks.md).
 
 ## Unit 2A Task 8: Prime number check (1 to 100)
 
-Checks whether a given number is prime or not. The input number must be between `1` and `100`.
+Checks whether a given number is prime or not using an `if-elif-else` ladder.
+
+For this task, **assume the input number is between `1` and `100`**.
 
 **What is a prime number?**
 - A prime number is a whole number greater than `1`
@@ -1052,7 +1056,7 @@ Checks whether a given number is prime or not. The input number must be between 
 ### Analyse the problem: Identify Input, Process and Output
 
 **Input**
-- Read a number from the user (must be between `1` and `100`)
+- Read a number from the user (assume / check it is between `1` and `100`)
 
 **Process**
 - Use an `if-elif-else` ladder
@@ -1085,6 +1089,8 @@ elif ____:  # divisible by 2, 3, 5, or 7?
 else:
     print(f"{number} is a prime number")
 ```
+
+> **Think about it:** This task assumes the input is between `1` and `100` (and the checks use only `2`, `3`, `5`, and `7`). How would you generalize this code so it works for **any** positive number, not only values between `1` and `100`?
 
 > **Hint:** Keep it as a simple `if` / `elif` / `else` ladder. Print the message in each branch. Do not use a `for` loop or an `is_prime` flag.
 
@@ -1496,62 +1502,73 @@ Back to [Lab tasks](lab-tasks.md).
 
 <a id="unit-2b-task-6"></a>
 
-## Unit 2B Task 6: Prime numbers from 1 to N (for loop)
+## Unit 2B Task 6: Prime number check (for loop)
 
-Prints all prime numbers between 1 and N using `for` loops.
+Checks whether a given number is prime or not using a `for` loop and a divisor **count**.
+
+For this task, **assume the input number is between `1` and `100`**.
 
 **What is a prime number?**
 - A prime number is a whole number greater than `1`
 - It can be divided evenly only by `1` and by itself
-- It has no other positive divisors
+- So a prime number has **exactly 2 divisors**
 - Examples: `2`, `3`, `5`, `7`, `11`
-- Not prime: `1` (too small), `4` (divisible by `2`), `9` (divisible by `3`)
+- Not prime: `1` (only one divisor), `4` (divisors `1`, `2`, `4` → count is `3`)
+
+**How to check using count logic?**
+- Set `count = 0`
+- Use a `for` loop from `1` to the number
+- Each time the number divides evenly (`%` gives `0`), add `1` to `count`
+- After the loop: if `count == 2`, the number is prime; otherwise it is not
 
 ### Analyse the problem: Identify Input, Process and Output
 
 **Input**
-- Read a number `n` from the user
+- Read a number from the user (assume it is between `1` and `100`)
 
 **Process**
-- Take each candidate number from `2` to `n` (1 is not a prime number)
-- For each candidate, check whether it has any divisor other than `1` and itself
-- If it has no such divisor, it is prime
+- Set `count` to `0`
+- Loop from `1` to the number
+- Whenever the number is divisible by the loop value, increase `count`
+- If `count` is `2`, it is prime; else it is not prime
 
 **Output**
-- Show each prime number between 1 and `n`
+- Show whether the number is prime or not (include the number in the message)
 
 ### Sample input and output messages
 
 **Input messages** (use with `input()`):
 
 ```python
-n = int(input("Enter the value of N: "))
+number = int(input("Enter a number between 1 and 100: "))
 ```
 
-**Program structure** (fill in the blanks — for loop):
+**Program structure** (fill in the blanks — for loop with count):
 
 ```python
-for ____ in ____:  # each candidate from 2 to n
-    is_prime = True  # assume prime until a divisor is found
+count = 0
 
-    for ____ in ____:  # try possible divisors (e.g. 2 to number - 1)
-        if ____:  # is number divisible by this divisor?
-            is_prime = False
-            break
+for ____ in ____:  # values from 1 to number (use range)
+    if ____:  # does number divide evenly by this value?
+        count = ____  # increase count by 1
 
-    if is_prime:
-        print(f"{____} is a prime number between 1 and {n}")  # print the prime candidate
+if ____:  # is count exactly 2?
+    print(f"{number} is a prime number (divisor count = {count})")
+else:
+    print(f"{number} is not a prime number (divisor count = {count})")
 ```
 
-> **Hint:** A prime number is greater than `1` and has no divisors other than `1` and itself. Use nested `for` loops: one for each candidate, one to test divisors.
+> **Think about it:** This task assumes the input is between `1` and `100`. How would you generalize this code so it works for **any** positive number, not only values between `1` and `100`?
 
 ### Example
 
 | Item | Details |
 |------|---------|
-| **Example input** | `n = 10` |
-| **Example calculation** | Check `2`, `3`, `4`, …, `10`<br>Primes: `2`, `3`, `5`, `7` |
-| **Example output** | `2 is a prime number between 1 and 10`<br>`3 is a prime number between 1 and 10`<br>`5 is a prime number between 1 and 10`<br>`7 is a prime number between 1 and 10` |
+| **Example input** | `number = 7` |
+| **Example calculation** | Divisors of `7`: `1` and `7` → `count = 2` → prime |
+| **Example output** | `7 is a prime number (divisor count = 2)` |
+
+**Other examples:** `1` → count `1` → not prime; `4` → count `3` → not prime; `11` → count `2` → prime
 
 <a href="../.faculty/solutions/r5t1zk.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
@@ -2296,5 +2313,75 @@ while ____:  # continue while counter <= n
 | **Example output** | `while loop number = 1 (up to 6)` … `Used pass for multiple of 3: 3 (N is 6)` … |
 
 <a href="../.faculty/solutions/i4n9su.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2c-task-7"></a>
+
+## Unit 2C Task 7: Prime numbers from 1 to N (for loop)
+
+Prints all prime numbers between 1 and N using nested `for` loops and divisor **count** logic.
+
+**What is a prime number?**
+- A prime number is a whole number greater than `1`
+- It can be divided evenly only by `1` and by itself
+- So a prime number has **exactly 2 divisors**
+- Examples: `2`, `3`, `5`, `7`, `11`
+- Not prime: `1` (only one divisor), `4` (divisors `1`, `2`, `4` → count is `3`)
+
+**How to find primes from 1 to N using count logic?**
+- Take each candidate number from `1` to `n`
+- For each candidate, set `count = 0`
+- Loop from `1` to that candidate and count how many divisors it has
+- If `count == 2`, print that candidate as a prime number
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number `n` from the user
+
+**Process**
+- Outer loop: each candidate from `1` to `n`
+- Inner loop: count divisors of that candidate
+- If `count` is `2`, the candidate is prime
+
+**Output**
+- Show each prime number between 1 and `n`
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+n = int(input("Enter the value of N: "))
+```
+
+**Program structure** (fill in the blanks — nested for loops with count):
+
+```python
+for ____ in ____:  # each candidate from 1 to n
+    count = 0
+
+    for ____ in ____:  # values from 1 to the candidate
+        if ____:  # does the candidate divide evenly by this value?
+            count = ____  # increase count by 1
+
+    if ____:  # is count exactly 2?
+        print(f"{____} is a prime number between 1 and {n}")  # print the prime candidate
+```
+
+> **Hint:** Do not use an `is_prime` flag. For each candidate, count its divisors. Print it only when `count == 2`.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 10` |
+| **Example calculation** | Check `1` to `10` with divisor counts<br>Primes (`count = 2`): `2`, `3`, `5`, `7` |
+| **Example output** | `2 is a prime number between 1 and 10`<br>`3 is a prime number between 1 and 10`<br>`5 is a prime number between 1 and 10`<br>`7 is a prime number between 1 and 10` |
+
+<a href="../.faculty/solutions/s3w7yd.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](lab-tasks.md).

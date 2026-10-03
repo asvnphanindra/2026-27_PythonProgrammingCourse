@@ -37,7 +37,7 @@ Click **View hint** for input, process, output, and a worked example (where avai
 | 5 | Write a python program to find the largest of three numbers using nested if | `Unit-2A_Task-5_Largest_of_Three_Nested_If.py` | [View hint](hints.md#unit-2a-task-5) |
 | 6 | Write a python program to find the smallest of three numbers using nested if | `Unit-2A_Task-6_Smallest_of_Three_Nested_If.py` | — |
 | 7 | Write a python program to check whether a given year is a leap year | `Unit-2A_Task-7_Leap_Year.py` | [Approach 1](hints.md#unit-2a-task-7-approach-1) · [Approach 2](hints.md#unit-2a-task-7-approach-2) · [Approach 3](hints.md#unit-2a-task-7-approach-3) |
-| 8 | Write a python program to check whether a given number is prime or not (input number must be between 1 and 100) | `Unit-2A_Task-8_Prime_Number.py` | [View hint](hints.md#unit-2a-task-8) |
+| 8 | Write a python program to check whether a given number is prime or not<br>(assume the input number is between 1 and 100) | `Unit-2A_Task-8_Prime_Number.py` | [View hint](hints.md#unit-2a-task-8) |
 
 ### B. Iterative Statement Programs
 
@@ -48,7 +48,7 @@ Click **View hint** for input, process, output, and a worked example (where avai
 | 3 | Write a python program to find the sum and average of N numbers using for loop | `Unit-2B_Task-3_Sum_and_Average_of_N_Numbers_For_Loop.py` | [View hint](hints.md#unit-2b-task-3) |
 | 4 | Write a python program to find the largest number in a series of N numbers entered by the user using for loop | `Unit-2B_Task-4_Largest_in_Series_of_N_Numbers_For_Loop.py` | [View hint](hints.md#unit-2b-task-4) |
 | 5 | Write a python program to find the factorial of a number using for loop | `Unit-2B_Task-5_Factorial_For_Loop.py` | [View hint](hints.md#unit-2b-task-5) |
-| 6 | Write a python program to print all prime numbers between 1 and N using for loop | `Unit-2B_Task-6_Prime_Numbers_1_to_N_For_Loop.py` | [View hint](hints.md#unit-2b-task-6) |
+| 6 | Write a python program to check whether a given number is prime or not using for loop<br>(assume the input number is between 1 and 100) | `Unit-2B_Task-6_Prime_Number_Check_For_Loop.py` | [View hint](hints.md#unit-2b-task-6) |
 | 7 | Write a python program to print Fibonacci series up to N terms using for loop | `Unit-2B_Task-7_Fibonacci_Series_N_Terms_For_Loop.py` | [View hint](hints.md#unit-2b-task-7) |
 | 8 | Write a python program to find the sum of digits of a number using while loop | `Unit-2B_Task-8_Sum_of_Digits_While_Loop.py` | [View hint](hints.md#unit-2b-task-8) |
 | 9 | Write a python program to count the number of digits in a number using while loop | `Unit-2B_Task-9_Count_Digits_While_Loop.py` | [View hint](hints.md#unit-2b-task-9) |
@@ -69,6 +69,7 @@ Click **View hint** for input, process, output, and a worked example (where avai
 | 4 | Write a python program to print a diamond pattern of stars | `Unit-2C_Task-4_Diamond_Pattern_of_Stars.py` | — |
 | 5 | Write a python program to print Pascal's triangle | `Unit-2C_Task-5_Pascals_Triangle.py` | — |
 | 6 | Write a python program to print a number pattern (e.g., Floyd's triangle) | `Unit-2C_Task-6_Floyds_Triangle_Number_Pattern.py` | — |
+| 7 | Write a python program to print all prime numbers between 1 and N using for loop | `Unit-2C_Task-7_Prime_Numbers_1_to_N_For_Loop.py` | [View hint](hints.md#unit-2c-task-7) |
 
 ### D. String Manipulation Programs
 

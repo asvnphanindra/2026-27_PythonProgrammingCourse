@@ -1,6 +1,6 @@
 # Unit 2A Task 8 — Example solution
 
-Check whether a number is prime or not (input must be between 1 and 100).
+Check whether a number is prime or not (input between 1 and 100).
 Uses an `if-elif-else` ladder only — no `for` loop.
 
 ```python
@@ -18,3 +18,5 @@ elif number % 2 == 0 or number % 3 == 0 or number % 5 == 0 or number % 7 == 0:
 else:
     print(f"{number} is a prime number")
 ```
+
+> **Think about it:** This program assumes the input is between `1` and `100` (and the checks use only `2`, `3`, `5`, and `7`). How would you generalize this code so it works for **any** positive number, not only values between `1` and `100`?

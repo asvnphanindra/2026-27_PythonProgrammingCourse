@@ -1,19 +1,22 @@
 # Unit 2B Task 6 — Example solution
 
-Prime numbers between 1 and N using `for` loops.
+Check whether a number is prime or not using a `for` loop and divisor count.
+Assume the input is between 1 and 100 for this task.
 
 ```python
-# Example solution: prime numbers from 1 to N using for loops
-n = int(input("Enter the value of N: "))
+# Example solution: prime check using divisor count (for loop)
+number = int(input("Enter a number between 1 and 100: "))
 
-for number in range(2, n + 1):
-    is_prime = True
+count = 0
 
-    for divisor in range(2, number):
-        if number % divisor == 0:
-            is_prime = False
-            break
+for i in range(1, number + 1):
+    if number % i == 0:
+        count = count + 1
 
-    if is_prime:
-        print(f"{number} is a prime number between 1 and {n}")
+if count == 2:
+    print(f"{number} is a prime number (divisor count = {count})")
+else:
+    print(f"{number} is not a prime number (divisor count = {count})")
 ```
+
+> **Think about it:** This program assumes the input is between `1` and `100`. How would you generalize this code so it works for **any** positive number, not only values between `1` and `100`?
