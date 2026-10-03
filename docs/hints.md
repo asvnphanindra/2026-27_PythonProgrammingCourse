@@ -11,7 +11,7 @@ Jump to a task:
 
 **Unit 1:** [Task 1](#unit-1-task-1) · [Task 2](#unit-1-task-2) · [Task 3](#unit-1-task-3) · [Task 4](#unit-1-task-4) · [Task 5](#unit-1-task-5) · [Task 6](#unit-1-task-6) · [Task 7](#unit-1-task-7) · [Task 8](#unit-1-task-8) · [Task 9](#unit-1-task-9) · [Task 10](#unit-1-task-10) · [Task 11](#unit-1-task-11) · [Task 12](#unit-1-task-12) · [Task 13](#unit-1-task-13) · [Task 14](#unit-1-task-14) · [Task 15](#unit-1-task-15)
 
-**Unit 2A:** [Task 1](#unit-2a-task-1) · [Task 2](#unit-2a-task-2) · [Task 3](#unit-2a-task-3) · [Task 5](#unit-2a-task-5) · [Task 7 Approach 1](#unit-2a-task-7-approach-1) · [Task 7 Approach 2](#unit-2a-task-7-approach-2) · [Task 7 Approach 3](#unit-2a-task-7-approach-3) · [Task 8](#unit-2a-task-8)
+**Unit 2A:** [Task 1](#unit-2a-task-1) · [Task 2](#unit-2a-task-2) · [Task 3](#unit-2a-task-3) · [Task 4](#unit-2a-task-4) · [Task 5](#unit-2a-task-5) · [Task 6](#unit-2a-task-6) · [Task 7 Approach 1](#unit-2a-task-7-approach-1) · [Task 7 Approach 2](#unit-2a-task-7-approach-2) · [Task 7 Approach 3](#unit-2a-task-7-approach-3) · [Task 8](#unit-2a-task-8)
 
 **Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2) · [Task 2 Approach 1](#unit-2b-task-2-approach-1) · [Task 2 Approach 2](#unit-2b-task-2-approach-2) · [Task 3](#unit-2b-task-3) · [Task 4](#unit-2b-task-4) · [Task 5](#unit-2b-task-5) · [Task 6](#unit-2b-task-6) · [Task 7](#unit-2b-task-7) · [Task 8](#unit-2b-task-8) · [Task 9](#unit-2b-task-9) · [Task 10](#unit-2b-task-10) · [Task 11](#unit-2b-task-11) · [Task 12](#unit-2b-task-12) · [Task 13 Approach 1](#unit-2b-task-13-approach-1) · [Task 13 Approach 2](#unit-2b-task-13-approach-2) · [Task 14 Approach 1](#unit-2b-task-14-approach-1) · [Task 14 Approach 2](#unit-2b-task-14-approach-2) · [Task 15 Approach 1](#unit-2b-task-15-approach-1) · [Task 15 Approach 2](#unit-2b-task-15-approach-2)
 
@@ -801,19 +801,98 @@ Back to [Lab tasks](lab-tasks.md).
 
 ---
 
+<a id="unit-2a-task-4"></a>
+
+## Unit 2A Task 4: Student grade (elif ladder)
+
+Prints the grade of a student from marks using an `if-elif-else` ladder.
+
+**What is an elif ladder?**
+- Use `if` for the first check
+- Use `elif` for the next checks (only tried if earlier ones were false)
+- Use `else` for the last remaining case
+- Only one branch runs
+
+**Grade rules for this task**
+- Marks `>= 90` → Grade A
+- Marks `>= 80` and `< 90` → Grade B
+- Marks `>= 70` and `< 80` → Grade C
+- Marks `< 70` → Grade D
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read marks from the user
+
+**Process**
+- Check the marks from highest grade to lowest using `if` / `elif` / `else`
+- Because of `elif`, once a true branch is found, lower grades are not checked
+
+**Output**
+- Show the grade for the given marks
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+marks = float(input("Enter marks: "))
+```
+
+**Program structure** (fill in the blanks — if-elif-else ladder):
+
+```python
+if ____:  # Grade A? (marks >= 90)
+    print(f"Marks {marks}: Grade A")
+elif ____:  # Grade B? (marks >= 80)
+    print(f"Marks {marks}: Grade B")
+elif ____:  # Grade C? (marks >= 70)
+    print(f"Marks {marks}: Grade C")
+else:
+    print(f"Marks {marks}: Grade D")  # remaining case (marks < 70)
+```
+
+> **Hint:** Start with the highest range first (`>= 90`). With `elif`, you do not need to write both `>= 80` and `< 90` — the earlier false check already means marks are below `90`.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `marks = 85` |
+| **Example calculation** | `85 >= 90` → False<br>`85 >= 80` → True → Grade B |
+| **Example output** | `Marks 85: Grade B` |
+
+**Other examples:** `92` → Grade A; `70` → Grade C; `55` → Grade D
+
+<a href="../.faculty/solutions/f7v3qs.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
 <a id="unit-2a-task-5"></a>
 
 ## Unit 2A Task 5: Largest of three numbers (nested if)
 
-Finds the largest of three numbers using nested `if`. Only one inner block runs — the side that won the outer compare.
+Finds the largest of three numbers using nested `if`.
+
+**What is a nested if?**
+- An `if` (or `else`) block can contain another `if` inside it
+- First compare two numbers (outer check)
+- Then compare the winner with the third number (inner check)
+- Only one inner block runs — the side that won the outer compare
 
 ### Analyse the problem: Identify Input, Process and Output
 
-| Item | Details |
-|------|---------|
-| **Input** | three numbers `x`, `y`, `z` |
-| **Process** | **Outer if:** compare `x` and `y` (`x >= y`).<br>**Outer else:** when `x < y`.<br>**Inner under if:** compare `x` with `z` → `largest = x` or `z`.<br>**Inner under else:** compare `y` with `z` → `largest = y` or `z`.<br>Store that winner in `largest`, then print it. |
-| **Output** | `Largest = … (among x, y, z)` |
+**Input**
+- Read three numbers `x`, `y`, and `z`
+
+**Process**
+- **Outer if:** compare `x` and `y` (`x >= y`)
+- **Outer else:** when `x < y`
+- **Inner under if:** compare `x` with `z` → `largest = x` or `z`
+- **Inner under else:** compare `y` with `z` → `largest = y` or `z`
+- Store that winner in `largest`, then print it
 
 **Process columns** (nested structure):
 
@@ -822,6 +901,9 @@ Finds the largest of three numbers using nested `if`. Only one inner block runs 
 | Compare `x` with `z` (`x >= z`). | Compare `y` with `z` (`y >= z`). |
 | True → `largest = x`. | True → `largest = y`. |
 | False → `largest = z`. | False → `largest = z`. |
+
+**Output**
+- Show the largest number among `x`, `y`, and `z`
 
 ### Sample input and output messages
 
@@ -861,6 +943,84 @@ print(f"Largest = {largest} (among {x}, {y}, {z})")
 **Another example:** `x = 9`, `y = 9`, `z = 4` → `9 >= 9` → True → `9 >= 4` → True → `Largest = 9 (among 9, 9, 4)`
 
 <a href="../.faculty/solutions/d5t1oq.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2a-task-6"></a>
+
+## Unit 2A Task 6: Smallest of three numbers (nested if)
+
+Finds the smallest of three numbers using nested `if`.
+
+**What is a nested if?**
+- An `if` (or `else`) block can contain another `if` inside it
+- First compare two numbers (outer check)
+- Then compare the smaller one with the third number (inner check)
+- Only one inner block runs — the side that won the outer compare
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read three numbers `x`, `y`, and `z`
+
+**Process**
+- **Outer if:** compare `x` and `y` (`x <= y`)
+- **Outer else:** when `x > y`
+- **Inner under if:** compare `x` with `z` → `smallest = x` or `z`
+- **Inner under else:** compare `y` with `z` → `smallest = y` or `z`
+- Store that winner in `smallest`, then print it
+
+**Process columns** (nested structure):
+
+| If `x <= y` | Else (`x > y`) |
+|-------------|----------------|
+| Compare `x` with `z` (`x <= z`). | Compare `y` with `z` (`y <= z`). |
+| True → `smallest = x`. | True → `smallest = y`. |
+| False → `smallest = z`. | False → `smallest = z`. |
+
+**Output**
+- Show the smallest number among `x`, `y`, and `z`
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+x = int(input("Enter first number: "))
+y = int(input("Enter second number: "))
+z = int(input("Enter third number: "))
+```
+
+**Program structure** (fill in the blanks — nested if):
+
+```python
+if ____:  # outer: compare x with y (smaller side)
+    if ____:  # inner under if: compare x with z
+        smallest = ____  # x wins
+    else:
+        smallest = ____  # z wins on this side
+else:
+    if ____:  # inner under else: compare y with z
+        smallest = ____  # y wins
+    else:
+        smallest = ____  # z wins on this side
+
+print(f"Smallest = {smallest} (among {x}, {y}, {z})")
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `x = 10`, `y = 25`, `z = 7` |
+| **Example calculation** | `10 <= 25` → True → outer if → `10 <= 7` → False → `smallest = 7` |
+| **Example output** | `Smallest = 7 (among 10, 25, 7)` |
+
+**Another example:** `x = 9`, `y = 9`, `z = 4` → `9 <= 9` → True → `9 <= 4` → False → `Smallest = 4 (among 9, 9, 4)`
+
+<a href="../.faculty/solutions/g8w4rt.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](lab-tasks.md).
 

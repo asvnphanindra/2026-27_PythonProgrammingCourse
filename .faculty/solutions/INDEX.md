@@ -7,7 +7,9 @@ Not linked from student docs. Map task → cryptic file.
 | Unit 2A Task 1 — Valid triangle | `a2q8lm.md` |
 | Unit 2A Task 2 — Voting eligibility | `b3r9mn.md` |
 | Unit 2A Task 3 — Positive, negative, or zero | `c4s0np.md` |
+| Unit 2A Task 4 — Student grade (elif ladder) | `f7v3qs.md` |
 | Unit 2A Task 5 — Largest of three (nested if) | `d5t1oq.md` |
+| Unit 2A Task 6 — Smallest of three (nested if) | `g8w4rt.md` |
 | Unit 2A Task 7 — Leap year (3 approaches) | `e6u2pr.md` |
 | Unit 2A Task 8 — Prime number check (1 to 100) | `j5p8wv.md` |
 | Unit 2B Task 1 — Print numbers from 1 to N | `k7m2xq.md` |
