@@ -1040,14 +1040,14 @@ Checks whether a given number is prime or not. The input number must be between 
 - Examples: `2`, `3`, `5`, `7`, `11`, `97`
 - Not prime: `1` (too small), `4` (divisible by `2`), `9` (divisible by `3`), `100` (divisible by `2`, `4`, `5`, …)
 
-**How to check a number between 1 and 100?**
+**How to check a number between 1 and 100 (using if-elif only)?**
 - First check that the number is from `1` to `100` (inclusive)
-- If it is outside that range, show a message and stop
+- If it is outside that range, print a message
 - If the number is `1`, it is **not** prime
-- If the number is `2`, it **is** prime
-- For other numbers, try dividing by values from `2` up to the number minus `1`
-- If any of those divides the number evenly, it is **not** prime
-- If none of them divide it evenly, it **is** prime
+- If the number is `2`, `3`, `5`, or `7`, it **is** prime
+- Else if the number is divisible by `2`, `3`, `5`, or `7`, it is **not** prime
+- Else it **is** prime
+- Why only `2`, `3`, `5`, `7`? For numbers up to `100`, these are enough to catch non-primes (no loop needed)
 
 ### Analyse the problem: Identify Input, Process and Output
 
@@ -1055,9 +1055,9 @@ Checks whether a given number is prime or not. The input number must be between 
 - Read a number from the user (must be between `1` and `100`)
 
 **Process**
-- If the number is not between `1` and `100`, show an error message
-- Otherwise check whether it is prime using the rules above
-- Use a loop to test possible divisors when needed
+- Use an `if-elif-else` ladder
+- Check the range, then the prime rules above
+- Print the message directly in each branch (do not use a `for` loop)
 
 **Output**
 - Show whether the number is prime or not (include the number in the message)
@@ -1071,39 +1071,32 @@ Checks whether a given number is prime or not. The input number must be between 
 number = int(input("Enter a number between 1 and 100: "))
 ```
 
-**Program structure** (fill in the blanks):
+**Program structure** (fill in the blanks — if-elif-else ladder):
 
 ```python
 if ____:  # number is outside 1 to 100?
     print(f"{number} is not between 1 and 100")
+elif ____:  # 1 is not prime
+    print(f"{number} is not a prime number")
+elif ____:  # number is 2, 3, 5, or 7?
+    print(f"{number} is a prime number")
+elif ____:  # divisible by 2, 3, 5, or 7?
+    print(f"{number} is not a prime number")
 else:
-    if ____:  # special case: 1 is not prime
-        print(f"{number} is not a prime number")
-    else:
-        is_prime = True  # assume prime until a divisor is found
-
-        for ____ in ____:  # try divisors from 2 to number - 1
-            if ____:  # is number divisible by this divisor?
-                is_prime = False
-                break
-
-        if is_prime:
-            print(f"{number} is a prime number")
-        else:
-            print(f"{number} is not a prime number")
+    print(f"{number} is a prime number")
 ```
 
-> **Hint:** First validate the range `1` to `100`. Then use the same prime idea as Unit 2B Task 6, but for one number only.
+> **Hint:** Keep it as a simple `if` / `elif` / `else` ladder. Print the message in each branch. Do not use a `for` loop or an `is_prime` flag.
 
 ### Example
 
 | Item | Details |
 |------|---------|
 | **Example input** | `number = 17` |
-| **Example calculation** | `17` is between `1` and `100`<br>Check divisors `2` to `16` → none divides `17` evenly → prime |
+| **Example calculation** | `17` is between `1` and `100`<br>Not `1`, not `2/3/5/7`<br>Not divisible by `2`, `3`, `5`, or `7` → prime |
 | **Example output** | `17 is a prime number` |
 
-**Other examples:** `1` → not prime; `4` → not prime; `97` → prime; `120` → not between 1 and 100
+**Other examples:** `1` → not prime; `4` → not prime; `7` → prime; `97` → prime; `120` → not between 1 and 100
 
 <a href="../.faculty/solutions/j5p8wv.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 

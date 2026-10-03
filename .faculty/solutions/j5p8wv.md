@@ -1,26 +1,20 @@
 # Unit 2A Task 8 — Example solution
 
 Check whether a number is prime or not (input must be between 1 and 100).
+Uses an `if-elif-else` ladder only — no `for` loop.
 
 ```python
-# Example solution: prime number check for a value between 1 and 100
+# Example solution: prime check with if-elif ladder (1 to 100)
 number = int(input("Enter a number between 1 and 100: "))
 
 if number < 1 or number > 100:
     print(f"{number} is not between 1 and 100")
+elif number == 1:
+    print(f"{number} is not a prime number")
+elif number == 2 or number == 3 or number == 5 or number == 7:
+    print(f"{number} is a prime number")
+elif number % 2 == 0 or number % 3 == 0 or number % 5 == 0 or number % 7 == 0:
+    print(f"{number} is not a prime number")
 else:
-    if number == 1:
-        print(f"{number} is not a prime number")
-    else:
-        is_prime = True
-
-        for divisor in range(2, number):
-            if number % divisor == 0:
-                is_prime = False
-                break
-
-        if is_prime:
-            print(f"{number} is a prime number")
-        else:
-            print(f"{number} is not a prime number")
+    print(f"{number} is a prime number")
 ```
