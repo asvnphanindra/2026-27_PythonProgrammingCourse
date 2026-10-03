@@ -37,7 +37,7 @@ Click **View hint** for input, process, output, and a worked example (where avai
 | 5 | Write a python program to find the largest of three numbers using nested if | `Unit-2A_Task-5_Largest_of_Three_Nested_If.py` | [View hint](hints.md#unit-2a-task-5) |
 | 6 | Write a python program to find the smallest of three numbers using nested if | `Unit-2A_Task-6_Smallest_of_Three_Nested_If.py` | — |
 | 7 | Write a python program to check whether a given year is a leap year | `Unit-2A_Task-7_Leap_Year.py` | [Approach 1](hints.md#unit-2a-task-7-approach-1) · [Approach 2](hints.md#unit-2a-task-7-approach-2) · [Approach 3](hints.md#unit-2a-task-7-approach-3) |
-| 8 | Write a python program to check whether a given number is prime | `Unit-2A_Task-8_Prime_Number.py` | — |
+| 8 | Write a python program to check whether a given number is prime or not (input number must be between 1 and 100) | `Unit-2A_Task-8_Prime_Number.py` | [View hint](hints.md#unit-2a-task-8) |
 
 ### B. Iterative Statement Programs
 

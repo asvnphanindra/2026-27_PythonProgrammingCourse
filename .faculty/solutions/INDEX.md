@@ -4,6 +4,7 @@ Not linked from student docs. Map task → cryptic file.
 
 | Task | File |
 |------|------|
+| Unit 2A Task 8 — Prime number check (1 to 100) | `j5p8wv.md` |
 | Unit 2B Task 1 — Print numbers from 1 to N | `k7m2xq.md` |
 | Unit 2B Task 2 — Multiplication table | `p4n9rw.md` |
 | Unit 2B Task 3 — Sum and average of N numbers | `w8c3jt.md` |

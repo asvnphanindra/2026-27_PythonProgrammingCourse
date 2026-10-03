@@ -11,7 +11,7 @@ Jump to a task:
 
 **Unit 1:** [Task 1](#unit-1-task-1) · [Task 2](#unit-1-task-2) · [Task 3](#unit-1-task-3) · [Task 4](#unit-1-task-4) · [Task 5](#unit-1-task-5) · [Task 6](#unit-1-task-6) · [Task 7](#unit-1-task-7) · [Task 8](#unit-1-task-8) · [Task 9](#unit-1-task-9) · [Task 10](#unit-1-task-10) · [Task 11](#unit-1-task-11) · [Task 12](#unit-1-task-12) · [Task 13](#unit-1-task-13) · [Task 14](#unit-1-task-14) · [Task 15](#unit-1-task-15)
 
-**Unit 2A:** [Task 1](#unit-2a-task-1) · [Task 2](#unit-2a-task-2) · [Task 3](#unit-2a-task-3) · [Task 5](#unit-2a-task-5) · [Task 7 Approach 1](#unit-2a-task-7-approach-1) · [Task 7 Approach 2](#unit-2a-task-7-approach-2) · [Task 7 Approach 3](#unit-2a-task-7-approach-3)
+**Unit 2A:** [Task 1](#unit-2a-task-1) · [Task 2](#unit-2a-task-2) · [Task 3](#unit-2a-task-3) · [Task 5](#unit-2a-task-5) · [Task 7 Approach 1](#unit-2a-task-7-approach-1) · [Task 7 Approach 2](#unit-2a-task-7-approach-2) · [Task 7 Approach 3](#unit-2a-task-7-approach-3) · [Task 8](#unit-2a-task-8)
 
 **Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2) · [Task 2 Approach 1](#unit-2b-task-2-approach-1) · [Task 2 Approach 2](#unit-2b-task-2-approach-2) · [Task 3](#unit-2b-task-3) · [Task 4](#unit-2b-task-4) · [Task 5](#unit-2b-task-5) · [Task 6](#unit-2b-task-6) · [Task 7](#unit-2b-task-7) · [Task 8](#unit-2b-task-8) · [Task 9](#unit-2b-task-9) · [Task 10](#unit-2b-task-10) · [Task 11](#unit-2b-task-11) · [Task 12](#unit-2b-task-12) · [Task 13 Approach 1](#unit-2b-task-13-approach-1) · [Task 13 Approach 2](#unit-2b-task-13-approach-2) · [Task 14 Approach 1](#unit-2b-task-14-approach-1) · [Task 14 Approach 2](#unit-2b-task-14-approach-2) · [Task 15 Approach 1](#unit-2b-task-15-approach-1) · [Task 15 Approach 2](#unit-2b-task-15-approach-2)
 
@@ -858,6 +858,17 @@ Back to [Lab tasks](lab-tasks.md).
 
 Checks whether a year is a leap year using nested `if-else`. Write the conditions yourself; only the nesting structure is shown.
 
+**What is a leap year?**
+- A normal year has `365` days
+- A leap year has `366` days (February has one extra day)
+- Leap years follow simple calendar rules using divisible checks (`%`)
+
+**How to check if a year is a leap year?**
+- If the year is divisible by `400` → it **is** a leap year (example: `2000`)
+- Else if the year is divisible by `100` → it is **not** a leap year (example: `1900`)
+- Else if the year is divisible by `4` → it **is** a leap year (example: `2024`)
+- Else → it is **not** a leap year (example: `2023`)
+
 ### Analyse the problem: Identify Input, Process and Output
 
 | Item | Details |
@@ -908,6 +919,17 @@ Back to [Lab tasks](lab-tasks.md).
 
 Checks whether a year is a leap year using an `if-elif-else` ladder. Write each condition yourself.
 
+**What is a leap year?**
+- A normal year has `365` days
+- A leap year has `366` days (February has one extra day)
+- Leap years follow simple calendar rules using divisible checks (`%`)
+
+**How to check if a year is a leap year?**
+- If the year is divisible by `400` → it **is** a leap year (example: `2000`)
+- Else if the year is divisible by `100` → it is **not** a leap year (example: `1900`)
+- Else if the year is divisible by `4` → it **is** a leap year (example: `2024`)
+- Else → it is **not** a leap year (example: `2023`)
+
 ### Analyse the problem: Identify Input, Process and Output
 
 | Item | Details |
@@ -956,6 +978,17 @@ Back to [Lab tasks](lab-tasks.md).
 
 Checks whether a year is a leap year using one combined condition with `or` / `and`. Write that condition yourself.
 
+**What is a leap year?**
+- A normal year has `365` days
+- A leap year has `366` days (February has one extra day)
+- Leap years follow simple calendar rules using divisible checks (`%`)
+
+**How to check if a year is a leap year?**
+- If the year is divisible by `400` → it **is** a leap year (example: `2000`)
+- Else if the year is divisible by `100` → it is **not** a leap year (example: `1900`)
+- Else if the year is divisible by `4` → it **is** a leap year (example: `2024`)
+- Else → it is **not** a leap year (example: `2023`)
+
 ### Analyse the problem: Identify Input, Process and Output
 
 | Item | Details |
@@ -990,6 +1023,90 @@ else:
 | **Example output** | `2024 is a leap year` |
 
 **Other examples:** `2000` → Leap year; `1900` → Not a leap year; `2023` → Not a leap year
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2a-task-8"></a>
+
+## Unit 2A Task 8: Prime number check (1 to 100)
+
+Checks whether a given number is prime or not. The input number must be between `1` and `100`.
+
+**What is a prime number?**
+- A prime number is a whole number greater than `1`
+- It can be divided evenly only by `1` and by itself
+- It has no other positive divisors
+- Examples: `2`, `3`, `5`, `7`, `11`, `97`
+- Not prime: `1` (too small), `4` (divisible by `2`), `9` (divisible by `3`), `100` (divisible by `2`, `4`, `5`, …)
+
+**How to check a number between 1 and 100?**
+- First check that the number is from `1` to `100` (inclusive)
+- If it is outside that range, show a message and stop
+- If the number is `1`, it is **not** prime
+- If the number is `2`, it **is** prime
+- For other numbers, try dividing by values from `2` up to the number minus `1`
+- If any of those divides the number evenly, it is **not** prime
+- If none of them divide it evenly, it **is** prime
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number from the user (must be between `1` and `100`)
+
+**Process**
+- If the number is not between `1` and `100`, show an error message
+- Otherwise check whether it is prime using the rules above
+- Use a loop to test possible divisors when needed
+
+**Output**
+- Show whether the number is prime or not (include the number in the message)
+- Or show that the number is outside the allowed range
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number = int(input("Enter a number between 1 and 100: "))
+```
+
+**Program structure** (fill in the blanks):
+
+```python
+if ____:  # number is outside 1 to 100?
+    print(f"{number} is not between 1 and 100")
+else:
+    if ____:  # special case: 1 is not prime
+        print(f"{number} is not a prime number")
+    else:
+        is_prime = True  # assume prime until a divisor is found
+
+        for ____ in ____:  # try divisors from 2 to number - 1
+            if ____:  # is number divisible by this divisor?
+                is_prime = False
+                break
+
+        if is_prime:
+            print(f"{number} is a prime number")
+        else:
+            print(f"{number} is not a prime number")
+```
+
+> **Hint:** First validate the range `1` to `100`. Then use the same prime idea as Unit 2B Task 6, but for one number only.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 17` |
+| **Example calculation** | `17` is between `1` and `100`<br>Check divisors `2` to `16` → none divides `17` evenly → prime |
+| **Example output** | `17 is a prime number` |
+
+**Other examples:** `1` → not prime; `4` → not prime; `97` → prime; `120` → not between 1 and 100
+
+<a href="../.faculty/solutions/j5p8wv.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
 Back to [Lab tasks](lab-tasks.md).
 
 ---
