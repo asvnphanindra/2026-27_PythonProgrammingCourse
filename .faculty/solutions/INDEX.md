@@ -4,6 +4,11 @@ Not linked from student docs. Map task → cryptic file.
 
 | Task | File |
 |------|------|
+| Unit 2A Task 1 — Valid triangle | `a2q8lm.md` |
+| Unit 2A Task 2 — Voting eligibility | `b3r9mn.md` |
+| Unit 2A Task 3 — Positive, negative, or zero | `c4s0np.md` |
+| Unit 2A Task 5 — Largest of three (nested if) | `d5t1oq.md` |
+| Unit 2A Task 7 — Leap year (3 approaches) | `e6u2pr.md` |
 | Unit 2A Task 8 — Prime number check (1 to 100) | `j5p8wv.md` |
 | Unit 2B Task 1 — Print numbers from 1 to N | `k7m2xq.md` |
 | Unit 2B Task 2 — Multiplication table | `p4n9rw.md` |
@@ -15,7 +20,7 @@ Not linked from student docs. Map task → cryptic file.
 | Unit 2B Task 8 — Sum of digits | `v3n8wp.md` |
 | Unit 2B Task 9 — Count digits | `c4x7la.md` |
 | Unit 2B Task 10 — Reverse a number | `d9f2mh.md` |
-| Unit 2B Task 11 — Armstrong number | `e1g5nk.md` |
+| Unit 2B Task 11 — Armstrong number (3 digits) | `e1g5nk.md` |
 | Unit 2B Task 12 — Palindrome number | `f8h3pj.md` |
 | Unit 2B Task 13 — Break statement | `g2k6qs.md` |
 | Unit 2B Task 14 — Continue statement | `h7m1rt.md` |

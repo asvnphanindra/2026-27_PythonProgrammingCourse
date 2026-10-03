@@ -696,6 +696,9 @@ else:
 | **Example output** | The triangle is valid |
 
 **Another example (invalid):** `angle1_in_degrees = 90`, `angle2_in_degrees = 90`, `angle3_in_degrees = 90` → sum = 270 ≠ 180 → The triangle is not valid
+
+<a href="../.faculty/solutions/a2q8lm.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -742,6 +745,9 @@ else:
 | **Example output** | Eligible to vote |
 
 **Another example:** `age_in_years = 16` → `16 >= 18` → False → Not eligible to vote
+
+<a href="../.faculty/solutions/b3r9mn.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -788,6 +794,9 @@ else:
 | **Example output** | The number is positive |
 
 **Other examples:** `number = -7` → The number is negative; `number = 0` → The number is zero
+
+<a href="../.faculty/solutions/c4s0np.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -850,6 +859,9 @@ print(f"Largest = {largest} (among {x}, {y}, {z})")
 | **Example output** | `Largest = 25 (among 10, 25, 7)` |
 
 **Another example:** `x = 9`, `y = 9`, `z = 4` → `9 >= 9` → True → `9 >= 4` → True → `Largest = 9 (among 9, 9, 4)`
+
+<a href="../.faculty/solutions/d5t1oq.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -911,6 +923,9 @@ else:
 | **Example output** | `2000 is a leap year` |
 
 **Other examples:** `1900` → Not a leap year; `2024` → Leap year; `2023` → Not a leap year
+
+<a href="../.faculty/solutions/e6u2pr.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -970,6 +985,9 @@ else:
 | **Example output** | `1900 is not a leap year` |
 
 **Other examples:** `2000` → Leap year; `2024` → Leap year; `2023` → Not a leap year
+
+<a href="../.faculty/solutions/e6u2pr.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -1025,6 +1043,9 @@ else:
 | **Example output** | `2024 is a leap year` |
 
 **Other examples:** `2000` → Leap year; `1900` → Not a leap year; `2023` → Not a leap year
+
+<a href="../.faculty/solutions/e6u2pr.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
 Back to [Lab tasks](lab-tasks.md).
 
 ---
@@ -1833,25 +1854,27 @@ Back to [Lab tasks](lab-tasks.md).
 
 Checks whether a number is an Armstrong number using a `while` loop.
 
+For this task, **assume the number has 3 digits** (so each digit is raised to the power `3`).
+
 **What is an Armstrong number?**
 - Take each digit of the number
-- Raise each digit to the power of how many digits the number has
+- Raise each digit to a power
 - Add those powered values together
 - If that sum equals the original number, it is an Armstrong number
-- Example: `153` has `3` digits, so check `1³ + 5³ + 3³ = 1 + 125 + 27 = 153` → Armstrong
-- Another example: `9474` has `4` digits, so each digit is raised to the power `4`
+- For a **3-digit** number, the power is `3`
+- Example: `153` → `1³ + 5³ + 3³ = 1 + 125 + 27 = 153` → Armstrong
+- Example: `370` → `3³ + 7³ + 0³ = 27 + 343 + 0 = 370` → Armstrong
 
 ### Analyse the problem: Identify Input, Process and Output
 
 **Input**
-- Read a number from the user
+- Read a 3-digit number from the user
 
 **Process**
 - Keep a copy of the original number
-- Count the digits (same idea as Task 9) → store as `digit_count`
 - Set `armstrong_sum` to `0`
-- Peel each digit again with `% 10` / `// 10`
-- Add `digit ** digit_count` to `armstrong_sum`
+- Peel each digit with `% 10` / `// 10`
+- Add `digit ** 3` to `armstrong_sum` (power is `3` because we assume 3 digits)
 - Compare `armstrong_sum` with the original number
 
 **Output**
@@ -1862,52 +1885,43 @@ Checks whether a number is an Armstrong number using a `while` loop.
 **Input messages** (use with `input()`):
 
 ```python
-number = int(input("Enter a number: "))
+number = int(input("Enter a 3-digit number: "))
 ```
 
 **Program structure** (fill in the blanks — while loop):
 
 ```python
 original_number = number
-
-# Step 1: count digits into digit_count (see Task 9 idea)
-digit_count = 0
-temp = number
-____  # write a while loop here to count digits of temp
-
-# Step 2: sum each digit raised to digit_count
 armstrong_sum = 0
-temp = number
-while ____:  # peel digits from temp
+
+while ____:  # peel digits from number
     ____ = ____  # last digit with % 10
-    armstrong_sum = ____  # add digit ** digit_count
-    temp = ____  # remove last digit with // 10
+    armstrong_sum = ____  # add digit ** 3
+    number = ____  # remove last digit with // 10
 
 if ____:  # compare armstrong_sum with original_number
     print(
         f"{original_number} is an Armstrong number "
-        f"(sum of digits to power {digit_count} is {armstrong_sum})"
+        f"(sum of cubes of digits is {armstrong_sum})"
     )
 else:
     print(
         f"{original_number} is not an Armstrong number "
-        f"(sum of digits to power {digit_count} is {armstrong_sum})"
+        f"(sum of cubes of digits is {armstrong_sum})"
     )
 ```
 
-> **Hint:**
-> - First, use a `while` loop only to **count how many digits** the number has. That count becomes the power (for `153`, the power is `3`).
-> - Then, use another `while` loop to **take each digit**, raise it to that power, and **add** the results.
-> - You need two loops because you must know the digit count **before** you start raising digits to that power.
-> - Use `% 10` and `// 10` only — do not use strings.
+> **Think about it:** This task assumes the number has **3 digits** (power `3`). How would you generalize this code so it works for a number with **any** number of digits, not only 3-digit numbers?
 
 ### Example
 
 | Item | Details |
 |------|---------|
 | **Example input** | `number = 153` |
-| **Example calculation** | Digits = `3`<br>`1³ + 5³ + 3³ = 1 + 125 + 27 = 153` |
-| **Example output** | `153 is an Armstrong number (sum of digits to power 3 is 153)` |
+| **Example calculation** | `1³ + 5³ + 3³ = 1 + 125 + 27 = 153` |
+| **Example output** | `153 is an Armstrong number (sum of cubes of digits is 153)` |
+
+**Other examples:** `370` → Armstrong; `371` → Armstrong; `123` → not Armstrong
 
 <a href="../.faculty/solutions/e1g5nk.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 

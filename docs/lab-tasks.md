@@ -53,7 +53,7 @@ Click **View hint** for input, process, output, and a worked example (where avai
 | 8 | Write a python program to find the sum of digits of a number using while loop | `Unit-2B_Task-8_Sum_of_Digits_While_Loop.py` | [View hint](hints.md#unit-2b-task-8) |
 | 9 | Write a python program to count the number of digits in a number using while loop | `Unit-2B_Task-9_Count_Digits_While_Loop.py` | [View hint](hints.md#unit-2b-task-9) |
 | 10 | Write a python program to reverse a given number using while loop | `Unit-2B_Task-10_Reverse_a_Number_While_Loop.py` | [View hint](hints.md#unit-2b-task-10) |
-| 11 | Write a python program to check whether a number is an Armstrong number using while loop | `Unit-2B_Task-11_Armstrong_Number_While_Loop.py` | [View hint](hints.md#unit-2b-task-11) |
+| 11 | Write a python program to check whether a number is an Armstrong number using while loop<br>(assume the number has 3 digits) | `Unit-2B_Task-11_Armstrong_Number_While_Loop.py` | [View hint](hints.md#unit-2b-task-11) |
 | 12 | Write a python program to check whether a number is a palindrome using while loop | `Unit-2B_Task-12_Palindrome_Number_While_Loop.py` | [View hint](hints.md#unit-2b-task-12) |
 | 13 | Write a python program to demonstrate use of break statement<br>1. using for loop<br>2. using while loop | `Unit-2B_Task-13_Break_Statement.py` | [Approach 1](hints.md#unit-2b-task-13-approach-1) · [Approach 2](hints.md#unit-2b-task-13-approach-2) |
 | 14 | Write a python program to demonstrate use of continue statement<br>1. using for loop<br>2. using while loop | `Unit-2B_Task-14_Continue_Statement.py` | [Approach 1](hints.md#unit-2b-task-14-approach-1) · [Approach 2](hints.md#unit-2b-task-14-approach-2) |
