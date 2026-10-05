@@ -15,7 +15,7 @@ Jump to a task:
 
 **Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2) · [Task 2 Approach 1](#unit-2b-task-2-approach-1) · [Task 2 Approach 2](#unit-2b-task-2-approach-2) · [Task 3](#unit-2b-task-3) · [Task 4](#unit-2b-task-4) · [Task 5](#unit-2b-task-5) · [Task 6](#unit-2b-task-6) · [Task 7](#unit-2b-task-7) · [Task 8](#unit-2b-task-8) · [Task 9](#unit-2b-task-9) · [Task 10](#unit-2b-task-10) · [Task 11](#unit-2b-task-11) · [Task 12](#unit-2b-task-12) · [Task 13 Approach 1](#unit-2b-task-13-approach-1) · [Task 13 Approach 2](#unit-2b-task-13-approach-2) · [Task 14 Approach 1](#unit-2b-task-14-approach-1) · [Task 14 Approach 2](#unit-2b-task-14-approach-2) · [Task 15 Approach 1](#unit-2b-task-15-approach-1) · [Task 15 Approach 2](#unit-2b-task-15-approach-2)
 
-**Unit 2C:** [Task 1](#unit-2c-task-1) · [Task 2](#unit-2c-task-2) · [Task 3](#unit-2c-task-3) · [Task 4](#unit-2c-task-4) · [Task 5](#unit-2c-task-5) · [Task 6](#unit-2c-task-6) · [Task 7](#unit-2c-task-7) · [Task 8](#unit-2c-task-8)
+**Unit 2C:** [Task 1](#unit-2c-task-1) · [Task 2](#unit-2c-task-2) · [Task 3](#unit-2c-task-3) · [Task 4](#unit-2c-task-4) · [Task 5](#unit-2c-task-5) · [Task 6](#unit-2c-task-6) · [Task 7](#unit-2c-task-7) · [Task 8](#unit-2c-task-8) · [Task 9](#unit-2c-task-9) · [Task 10](#unit-2c-task-10) · [Task 11](#unit-2c-task-11) · [Task 12](#unit-2c-task-12) · [Task 13](#unit-2c-task-13) · [Task 14](#unit-2c-task-14) · [Task 15](#unit-2c-task-15)
 
 ---
 
@@ -2898,3 +2898,402 @@ for ____ in ____:  # row_loop_var; range(rows, 0, -1)
 
 Back to [Lab tasks](lab-tasks.md).
 
+---
+
+<a id="unit-2c-task-9"></a>
+
+## Unit 2C Task 9: Centered pyramid pattern of stars
+
+Prints a centered pyramid of stars (`*`). Leading spaces push each row toward the center; the number of stars grows as `1, 3, 5, ...`
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Number of rows (example: `rows = 3`), or read from the user
+
+**Process**
+- Outer loop: `row_loop_var` from `1` to `rows`
+- First inner loop: print leading spaces — `range(1, rows - row_loop_var + 1)`
+- Second inner loop: print stars — `range(1, 2 * row_loop_var)` (odd count: 1, 3, 5, ...)
+- Move to the next line after each row
+
+**Output**
+- A centered pyramid of stars
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks — nested for loops):
+
+```python
+rows = ____  # e.g. 3
+
+for ____ in ____:  # row_loop_var; range(1, rows + 1)
+    for ____ in ____:  # column_loop_var_spaces; range(1, rows - row_loop_var + 1)
+        print(" ", end=" ")
+    for ____ in ____:  # column_loop_var_dots; range(1, 2 * row_loop_var)
+        print(____, end=" ")  # print one star
+    print()
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `rows = 3` |
+| **Example output** | `    *`<br>`  * * *`<br>`* * * * *` |
+
+<a href="../.faculty/solutions/f3m0zo.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2c-task-10"></a>
+
+## Unit 2C Task 10: Diamond pattern of stars
+
+Prints a diamond of stars. The **upper half** is a centered pyramid (including the middle row); the **lower half** is the same shape getting narrower.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Number of rows for the half diamond (including the middle). Example: `rows = 3`
+
+**Process**
+- Upper half: `row_loop_var` from `1` to `rows` — spaces, then `2 * row_loop_var - 1` stars
+- Lower half: `row_loop_var` from `rows - 1` down to `1` — same space and star loops
+
+**Output**
+- A diamond of stars
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+rows = int(input("Enter number of rows (half diamond): "))
+```
+
+**Program structure** (fill in the blanks):
+
+```python
+rows = int(input("Enter number of rows (half diamond): "))
+
+# Upper half (including middle)
+for ____ in ____:  # row_loop_var; range(1, rows + 1)
+    for ____ in ____:  # column_loop_var_spaces
+        print(" ", end=" ")
+    for ____ in ____:  # column_loop_var_dots; range(1, 2 * row_loop_var)
+        print(____, end=" ")
+    print()
+
+# Lower half
+for ____ in ____:  # row_loop_var; range(rows - 1, 0, -1)
+    for ____ in ____:  # column_loop_var_spaces
+        print(" ", end=" ")
+    for ____ in ____:  # column_loop_var_dots
+        print(____, end=" ")
+    print()
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `rows = 3` |
+| **Example output** | `    *`<br>`  * * *`<br>`* * * * *`<br>`  * * *`<br>`    *` |
+
+<a href="../.faculty/solutions/c0j8ql.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2c-task-11"></a>
+
+## Unit 2C Task 11: Hollow diamond pattern of stars
+
+Same diamond shape as Task 10, but only the **outline** is stars; the inside is spaces.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Number of rows for the half diamond. Example: `rows = 3`
+
+**Process**
+- Same loops as the solid diamond (spaces + positions across the row)
+- For each star position, print `*` only on the **first** or **last** position of that row:
+  - `column_loop_var_dots == 1` or `column_loop_var_dots == 2 * row_loop_var - 1`
+- Otherwise print a space
+
+**Output**
+- A hollow diamond of stars
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+rows = ____  # e.g. 3
+
+# Upper half
+for ____ in ____:  # row_loop_var; range(1, rows + 1)
+    for ____ in ____:  # leading spaces
+        print(" ", end=" ")
+    for ____ in ____:  # column_loop_var_dots; range(1, 2 * row_loop_var)
+        if ____:  # first or last position in this row?
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+
+# Lower half (same idea with row_loop_var from rows-1 down to 1)
+for ____ in ____:
+    for ____ in ____:
+        print(" ", end=" ")
+    for ____ in ____:
+        if ____:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `rows = 3` |
+| **Example output** | `    *`<br>`  *   *`<br>`*       *`<br>`  *   *`<br>`    *` |
+
+<a href="../.faculty/solutions/h5o2bq.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2c-task-12"></a>
+
+## Unit 2C Task 12: Centered pyramid of numbers from 1 to 10
+
+Prints numbers `1` to `10` in a centered pyramid (spaces on the left, then numbers on each row).
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- No user input needed for the fixed case: numbers `1` to `10` need **4** rows (1 + 2 + 3 + 4 = 10)
+
+**Process**
+- Keep a running counter `num` starting at `1`
+- Outer loop: each row
+- Print leading spaces to center the row
+- Inner loop: print as many numbers as the row number, while `num <= 10`
+- Increase `num` after each print
+
+**Output**
+- A centered number pyramid using `1` to `10`
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+num = ____  # start from 1
+rows = ____  # 4 rows for numbers 1 to 10
+
+for ____ in ____:  # row_loop_var; range(1, rows + 1)
+    for ____ in ____:  # leading spaces
+        print(" ", end=" ")
+    for ____ in ____:  # numbers in this row
+        if ____:  # still have numbers left up to 10?
+            print(____, end=" ")
+            num = ____  # increase num by 1
+    print()
+```
+
+> **Hint:** Row 1 prints 1 number, row 2 prints 2, row 3 prints 3, row 4 prints 4.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | (none) |
+| **Example output** | `      1`<br>`    2 3`<br>`  4 5 6`<br>`7 8 9 10` |
+
+<a href="../.faculty/solutions/x5e3ug.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2c-task-13"></a>
+
+## Unit 2C Task 13: Pascal's triangle
+
+**What is Pascal's triangle?**
+- Pascal's triangle is a triangular number pattern named after Blaise Pascal
+- Each row starts and ends with `1`
+- Every other number is the **sum of the two numbers directly above it** (left + right from the previous row)
+- Row shapes grow like: `1` → `1 1` → `1 2 1` → `1 3 3 1` → `1 4 6 4 1`
+- The same values also appear in combinations / binomial coefficients: entry at row `n`, position `k` is often written as C(n, k)
+
+**How can we print it with nested loops?**
+- Outer loop for each row
+- Start each row with `value = 1`
+- Inner loop prints the values in that row
+- Update the next value with a formula (no need to store the previous row):
+  - With `row_loop_var` and `column_loop_var` starting at `1`:
+  - `value = value * (row_loop_var - column_loop_var) // column_loop_var`
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read how many rows to print
+
+**Process**
+- Outer loop for each row from `1` to `rows`
+- Start `value = 1`
+- Inner loop for each position in the row; print `value`, then update it with the formula above
+
+**Output**
+- Pascal's triangle with the requested number of rows
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+rows = int(input("Enter number of rows: "))
+```
+
+**Program structure** (fill in the blanks — nested for loops):
+
+```python
+rows = int(input("Enter number of rows: "))
+
+for ____ in ____:  # row_loop_var; range(1, rows + 1)
+    value = ____  # first value in a Pascal row is 1
+    for ____ in ____:  # column_loop_var; range(1, row_loop_var + 1)
+        print(____, end=" ")  # print current Pascal value
+        value = ____  # update using the formula
+    print()
+```
+
+> **Hint:** One common update (1-based loops) is `value = value * (row_loop_var - column_loop_var) // column_loop_var`.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `rows = 5` |
+| **Example output** | `1`<br>`1 1`<br>`1 2 1`<br>`1 3 3 1`<br>`1 4 6 4 1` |
+
+<a href="../.faculty/solutions/y6f4th.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2c-task-14"></a>
+
+## Unit 2C Task 14: Floyd's triangle
+
+**What is Floyd's triangle?**
+- Floyd's triangle is a right-angled triangle filled with **consecutive natural numbers** starting from `1`
+- Row 1 has **1** number, row 2 has **2** numbers, row 3 has **3** numbers, and so on
+- Numbers keep increasing across rows without restarting: `1` / `2 3` / `4 5 6` / `7 8 9 10`
+- It is named after Robert Floyd
+- Unlike a number triangle that reprints `1 2 3 ...` on each row, Floyd's triangle uses one running counter for the whole pattern
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read how many rows to print
+
+**Process**
+- Keep a running number `num` (or `print_val`) starting at `1`
+- Outer loop for each row
+- Inner loop prints as many numbers as the current row number
+- Increase the running number after each print
+
+**Output**
+- Floyd's triangle with the requested number of rows
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+rows = int(input("Enter number of rows: "))
+```
+
+**Program structure** (fill in the blanks — nested for loops):
+
+```python
+rows = int(input("Enter number of rows: "))
+num = ____  # start from 1
+
+for ____ in ____:  # row_loop_var; range(1, rows + 1)
+    for ____ in ____:  # column_loop_var; range(1, row_loop_var + 1)
+        print(____, end=" ")  # print current number
+        num = ____  # increase num by 1
+    print()
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `rows = 4` |
+| **Example output** | `1`<br>`2 3`<br>`4 5 6`<br>`7 8 9 10` |
+
+<a href="../.faculty/solutions/z7g5si.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2c-task-15"></a>
+
+## Unit 2C Task 15: Number right-angled triangle pattern
+
+Prints a right-angled triangle where each row shows `1 2 3 ...` up to the row number (numbers restart each row).
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Number of rows (example: `rows = 6`), or read from the user
+
+**Process**
+- Outer loop: `row_loop_var` from `1` to `rows`
+- Inner loop: `column_loop_var` from `1` to `row_loop_var`
+- Print `column_loop_var` (not a running counter across rows)
+
+**Output**
+- A number right-angled triangle
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks — nested for loops):
+
+```python
+rows = ____  # e.g. 6
+
+for ____ in ____:  # row_loop_var; range(1, rows + 1)
+    for ____ in ____:  # column_loop_var; range(1, row_loop_var + 1)
+        print(____, end=" ")  # print column_loop_var
+    print()
+```
+
+> **Think about it:** Compare this with Floyd's triangle. Here each row starts again from `1`. In Floyd's triangle, numbers continue from where the previous row stopped.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `rows = 6` |
+| **Example output** | `1`<br>`1 2`<br>`1 2 3`<br>`1 2 3 4`<br>`1 2 3 4 5`<br>`1 2 3 4 5 6` |
+
+<a href="../.faculty/solutions/e2l9yn.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).

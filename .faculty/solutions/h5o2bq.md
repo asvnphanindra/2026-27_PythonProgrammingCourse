@@ -29,4 +29,4 @@ for row_loop_var in range(rows - 1, 0, -1):
     print()
 ```
 
-[Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-2c-task-11) · [Back to lab tasks](../../docs/lab-tasks.md)
