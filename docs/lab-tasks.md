@@ -61,23 +61,174 @@ Click **View hint** for input, process, output, and a worked example (where avai
 
 ### C. Pattern Generation Programs
 
-| Task | What to write | File name | Expected output | Hint |
-|------|----------------|-----------|-----------------|------|
-| 1 | Write a python program to print 3 zeros in 1 row and 1 column | `Unit-2C_Task-1_Three_Zeros_Row_and_Column.py` | `0 0 0`<br>`0`<br>`0`<br>`0` | [View hint](hints.md#unit-2c-task-1) |
-| 2 | Write a python program to print a 3x3 grid of zeros | `Unit-2C_Task-2_Three_by_Three_Grid_of_Zeros.py` | `0 0 0`<br>`0 0 0`<br>`0 0 0` | [View hint](hints.md#unit-2c-task-2) |
-| 3 | Write a python program to print numbers in a 3x3 grid (as shown in the hint) using for-for nested loop | `Unit-2C_Task-3_Three_by_Three_Numbers_For_For.py` | `1 2 3`<br>`4 5 6`<br>`7 8 9` | [View hint](hints.md#unit-2c-task-3) |
-| 4 | Write a python program to print numbers in a 3x3 grid (as shown in the hint) using while-for nested loop | `Unit-2C_Task-4_Three_by_Three_Numbers_While_For.py` | `1 2 3`<br>`4 5 6`<br>`7 8 9` | [View hint](hints.md#unit-2c-task-4) |
-| 5 | Write a python program to print a 5x5 grid of stars (*); generalize the program so the grid size is based on user input | `Unit-2C_Task-5_Star_Grid_User_Input.py` | (for rows = 5)<br>`* * * * *`<br>`* * * * *`<br>`* * * * *`<br>`* * * * *`<br>`* * * * *` | [View hint](hints.md#unit-2c-task-5) |
-| 6 | Write a python program to print a 5x5 hollow grid of stars (*); generalize the program so the grid size is based on user input | `Unit-2C_Task-6_Hollow_Star_Grid_User_Input.py` | (for rows = 5)<br>`* * * * *`<br>`*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*`<br>`*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*`<br>`*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*`<br>`* * * * *` | [View hint](hints.md#unit-2c-task-6) |
-| 7 | Write a python program to print a right-angled triangle pattern; read the number of rows and the symbol to print (e.g. * or 0) from the user | `Unit-2C_Task-7_Right_Angled_Triangle_Pattern.py` | (for rows = 4, symbol *)<br>`*`<br>`* *`<br>`* * *`<br>`* * * *`<br><br>(for rows = 3, symbol 0)<br>`0`<br>`0 0`<br>`0 0 0` | [View hint](hints.md#unit-2c-task-7) |
-| 8 | Write a python program to print an inverted right-angled triangle pattern | `Unit-2C_Task-8_Inverted_Right_Angled_Triangle.py` | (for rows = 4)<br>`* * * *`<br>`* * *`<br>`* *`<br>`*` | [View hint](hints.md#unit-2c-task-8) |
-| 9 | Write a python program to print a centered pyramid pattern of stars | `Unit-2C_Task-9_Centered_Pyramid_Stars.py` | (for rows = 3)<br>&nbsp;&nbsp;&nbsp;&nbsp;*<br>&nbsp;&nbsp;* * *<br>* * * * * | [View hint](hints.md#unit-2c-task-9) |
-| 10 | Write a python program to print a diamond pattern of stars | `Unit-2C_Task-10_Diamond_Pattern_of_Stars.py` | (for rows = 3)<br>&nbsp;&nbsp;&nbsp;&nbsp;*<br>&nbsp;&nbsp;* * *<br>* * * * *<br>&nbsp;&nbsp;* * *<br>&nbsp;&nbsp;&nbsp;&nbsp;* | [View hint](hints.md#unit-2c-task-10) |
-| 11 | Write a python program to print a hollow diamond pattern of stars | `Unit-2C_Task-11_Hollow_Diamond_Stars.py` | (for rows = 3)<br>&nbsp;&nbsp;&nbsp;&nbsp;*<br>&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*<br>*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<br>&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*<br>&nbsp;&nbsp;&nbsp;&nbsp;* | [View hint](hints.md#unit-2c-task-11) |
-| 12 | Write a python program to print a centered pyramid pattern of numbers from 1 to 10 | `Unit-2C_Task-12_Centered_Pyramid_Numbers_1_to_10.py` | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1<br>&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;3<br>&nbsp;&nbsp;4&nbsp;5&nbsp;6<br>7&nbsp;8&nbsp;9&nbsp;10 | [View hint](hints.md#unit-2c-task-12) |
-| 13 | Write a python program to print Pascal's triangle | `Unit-2C_Task-13_Pascals_Triangle.py` | (for rows = 5)<br>`1`<br>`1 1`<br>`1 2 1`<br>`1 3 3 1`<br>`1 4 6 4 1` | [View hint](hints.md#unit-2c-task-13) |
-| 14 | Write a python program to print a number pattern (e.g., Floyd's triangle) | `Unit-2C_Task-14_Floyds_Triangle_Number_Pattern.py` | (for rows = 4)<br>`1`<br>`2 3`<br>`4 5 6`<br>`7 8 9 10` | [View hint](hints.md#unit-2c-task-14) |
-| 15 | Write a python program to print a number right-angled triangle pattern | `Unit-2C_Task-15_Number_Right_Angled_Triangle.py` | (for rows = 6)<br>`1`<br>`1 2`<br>`1 2 3`<br>`1 2 3 4`<br>`1 2 3 4 5`<br>`1 2 3 4 5 6` | [View hint](hints.md#unit-2c-task-15) |
+<table>
+  <thead>
+    <tr>
+      <th>Task</th>
+      <th>What to write</th>
+      <th>File name</th>
+      <th>Expected output</th>
+      <th>Hint</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>1</td>
+    <td>Write a python program to print 3 zeros in 1 row and 1 column</td>
+    <td><code>Unit-2C_Task-1_Three_Zeros_Row_and_Column.py</code></td>
+    <td><pre style="margin:0; line-height:1.2">0 0 0
+0
+0
+0</pre></td>
+    <td><a href="hints.md#unit-2c-task-1">View hint</a></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Write a python program to print a 3x3 grid of zeros</td>
+    <td><code>Unit-2C_Task-2_Three_by_Three_Grid_of_Zeros.py</code></td>
+    <td><pre style="margin:0; line-height:1.2">0 0 0
+0 0 0
+0 0 0</pre></td>
+    <td><a href="hints.md#unit-2c-task-2">View hint</a></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Write a python program to print numbers in a 3x3 grid (as shown in the hint) using for-for nested loop</td>
+    <td><code>Unit-2C_Task-3_Three_by_Three_Numbers_For_For.py</code></td>
+    <td><pre style="margin:0; line-height:1.2">1 2 3
+4 5 6
+7 8 9</pre></td>
+    <td><a href="hints.md#unit-2c-task-3">View hint</a></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Write a python program to print numbers in a 3x3 grid (as shown in the hint) using while-for nested loop</td>
+    <td><code>Unit-2C_Task-4_Three_by_Three_Numbers_While_For.py</code></td>
+    <td><pre style="margin:0; line-height:1.2">1 2 3
+4 5 6
+7 8 9</pre></td>
+    <td><a href="hints.md#unit-2c-task-4">View hint</a></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Write a python program to print a 5x5 grid of stars (*); generalize the program so the grid size is based on user input</td>
+    <td><code>Unit-2C_Task-5_Star_Grid_User_Input.py</code></td>
+    <td>(for rows = 5)<br><pre style="margin:0; line-height:1.2">* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *</pre></td>
+    <td><a href="hints.md#unit-2c-task-5">View hint</a></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Write a python program to print a 5x5 hollow grid of stars (*); generalize the program so the grid size is based on user input</td>
+    <td><code>Unit-2C_Task-6_Hollow_Star_Grid_User_Input.py</code></td>
+    <td>(for rows = 5)<br><pre style="margin:0; line-height:1.2">* * * * *
+*       *
+*       *
+*       *
+* * * * *</pre></td>
+    <td><a href="hints.md#unit-2c-task-6">View hint</a></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Write a python program to print a right-angled triangle pattern; read the number of rows and the symbol to print (e.g. * or 0) from the user</td>
+    <td><code>Unit-2C_Task-7_Right_Angled_Triangle_Pattern.py</code></td>
+    <td>(for rows = 4, symbol *)<br><pre style="margin:0; line-height:1.2">*
+* *
+* * *
+* * * *</pre><br>(for rows = 3, symbol 0)<br><pre style="margin:0; line-height:1.2">0
+0 0
+0 0 0</pre></td>
+    <td><a href="hints.md#unit-2c-task-7">View hint</a></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Write a python program to print an inverted right-angled triangle pattern</td>
+    <td><code>Unit-2C_Task-8_Inverted_Right_Angled_Triangle.py</code></td>
+    <td>(for rows = 4)<br><pre style="margin:0; line-height:1.2">* * * *
+* * *
+* *
+*</pre></td>
+    <td><a href="hints.md#unit-2c-task-8">View hint</a></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Write a python program to print a centered pyramid pattern of stars</td>
+    <td><code>Unit-2C_Task-9_Centered_Pyramid_Stars.py</code></td>
+    <td>(for rows = 3)<br><pre style="margin:0; line-height:1.2">    *
+  * * *
+* * * * *</pre></td>
+    <td><a href="hints.md#unit-2c-task-9">View hint</a></td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Write a python program to print a diamond pattern of stars</td>
+    <td><code>Unit-2C_Task-10_Diamond_Pattern_of_Stars.py</code></td>
+    <td>(for rows = 3)<br><pre style="margin:0; line-height:1.2">    *
+  * * *
+* * * * *
+  * * *
+    *</pre></td>
+    <td><a href="hints.md#unit-2c-task-10">View hint</a></td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Write a python program to print a hollow diamond pattern of stars</td>
+    <td><code>Unit-2C_Task-11_Hollow_Diamond_Stars.py</code></td>
+    <td>(for rows = 3)<br><pre style="margin:0; line-height:1.2">    *
+  *   *
+*       *
+  *   *
+    *</pre></td>
+    <td><a href="hints.md#unit-2c-task-11">View hint</a></td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>Write a python program to print a centered pyramid pattern of numbers from 1 to 10</td>
+    <td><code>Unit-2C_Task-12_Centered_Pyramid_Numbers_1_to_10.py</code></td>
+    <td><pre style="margin:0; line-height:1.2">      1
+    2 3
+  4 5 6
+7 8 9 10</pre></td>
+    <td><a href="hints.md#unit-2c-task-12">View hint</a></td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>Write a python program to print Pascal's triangle</td>
+    <td><code>Unit-2C_Task-13_Pascals_Triangle.py</code></td>
+    <td>(for rows = 5)<br><pre style="margin:0; line-height:1.2">1
+1 1
+1 2 1
+1 3 3 1
+1 4 6 4 1</pre></td>
+    <td><a href="hints.md#unit-2c-task-13">View hint</a></td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>Write a python program to print a number pattern (e.g., Floyd's triangle)</td>
+    <td><code>Unit-2C_Task-14_Floyds_Triangle_Number_Pattern.py</code></td>
+    <td>(for rows = 4)<br><pre style="margin:0; line-height:1.2">1
+2 3
+4 5 6
+7 8 9 10</pre></td>
+    <td><a href="hints.md#unit-2c-task-14">View hint</a></td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>Write a python program to print a number right-angled triangle pattern</td>
+    <td><code>Unit-2C_Task-15_Number_Right_Angled_Triangle.py</code></td>
+    <td>(for rows = 6)<br><pre style="margin:0; line-height:1.2">1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+1 2 3 4 5 6</pre></td>
+    <td><a href="hints.md#unit-2c-task-15">View hint</a></td>
+  </tr>
+  </tbody>
+</table>
 
 ### D. String Manipulation Programs
 
