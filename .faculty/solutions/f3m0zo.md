@@ -1,4 +1,4 @@
-# Unit 2C Task 13 — Example solution
+# Unit 2C Task 9 — Example solution
 
 Print a centered pyramid pattern of stars.
 

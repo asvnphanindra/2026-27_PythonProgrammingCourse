@@ -15,7 +15,7 @@ Jump to a task:
 
 **Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2) · [Task 2 Approach 1](#unit-2b-task-2-approach-1) · [Task 2 Approach 2](#unit-2b-task-2-approach-2) · [Task 3](#unit-2b-task-3) · [Task 4](#unit-2b-task-4) · [Task 5](#unit-2b-task-5) · [Task 6](#unit-2b-task-6) · [Task 7](#unit-2b-task-7) · [Task 8](#unit-2b-task-8) · [Task 9](#unit-2b-task-9) · [Task 10](#unit-2b-task-10) · [Task 11](#unit-2b-task-11) · [Task 12](#unit-2b-task-12) · [Task 13 Approach 1](#unit-2b-task-13-approach-1) · [Task 13 Approach 2](#unit-2b-task-13-approach-2) · [Task 14 Approach 1](#unit-2b-task-14-approach-1) · [Task 14 Approach 2](#unit-2b-task-14-approach-2) · [Task 15 Approach 1](#unit-2b-task-15-approach-1) · [Task 15 Approach 2](#unit-2b-task-15-approach-2)
 
-**Unit 2C:** [Task 1](#unit-2c-task-1) · [Task 2](#unit-2c-task-2) · [Task 3](#unit-2c-task-3) · [Task 4](#unit-2c-task-4) · [Task 8](#unit-2c-task-8) · [Task 9](#unit-2c-task-9)
+**Unit 2C:** [Task 1](#unit-2c-task-1) · [Task 2](#unit-2c-task-2) · [Task 3](#unit-2c-task-3) · [Task 4](#unit-2c-task-4) · [Task 5](#unit-2c-task-5) · [Task 6](#unit-2c-task-6) · [Task 7](#unit-2c-task-7) · [Task 8](#unit-2c-task-8)
 
 ---
 
@@ -2677,24 +2677,139 @@ Back to [Lab tasks](lab-tasks.md).
 
 ---
 
-<a id="unit-2c-task-8"></a>
 
-## Unit 2C Task 8: Right-angled triangle pattern of stars
+<a id="unit-2c-task-5"></a>
 
-Prints a right-angled triangle made of stars (`*`).
+## Unit 2C Task 5: Star grid (5x5, then user input)
+
+Prints a square grid of stars. Start with a **5x5** grid, then generalize so the size comes from the user.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- First version: fixed size `rows = 5` (square grid: 5 rows and 5 columns)
+- Generalized version: read `rows` from the user (same number of rows and columns)
+
+**Process**
+- Outer loop: `row_loop_var` from `1` to `rows`
+- Inner loop: `column_loop_var` from `1` to `rows`
+- Print `*` on the same line; move to the next line after each row
+
+**Output**
+- A filled square grid of stars
+
+### Sample input and output messages
+
+**Input messages** (generalized version):
+
+```python
+rows = int(input("Enter grid size (rows and columns): "))
+```
+
+**Program structure** (fill in the blanks — nested for loops):
+
+```python
+rows = ____  # start with 5; later use int(input(...))
+
+for ____ in ____:  # row_loop_var; range(1, rows + 1)
+    for ____ in ____:  # column_loop_var; range(1, rows + 1)
+        print(____, end=" ")  # print one star
+    print()  # next line after the row
+```
+
+> **Think about it:** After the 5x5 version works, replace the fixed `rows` with a value read using `input()`.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `rows = 5` |
+| **Example output** | `* * * * *`<br>`* * * * *`<br>`* * * * *`<br>`* * * * *`<br>`* * * * *` |
+
+<a href="../.faculty/solutions/i6p3cr.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2c-task-6"></a>
+
+## Unit 2C Task 6: Hollow star grid (5x5, then user input)
+
+Prints a hollow square grid of stars. Start with a **5x5** grid, then generalize so the size comes from the user.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- First version: fixed size `rows = 5`
+- Generalized version: read `rows` from the user
+
+**Process**
+- Outer loop: `row_loop_var` from `1` to `rows`
+- Inner loop: `column_loop_var` from `1` to `rows`
+- Print `*` on the first row, last row, first column, or last column; otherwise print a space
+- Move to the next line after each row
+
+**Output**
+- A hollow square grid of stars
+
+### Sample input and output messages
+
+**Input messages** (generalized version):
+
+```python
+rows = int(input("Enter grid size (rows and columns): "))
+```
+
+**Program structure** (fill in the blanks — nested for loops):
+
+```python
+rows = ____  # start with 5; later use int(input(...))
+
+for ____ in ____:  # row_loop_var; range(1, rows + 1)
+    for ____ in ____:  # column_loop_var; range(1, rows + 1)
+        if ____:  # first/last row or first/last column?
+            print(____, end=" ")  # print a star
+        else:
+            print(____, end=" ")  # print a space
+    print()  # next line after the row
+```
+
+> **Think about it:** Border cells use `row_loop_var == 1`, `row_loop_var == rows`, `column_loop_var == 1`, or `column_loop_var == rows`.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `rows = 5` |
+| **Example output** | `* * * * *`<br>`*       *`<br>`*       *`<br>`*       *`<br>`* * * * *` |
+
+<a href="../.faculty/solutions/j7q4ds.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2c-task-7"></a>
+
+## Unit 2C Task 7: Right-angled triangle pattern (any symbol)
+
+Prints a right-angled triangle using one symbol (e.g. `*` or `0`). The **same nested loops** work for any symbol — only the value you print changes.
 
 ### Analyse the problem: Identify Input, Process and Output
 
 **Input**
 - Read how many rows to print
+- Read the symbol to print (one character, such as `*` or `0`)
 
 **Process**
+- Store the symbol in a variable (e.g. `symbol`)
 - Outer loop for each row
-- Inner loop prints stars for that row (row 1 → 1 star, row 2 → 2 stars, ...)
+- Inner loop prints that symbol for that row (row 1 → 1 symbol, row 2 → 2 symbols, ...)
 - Move to the next line after each row
 
 **Output**
-- A right-angled triangle of stars
+- A right-angled triangle of the chosen symbol
 
 ### Sample input and output messages
 
@@ -2702,25 +2817,31 @@ Prints a right-angled triangle made of stars (`*`).
 
 ```python
 rows = int(input("Enter number of rows: "))
+symbol = input("Enter symbol to print (e.g. * or 0): ")
 ```
 
 **Program structure** (fill in the blanks — nested for loops):
 
 ```python
 rows = int(input("Enter number of rows: "))
+symbol = input("Enter symbol to print (e.g. * or 0): ")
 
 for ____ in ____:  # row_loop_var; range(1, rows + 1)
     for ____ in ____:  # column_loop_var; range(1, row_loop_var + 1)
-        print(____, end=" ")  # print one star
+        print(____, end=" ")  # print the symbol variable
     print()  # next line after the row
 ```
+
+> **Think about it:** Run the program with `symbol = '*'` and again with `symbol = '0'` — the loop structure stays the same.
 
 ### Example
 
 | Item | Details |
 |------|---------|
-| **Example input** | `rows = 4` |
+| **Example input** | `rows = 4`, `symbol = '*'` |
 | **Example output** | `*`<br>`* *`<br>`* * *`<br>`* * * *` |
+| **Example input** | `rows = 3`, `symbol = '0'` |
+| **Example output** | `0`<br>`0 0`<br>`0 0 0` |
 
 <a href="../.faculty/solutions/a8h6rj.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
@@ -2728,9 +2849,9 @@ Back to [Lab tasks](lab-tasks.md).
 
 ---
 
-<a id="unit-2c-task-9"></a>
+<a id="unit-2c-task-8"></a>
 
-## Unit 2C Task 9: Inverted right-angled triangle pattern
+## Unit 2C Task 8: Inverted right-angled triangle pattern
 
 Prints an inverted right-angled triangle made of stars (`*`).
 

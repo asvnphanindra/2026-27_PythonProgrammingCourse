@@ -31,14 +31,14 @@ Not linked from student docs. Map task → cryptic file.
 | Unit 2C Task 2 — 3x3 grid of zeros | `u2b0yd.md` |
 | Unit 2C Task 3 — 3x3 numbers (for-for) | `v3c1xe.md` |
 | Unit 2C Task 4 — 3x3 numbers (while-for) | `w4d2vf.md` |
-| Unit 2C Task 5 — Pyramid numbers 1 to 10 | `x5e3ug.md` |
-| Unit 2C Task 6 — Pascal's triangle | `y6f4th.md` |
-| Unit 2C Task 7 — Floyd's triangle | `z7g5si.md` |
-| Unit 2C Task 8 — Right-angled triangle stars | `a8h6rj.md` |
-| Unit 2C Task 9 — Inverted right-angled triangle | `b9i7pk.md` |
+| Unit 2C Task 5 — Star grid (user input) | `i6p3cr.md` |
+| Unit 2C Task 6 — Hollow star grid (user input) | `j7q4ds.md` |
+| Unit 2C Task 7 — Right-angled triangle (symbol) | `a8h6rj.md` |
+| Unit 2C Task 8 — Inverted right-angled triangle | `b9i7pk.md` |
+| Unit 2C Task 9 — Centered pyramid of stars | `f3m0zo.md` |
 | Unit 2C Task 10 — Diamond pattern of stars | `c0j8ql.md` |
-| Unit 2C Task 11 — Right-angled triangle of zeros | `d1k8xm.md` |
-| Unit 2C Task 12 — Number right-angled triangle | `e2l9yn.md` |
-| Unit 2C Task 13 — Centered pyramid of stars | `f3m0zo.md` |
-| Unit 2C Task 14 — Hollow square of stars | `g4n1ap.md` |
+| Unit 2C Task 11 — Pyramid numbers 1 to 10 | `x5e3ug.md` |
+| Unit 2C Task 12 — Pascal's triangle | `y6f4th.md` |
+| Unit 2C Task 13 — Floyd's triangle | `z7g5si.md` |
+| Unit 2C Task 14 — Number right-angled triangle | `e2l9yn.md` |
 | Unit 2C Task 15 — Hollow diamond of stars | `h5o2bq.md` |

@@ -1,4 +1,4 @@
-# Unit 2C Task 6 — Example solution
+# Unit 2C Task 12 — Example solution
 
 Print Pascal's triangle for n rows.
 
