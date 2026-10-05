@@ -28,3 +28,5 @@ else:
 ```
 
 > **Think about it:** This program assumes the number has **3 digits** (power `3`). How would you generalize this code so it works for a number with **any** number of digits, not only 3-digit numbers?
+
+[Back to hint](../../docs/hints.md#unit-2b-task-11) · [Back to lab tasks](../../docs/lab-tasks.md)

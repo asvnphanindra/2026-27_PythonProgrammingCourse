@@ -16,3 +16,5 @@ while number > 0:
 
 print(f"Reverse of {original_number} is {reversed_number}")
 ```
+
+[Back to hint](../../docs/hints.md#unit-2b-task-10) · [Back to lab tasks](../../docs/lab-tasks.md)

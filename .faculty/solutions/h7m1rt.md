@@ -30,3 +30,5 @@ while number <= n:
     print(f"while loop odd number = {number} (up to {n})")
     number = number + 1
 ```
+
+[Back to hint](../../docs/hints.md#unit-2b-task-14-approach-1) · [Back to lab tasks](../../docs/lab-tasks.md)

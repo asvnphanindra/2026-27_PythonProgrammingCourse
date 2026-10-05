@@ -16,3 +16,5 @@ while number > 0:
 
 print(f"Sum of digits of {original_number} is {digit_sum}")
 ```
+
+[Back to hint](../../docs/hints.md#unit-2b-task-8) · [Back to lab tasks](../../docs/lab-tasks.md)

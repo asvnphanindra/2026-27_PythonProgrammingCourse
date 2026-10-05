@@ -25,3 +25,5 @@ while multiplier <= 10:
     print(f"{number} x {multiplier} = {product}")
     multiplier = multiplier + 1
 ```
+
+[Back to hint](../../docs/hints.md#unit-2b-task-2-approach-1) · [Back to lab tasks](../../docs/lab-tasks.md)

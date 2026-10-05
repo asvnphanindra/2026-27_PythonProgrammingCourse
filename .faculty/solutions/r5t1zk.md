@@ -20,3 +20,5 @@ else:
 ```
 
 > **Think about it:** This program assumes the input is between `1` and `100`. How would you generalize this code so it works for **any** positive number, not only values between `1` and `100`?
+
+[Back to hint](../../docs/hints.md#unit-2b-task-6) · [Back to lab tasks](../../docs/lab-tasks.md)

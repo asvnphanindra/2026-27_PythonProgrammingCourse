@@ -47,3 +47,5 @@ if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
 else:
     print(f"{year} is not a leap year")
 ```
+
+[Back to hint](../../docs/hints.md#unit-2a-task-7-approach-1) · [Back to lab tasks](../../docs/lab-tasks.md)

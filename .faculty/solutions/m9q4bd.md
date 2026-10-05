@@ -13,3 +13,5 @@ for value in range(1, number + 1):
 
 print(f"Factorial of {number} is {factorial}")
 ```
+
+[Back to hint](../../docs/hints.md#unit-2b-task-5) · [Back to lab tasks](../../docs/lab-tasks.md)

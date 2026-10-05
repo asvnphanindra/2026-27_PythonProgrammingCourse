@@ -21,3 +21,5 @@ else:
 
 print(f"Smallest = {smallest} (among {x}, {y}, {z})")
 ```
+
+[Back to hint](../../docs/hints.md#unit-2a-task-6) · [Back to lab tasks](../../docs/lab-tasks.md)

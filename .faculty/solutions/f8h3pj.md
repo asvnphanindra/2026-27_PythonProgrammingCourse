@@ -25,3 +25,5 @@ else:
         f"(reversed value is {reversed_number})"
     )
 ```
+
+[Back to hint](../../docs/hints.md#unit-2b-task-12) · [Back to lab tasks](../../docs/lab-tasks.md)

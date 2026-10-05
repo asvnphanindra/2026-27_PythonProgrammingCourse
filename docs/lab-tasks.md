@@ -63,13 +63,16 @@ Click **View hint** for input, process, output, and a worked example (where avai
 
 | Task | What to write | File name | Hint |
 |------|----------------|-----------|------|
-| 1 | Write a python program to print a right-angled triangle pattern of stars | `Unit-2C_Task-1_Right_Angled_Triangle_Stars.py` | — |
-| 2 | Write a python program to print an inverted right-angled triangle pattern | `Unit-2C_Task-2_Inverted_Right_Angled_Triangle.py` | — |
-| 3 | Write a python program to print a pyramid pattern of numbers | `Unit-2C_Task-3_Pyramid_Pattern_of_Numbers.py` | — |
-| 4 | Write a python program to print a diamond pattern of stars | `Unit-2C_Task-4_Diamond_Pattern_of_Stars.py` | — |
-| 5 | Write a python program to print Pascal's triangle | `Unit-2C_Task-5_Pascals_Triangle.py` | — |
-| 6 | Write a python program to print a number pattern (e.g., Floyd's triangle) | `Unit-2C_Task-6_Floyds_Triangle_Number_Pattern.py` | — |
-| 7 | Write a python program to print all prime numbers between 1 and N using for loop | `Unit-2C_Task-7_Prime_Numbers_1_to_N_For_Loop.py` | [View hint](hints.md#unit-2c-task-7) |
+| 1 | Write a python program to print 3 zeros in 1 row and 1 column | `Unit-2C_Task-1_Three_Zeros_Row_and_Column.py` | [View hint](hints.md#unit-2c-task-1) |
+| 2 | Write a python program to print a 3x3 grid of zeros | `Unit-2C_Task-2_Three_by_Three_Grid_of_Zeros.py` | [View hint](hints.md#unit-2c-task-2) |
+| 3 | Write a python program to print numbers in a 3x3 grid (as shown in the hint) using for-for nested loop | `Unit-2C_Task-3_Three_by_Three_Numbers_For_For.py` | [View hint](hints.md#unit-2c-task-3) |
+| 4 | Write a python program to print numbers in a 3x3 grid (as shown in the hint) using while-for nested loop | `Unit-2C_Task-4_Three_by_Three_Numbers_While_For.py` | [View hint](hints.md#unit-2c-task-4) |
+| 5 | Write a python program to print a pyramid pattern of numbers from 1 to 10 | `Unit-2C_Task-5_Pyramid_Pattern_Numbers_1_to_10.py` | [View hint](hints.md#unit-2c-task-5) |
+| 6 | Write a python program to print Pascal's triangle | `Unit-2C_Task-6_Pascals_Triangle.py` | [View hint](hints.md#unit-2c-task-6) |
+| 7 | Write a python program to print a number pattern (e.g., Floyd's triangle) | `Unit-2C_Task-7_Floyds_Triangle_Number_Pattern.py` | [View hint](hints.md#unit-2c-task-7) |
+| 8 | Write a python program to print a right-angled triangle pattern of stars | `Unit-2C_Task-8_Right_Angled_Triangle_Stars.py` | [View hint](hints.md#unit-2c-task-8) |
+| 9 | Write a python program to print an inverted right-angled triangle pattern | `Unit-2C_Task-9_Inverted_Right_Angled_Triangle.py` | [View hint](hints.md#unit-2c-task-9) |
+| 10 | Write a python program to print a diamond pattern of stars | `Unit-2C_Task-10_Diamond_Pattern_of_Stars.py` | [View hint](hints.md#unit-2c-task-10) |
 
 ### D. String Manipulation Programs
 

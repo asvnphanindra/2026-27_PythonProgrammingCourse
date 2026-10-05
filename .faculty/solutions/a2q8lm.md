@@ -24,3 +24,5 @@ else:
         f"{angle2_in_degrees}, and {angle3_in_degrees} is not valid"
     )
 ```
+
+[Back to hint](../../docs/hints.md#unit-2a-task-1) · [Back to lab tasks](../../docs/lab-tasks.md)
