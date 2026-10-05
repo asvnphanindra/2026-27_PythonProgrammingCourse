@@ -67,12 +67,12 @@ Click **View hint** for input, process, output, and a worked example (where avai
 | 2 | Write a python program to print a 3x3 grid of zeros | `Unit-2C_Task-2_Three_by_Three_Grid_of_Zeros.py` | [View hint](hints.md#unit-2c-task-2) |
 | 3 | Write a python program to print numbers in a 3x3 grid (as shown in the hint) using for-for nested loop | `Unit-2C_Task-3_Three_by_Three_Numbers_For_For.py` | [View hint](hints.md#unit-2c-task-3) |
 | 4 | Write a python program to print numbers in a 3x3 grid (as shown in the hint) using while-for nested loop | `Unit-2C_Task-4_Three_by_Three_Numbers_While_For.py` | [View hint](hints.md#unit-2c-task-4) |
-| 5 | Write a python program to print a pyramid pattern of numbers from 1 to 10 | `Unit-2C_Task-5_Pyramid_Pattern_Numbers_1_to_10.py` | [View hint](hints.md#unit-2c-task-5) |
-| 6 | Write a python program to print Pascal's triangle | `Unit-2C_Task-6_Pascals_Triangle.py` | [View hint](hints.md#unit-2c-task-6) |
-| 7 | Write a python program to print a number pattern (e.g., Floyd's triangle) | `Unit-2C_Task-7_Floyds_Triangle_Number_Pattern.py` | [View hint](hints.md#unit-2c-task-7) |
+| 5 | Write a python program to print a pyramid pattern of numbers from 1 to 10 | `Unit-2C_Task-5_Pyramid_Pattern_Numbers_1_to_10.py` | — |
+| 6 | Write a python program to print Pascal's triangle | `Unit-2C_Task-6_Pascals_Triangle.py` | — |
+| 7 | Write a python program to print a number pattern (e.g., Floyd's triangle) | `Unit-2C_Task-7_Floyds_Triangle_Number_Pattern.py` | — |
 | 8 | Write a python program to print a right-angled triangle pattern of stars | `Unit-2C_Task-8_Right_Angled_Triangle_Stars.py` | [View hint](hints.md#unit-2c-task-8) |
 | 9 | Write a python program to print an inverted right-angled triangle pattern | `Unit-2C_Task-9_Inverted_Right_Angled_Triangle.py` | [View hint](hints.md#unit-2c-task-9) |
-| 10 | Write a python program to print a diamond pattern of stars | `Unit-2C_Task-10_Diamond_Pattern_of_Stars.py` | [View hint](hints.md#unit-2c-task-10) |
+| 10 | Write a python program to print a diamond pattern of stars | `Unit-2C_Task-10_Diamond_Pattern_of_Stars.py` | — |
 
 ### D. String Manipulation Programs
 
