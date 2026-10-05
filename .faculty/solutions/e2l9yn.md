@@ -1,4 +1,4 @@
-# Unit 2C Task 14 — Example solution
+# Unit 2C Task 15 — Example solution
 
 Print a number right-angled triangle pattern.
 

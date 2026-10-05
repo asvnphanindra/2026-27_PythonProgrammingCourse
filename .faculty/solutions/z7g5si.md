@@ -1,4 +1,4 @@
-# Unit 2C Task 13 — Example solution
+# Unit 2C Task 14 — Example solution
 
 Print Floyd's triangle.
 

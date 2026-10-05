@@ -1,4 +1,4 @@
-# Unit 2C Task 15 — Example solution
+# Unit 2C Task 11 — Example solution
 
 Print a hollow diamond pattern of stars.
 

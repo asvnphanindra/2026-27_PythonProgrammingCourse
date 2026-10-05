@@ -1,4 +1,4 @@
-# Unit 2C Task 11 — Example solution
+# Unit 2C Task 12 — Example solution
 
 Print a pyramid of numbers from 1 to 10.
 

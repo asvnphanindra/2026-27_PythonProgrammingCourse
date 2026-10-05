@@ -73,11 +73,11 @@ Click **View hint** for input, process, output, and a worked example (where avai
 | 8 | Write a python program to print an inverted right-angled triangle pattern | `Unit-2C_Task-8_Inverted_Right_Angled_Triangle.py` | (for `rows = 4`)<br>`* * * *`<br>`* * *`<br>`* *`<br>`*` | [View hint](hints.md#unit-2c-task-8) |
 | 9 | Write a python program to print a centered pyramid pattern of stars | `Unit-2C_Task-9_Centered_Pyramid_Stars.py` | (for `rows = 3`)<br>`    *`<br>`  * * *`<br>`* * * * *` | — |
 | 10 | Write a python program to print a diamond pattern of stars | `Unit-2C_Task-10_Diamond_Pattern_of_Stars.py` | (for `rows = 3`)<br>`    *`<br>`  * * *`<br>`* * * * *`<br>`  * * *`<br>`    *` | — |
-| 11 | Write a python program to print a pyramid pattern of numbers from 1 to 10 | `Unit-2C_Task-11_Pyramid_Pattern_Numbers_1_to_10.py` | `      1`<br>`    2 3`<br>`  4 5 6`<br>`7 8 9 10` | — |
-| 12 | Write a python program to print Pascal's triangle | `Unit-2C_Task-12_Pascals_Triangle.py` | (for `rows = 5`)<br>`1`<br>`1 1`<br>`1 2 1`<br>`1 3 3 1`<br>`1 4 6 4 1` | — |
-| 13 | Write a python program to print a number pattern (e.g., Floyd's triangle) | `Unit-2C_Task-13_Floyds_Triangle_Number_Pattern.py` | (for `rows = 4`)<br>`1`<br>`2 3`<br>`4 5 6`<br>`7 8 9 10` | — |
-| 14 | Write a python program to print a number right-angled triangle pattern | `Unit-2C_Task-14_Number_Right_Angled_Triangle.py` | (for `rows = 6`)<br>`1`<br>`1 2`<br>`1 2 3`<br>`1 2 3 4`<br>`1 2 3 4 5`<br>`1 2 3 4 5 6` | — |
-| 15 | Write a python program to print a hollow diamond pattern of stars | `Unit-2C_Task-15_Hollow_Diamond_Stars.py` | (for `rows = 3`)<br>`    *`<br>`  *   *`<br>`*       *`<br>`  *   *`<br>`    *` | — |
+| 11 | Write a python program to print a hollow diamond pattern of stars | `Unit-2C_Task-11_Hollow_Diamond_Stars.py` | (for `rows = 3`)<br>`    *`<br>`  *   *`<br>`*       *`<br>`  *   *`<br>`    *` | — |
+| 12 | Write a python program to print a pyramid pattern of numbers from 1 to 10 | `Unit-2C_Task-12_Pyramid_Pattern_Numbers_1_to_10.py` | `      1`<br>`    2 3`<br>`  4 5 6`<br>`7 8 9 10` | — |
+| 13 | Write a python program to print Pascal's triangle | `Unit-2C_Task-13_Pascals_Triangle.py` | (for `rows = 5`)<br>`1`<br>`1 1`<br>`1 2 1`<br>`1 3 3 1`<br>`1 4 6 4 1` | — |
+| 14 | Write a python program to print a number pattern (e.g., Floyd's triangle) | `Unit-2C_Task-14_Floyds_Triangle_Number_Pattern.py` | (for `rows = 4`)<br>`1`<br>`2 3`<br>`4 5 6`<br>`7 8 9 10` | — |
+| 15 | Write a python program to print a number right-angled triangle pattern | `Unit-2C_Task-15_Number_Right_Angled_Triangle.py` | (for `rows = 6`)<br>`1`<br>`1 2`<br>`1 2 3`<br>`1 2 3 4`<br>`1 2 3 4 5`<br>`1 2 3 4 5 6` | — |
 
 ### D. String Manipulation Programs
 
