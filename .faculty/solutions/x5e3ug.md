@@ -1,9 +1,9 @@
 # Unit 2C Task 12 — Example solution
 
-Print a pyramid of numbers from 1 to 10.
+Print a centered pyramid of numbers from 1 to 10.
 
 ```python
-# Example solution: pyramid pattern of numbers from 1 to 10
+# Example solution: centered pyramid pattern of numbers from 1 to 10
 num = 1
 rows = 4
 
