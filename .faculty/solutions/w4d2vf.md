@@ -5,10 +5,11 @@ Print numbers 1 to 9 in a 3x3 grid using while-for nested loops.
 ```python
 # Example solution: 3x3 grid of numbers (while-for)
 num = 1
+rows = 3
 row_loop_var = 1
 
-while row_loop_var <= 3:
-    for column_loop_var in range(1, 4):
+while row_loop_var <= rows:
+    for column_loop_var in range(1, rows + 1):
         print(num, end=" ")
         num = num + 1
     print()

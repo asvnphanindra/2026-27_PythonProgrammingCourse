@@ -27,13 +27,13 @@ Not linked from student docs. Map task → cryptic file.
 | Unit 2B Task 13 — Break statement | `g2k6qs.md` |
 | Unit 2B Task 14 — Continue statement | `h7m1rt.md` |
 | Unit 2B Task 15 — Pass statement | `i4n9su.md` |
-| Unit 2C Task 1 — Three zeros row and column | `t1a9zc.md` |
-| Unit 2C Task 2 — 3x3 grid of zeros | `u2b0yd.md` |
+| Unit 2C Task 1 — Square pattern of zeros | `t1a9zc.md` |
+| Unit 2C Task 2 — Right-angled triangle of zeros | `u2b0yd.md` |
 | Unit 2C Task 3 — 3x3 numbers (for-for) | `v3c1xe.md` |
 | Unit 2C Task 4 — 3x3 numbers (while-for) | `w4d2vf.md` |
-| Unit 2C Task 5 — Pyramid numbers 1 to 10 | `x5e3ug.md` |
-| Unit 2C Task 6 — Pascal's triangle | `y6f4th.md` |
+| Unit 2C Task 5 — Number right-angled triangle | `x5e3ug.md` |
+| Unit 2C Task 6 — Centered pyramid of stars | `y6f4th.md` |
 | Unit 2C Task 7 — Floyd's triangle | `z7g5si.md` |
-| Unit 2C Task 8 — Right-angled triangle stars | `a8h6rj.md` |
-| Unit 2C Task 9 — Inverted right-angled triangle | `b9i7pk.md` |
-| Unit 2C Task 10 — Diamond pattern of stars | `c0j8ql.md` |
+| Unit 2C Task 8 — Diamond pattern of stars | `a8h6rj.md` |
+| Unit 2C Task 9 — Hollow square of stars | `b9i7pk.md` |
+| Unit 2C Task 10 — Hollow diamond of stars | `c0j8ql.md` |

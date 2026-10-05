@@ -1,16 +1,16 @@
 # Unit 2C Task 6 — Example solution
 
-Print Pascal's triangle for n rows.
+Print a centered pyramid pattern of stars.
 
 ```python
-# Example solution: Pascal's triangle
-rows = int(input("Enter number of rows: "))
+# Example solution: centered pyramid of stars
+rows = 3
 
 for row_loop_var in range(1, rows + 1):
-    value = 1
-    for column_loop_var in range(1, row_loop_var + 1):
-        print(value, end=" ")
-        value = value * (row_loop_var - column_loop_var) // column_loop_var
+    for column_loop_var_spaces in range(1, rows - row_loop_var + 1):
+        print(" ", end=" ")
+    for column_loop_var_dots in range(1, 2 * row_loop_var):
+        print("*", end=" ")
     print()
 ```
 

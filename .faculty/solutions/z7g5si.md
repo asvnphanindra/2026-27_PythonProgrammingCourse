@@ -4,13 +4,13 @@ Print Floyd's triangle.
 
 ```python
 # Example solution: Floyd's triangle
-rows = int(input("Enter number of rows: "))
-num = 1
+rows = 4
+print_val = 1
 
 for row_loop_var in range(1, rows + 1):
     for column_loop_var in range(1, row_loop_var + 1):
-        print(num, end=" ")
-        num = num + 1
+        print(print_val, end=" ")
+        print_val = print_val + 1
     print()
 ```
 
