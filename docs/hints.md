@@ -2516,12 +2516,12 @@ Prints three zeros in one row, then three zeros in one column.
 
 ```python
 # One row: three zeros on the same line
-for ____ in ____:  # col_var; repeat 3 times
+for ____ in ____:  # column_loop_var; range starts at 1, repeat 3 times
     print(____, end=" ")  # print one zero, stay on same line
 print()  # move to next line after the row
 
 # One column: three zeros, each on its own line
-for ____ in ____:  # row_var; repeat 3 times
+for ____ in ____:  # row_loop_var; range starts at 1, repeat 3 times
     print(____)  # print one zero and go to next line
 ```
 
@@ -2562,8 +2562,8 @@ Prints a 3 by 3 grid filled with zeros.
 **Program structure** (fill in the blanks — nested for loops):
 
 ```python
-for ____ in ____:  # row_var; each row (3 times)
-    for ____ in ____:  # col_var; each column in the row (3 times)
+for ____ in ____:  # row_loop_var; range(1, 4) — each row
+    for ____ in ____:  # column_loop_var; range(1, 4) — each column
         print(____, end=" ")  # print one zero, stay on same line
     print()  # move to next line after the row
 ```
@@ -2608,8 +2608,8 @@ Prints numbers `1` to `9` in a 3 by 3 grid using nested `for` loops.
 ```python
 num = ____  # start counting from 1
 
-for ____ in ____:  # row_var; each row (3 times)
-    for ____ in ____:  # col_var; each column in the row (3 times)
+for ____ in ____:  # row_loop_var; range(1, 4) — each row
+    for ____ in ____:  # column_loop_var; range(1, 4) — each column
         print(____, end=" ")  # print the current number
         num = ____  # increase num by 1 for the next cell
     print()  # move to next line after the row
@@ -2641,9 +2641,9 @@ Prints numbers `1` to `9` in a 3 by 3 grid using a `while` outer loop and a `for
 
 **Process**
 - Keep a running number that starts at `1`
-- Outer `while` loop for each row (use `row_var` as the row counter)
-- Inner `for` loop for each column (`col_var`): print the current number, then increase it by 1
-- Move to the next line after each row and update `row_var`
+- Outer `while` loop for each row (use `row_loop_var` starting at `1`)
+- Inner `for` loop for each column (`column_loop_var`, range starts at `1`): print the current number, then increase it by 1
+- Move to the next line after each row and update `row_loop_var`
 
 **Output**
 - Numbers `1` to `9` shown as a 3x3 grid
@@ -2654,14 +2654,14 @@ Prints numbers `1` to `9` in a 3 by 3 grid using a `while` outer loop and a `for
 
 ```python
 num = ____  # start counting from 1
-row_var = ____  # start row counter at 1 (or 0)
+row_loop_var = ____  # start row_loop_var at 1
 
-while ____:  # keep going while row_var is within 1..3 (or 0..2)
-    for ____ in ____:  # col_var; each column in the row (3 times)
+while ____:  # keep going while row_loop_var is within 1..3
+    for ____ in ____:  # column_loop_var; range(1, 4) — each column
         print(____, end=" ")  # print the current number
         num = ____  # increase num by 1 for the next cell
     print()  # move to next line after the row
-    row_var = ____  # increase row_var by 1
+    row_loop_var = ____  # increase row_loop_var by 1
 ```
 
 ### Example
@@ -2701,16 +2701,16 @@ Prints a right-angled triangle made of stars (`*`).
 **Input messages** (use with `input()`):
 
 ```python
-n = int(input("Enter number of rows: "))
+rows = int(input("Enter number of rows: "))
 ```
 
 **Program structure** (fill in the blanks — nested for loops):
 
 ```python
-n = int(input("Enter number of rows: "))
+rows = int(input("Enter number of rows: "))
 
-for ____ in ____:  # row_var; each row from 1 to n
-    for ____ in ____:  # col_var; print row_var stars in this row
+for ____ in ____:  # row_loop_var; range(1, rows + 1)
+    for ____ in ____:  # column_loop_var; range(1, row_loop_var + 1)
         print(____, end=" ")  # print one star
     print()  # next line after the row
 ```
@@ -2719,7 +2719,7 @@ for ____ in ____:  # row_var; each row from 1 to n
 
 | Item | Details |
 |------|---------|
-| **Example input** | `n = 4` |
+| **Example input** | `rows = 4` |
 | **Example output** | `*`<br>`* *`<br>`* * *`<br>`* * * *` |
 
 <a href="../.faculty/solutions/a8h6rj.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
@@ -2752,16 +2752,16 @@ Prints an inverted right-angled triangle made of stars (`*`).
 **Input messages** (use with `input()`):
 
 ```python
-n = int(input("Enter number of rows: "))
+rows = int(input("Enter number of rows: "))
 ```
 
 **Program structure** (fill in the blanks — nested for loops):
 
 ```python
-n = int(input("Enter number of rows: "))
+rows = int(input("Enter number of rows: "))
 
-for ____ in ____:  # row_var; each row from n down to 1 (or 0 to n-1 with care)
-    for ____ in ____:  # col_var; print the correct number of stars for this row
+for ____ in ____:  # row_loop_var; range(rows, 0, -1)
+    for ____ in ____:  # column_loop_var; range(1, row_loop_var + 1)
         print(____, end=" ")  # print one star
     print()  # next line after the row
 ```
@@ -2770,7 +2770,7 @@ for ____ in ____:  # row_var; each row from n down to 1 (or 0 to n-1 with care)
 
 | Item | Details |
 |------|---------|
-| **Example input** | `n = 4` |
+| **Example input** | `rows = 4` |
 | **Example output** | `* * * *`<br>`* * *`<br>`* *`<br>`*` |
 
 <a href="../.faculty/solutions/b9i7pk.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)

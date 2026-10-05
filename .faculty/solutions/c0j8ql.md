@@ -4,23 +4,23 @@ Print a diamond pattern of stars.
 
 ```python
 # Example solution: diamond pattern of stars
-n = int(input("Enter number of rows (half diamond): "))
+rows = int(input("Enter number of rows (half diamond): "))
 
 # Upper half (including middle)
-for row_var in range(1, n + 1):
-    for col_var in range(n - row_var):
+for row_loop_var in range(1, rows + 1):
+    for column_loop_var_spaces in range(1, rows - row_loop_var + 1):
         print(" ", end=" ")
-    for col_var in range(row_var):
+    for column_loop_var_dots in range(1, 2 * row_loop_var):
         print("*", end=" ")
     print()
 
 # Lower half
-for row_var in range(n - 1, 0, -1):
-    for col_var in range(n - row_var):
+for row_loop_var in range(rows - 1, 0, -1):
+    for column_loop_var_spaces in range(1, rows - row_loop_var + 1):
         print(" ", end=" ")
-    for col_var in range(row_var):
+    for column_loop_var_dots in range(1, 2 * row_loop_var):
         print("*", end=" ")
     print()
 ```
 
-[Back to hint](../../docs/hints.md#unit-2c-task-10) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to lab tasks](../../docs/lab-tasks.md)

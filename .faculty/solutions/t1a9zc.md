@@ -4,11 +4,11 @@ Print three zeros in one row and three zeros in one column.
 
 ```python
 # Example solution: three zeros in 1 row and 1 column
-for col_var in range(3):
+for column_loop_var in range(1, 4):
     print(0, end=" ")
 print()
 
-for row_var in range(3):
+for row_loop_var in range(1, 4):
     print(0)
 ```
 
