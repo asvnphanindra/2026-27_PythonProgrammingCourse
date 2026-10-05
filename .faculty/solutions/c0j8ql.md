@@ -7,18 +7,18 @@ Print a diamond pattern of stars.
 n = int(input("Enter number of rows (half diamond): "))
 
 # Upper half (including middle)
-for i in range(1, n + 1):
-    for space in range(n - i):
+for row_var in range(1, n + 1):
+    for col_var in range(n - row_var):
         print(" ", end=" ")
-    for star in range(i):
+    for col_var in range(row_var):
         print("*", end=" ")
     print()
 
 # Lower half
-for i in range(n - 1, 0, -1):
-    for space in range(n - i):
+for row_var in range(n - 1, 0, -1):
+    for col_var in range(n - row_var):
         print(" ", end=" ")
-    for star in range(i):
+    for col_var in range(row_var):
         print("*", end=" ")
     print()
 ```

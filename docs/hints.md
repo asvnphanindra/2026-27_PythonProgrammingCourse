@@ -2516,12 +2516,12 @@ Prints three zeros in one row, then three zeros in one column.
 
 ```python
 # One row: three zeros on the same line
-for ____ in ____:  # repeat 3 times
+for ____ in ____:  # col_var; repeat 3 times
     print(____, end=" ")  # print one zero, stay on same line
 print()  # move to next line after the row
 
 # One column: three zeros, each on its own line
-for ____ in ____:  # repeat 3 times
+for ____ in ____:  # row_var; repeat 3 times
     print(____)  # print one zero and go to next line
 ```
 
@@ -2562,8 +2562,8 @@ Prints a 3 by 3 grid filled with zeros.
 **Program structure** (fill in the blanks — nested for loops):
 
 ```python
-for ____ in ____:  # each row (3 times)
-    for ____ in ____:  # each column in the row (3 times)
+for ____ in ____:  # row_var; each row (3 times)
+    for ____ in ____:  # col_var; each column in the row (3 times)
         print(____, end=" ")  # print one zero, stay on same line
     print()  # move to next line after the row
 ```
@@ -2608,8 +2608,8 @@ Prints numbers `1` to `9` in a 3 by 3 grid using nested `for` loops.
 ```python
 num = ____  # start counting from 1
 
-for ____ in ____:  # each row (3 times)
-    for ____ in ____:  # each column in the row (3 times)
+for ____ in ____:  # row_var; each row (3 times)
+    for ____ in ____:  # col_var; each column in the row (3 times)
         print(____, end=" ")  # print the current number
         num = ____  # increase num by 1 for the next cell
     print()  # move to next line after the row
@@ -2641,9 +2641,9 @@ Prints numbers `1` to `9` in a 3 by 3 grid using a `while` outer loop and a `for
 
 **Process**
 - Keep a running number that starts at `1`
-- Outer `while` loop for each row (use a row counter)
-- Inner `for` loop for each column: print the current number, then increase it by 1
-- Move to the next line after each row and update the row counter
+- Outer `while` loop for each row (use `row_var` as the row counter)
+- Inner `for` loop for each column (`col_var`): print the current number, then increase it by 1
+- Move to the next line after each row and update `row_var`
 
 **Output**
 - Numbers `1` to `9` shown as a 3x3 grid
@@ -2654,14 +2654,14 @@ Prints numbers `1` to `9` in a 3 by 3 grid using a `while` outer loop and a `for
 
 ```python
 num = ____  # start counting from 1
-row = ____  # start row counter at 1 (or 0)
+row_var = ____  # start row counter at 1 (or 0)
 
-while ____:  # keep going while row is within 1..3 (or 0..2)
-    for ____ in ____:  # each column in the row (3 times)
+while ____:  # keep going while row_var is within 1..3 (or 0..2)
+    for ____ in ____:  # col_var; each column in the row (3 times)
         print(____, end=" ")  # print the current number
         num = ____  # increase num by 1 for the next cell
     print()  # move to next line after the row
-    row = ____  # increase row counter by 1
+    row_var = ____  # increase row_var by 1
 ```
 
 ### Example
@@ -2711,10 +2711,10 @@ Prints a pyramid that uses numbers from `1` to `10`.
 num = ____  # start from 1
 rows = ____  # how many rows are needed for numbers 1 to 10?
 
-for ____ in ____:  # each row
-    for ____ in ____:  # print leading spaces for this row
+for ____ in ____:  # row_var; each row
+    for ____ in ____:  # col_var; print leading spaces for this row
         print(" ", end=" ")
-    for ____ in ____:  # print numbers in this row
+    for ____ in ____:  # col_var; print numbers in this row
         if ____:  # still have numbers left up to 10?
             print(____, end=" ")
             num = ____  # increase num by 1
@@ -2775,15 +2775,15 @@ n = int(input("Enter number of rows: "))
 ```python
 n = int(input("Enter number of rows: "))
 
-for ____ in ____:  # each row from 0 to n-1
+for ____ in ____:  # row_var; each row from 0 to n-1
     value = ____  # first value in a Pascal row is 1
-    for ____ in ____:  # each position in the current row
+    for ____ in ____:  # col_var; each position in the current row
         print(____, end=" ")  # print current Pascal value
         value = ____  # update value for the next position in this row
     print()  # next line after the row
 ```
 
-> **Hint:** One common update is `value = value * (row - col) // (col + 1)` when `row` and `col` start at `0`.
+> **Hint:** One common update is `value = value * (row_var - col_var) // (col_var + 1)` when `row_var` and `col_var` start at `0`.
 
 ### Example
 
@@ -2836,8 +2836,8 @@ n = int(input("Enter number of rows: "))
 n = int(input("Enter number of rows: "))
 num = ____  # start from 1
 
-for ____ in ____:  # each row from 1 to n
-    for ____ in ____:  # print i numbers in row i
+for ____ in ____:  # row_var; each row from 1 to n
+    for ____ in ____:  # col_var; print row_var numbers in this row
         print(____, end=" ")  # print current number
         num = ____  # increase num by 1
     print()  # next line after the row
@@ -2888,8 +2888,8 @@ n = int(input("Enter number of rows: "))
 ```python
 n = int(input("Enter number of rows: "))
 
-for ____ in ____:  # each row from 1 to n
-    for ____ in ____:  # print i stars in row i
+for ____ in ____:  # row_var; each row from 1 to n
+    for ____ in ____:  # col_var; print row_var stars in this row
         print(____, end=" ")  # print one star
     print()  # next line after the row
 ```
@@ -2939,8 +2939,8 @@ n = int(input("Enter number of rows: "))
 ```python
 n = int(input("Enter number of rows: "))
 
-for ____ in ____:  # each row from n down to 1 (or 0 to n-1 with care)
-    for ____ in ____:  # print the correct number of stars for this row
+for ____ in ____:  # row_var; each row from n down to 1 (or 0 to n-1 with care)
+    for ____ in ____:  # col_var; print the correct number of stars for this row
         print(____, end=" ")  # print one star
     print()  # next line after the row
 ```
@@ -2996,18 +2996,18 @@ n = int(input("Enter number of rows (half diamond): "))
 n = int(input("Enter number of rows (half diamond): "))
 
 # Upper half (including middle row)
-for ____ in ____:  # rows growing from 1 to n
-    for ____ in ____:  # leading spaces
+for ____ in ____:  # row_var; rows growing from 1 to n
+    for ____ in ____:  # col_var; leading spaces
         print(" ", end=" ")
-    for ____ in ____:  # stars in this row
+    for ____ in ____:  # col_var; stars in this row
         print(____, end=" ")
     print()
 
 # Lower half
-for ____ in ____:  # rows shrinking from n-1 down to 1
-    for ____ in ____:  # leading spaces
+for ____ in ____:  # row_var; rows shrinking from n-1 down to 1
+    for ____ in ____:  # col_var; leading spaces
         print(" ", end=" ")
-    for ____ in ____:  # stars in this row
+    for ____ in ____:  # col_var; stars in this row
         print(____, end=" ")
     print()
 ```

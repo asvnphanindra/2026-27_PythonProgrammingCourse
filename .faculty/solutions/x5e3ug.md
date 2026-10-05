@@ -7,10 +7,10 @@ Print a pyramid of numbers from 1 to 10.
 num = 1
 rows = 4
 
-for i in range(1, rows + 1):
-    for space in range(rows - i):
+for row_var in range(1, rows + 1):
+    for col_var in range(rows - row_var):
         print(" ", end=" ")
-    for j in range(i):
+    for col_var in range(row_var):
         if num <= 10:
             print(num, end=" ")
             num = num + 1

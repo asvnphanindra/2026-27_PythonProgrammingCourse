@@ -7,8 +7,8 @@ Print Floyd's triangle.
 n = int(input("Enter number of rows: "))
 num = 1
 
-for i in range(1, n + 1):
-    for j in range(i):
+for row_var in range(1, n + 1):
+    for col_var in range(row_var):
         print(num, end=" ")
         num = num + 1
     print()

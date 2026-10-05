@@ -6,8 +6,8 @@ Print numbers 1 to 9 in a 3x3 grid using for-for nested loops.
 # Example solution: 3x3 grid of numbers (for-for)
 num = 1
 
-for row in range(3):
-    for col in range(3):
+for row_var in range(3):
+    for col_var in range(3):
         print(num, end=" ")
         num = num + 1
     print()

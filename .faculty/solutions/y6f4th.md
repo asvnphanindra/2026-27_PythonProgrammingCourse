@@ -6,11 +6,11 @@ Print Pascal's triangle for n rows.
 # Example solution: Pascal's triangle
 n = int(input("Enter number of rows: "))
 
-for row in range(n):
+for row_var in range(n):
     value = 1
-    for col in range(row + 1):
+    for col_var in range(row_var + 1):
         print(value, end=" ")
-        value = value * (row - col) // (col + 1)
+        value = value * (row_var - col_var) // (col_var + 1)
     print()
 ```
 

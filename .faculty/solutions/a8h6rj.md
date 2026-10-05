@@ -6,8 +6,8 @@ Print a right-angled triangle of stars.
 # Example solution: right-angled triangle of stars
 n = int(input("Enter number of rows: "))
 
-for i in range(1, n + 1):
-    for j in range(i):
+for row_var in range(1, n + 1):
+    for col_var in range(row_var):
         print("*", end=" ")
     print()
 ```
