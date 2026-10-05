@@ -1,23 +1,15 @@
 # Unit 2C Task 9 — Example solution
 
-Print a hollow square pattern of stars.
+Print an inverted right-angled triangle of stars.
 
 ```python
-# Example solution: hollow square of stars
-rows = 5
+# Example solution: inverted right-angled triangle of stars
+rows = int(input("Enter number of rows: "))
 
-for row_loop_var in range(1, rows + 1):
-    for column_loop_var in range(1, rows + 1):
-        if (
-            column_loop_var == 1
-            or column_loop_var == rows
-            or row_loop_var == 1
-            or row_loop_var == rows
-        ):
-            print("*", end=" ")
-        else:
-            print(" ", end=" ")
+for row_loop_var in range(rows, 0, -1):
+    for column_loop_var in range(1, row_loop_var + 1):
+        print("*", end=" ")
     print()
 ```
 
-[Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-2c-task-9) · [Back to lab tasks](../../docs/lab-tasks.md)

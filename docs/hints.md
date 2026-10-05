@@ -15,7 +15,7 @@ Jump to a task:
 
 **Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2) · [Task 2 Approach 1](#unit-2b-task-2-approach-1) · [Task 2 Approach 2](#unit-2b-task-2-approach-2) · [Task 3](#unit-2b-task-3) · [Task 4](#unit-2b-task-4) · [Task 5](#unit-2b-task-5) · [Task 6](#unit-2b-task-6) · [Task 7](#unit-2b-task-7) · [Task 8](#unit-2b-task-8) · [Task 9](#unit-2b-task-9) · [Task 10](#unit-2b-task-10) · [Task 11](#unit-2b-task-11) · [Task 12](#unit-2b-task-12) · [Task 13 Approach 1](#unit-2b-task-13-approach-1) · [Task 13 Approach 2](#unit-2b-task-13-approach-2) · [Task 14 Approach 1](#unit-2b-task-14-approach-1) · [Task 14 Approach 2](#unit-2b-task-14-approach-2) · [Task 15 Approach 1](#unit-2b-task-15-approach-1) · [Task 15 Approach 2](#unit-2b-task-15-approach-2)
 
-**Unit 2C:** [Task 1](#unit-2c-task-1) · [Task 2](#unit-2c-task-2) · [Task 3](#unit-2c-task-3) · [Task 4](#unit-2c-task-4)
+**Unit 2C:** [Task 1](#unit-2c-task-1) · [Task 2](#unit-2c-task-2) · [Task 3](#unit-2c-task-3) · [Task 4](#unit-2c-task-4) · [Task 8](#unit-2c-task-8) · [Task 9](#unit-2c-task-9)
 
 ---
 
@@ -2494,42 +2494,43 @@ Back to [Lab tasks](lab-tasks.md).
 
 <a id="unit-2c-task-1"></a>
 
-## Unit 2C Task 1: Square pattern of zeros
+## Unit 2C Task 1: Three zeros in 1 row and 1 column
 
-Prints a square grid filled with zeros using nested `for` loops.
+Prints three zeros in one row, then three zeros in one column.
 
 ### Analyse the problem: Identify Input, Process and Output
 
 **Input**
-- Number of rows (for a square, rows = columns). Example: `rows = 3`
+- No user input needed (fixed size: 3 zeros)
 
 **Process**
-- Outer loop: `row_loop_var` from `1` to `rows`
-- Inner loop: `column_loop_var` from `1` to `rows`
-- Print `0` on the same line, then move to the next line after each row
+- Print three zeros on the same line (one row)
+- Then print three zeros one under another (one column)
 
 **Output**
-- A square of zeros
+- One row of zeros and one column of zeros
 
 ### Sample input and output messages
 
-**Program structure** (fill in the blanks — nested for loops):
+**Program structure** (fill in the blanks):
 
 ```python
-rows = ____  # e.g. 3
+# One row: three zeros on the same line
+for ____ in ____:  # column_loop_var; range starts at 1, repeat 3 times
+    print(____, end=" ")  # print one zero, stay on same line
+print()  # move to next line after the row
 
-for ____ in ____:  # row_loop_var; range(1, rows + 1)
-    for ____ in ____:  # column_loop_var; range(1, rows + 1)
-        print(____, end=" ")  # print one zero
-    print()  # next line after the row
+# One column: three zeros, each on its own line
+for ____ in ____:  # row_loop_var; range starts at 1, repeat 3 times
+    print(____)  # print one zero and go to next line
 ```
 
 ### Example
 
 | Item | Details |
 |------|---------|
-| **Example input** | `rows = 3` |
-| **Example output** | `0 0 0`<br>`0 0 0`<br>`0 0 0` |
+| **Example input** | (none) |
+| **Example output** | `0 0 0`<br>`0`<br>`0`<br>`0` |
 
 <a href="../.faculty/solutions/t1a9zc.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
@@ -2539,42 +2540,40 @@ Back to [Lab tasks](lab-tasks.md).
 
 <a id="unit-2c-task-2"></a>
 
-## Unit 2C Task 2: Right-angled triangle pattern of zeros
+## Unit 2C Task 2: 3x3 grid of zeros
 
-Prints a right-angled triangle made of zeros.
+Prints a 3 by 3 grid filled with zeros.
 
 ### Analyse the problem: Identify Input, Process and Output
 
 **Input**
-- Number of rows. Example: `rows = 3`
+- No user input needed (fixed size: 3x3)
 
 **Process**
-- Outer loop: `row_loop_var` from `1` to `rows`
-- Inner loop: `column_loop_var` from `1` to `row_loop_var` (row 1 → 1 zero, row 2 → 2 zeros, ...)
+- Outer loop controls the rows
+- Inner loop prints three zeros on each row
 - Move to the next line after each row
 
 **Output**
-- A right-angled triangle of zeros
+- Three rows, each with three zeros
 
 ### Sample input and output messages
 
 **Program structure** (fill in the blanks — nested for loops):
 
 ```python
-rows = ____  # e.g. 3
-
-for ____ in ____:  # row_loop_var; range(1, rows + 1)
-    for ____ in ____:  # column_loop_var; range(1, row_loop_var + 1)
-        print(____, end=" ")  # print one zero
-    print()  # next line after the row
+for ____ in ____:  # row_loop_var; range(1, 4) — each row
+    for ____ in ____:  # column_loop_var; range(1, 4) — each column
+        print(____, end=" ")  # print one zero, stay on same line
+    print()  # move to next line after the row
 ```
 
 ### Example
 
 | Item | Details |
 |------|---------|
-| **Example input** | `rows = 3` |
-| **Example output** | `0`<br>`0 0`<br>`0 0 0` |
+| **Example input** | (none) |
+| **Example output** | `0 0 0`<br>`0 0 0`<br>`0 0 0` |
 
 <a href="../.faculty/solutions/u2b0yd.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
@@ -2591,12 +2590,12 @@ Prints numbers `1` to `9` in a 3 by 3 grid using nested `for` loops.
 ### Analyse the problem: Identify Input, Process and Output
 
 **Input**
-- No user input needed (fixed size: 3x3), or use `rows = 3`
+- No user input needed (fixed size: 3x3)
 
 **Process**
 - Keep a running number that starts at `1`
-- Outer `for` loop: `row_loop_var` from `1` to `3`
-- Inner `for` loop: `column_loop_var` from `1` to `3` — print current number, then increase it by 1
+- Outer `for` loop for each row
+- Inner `for` loop for each column: print the current number, then increase it by 1
 - Move to the next line after each row
 
 **Output**
@@ -2608,10 +2607,9 @@ Prints numbers `1` to `9` in a 3 by 3 grid using nested `for` loops.
 
 ```python
 num = ____  # start counting from 1
-rows = ____  # 3
 
-for ____ in ____:  # row_loop_var; range(1, rows + 1)
-    for ____ in ____:  # column_loop_var; range(1, rows + 1)
+for ____ in ____:  # row_loop_var; range(1, 4) — each row
+    for ____ in ____:  # column_loop_var; range(1, 4) — each column
         print(____, end=" ")  # print the current number
         num = ____  # increase num by 1 for the next cell
     print()  # move to next line after the row
@@ -2621,7 +2619,7 @@ for ____ in ____:  # row_loop_var; range(1, rows + 1)
 
 | Item | Details |
 |------|---------|
-| **Example input** | (none) / `rows = 3` |
+| **Example input** | (none) |
 | **Example output** | `1 2 3`<br>`4 5 6`<br>`7 8 9` |
 
 <a href="../.faculty/solutions/v3c1xe.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
@@ -2639,13 +2637,13 @@ Prints numbers `1` to `9` in a 3 by 3 grid using a `while` outer loop and a `for
 ### Analyse the problem: Identify Input, Process and Output
 
 **Input**
-- No user input needed (fixed size: 3x3), or use `rows = 3`
+- No user input needed (fixed size: 3x3)
 
 **Process**
 - Keep a running number that starts at `1`
-- Outer `while` loop with `row_loop_var` starting at `1`
-- Inner `for` loop: `column_loop_var` from `1` to `rows` — print current number, then increase it by 1
-- Move to the next line after each row and increase `row_loop_var`
+- Outer `while` loop for each row (use `row_loop_var` starting at `1`)
+- Inner `for` loop for each column (`column_loop_var`, range starts at `1`): print the current number, then increase it by 1
+- Move to the next line after each row and update `row_loop_var`
 
 **Output**
 - Numbers `1` to `9` shown as a 3x3 grid
@@ -2656,11 +2654,10 @@ Prints numbers `1` to `9` in a 3 by 3 grid using a `while` outer loop and a `for
 
 ```python
 num = ____  # start counting from 1
-rows = ____  # 3
-row_loop_var = ____  # start at 1
+row_loop_var = ____  # start row_loop_var at 1
 
-while ____:  # keep going while row_loop_var <= rows
-    for ____ in ____:  # column_loop_var; range(1, rows + 1)
+while ____:  # keep going while row_loop_var is within 1..3
+    for ____ in ____:  # column_loop_var; range(1, 4) — each column
         print(____, end=" ")  # print the current number
         num = ____  # increase num by 1 for the next cell
     print()  # move to next line after the row
@@ -2671,9 +2668,112 @@ while ____:  # keep going while row_loop_var <= rows
 
 | Item | Details |
 |------|---------|
-| **Example input** | (none) / `rows = 3` |
+| **Example input** | (none) |
 | **Example output** | `1 2 3`<br>`4 5 6`<br>`7 8 9` |
 
 <a href="../.faculty/solutions/w4d2vf.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2c-task-8"></a>
+
+## Unit 2C Task 8: Right-angled triangle pattern of stars
+
+Prints a right-angled triangle made of stars (`*`).
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read how many rows to print
+
+**Process**
+- Outer loop for each row
+- Inner loop prints stars for that row (row 1 → 1 star, row 2 → 2 stars, ...)
+- Move to the next line after each row
+
+**Output**
+- A right-angled triangle of stars
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+rows = int(input("Enter number of rows: "))
+```
+
+**Program structure** (fill in the blanks — nested for loops):
+
+```python
+rows = int(input("Enter number of rows: "))
+
+for ____ in ____:  # row_loop_var; range(1, rows + 1)
+    for ____ in ____:  # column_loop_var; range(1, row_loop_var + 1)
+        print(____, end=" ")  # print one star
+    print()  # next line after the row
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `rows = 4` |
+| **Example output** | `*`<br>`* *`<br>`* * *`<br>`* * * *` |
+
+<a href="../.faculty/solutions/a8h6rj.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2c-task-9"></a>
+
+## Unit 2C Task 9: Inverted right-angled triangle pattern
+
+Prints an inverted right-angled triangle made of stars (`*`).
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read how many rows to print
+
+**Process**
+- Outer loop for each row
+- Inner loop prints stars that decrease each row (first row has `n` stars, then `n-1`, ...)
+- Move to the next line after each row
+
+**Output**
+- An inverted right-angled triangle of stars
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+rows = int(input("Enter number of rows: "))
+```
+
+**Program structure** (fill in the blanks — nested for loops):
+
+```python
+rows = int(input("Enter number of rows: "))
+
+for ____ in ____:  # row_loop_var; range(rows, 0, -1)
+    for ____ in ____:  # column_loop_var; range(1, row_loop_var + 1)
+        print(____, end=" ")  # print one star
+    print()  # next line after the row
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `rows = 4` |
+| **Example output** | `* * * *`<br>`* * *`<br>`* *`<br>`*` |
+
+<a href="../.faculty/solutions/b9i7pk.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+

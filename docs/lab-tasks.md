@@ -63,16 +63,21 @@ Click **View hint** for input, process, output, and a worked example (where avai
 
 | Task | What to write | File name | Expected output | Hint |
 |------|----------------|-----------|-----------------|------|
-| 1 | Write a python program to print a square pattern of zeros | `Unit-2C_Task-1_Square_Pattern_of_Zeros.py` | (for `rows = 3`)<br>`0 0 0`<br>`0 0 0`<br>`0 0 0` | [View hint](hints.md#unit-2c-task-1) |
-| 2 | Write a python program to print a right-angled triangle pattern of zeros | `Unit-2C_Task-2_Right_Angled_Triangle_Zeros.py` | (for `rows = 3`)<br>`0`<br>`0 0`<br>`0 0 0` | [View hint](hints.md#unit-2c-task-2) |
-| 3 | Write a python program to print numbers in a 3x3 grid using for-for nested loop | `Unit-2C_Task-3_Three_by_Three_Numbers_For_For.py` | `1 2 3`<br>`4 5 6`<br>`7 8 9` | [View hint](hints.md#unit-2c-task-3) |
-| 4 | Write a python program to print numbers in a 3x3 grid using while-for nested loop | `Unit-2C_Task-4_Three_by_Three_Numbers_While_For.py` | `1 2 3`<br>`4 5 6`<br>`7 8 9` | [View hint](hints.md#unit-2c-task-4) |
-| 5 | Write a python program to print a number right-angled triangle pattern | `Unit-2C_Task-5_Number_Right_Angled_Triangle.py` | (for `rows = 6`)<br>`1`<br>`1 2`<br>`1 2 3`<br>`1 2 3 4`<br>`1 2 3 4 5`<br>`1 2 3 4 5 6` | — |
-| 6 | Write a python program to print a centered pyramid pattern of stars | `Unit-2C_Task-6_Centered_Pyramid_Stars.py` | (for `rows = 3`)<br>`    *`<br>`  * * *`<br>`* * * * *` | — |
-| 7 | Write a python program to print Floyd's triangle | `Unit-2C_Task-7_Floyds_Triangle.py` | (for `rows = 4`)<br>`1`<br>`2 3`<br>`4 5 6`<br>`7 8 9 10` | — |
-| 8 | Write a python program to print a diamond pattern of stars | `Unit-2C_Task-8_Diamond_Pattern_of_Stars.py` | (for `rows = 3`)<br>`    *`<br>`  * * *`<br>`* * * * *`<br>`  * * *`<br>`    *` | — |
-| 9 | Write a python program to print a hollow square pattern of stars | `Unit-2C_Task-9_Hollow_Square_Stars.py` | (for `rows = 5`)<br>`* * * * *`<br>`*       *`<br>`*       *`<br>`*       *`<br>`* * * * *` | — |
-| 10 | Write a python program to print a hollow diamond pattern of stars | `Unit-2C_Task-10_Hollow_Diamond_Stars.py` | (for `rows = 3`)<br>`    *`<br>`  *   *`<br>`*       *`<br>`  *   *`<br>`    *` | — |
+| 1 | Write a python program to print 3 zeros in 1 row and 1 column | `Unit-2C_Task-1_Three_Zeros_Row_and_Column.py` | `0 0 0`<br>`0`<br>`0`<br>`0` | [View hint](hints.md#unit-2c-task-1) |
+| 2 | Write a python program to print a 3x3 grid of zeros | `Unit-2C_Task-2_Three_by_Three_Grid_of_Zeros.py` | `0 0 0`<br>`0 0 0`<br>`0 0 0` | [View hint](hints.md#unit-2c-task-2) |
+| 3 | Write a python program to print numbers in a 3x3 grid (as shown in the hint) using for-for nested loop | `Unit-2C_Task-3_Three_by_Three_Numbers_For_For.py` | `1 2 3`<br>`4 5 6`<br>`7 8 9` | [View hint](hints.md#unit-2c-task-3) |
+| 4 | Write a python program to print numbers in a 3x3 grid (as shown in the hint) using while-for nested loop | `Unit-2C_Task-4_Three_by_Three_Numbers_While_For.py` | `1 2 3`<br>`4 5 6`<br>`7 8 9` | [View hint](hints.md#unit-2c-task-4) |
+| 5 | Write a python program to print a pyramid pattern of numbers from 1 to 10 | `Unit-2C_Task-5_Pyramid_Pattern_Numbers_1_to_10.py` | `      1`<br>`    2 3`<br>`  4 5 6`<br>`7 8 9 10` | — |
+| 6 | Write a python program to print Pascal's triangle | `Unit-2C_Task-6_Pascals_Triangle.py` | (for `rows = 5`)<br>`1`<br>`1 1`<br>`1 2 1`<br>`1 3 3 1`<br>`1 4 6 4 1` | — |
+| 7 | Write a python program to print a number pattern (e.g., Floyd's triangle) | `Unit-2C_Task-7_Floyds_Triangle_Number_Pattern.py` | (for `rows = 4`)<br>`1`<br>`2 3`<br>`4 5 6`<br>`7 8 9 10` | — |
+| 8 | Write a python program to print a right-angled triangle pattern of stars | `Unit-2C_Task-8_Right_Angled_Triangle_Stars.py` | (for `rows = 4`)<br>`*`<br>`* *`<br>`* * *`<br>`* * * *` | [View hint](hints.md#unit-2c-task-8) |
+| 9 | Write a python program to print an inverted right-angled triangle pattern | `Unit-2C_Task-9_Inverted_Right_Angled_Triangle.py` | (for `rows = 4`)<br>`* * * *`<br>`* * *`<br>`* *`<br>`*` | [View hint](hints.md#unit-2c-task-9) |
+| 10 | Write a python program to print a diamond pattern of stars | `Unit-2C_Task-10_Diamond_Pattern_of_Stars.py` | (for `rows = 3`)<br>`    *`<br>`  * * *`<br>`* * * * *`<br>`  * * *`<br>`    *` | — |
+| 11 | Write a python program to print a right-angled triangle pattern of zeros | `Unit-2C_Task-11_Right_Angled_Triangle_Zeros.py` | (for `rows = 3`)<br>`0`<br>`0 0`<br>`0 0 0` | — |
+| 12 | Write a python program to print a number right-angled triangle pattern | `Unit-2C_Task-12_Number_Right_Angled_Triangle.py` | (for `rows = 6`)<br>`1`<br>`1 2`<br>`1 2 3`<br>`1 2 3 4`<br>`1 2 3 4 5`<br>`1 2 3 4 5 6` | — |
+| 13 | Write a python program to print a centered pyramid pattern of stars | `Unit-2C_Task-13_Centered_Pyramid_Stars.py` | (for `rows = 3`)<br>`    *`<br>`  * * *`<br>`* * * * *` | — |
+| 14 | Write a python program to print a hollow square pattern of stars | `Unit-2C_Task-14_Hollow_Square_Stars.py` | (for `rows = 5`)<br>`* * * * *`<br>`*       *`<br>`*       *`<br>`*       *`<br>`* * * * *` | — |
+| 15 | Write a python program to print a hollow diamond pattern of stars | `Unit-2C_Task-15_Hollow_Diamond_Stars.py` | (for `rows = 3`)<br>`    *`<br>`  *   *`<br>`*       *`<br>`  *   *`<br>`    *` | — |
 
 ### D. String Manipulation Programs
 

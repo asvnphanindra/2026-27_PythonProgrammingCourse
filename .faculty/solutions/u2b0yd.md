@@ -1,13 +1,11 @@
 # Unit 2C Task 2 — Example solution
 
-Print a right-angled triangle pattern of zeros.
+Print a 3x3 grid of zeros using nested for loops.
 
 ```python
-# Example solution: right-angled triangle of zeros
-rows = 3
-
-for row_loop_var in range(1, rows + 1):
-    for column_loop_var in range(1, row_loop_var + 1):
+# Example solution: 3x3 grid of zeros
+for row_loop_var in range(1, 4):
+    for column_loop_var in range(1, 4):
         print(0, end=" ")
     print()
 ```
