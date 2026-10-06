@@ -3074,51 +3074,47 @@ Back to [Lab tasks](lab-tasks.md).
 
 <a id="unit-2c-task-12"></a>
 
-## Unit 2C Task 12: Centered pyramid of numbers from 1 to 10
+## Unit 2C Task 12: Centered pyramid pattern of numbers
 
-Prints numbers `1` to `10` in a centered pyramid (spaces on the left, then numbers on each row).
+Prints a centered pyramid of numbers (`1`, `1 2 3`, `1 2 3 4 5`, ...). Same spacing idea as the star pyramid (Task 9): leading spaces push each row toward the center; numbers on a row are separated by spaces. Numbers restart from `1` on every row.
 
 ### Analyse the problem: Identify Input, Process and Output
 
 **Input**
-- No user input needed for the fixed case: numbers `1` to `10` need **4** rows (1 + 2 + 3 + 4 = 10)
+- Number of rows (example: `rows = 5`), or read from the user
 
 **Process**
-- Keep a running counter `num` starting at `1`
-- Outer loop: each row
-- Print leading spaces to center the row
-- Inner loop: print as many numbers as the row number, while `num <= 10`
-- Increase `num` after each print
+- Outer loop: `row_loop_var` from `1` to `rows`
+- First inner loop: print leading spaces — `range(1, rows - row_loop_var + 1)` with `end=" "`
+- Second inner loop: print numbers `1` to `2 * row_loop_var - 1` with `end=" "` (space between numbers)
+- Move to the next line after each row
 
 **Output**
-- A centered number pyramid using `1` to `10`
+- A centered number pyramid
 
 ### Sample input and output messages
 
-**Program structure** (fill in the blanks):
+**Program structure** (fill in the blanks — nested for loops):
 
 ```python
-num = ____  # start from 1
-rows = ____  # 4 rows for numbers 1 to 10
+rows = ____  # e.g. 5
 
 for ____ in ____:  # row_loop_var; range(1, rows + 1)
-    for ____ in ____:  # leading spaces
+    for ____ in ____:  # column_loop_var_spaces; range(1, rows - row_loop_var + 1)
         print(" ", end=" ")
-    for ____ in ____:  # numbers in this row
-        if ____:  # still have numbers left up to 10?
-            print(____, end=" ")
-            num = ____  # increase num by 1
+    for ____ in ____:  # column_loop_var; range(1, 2 * row_loop_var)
+        print(____, end=" ")  # print 1, 2, 3, ... with a space between
     print()
 ```
 
-> **Hint:** Row 1 prints 1 number, row 2 prints 2, row 3 prints 3, row 4 prints 4.
+> **Hint:** Same shape as Task 9, but print `column_loop_var` instead of `*`. Row `i` prints `(2 * i - 1)` numbers starting from `1`.
 
 ### Example
 
 | Item | Details |
 |------|---------|
-| **Example input** | (none) |
-| **Example output** | `      1`<br>`    2 3`<br>`  4 5 6`<br>`7 8 9 10` |
+| **Example input** | `rows = 5` |
+| **Example output** | `        1`<br>`      1 2 3`<br>`    1 2 3 4 5`<br>`  1 2 3 4 5 6 7`<br>`1 2 3 4 5 6 7 8 9` |
 
 <a href="../.faculty/solutions/x5e3ug.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 

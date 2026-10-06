@@ -1,19 +1,16 @@
 # Unit 2C Task 12 — Example solution
 
-Print a centered pyramid of numbers from 1 to 10.
+Print a centered pyramid pattern of numbers.
 
 ```python
-# Example solution: centered pyramid pattern of numbers from 1 to 10
-num = 1
-rows = 4
+# Example solution: centered number pyramid
+rows = 5
 
 for row_loop_var in range(1, rows + 1):
     for column_loop_var_spaces in range(1, rows - row_loop_var + 1):
         print(" ", end=" ")
-    for column_loop_var in range(1, row_loop_var + 1):
-        if num <= 10:
-            print(num, end=" ")
-            num = num + 1
+    for column_loop_var in range(1, 2 * row_loop_var):
+        print(column_loop_var, end=" ")
     print()
 ```
 

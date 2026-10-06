@@ -38,7 +38,7 @@ Not linked from student docs. Map task → cryptic file.
 | Unit 2C Task 9 — Centered pyramid of stars | `f3m0zo.md` |
 | Unit 2C Task 10 — Diamond pattern of stars | `c0j8ql.md` |
 | Unit 2C Task 11 — Hollow diamond of stars | `h5o2bq.md` |
-| Unit 2C Task 12 — Centered pyramid numbers 1 to 10 | `x5e3ug.md` |
+| Unit 2C Task 12 — Centered number pyramid | `x5e3ug.md` |
 | Unit 2C Task 13 — Pascal's triangle | `y6f4th.md` |
 | Unit 2C Task 14 — Floyd's triangle | `z7g5si.md` |
 | Unit 2C Task 15 — Number right-angled triangle | `e2l9yn.md` |
