@@ -3135,8 +3135,9 @@ Back to [Lab tasks](lab-tasks.md).
 
 **How can we print it with nested loops?**
 - Outer loop for each row
+- Print leading spaces so the triangle looks centered
 - Start each row with `value = 1`
-- Inner loop prints the values in that row
+- Inner loop prints the values in that row (with a space between numbers)
 - Update the next value with a formula (no need to store the previous row):
   - With `row_loop_var` and `column_loop_var` starting at `1`:
   - `value = value * (row_loop_var - column_loop_var) // column_loop_var`
@@ -3148,11 +3149,13 @@ Back to [Lab tasks](lab-tasks.md).
 
 **Process**
 - Outer loop for each row from `1` to `rows`
+- First inner loop: print leading spaces — count is `rows - row_loop_var` (use `end=""`)
 - Start `value = 1`
-- Inner loop for each position in the row; print `value`, then update it with the formula above
+- Second inner loop for each position in the row; print `value` with `end=" "`, then update it with the formula above
+- Move to the next line after each row
 
 **Output**
-- Pascal's triangle with the requested number of rows
+- A centered Pascal's triangle with the requested number of rows
 
 ### Sample input and output messages
 
@@ -3168,6 +3171,8 @@ rows = int(input("Enter number of rows: "))
 rows = int(input("Enter number of rows: "))
 
 for ____ in ____:  # row_loop_var; range(1, rows + 1)
+    for ____ in ____:  # column_loop_var_spaces; range(1, rows - row_loop_var + 1)
+        print(" ", end="")  # single leading space for centering
     value = ____  # first value in a Pascal row is 1
     for ____ in ____:  # column_loop_var; range(1, row_loop_var + 1)
         print(____, end=" ")  # print current Pascal value
@@ -3175,14 +3180,14 @@ for ____ in ____:  # row_loop_var; range(1, rows + 1)
     print()
 ```
 
-> **Hint:** One common update (1-based loops) is `value = value * (row_loop_var - column_loop_var) // column_loop_var`.
+> **Hint:** One common update (1-based loops) is `value = value * (row_loop_var - column_loop_var) // column_loop_var`. Row `i` has `(rows - i)` leading spaces.
 
 ### Example
 
 | Item | Details |
 |------|---------|
 | **Example input** | `rows = 5` |
-| **Example output** | `1`<br>`1 1`<br>`1 2 1`<br>`1 3 3 1`<br>`1 4 6 4 1` |
+| **Example output** | `    1`<br>`   1 1`<br>`  1 2 1`<br>` 1 3 3 1`<br>`1 4 6 4 1` |
 
 <a href="../.faculty/solutions/y6f4th.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 

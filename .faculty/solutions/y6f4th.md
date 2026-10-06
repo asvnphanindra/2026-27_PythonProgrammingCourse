@@ -1,12 +1,14 @@
 # Unit 2C Task 13 — Example solution
 
-Print Pascal's triangle for n rows.
+Print Pascal's triangle for n rows (centered).
 
 ```python
 # Example solution: Pascal's triangle
 rows = int(input("Enter number of rows: "))
 
 for row_loop_var in range(1, rows + 1):
+    for column_loop_var_spaces in range(1, rows - row_loop_var + 1):
+        print(" ", end="")
     value = 1
     for column_loop_var in range(1, row_loop_var + 1):
         print(value, end=" ")
