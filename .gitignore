@@ -1,3 +1,6 @@
 
 # Faculty-only: classroom VS Code profiles (not for students)
 tools/vscode-classroom-profile/
+
+# Faculty-only: Unit 2C classroom notebook (local demo)
+.faculty/Unit-2C_All_Tasks.ipynb
