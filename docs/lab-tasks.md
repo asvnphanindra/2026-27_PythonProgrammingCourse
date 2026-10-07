@@ -28,6 +28,8 @@ Click **Lab observation expectations** in a row for Full / Short / Will be infor
 
 ## Unit 2
 
+**Sec-21 (Cyber Security):** For Unit 2 **Full** tasks (2A: 1, 3, 4, 5 · 2B: 3, 7, 8, 11 · 2C: 4, 5, 6, 13), come prepared by **09-Oct-2026, 09:00 AM**. Details: [Sec-21 notice](lab-expectations.md#sec-21).
+
 ### A. Conditional Statement Programs
 
 | S No | Task name | Lab observation expectations | File name | Record expectations | Hint |

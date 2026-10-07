@@ -10,6 +10,28 @@ Back to [Lab tasks](lab-tasks.md).
 
 ---
 
+<a id="sec-21"></a>
+
+## Section notice — Sec-21 (Cyber Security)
+
+For all **Unit 2** tasks marked **Full**:
+
+- Bring lab observation to the lab by **09-Oct-2026, 09:00 AM**.
+- Minimum by that time: **Aim**, **Python program**, and **Test cases** (at least 5; at least 2 tricky).
+- You may leave blank space for Algorithm, Flowchart, Pseudocode (and other Full-only items) and finish them by **10-Oct-2026**.
+
+**Unit 2 Full task numbers**
+
+| Unit | Full tasks |
+|------|------------|
+| 2A | 1, 3, 4, 5 |
+| 2B | 3, 7, 8, 11 |
+| 2C | 4, 5, 6, 13 |
+
+See the [lab tasks](lab-tasks.md) list for file names and [Full](#full) details.
+
+---
+
 <a id="before-lab"></a>
 
 ## Before lab — Lab observation
