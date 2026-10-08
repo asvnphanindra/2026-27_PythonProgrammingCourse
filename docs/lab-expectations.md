@@ -10,6 +10,25 @@ Back to [Lab tasks](lab-tasks.md).
 
 ---
 
+<a id="sec-19"></a>
+
+## Section notice — Sec-19 (CSE 4)
+
+Prepare lab observation for every **Unit 2A** and **Unit 2B** task marked **Full**:
+
+- Bring lab observation to the lab by **10-Oct-2026, 09:00 AM**.
+
+**Unit 2A / 2B Full task numbers**
+
+| Unit | Full tasks |
+|------|------------|
+| 2A | 1, 3, 4, 5 |
+| 2B | 3, 7, 8, 11 |
+
+See the [lab tasks](lab-tasks.md) list for file names and [Full](#full) details.
+
+---
+
 <a id="sec-21"></a>
 
 ## Section notice — Sec-21 (Cyber Security)
