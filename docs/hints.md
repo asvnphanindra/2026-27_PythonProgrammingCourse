@@ -17,6 +17,8 @@ Jump to a task:
 
 **Unit 2C:** [Task 1](#unit-2c-task-1) · [Task 2](#unit-2c-task-2) · [Task 3](#unit-2c-task-3) · [Task 4](#unit-2c-task-4) · [Task 5](#unit-2c-task-5) · [Task 6](#unit-2c-task-6) · [Task 7](#unit-2c-task-7) · [Task 8](#unit-2c-task-8) · [Task 9](#unit-2c-task-9) · [Task 10](#unit-2c-task-10) · [Task 11](#unit-2c-task-11) · [Task 12](#unit-2c-task-12) · [Task 13](#unit-2c-task-13) · [Task 14](#unit-2c-task-14) · [Task 15](#unit-2c-task-15)
 
+**Unit 2D:** [Task 1](#unit-2d-task-1) · [Task 2](#unit-2d-task-2) · [Task 3](#unit-2d-task-3) · [Task 4](#unit-2d-task-4) · [Task 5](#unit-2d-task-5) · [Task 6](#unit-2d-task-6) · [Task 7](#unit-2d-task-7) · [Task 8](#unit-2d-task-8)
+
 ---
 
 <a id="unit-1-task-1"></a>
@@ -3296,5 +3298,484 @@ for ____ in ____:  # row_loop_var; range(1, rows + 1)
 | **Example output** | `1`<br>`1 2`<br>`1 2 3`<br>`1 2 3 4`<br>`1 2 3 4 5`<br>`1 2 3 4 5 6` |
 
 <a href="../.faculty/solutions/e2l9yn.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2d-task-1"></a>
+
+## Unit 2D Task 1: String creation and basic operations
+
+Demonstrates creating a string and using concatenation (`+`), repetition (`*`), and slicing.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- You may use fixed sample strings in code (or read from the user)
+
+**Process**
+- Create a string
+- Concatenate two strings with `+`
+- Repeat a string with `*`
+- Slice parts of the string with `[start:stop]` (and negative indexes if useful)
+
+**Output**
+- Show the original string, concatenation, repetition, and sliced parts
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+s = ____  # e.g. "Python"
+print("String:", ____)
+
+s1 = ____  # e.g. "Hello"
+s2 = ____  # e.g. "World"
+print("Concatenation:", ____)  # join s1 and s2 with a space using +
+
+print("Repetition:", ____)  # repeat s three times using *
+
+print("First 3 characters:", ____)  # s[:3]
+print("Last 3 characters:", ____)  # s[-3:]
+print("Characters from index 1 to 4:", ____)  # s[1:5]
+```
+
+> **Hint:** Indexing starts at `0`. `s[1:5]` means from index `1` up to (but not including) index `5`.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `s = "Python"`, `s1 = "Hello"`, `s2 = "World"` |
+| **Example output** | `String: Python`<br>`Concatenation: Hello World`<br>`Repetition: PythonPythonPython`<br>`First 3 characters: Pyt`<br>`Last 3 characters: hon`<br>`Characters from index 1 to 4: ytho` |
+
+<a href="../.faculty/solutions/a3k7mp.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2d-task-2"></a>
+
+## Unit 2D Task 2: String methods
+
+Demonstrates common string methods: `upper`, `lower`, `strip`, `split`, `join`, `replace`, and `find`.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A sample string (fixed in code or read from the user)
+
+**Process**
+- Call each required method on the string (or on a list for `join`)
+- Print the result of each call
+
+**Output**
+- Uppercase, lowercase, stripped, split list, joined string, replaced string, and find index
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+s = ____  # e.g. "  Hello Python World  "
+
+print("Upper:", ____)  # s.upper()
+print("Lower:", ____)  # s.lower()
+print("Strip:", ____)  # s.strip()
+print("Split:", ____)  # s.split()
+print("Join:", ____)  # "-".join(["Hello", "Python"])
+print("Replace:", ____)  # replace "Python" with "Java"
+print("Find:", ____)  # find index of "Python"
+```
+
+> **Hint:** `strip()` removes leading and trailing spaces. `split()` (with no argument) splits on whitespace and returns a list. `find()` returns the starting index of a substring (or `-1` if not found).
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `s = "  Hello Python World  "` |
+| **Example output** | `Upper:   HELLO PYTHON WORLD  `<br>`Lower:   hello python world  `<br>`Strip: Hello Python World`<br>`Split: ['Hello', 'Python', 'World']`<br>`Join: Hello-Python`<br>`Replace:   Hello Java World  `<br>`Find: 8` |
+
+<a href="../.faculty/solutions/b4l8nq.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2d-task-3"></a>
+
+## Unit 2D Task 3: String palindrome
+
+Checks whether a string reads the same forwards and backwards.
+
+**What is a palindrome string?**
+- It is the same from left to right and from right to left
+- Example: `madam` → reverse is `madam` → palindrome
+- Example: `python` → reverse is `nohtyp` → not a palindrome
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a string from the user
+
+**Process**
+- Compare the string with its reverse (`s[::-1]`)
+- If they are equal, it is a palindrome
+
+**Output**
+- Say whether the string is a palindrome or not
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+s = input("Enter a string: ")
+```
+
+**Program structure** (fill in the blanks):
+
+```python
+s = input("Enter a string: ")
+
+if ____:  # s equals its reverse s[::-1]
+    print(____)  # "Palindrome"
+else:
+    print(____)  # "Not a palindrome"
+```
+
+> **Hint:** `s[::-1]` reverses the string using slicing (step `-1`).
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `madam` |
+| **Example output** | `Palindrome` |
+
+<a href="../.faculty/solutions/c5m9or.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2d-task-4"></a>
+
+## Unit 2D Task 4: Reverse a string
+
+Reads a string and prints it in reverse order.
+
+### How slicing works (simple idea)
+
+Slicing uses the form `s[start:stop:step]`:
+
+- **start** — where to begin (default: beginning of the string)
+- **stop** — where to stop, not included (default: end of the string)
+- **step** — how many characters to jump each time (default: `1`, forward)
+
+**Simple example** with `s = "Python"`:
+
+| Index | 0 | 1 | 2 | 3 | 4 | 5 |
+|-------|---|---|---|---|---|---|
+| Char | P | y | t | h | o | n |
+
+```python
+s = "Python"
+print(s[0:3])    # Pyt   → from index 0 up to (not including) 3
+print(s[1:5])    # ytho  → from index 1 up to (not including) 5
+print(s[:3])     # Pyt   → start omitted → begin at 0
+print(s[2:])     # thon  → stop omitted → go to the end
+print(s[::2])    # Pto   → every 2nd character forward
+print(s[::-1])   # nohtyP → step -1 means walk backwards
+```
+
+To reverse a string, leave start and stop empty and use step `-1`:
+
+```text
+s[::-1]  →  start at the end, move left by 1 each time, until the beginning
+"Python"[::-1]  →  "nohtyP"
+```
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a string from the user
+
+**Process**
+- Reverse the string with slicing `s[::-1]`
+
+**Output**
+- The reversed string
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+s = input("Enter a string: ")
+```
+
+**Program structure** (fill in the blanks):
+
+```python
+s = input("Enter a string: ")
+
+reverse = ____  # reverse s using slicing s[::-1]
+
+print("Reversed string:", ____)
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `Python` |
+| **Example output** | `Reversed string: nohtyP` |
+
+<a href="../.faculty/solutions/d6n0ps.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2d-task-5"></a>
+
+## Unit 2D Task 5: Count vowels, consonants, digits and spaces
+
+Counts how many vowels, consonants, digits, and spaces appear in a string.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a string from the user
+
+**Process**
+- Start four counters at `0`
+- Loop through each character
+- If it is a vowel (`a e i o u`, check lowercase) → increase vowels
+- Else if it is a letter → increase consonants
+- Else if it is a digit → increase digits
+- Else if it is a space → increase spaces
+
+**Output**
+- Print the four counts
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+s = input("Enter a string: ")
+```
+
+**Program structure** (fill in the blanks):
+
+```python
+s = input("Enter a string: ")
+
+vowels = ____
+consonants = ____
+digits = ____
+spaces = ____
+
+for ____ in ____:  # each character in s
+    if ____:  # ch.lower() in "aeiou"
+        vowels = ____
+    elif ____:  # ch.isalpha()
+        consonants = ____
+    elif ____:  # ch.isdigit()
+        digits = ____
+    elif ____:  # ch == " "
+        spaces = ____
+
+print("Vowels:", ____)
+print("Consonants:", ____)
+print("Digits:", ____)
+print("Spaces:", ____)
+```
+
+> **Hint:** Use `ch.lower()` so both `A` and `a` count as vowels. `isalpha()` is true for letters; `isdigit()` is true for `0`–`9`.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `Hello 123` |
+| **Example output** | `Vowels: 2`<br>`Consonants: 3`<br>`Digits: 3`<br>`Spaces: 1` |
+
+<a href="../.faculty/solutions/e7o1qt.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2d-task-6"></a>
+
+## Unit 2D Task 6: String formatting
+
+Shows the same message using three formatting styles: `format()`, f-strings, and the `%` operator.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Sample values such as `name` and `age` (fixed in code or read from the user)
+
+**Process**
+- Print one line with `.format(...)`
+- Print one line with an f-string `f"..."`
+- Print one line with `"..." % (values)`
+
+**Output**
+- The same sentence three times (one per style)
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+name = ____  # e.g. "Anusha"
+age = ____  # e.g. 25
+
+# Using format()
+print(____)  # "My name is {} and I am {} years old.".format(name, age)
+
+# Using f-string
+print(____)  # f"My name is {name} and I am {age} years old."
+
+# Using % operator
+print(____)  # "My name is %s and I am %d years old." % (name, age)
+```
+
+> **Hint:** `%s` is for strings; `%d` is for integers. An f-string places expressions inside `{ }` after the `f` prefix.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `name = "Anusha"`, `age = 25` |
+| **Example output** (all three lines) | `My name is Anusha and I am 25 years old.` |
+
+<a href="../.faculty/solutions/f8p2ru.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2d-task-7"></a>
+
+## Unit 2D Task 7: Character frequency
+
+Counts how many times each character appears in a string (often with a dictionary).
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a string from the user
+
+**Process**
+- Start with an empty dictionary
+- For each character: if it is already a key, increase its count by `1`; otherwise store `1`
+- Print each character and its count
+
+**Output**
+- Frequency of every character in the string
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+s = input("Enter a string: ")
+```
+
+**Program structure** (fill in the blanks):
+
+```python
+s = input("Enter a string: ")
+
+frequency = ____  # empty dictionary {}
+
+for ____ in ____:  # each character in s
+    if ____:  # character already in frequency?
+        frequency[____] = ____  # increase by 1
+    else:
+        frequency[____] = ____  # first time: store 1
+
+for ____, ____ in ____:  # items in frequency
+    print(____, ":", ____)
+```
+
+> **Hint:** First time a character appears → store `1`. If it appears again → add `1` to the stored count.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `hello` |
+| **Example output** | `h : 1`<br>`e : 1`<br>`l : 2`<br>`o : 1` |
+
+<a href="../.faculty/solutions/g9q3sv.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-2d-task-8"></a>
+
+## Unit 2D Task 8: Anagram check
+
+Checks whether two strings are anagrams.
+
+**What are anagrams?**
+- Two strings that contain the **same characters** with the **same frequency**, but possibly in a different order
+- Example: `listen` and `silent` are anagrams
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read two strings from the user
+
+**Process**
+- One common way: compare `sorted(s1)` with `sorted(s2)`
+- If the sorted lists/strings match, they are anagrams
+
+**Output**
+- Say whether the two strings are anagrams or not
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+s1 = input("Enter first string: ")
+s2 = input("Enter second string: ")
+```
+
+**Program structure** (fill in the blanks):
+
+```python
+s1 = input("Enter first string: ")
+s2 = input("Enter second string: ")
+
+if ____:  # sorted(s1) equals sorted(s2)
+    print(____)  # "Anagrams"
+else:
+    print(____)  # "Not anagrams"
+```
+
+> **Hint:** `sorted("listen")` and `sorted("silent")` produce the same sequence of characters.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `listen`, `silent` |
+| **Example output** | `Anagrams` |
+
+<a href="../.faculty/solutions/h0r4tw.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](lab-tasks.md).

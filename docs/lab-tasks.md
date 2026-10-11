@@ -92,14 +92,14 @@ Click **Lab observation expectations** in a row for Full / Short / Will be infor
 
 | S No | Task name | Lab observation expectations | File name | Record expectations | Hint |
 |------|-----------|------------------------------|-----------|---------------------|------|
-| 1 | Write a python program to demonstrate string creation and basic operations (concatenation, repetition, slicing) | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-2D_Task-1_String_Creation_Basic_Operations.py` | Will be updated later | — |
-| 2 | Write a python program to demonstrate string methods (upper, lower, strip, split, join, replace, find) | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-2D_Task-2_String_Methods.py` | Will be updated later | — |
-| 3 | Write a python program to check whether a string is a palindrome | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-2D_Task-3_String_Palindrome.py` | Will be updated later | — |
-| 4 | Write a python program to reverse a string | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-2D_Task-4_Reverse_a_String.py` | Will be updated later | — |
-| 5 | Write a python program to count vowels, consonants, digits and spaces in a string | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-2D_Task-5_Count_Vowels_Consonants_Digits_Spaces.py` | Will be updated later | — |
-| 6 | Write a python program to demonstrate string formatting (format(), f-strings, % operator) | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-2D_Task-6_String_Formatting.py` | Will be updated later | — |
-| 7 | Write a python program to count the frequency of each character in a string | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-2D_Task-7_Character_Frequency.py` | Will be updated later | — |
-| 8 | Write a python program to check whether two strings are anagrams | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-2D_Task-8_Anagram_Check.py` | Will be updated later | — |
+| 1 | Write a python program to demonstrate string creation and basic operations (concatenation, repetition, slicing) | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-2D_Task-1_String_Creation_Basic_Operations.py` | Will be updated later | [View hint](hints.md#unit-2d-task-1) |
+| 2 | Write a python program to demonstrate string methods (upper, lower, strip, split, join, replace, find) | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-2D_Task-2_String_Methods.py` | Will be updated later | [View hint](hints.md#unit-2d-task-2) |
+| 3 | Write a python program to check whether a string is a palindrome | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-2D_Task-3_String_Palindrome.py` | Will be updated later | [View hint](hints.md#unit-2d-task-3) |
+| 4 | Write a python program to reverse a string | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-2D_Task-4_Reverse_a_String.py` | Will be updated later | [View hint](hints.md#unit-2d-task-4) |
+| 5 | Write a python program to count vowels, consonants, digits and spaces in a string | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-2D_Task-5_Count_Vowels_Consonants_Digits_Spaces.py` | Will be updated later | [View hint](hints.md#unit-2d-task-5) |
+| 6 | Write a python program to demonstrate string formatting (format(), f-strings, % operator) | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-2D_Task-6_String_Formatting.py` | Will be updated later | [View hint](hints.md#unit-2d-task-6) |
+| 7 | Write a python program to count the frequency of each character in a string | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-2D_Task-7_Character_Frequency.py` | Will be updated later | [View hint](hints.md#unit-2d-task-7) |
+| 8 | Write a python program to check whether two strings are anagrams | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-2D_Task-8_Anagram_Check.py` | Will be updated later | [View hint](hints.md#unit-2d-task-8) |
 
 ## Unit 3
 

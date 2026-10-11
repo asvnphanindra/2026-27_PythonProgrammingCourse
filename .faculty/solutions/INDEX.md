@@ -42,3 +42,11 @@ Not linked from student docs. Map task → cryptic file.
 | Unit 2C Task 13 — Pascal's triangle | `y6f4th.md` |
 | Unit 2C Task 14 — Floyd's triangle | `z7g5si.md` |
 | Unit 2C Task 15 — Number right-angled triangle | `e2l9yn.md` |
+| Unit 2D Task 1 — String creation and basic operations | `a3k7mp.md` |
+| Unit 2D Task 2 — String methods | `b4l8nq.md` |
+| Unit 2D Task 3 — String palindrome | `c5m9or.md` |
+| Unit 2D Task 4 — Reverse a string | `d6n0ps.md` |
+| Unit 2D Task 5 — Count vowels consonants digits spaces | `e7o1qt.md` |
+| Unit 2D Task 6 — String formatting | `f8p2ru.md` |
+| Unit 2D Task 7 — Character frequency | `g9q3sv.md` |
+| Unit 2D Task 8 — Anagram check | `h0r4tw.md` |
