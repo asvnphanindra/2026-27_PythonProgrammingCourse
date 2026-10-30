@@ -27,7 +27,7 @@ for i in range(n):
         status = "OK"
 
     # ----- OUTPUT (each day) -----
-    print(day, "\t", prepared, "\t\t", leftovers, "\t\t", round(waste, 2), "\t", status)
+    print(f"{day}\t{prepared}\t\t{leftovers}\t\t{round(waste, 2)}\t{status}")
 
 # ----- OUTPUT (summary) -----
-print("\nDays with high waste:", high_waste_days)
+print(f"\nDays with high waste: {high_waste_days}")
