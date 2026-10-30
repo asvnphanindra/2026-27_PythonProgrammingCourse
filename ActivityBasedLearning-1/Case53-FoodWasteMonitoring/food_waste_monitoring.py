@@ -4,30 +4,30 @@
 print("Food Waste Monitoring")
 
 # ----- INPUT -----
-n = int(input("Number of days: "))
-limit = float(input("Acceptable limit %: "))
+int_days = int(input("Number of days: "))
+float_limit = float(input("Acceptable limit %: "))
 
-high_waste_days = []
+list_high_waste_days = []
 
 print("\n--- OUTPUT ---")
 print("Day\tPrepared\tLeftovers\tWastage%\tStatus")
 
-for i in range(n):
+for i in range(int_days):
     # ----- INPUT (each day) -----
-    day = input("\nDay name: ")
-    prepared = int(input("Meals prepared: "))
-    leftovers = int(input("Leftovers: "))
+    str_day = input("\nDay name: ")
+    int_prepared = int(input("Meals prepared: "))
+    int_leftovers = int(input("Leftovers: "))
 
     # ----- PROCESS -----
-    waste = (leftovers / prepared) * 100
-    if waste > limit:
-        status = "HIGH WASTE"
-        high_waste_days.append(day)
+    float_waste = (int_leftovers / int_prepared) * 100
+    if float_waste > float_limit:
+        str_status = "HIGH WASTE"
+        list_high_waste_days.append(str_day)
     else:
-        status = "OK"
+        str_status = "OK"
 
     # ----- OUTPUT (each day) -----
-    print(f"{day}\t{prepared}\t\t{leftovers}\t\t{round(waste, 2)}\t{status}")
+    print(f"{str_day}\t{int_prepared}\t\t{int_leftovers}\t\t{round(float_waste, 2)}\t{str_status}")
 
 # ----- OUTPUT (summary) -----
-print(f"\nDays with high waste: {high_waste_days}")
+print(f"\nDays with high waste: {list_high_waste_days}")
