@@ -94,15 +94,15 @@ END
 ```mermaid
 flowchart TD
     A([Start])
-    B[/INPUT: n, limit/]
-    C[/INPUT: day, prepared, leftovers/]
-    D[PROCESS: waste = leftovers / prepared * 100]
+    B[/n, limit/]
+    C[/day, prepared, leftovers/]
+    D[waste = leftovers / prepared * 100]
     E{waste > limit?}
-    F[PROCESS: status = HIGH WASTE]
-    G[PROCESS: status = OK]
-    H[/OUTPUT: print day result/]
+    F[status = HIGH WASTE]
+    G[status = OK]
+    H[/print day result/]
     I{More days?}
-    J[/OUTPUT: print high-waste days/]
+    J[/print high-waste days/]
     K([Stop])
 
     A --> B
