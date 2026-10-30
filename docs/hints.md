@@ -19,6 +19,12 @@ Jump to a task:
 
 **Unit 2D:** [Task 1](#unit-2d-task-1) · [Task 2](#unit-2d-task-2) · [Task 3](#unit-2d-task-3) · [Task 4](#unit-2d-task-4) · [Task 5](#unit-2d-task-5) · [Task 6](#unit-2d-task-6) · [Task 7](#unit-2d-task-7) · [Task 8](#unit-2d-task-8)
 
+**Unit 3A:** [Task 1](#unit-3a-task-1) · [Task 2](#unit-3a-task-2) · [Task 3](#unit-3a-task-3) · [Task 4](#unit-3a-task-4) · [Task 5](#unit-3a-task-5)
+
+**Unit 3B:** [Task 1](#unit-3b-task-1) · [Task 2](#unit-3b-task-2) · [Task 3](#unit-3b-task-3) · [Task 4](#unit-3b-task-4)
+
+**Unit 3C:** [Task 1](#unit-3c-task-1) · [Task 2](#unit-3c-task-2) · [Task 3](#unit-3c-task-3)
+
 ---
 
 <a id="unit-1-task-1"></a>
@@ -3777,5 +3783,618 @@ else:
 | **Example output** | `Anagrams` |
 
 <a href="../.faculty/solutions/h0r4tw.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3a-task-1"></a>
+
+## Unit 3A Task 1: Create, traverse and display a list
+
+Creates a list, visits each element with a loop, and displays the list.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A sample list (fixed in code or read from the user)
+
+**Process**
+- Create the list
+- Traverse with `for item in list_data`
+- Print each item; also print the whole list
+
+**Output**
+- Each element on its own line (or labelled), and the full list
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+list_data = ____  # e.g. [10, 20, 30, 40]
+
+print("List:", ____)
+
+print("Elements one by one:")
+for ____ in ____:  # each item in list_data
+    print(____)
+```
+
+> **Hint:** `for item in list_data:` visits every value without needing indexes.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `list_data = [10, 20, 30, 40]` |
+| **Example output** | `List: [10, 20, 30, 40]`<br>`Elements one by one:`<br>`10`<br>`20`<br>`30`<br>`40` |
+
+<a href="../.faculty/solutions/i2u6vy.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3a-task-2"></a>
+
+## Unit 3A Task 2: List operations
+
+Demonstrates `insert`, `append`, `remove`, `sort`, and `reverse` on a list.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A starting list (fixed in code or read from the user)
+
+**Process**
+- Call each required method and print the list after useful steps
+- `append(x)` adds at the end; `insert(i, x)` places `x` at index `i`
+- `remove(x)` removes the first matching value
+- `sort()` sorts in place; `reverse()` reverses in place
+
+**Output**
+- The list after each operation (or after the set of operations)
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+list_data = ____  # e.g. [3, 1, 4, 1, 5]
+print("Original:", ____)
+
+list_data.____(9)  # append 9 at the end
+print("After append:", ____)
+
+list_data.____(0, 7)  # insert 7 at index 0
+print("After insert:", ____)
+
+list_data.____(1)  # remove first matching 1
+print("After remove:", ____)
+
+list_data.____()  # sort ascending
+print("After sort:", ____)
+
+list_data.____()  # reverse the list
+print("After reverse:", ____)
+```
+
+> **Hint:** These methods change the list in place (they do not return a new list).
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `list_data = [3, 1, 4, 1, 5]` |
+| **Example output** | `Original: [3, 1, 4, 1, 5]`<br>`After append: [3, 1, 4, 1, 5, 9]`<br>`After insert: [7, 3, 1, 4, 1, 5, 9]`<br>`After remove: [7, 3, 4, 1, 5, 9]`<br>`After sort: [1, 3, 4, 5, 7, 9]`<br>`After reverse: [9, 7, 5, 4, 3, 1]` |
+
+<a href="../.faculty/solutions/j3v7wz.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3a-task-3"></a>
+
+## Unit 3A Task 3: Largest and smallest in a list
+
+Finds the largest and smallest values in a list of numbers.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A list of numbers (example: `[12, 5, 28, 9, 17]`)
+
+**Process**
+- Use `max(list_data)` and `min(list_data)` (or find them with a loop)
+
+**Output**
+- The list, the largest value, and the smallest value
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+list_data = ____  # e.g. [12, 5, 28, 9, 17]
+
+largest = ____  # max of list_data
+smallest = ____  # min of list_data
+
+print("List:", ____)
+print("Largest:", ____)
+print("Smallest:", ____)
+```
+
+> **Hint:** Built-in `max()` / `min()` work directly on a list of numbers.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `list_data = [12, 5, 28, 9, 17]` |
+| **Example output** | `List: [12, 5, 28, 9, 17]`<br>`Largest: 28`<br>`Smallest: 5` |
+
+<a href="../.faculty/solutions/k4w8xa.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3a-task-4"></a>
+
+## Unit 3A Task 4: Remove duplicates from a list
+
+Builds a new list that keeps each value only once (order preserved).
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A list that may contain repeated values
+
+**Process**
+- Start an empty result list
+- For each item: if it is not already in the result, append it
+- (Do this with list membership — save the set-based way for Unit 3C Task 3)
+
+**Output**
+- Original list and list without duplicates
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+list_data = ____  # e.g. [1, 2, 2, 3, 1, 4, 3]
+unique = ____  # empty list []
+
+for ____ in ____:  # each item in list_data
+    if ____:  # item not already in unique
+        unique.____(____)  # append item
+
+print("Original:", ____)
+print("Without duplicates:", ____)
+```
+
+> **Hint:** `if item not in unique:` skips values you have already kept.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `list_data = [1, 2, 2, 3, 1, 4, 3]` |
+| **Example output** | `Original: [1, 2, 2, 3, 1, 4, 3]`<br>`Without duplicates: [1, 2, 3, 4]` |
+
+<a href="../.faculty/solutions/l5x9yb.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3a-task-5"></a>
+
+## Unit 3A Task 5: Matrix operations with nested lists
+
+Stores matrices as nested lists and performs addition (and shows the result).
+
+**What is a nested-list matrix?**
+- A matrix is a grid of numbers in rows and columns
+- In Python, each **row** is a list; the whole matrix is a list of those row lists
+- Example 2×2: `[[1, 2], [3, 4]]` means row 0 is `1 2`, row 1 is `3 4`
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Two matrices of the same size (fixed in code or read from the user)
+
+**Process**
+- Create an empty result matrix (or build row by row)
+- For each row index `i` and column index `j`, add corresponding elements: `a[i][j] + b[i][j]`
+
+**Output**
+- Both input matrices and the sum matrix
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks — matrix addition):
+
+```python
+matrix_a = ____  # e.g. [[1, 2], [3, 4]]
+matrix_b = ____  # e.g. [[5, 6], [7, 8]]
+
+rows = ____  # len(matrix_a)
+cols = ____  # len(matrix_a[0])
+
+result = []
+for ____ in ____:  # i in range(rows)
+    row = []
+    for ____ in ____:  # j in range(cols)
+        row.append(____)  # matrix_a[i][j] + matrix_b[i][j]
+    result.append(____)
+
+print("Matrix A:", ____)
+print("Matrix B:", ____)
+print("Sum:", ____)
+```
+
+> **Hint:** Outer loop walks rows; inner loop walks columns. Both matrices must have the same shape for addition.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `matrix_a = [[1, 2], [3, 4]]`, `matrix_b = [[5, 6], [7, 8]]` |
+| **Example output** | `Matrix A: [[1, 2], [3, 4]]`<br>`Matrix B: [[5, 6], [7, 8]]`<br>`Sum: [[6, 8], [10, 12]]` |
+
+<a href="../.faculty/solutions/m6y0zc.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3b-task-1"></a>
+
+## Unit 3B Task 1: Create and access a tuple
+
+Creates a tuple and accesses elements by index (including the last item).
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A sample tuple (fixed in code or read from the user)
+
+**Process**
+- Create the tuple with parentheses
+- Access with positive and negative indexes; use `len()` for length
+
+**Output**
+- The tuple, first item, last item, and length
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+tuple_data = ____  # e.g. ("red", "green", "blue")
+
+print("Tuple:", ____)
+print("First:", ____)  # index 0
+print("Last:", ____)  # index -1
+print("Length:", ____)  # len(tuple_data)
+```
+
+> **Hint:** A single-item tuple needs a trailing comma: `(5,)`. Plain `(5)` is just an int in parentheses.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `tuple_data = ("red", "green", "blue")` |
+| **Example output** | `Tuple: ('red', 'green', 'blue')`<br>`First: red`<br>`Last: blue`<br>`Length: 3` |
+
+<a href="../.faculty/solutions/n7z1ad.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3b-task-2"></a>
+
+## Unit 3B Task 2: Tuple operations
+
+Demonstrates concatenation (`+`), slicing, and unpacking.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- One or two sample tuples
+
+**Process**
+- Concatenate with `+`
+- Slice with `[start:stop]`
+- Unpack into separate variables (number of variables must match length)
+
+**Output**
+- Joined tuple, a slice, and the unpacked values
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+tuple_data = ____  # e.g. (1, 2, 3)
+tuple_extra = ____  # e.g. (4, 5)
+
+joined = ____  # concatenate with +
+print("Joined:", ____)
+
+print("Slice first two:", ____)  # tuple_data[:2]
+
+a, b, c = ____  # unpack tuple_data
+print("Unpacked:", ____, ____, ____)
+```
+
+> **Hint:** Unpacking `a, b, c = (1, 2, 3)` assigns `a=1`, `b=2`, `c=3` in one step.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `tuple_data = (1, 2, 3)`, `tuple_extra = (4, 5)` |
+| **Example output** | `Joined: (1, 2, 3, 4, 5)`<br>`Slice first two: (1, 2)`<br>`Unpacked: 1 2 3` |
+
+<a href="../.faculty/solutions/o8a2be.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3b-task-3"></a>
+
+## Unit 3B Task 3: Swap using tuple unpacking
+
+Swaps two variables with packing and unpacking (no temporary third variable).
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Two values (example: `10` and `20`)
+
+**Process**
+- Assign `first, second = second, first`
+
+**Output**
+- Values before and after the swap
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+first_number = ____  # e.g. 10
+second_number = ____  # e.g. 20
+
+print("Before:", ____, ____)
+
+____, ____ = ____, ____  # swap with unpacking
+
+print("After:", ____, ____)
+```
+
+> **Hint:** The right-hand side builds a temporary tuple; the left-hand side unpacks it into the two names.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `first_number = 10`, `second_number = 20` |
+| **Example output** | `Before: 10 20`<br>`After: 20 10` |
+
+<a href="../.faculty/solutions/p9b3cf.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3b-task-4"></a>
+
+## Unit 3B Task 4: Maximum and minimum in a tuple
+
+Finds the largest and smallest values in a tuple of numbers.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A tuple of numbers
+
+**Process**
+- Use `max(tuple_data)` and `min(tuple_data)`
+
+**Output**
+- The tuple, maximum, and minimum
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+tuple_data = ____  # e.g. (12, 5, 28, 9, 17)
+
+largest = ____  # max(tuple_data)
+smallest = ____  # min(tuple_data)
+
+print("Tuple:", ____)
+print("Maximum:", ____)
+print("Minimum:", ____)
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `tuple_data = (12, 5, 28, 9, 17)` |
+| **Example output** | `Tuple: (12, 5, 28, 9, 17)`<br>`Maximum: 28`<br>`Minimum: 5` |
+
+<a href="../.faculty/solutions/q0c4dg.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3c-task-1"></a>
+
+## Unit 3C Task 1: Set creation and basic operations
+
+Creates sets and shows union, intersection, and difference.
+
+**What is a set?**
+- An unordered collection of **unique** items written with `{ }`
+- Duplicates are stored only once
+- Useful for membership tests and combining collections
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Two sample sets
+
+**Process**
+- Union: all items from both (`|` or `.union()`)
+- Intersection: items in both (`&` or `.intersection()`)
+- Difference: items in the first but not the second (`-` or `.difference()`)
+
+**Output**
+- Both sets and the three operation results
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+set_a = ____  # e.g. {1, 2, 3, 4}
+set_b = ____  # e.g. {3, 4, 5, 6}
+
+print("Set A:", ____)
+print("Set B:", ____)
+print("Union:", ____)  # set_a | set_b
+print("Intersection:", ____)  # set_a & set_b
+print("Difference (A - B):", ____)  # set_a - set_b
+```
+
+> **Hint:** Sets print in no fixed order. Compare results by the items present, not by print order.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `set_a = {1, 2, 3, 4}`, `set_b = {3, 4, 5, 6}` |
+| **Example output** (items may print in any order) | `Union: {1, 2, 3, 4, 5, 6}`<br>`Intersection: {3, 4}`<br>`Difference (A - B): {1, 2}` |
+
+<a href="../.faculty/solutions/r1d5eh.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3c-task-2"></a>
+
+## Unit 3C Task 2: Set membership and methods
+
+Tests membership with `in` / `not in`, and uses `add`, `remove`, and `discard`.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A sample set and a few values to test or change
+
+**Process**
+- Check membership with `in` / `not in`
+- `add(x)` inserts `x` if missing
+- `remove(x)` deletes `x` (error if missing)
+- `discard(x)` deletes `x` if present (no error if missing)
+
+**Output**
+- Membership results and the set after each change
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+set_data = ____  # e.g. {10, 20, 30}
+print("Set:", ____)
+
+print("20 in set?", ____)  # 20 in set_data
+print("40 not in set?", ____)  # 40 not in set_data
+
+set_data.____(40)  # add 40
+print("After add:", ____)
+
+set_data.____(10)  # remove 10
+print("After remove:", ____)
+
+set_data.____(99)  # discard 99 (safe even if missing)
+print("After discard:", ____)
+```
+
+> **Hint:** Prefer `discard` when the value might not be present; use `remove` when you expect it to exist.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `set_data = {10, 20, 30}` |
+| **Example output** (set order may vary) | `20 in set? True`<br>`40 not in set? True`<br>`After add: {10, 20, 30, 40}`<br>`After remove: {20, 30, 40}`<br>`After discard: {20, 30, 40}` |
+
+<a href="../.faculty/solutions/s2e6fi.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3c-task-3"></a>
+
+## Unit 3C Task 3: Remove duplicates using sets
+
+Converts a list to a set (unique values), then back to a list if needed.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A list with possible duplicates
+
+**Process**
+- `set(list_data)` drops duplicates
+- Convert back with `list(...)` if you need a list again
+- Note: set conversion does **not** guarantee original order
+
+**Output**
+- Original list and the unique collection
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+list_data = ____  # e.g. [1, 2, 2, 3, 1, 4, 3]
+
+unique_set = ____  # set(list_data)
+unique_list = ____  # list(unique_set)
+
+print("Original:", ____)
+print("Unique set:", ____)
+print("Unique list:", ____)
+```
+
+> **Think about it:** Compare with Unit 3A Task 4. The loop version can keep first-seen order; `set(...)` is shorter but order is not guaranteed.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `list_data = [1, 2, 2, 3, 1, 4, 3]` |
+| **Example output** | `Original: [1, 2, 2, 3, 1, 4, 3]`<br>`Unique set: {1, 2, 3, 4}` (order may vary)<br>`Unique list:` same items as the set |
+
+<a href="../.faculty/solutions/t3f7gj.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](lab-tasks.md).

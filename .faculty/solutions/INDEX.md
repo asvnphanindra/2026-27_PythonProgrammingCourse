@@ -50,3 +50,15 @@ Not linked from student docs. Map task → cryptic file.
 | Unit 2D Task 6 — String formatting | `f8p2ru.md` |
 | Unit 2D Task 7 — Character frequency | `g9q3sv.md` |
 | Unit 2D Task 8 — Anagram check | `h0r4tw.md` |
+| Unit 3A Task 1 — Create, traverse and display list | `i2u6vy.md` |
+| Unit 3A Task 2 — List operations | `j3v7wz.md` |
+| Unit 3A Task 3 — Largest and smallest in a list | `k4w8xa.md` |
+| Unit 3A Task 4 — Remove duplicates from a list | `l5x9yb.md` |
+| Unit 3A Task 5 — Matrix operations (nested lists) | `m6y0zc.md` |
+| Unit 3B Task 1 — Create and access a tuple | `n7z1ad.md` |
+| Unit 3B Task 2 — Tuple operations | `o8a2be.md` |
+| Unit 3B Task 3 — Swap using tuple unpacking | `p9b3cf.md` |
+| Unit 3B Task 4 — Max and min in a tuple | `q0c4dg.md` |
+| Unit 3C Task 1 — Set creation and basic operations | `r1d5eh.md` |
+| Unit 3C Task 2 — Set membership and methods | `s2e6fi.md` |
+| Unit 3C Task 3 — Remove duplicates using sets | `t3f7gj.md` |

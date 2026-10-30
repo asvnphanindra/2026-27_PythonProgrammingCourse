@@ -107,28 +107,28 @@ Click **Lab observation expectations** in a row for Full / Short / Will be infor
 
 | S No | Task name | Lab observation expectations | File name | Record expectations | Hint |
 |------|-----------|------------------------------|-----------|---------------------|------|
-| 1 | Write a python program to create, traverse and display elements of a list | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3A_Task-1_Create_Traverse_Display_List.py` | Will be updated later | — |
-| 2 | Write a python program to perform list operations (insert, append, remove, sort, reverse) | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3A_Task-2_List_Operations.py` | Will be updated later | — |
-| 3 | Write a python program to find the largest and smallest element in a list | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3A_Task-3_Largest_Smallest_in_List.py` | Will be updated later | — |
-| 4 | Write a python program to remove duplicate elements from a list | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3A_Task-4_Remove_Duplicates_from_List.py` | Will be updated later | — |
-| 5 | Write a python program to perform matrix operations using nested lists | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3A_Task-5_Matrix_Operations_Nested_Lists.py` | Will be updated later | — |
+| 1 | Write a python program to create, traverse and display elements of a list | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3A_Task-1_Create_Traverse_Display_List.py` | Will be updated later | [View hint](hints.md#unit-3a-task-1) |
+| 2 | Write a python program to perform list operations (insert, append, remove, sort, reverse) | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3A_Task-2_List_Operations.py` | Will be updated later | [View hint](hints.md#unit-3a-task-2) |
+| 3 | Write a python program to find the largest and smallest element in a list | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3A_Task-3_Largest_Smallest_in_List.py` | Will be updated later | [View hint](hints.md#unit-3a-task-3) |
+| 4 | Write a python program to remove duplicate elements from a list | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3A_Task-4_Remove_Duplicates_from_List.py` | Will be updated later | [View hint](hints.md#unit-3a-task-4) |
+| 5 | Write a python program to perform matrix operations using nested lists | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3A_Task-5_Matrix_Operations_Nested_Lists.py` | Will be updated later | [View hint](hints.md#unit-3a-task-5) |
 
 ### B. Tuple Programs
 
 | S No | Task name | Lab observation expectations | File name | Record expectations | Hint |
 |------|-----------|------------------------------|-----------|---------------------|------|
-| 1 | Write a python program to create and access elements of a tuple | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3B_Task-1_Create_Access_Tuple.py` | Will be updated later | — |
-| 2 | Write a python program to demonstrate tuple operations (concatenation, slicing, unpacking) | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3B_Task-2_Tuple_Operations.py` | Will be updated later | — |
-| 3 | Write a python program to swap two variables using tuple unpacking | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3B_Task-3_Swap_Using_Tuple_Unpacking.py` | Will be updated later | — |
-| 4 | Write a python program to find the maximum and minimum in a tuple | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3B_Task-4_Max_Min_in_Tuple.py` | Will be updated later | — |
+| 1 | Write a python program to create and access elements of a tuple | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3B_Task-1_Create_Access_Tuple.py` | Will be updated later | [View hint](hints.md#unit-3b-task-1) |
+| 2 | Write a python program to demonstrate tuple operations (concatenation, slicing, unpacking) | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3B_Task-2_Tuple_Operations.py` | Will be updated later | [View hint](hints.md#unit-3b-task-2) |
+| 3 | Write a python program to swap two variables using tuple unpacking | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3B_Task-3_Swap_Using_Tuple_Unpacking.py` | Will be updated later | [View hint](hints.md#unit-3b-task-3) |
+| 4 | Write a python program to find the maximum and minimum in a tuple | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3B_Task-4_Max_Min_in_Tuple.py` | Will be updated later | [View hint](hints.md#unit-3b-task-4) |
 
 ### C. Set Programs
 
 | S No | Task name | Lab observation expectations | File name | Record expectations | Hint |
 |------|-----------|------------------------------|-----------|---------------------|------|
-| 1 | Write a python program to demonstrate set creation and basic set operations (union, intersection, difference) | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3C_Task-1_Set_Creation_Basic_Operations.py` | Will be updated later | — |
-| 2 | Write a python program to demonstrate set membership testing and methods (add, remove, discard) | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3C_Task-2_Set_Membership_and_Methods.py` | Will be updated later | — |
-| 3 | Write a python program to remove duplicates from a list using sets | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3C_Task-3_Remove_Duplicates_Using_Sets.py` | Will be updated later | — |
+| 1 | Write a python program to demonstrate set creation and basic set operations (union, intersection, difference) | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3C_Task-1_Set_Creation_Basic_Operations.py` | Will be updated later | [View hint](hints.md#unit-3c-task-1) |
+| 2 | Write a python program to demonstrate set membership testing and methods (add, remove, discard) | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3C_Task-2_Set_Membership_and_Methods.py` | Will be updated later | [View hint](hints.md#unit-3c-task-2) |
+| 3 | Write a python program to remove duplicates from a list using sets | [Will be informed later](lab-expectations.md#will-be-informed-later) | `Unit-3C_Task-3_Remove_Duplicates_Using_Sets.py` | Will be updated later | [View hint](hints.md#unit-3c-task-3) |
 
 ## Notes
 
