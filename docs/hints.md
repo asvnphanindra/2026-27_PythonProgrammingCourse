@@ -25,6 +25,8 @@ Jump to a task:
 
 **Unit 3C:** [Task 1](#unit-3c-task-1) · [Task 2](#unit-3c-task-2) · [Task 3](#unit-3c-task-3)
 
+**Unit 3D:** [Task 1](#unit-3d-task-1) · [Task 2](#unit-3d-task-2) · [Task 3](#unit-3d-task-3) · [Task 4](#unit-3d-task-4) · [Task 5](#unit-3d-task-5) · [Task 6](#unit-3d-task-6) · [Task 7](#unit-3d-task-7) · [Task 8](#unit-3d-task-8) · [Task 9](#unit-3d-task-9) · [Task 10](#unit-3d-task-10) · [Task 11](#unit-3d-task-11) · [Task 12](#unit-3d-task-12) · [Task 13](#unit-3d-task-13) · [Task 14](#unit-3d-task-14) · [Task 15](#unit-3d-task-15) · [Task 16](#unit-3d-task-16)
+
 ---
 
 <a id="unit-1-task-1"></a>
@@ -4396,5 +4398,773 @@ print("Unique list:", ____)
 | **Example output** | `Original: [1, 2, 2, 3, 1, 4, 3]`<br>`Unique set: {1, 2, 3, 4}` (order may vary)<br>`Unique list:` same items as the set |
 
 <a href="../.faculty/solutions/t3f7gj.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3d-task-1"></a>
+
+## Unit 3D Task 1: Rectangle area and perimeter (function)
+
+Defines a function that takes length and breadth, and returns area and perimeter.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Length and breadth of a rectangle
+
+**Process**
+- Define a function with two parameters
+- Area = length × breadth
+- Perimeter = 2 × (length + breadth)
+- Return both values (for example as a tuple)
+
+**Output**
+- Area and perimeter
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+def rectangle_area_perimeter(____, ____):  # length, breadth
+    area = ____
+    perimeter = ____
+    return ____, ____
+
+length = ____  # e.g. 5
+breadth = ____  # e.g. 3
+area, perimeter = ____(length, breadth)
+print("Area:", ____)
+print("Perimeter:", ____)
+```
+
+> **Hint:** A function can return more than one value: `return a, b`.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `length = 5`, `breadth = 3` |
+| **Example output** | `Area: 15`<br>`Perimeter: 16` |
+
+<a href="../.faculty/solutions/u4a8bk.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3d-task-2"></a>
+
+## Unit 3D Task 2: Celsius to Fahrenheit (function)
+
+Defines a function that converts Celsius to Fahrenheit and returns the result.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Temperature in Celsius
+
+**Process**
+- Formula: Fahrenheit = (Celsius × 9/5) + 32
+- Put the formula inside a function and `return` the result
+
+**Output**
+- Temperature in Fahrenheit
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+def celsius_to_fahrenheit(____):  # celsius
+    fahrenheit = ____
+    return ____
+
+celsius = ____  # e.g. 37
+fahrenheit = ____(celsius)
+print("Fahrenheit:", ____)
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `celsius = 37` |
+| **Example output** | `Fahrenheit: 98.6` |
+
+<a href="../.faculty/solutions/v5b9cl.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3d-task-3"></a>
+
+## Unit 3D Task 3: Marks total and average (function)
+
+Defines a function that takes three subject marks and returns total and average.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Marks of three subjects
+
+**Process**
+- Total = sum of the three marks
+- Average = total / 3
+- Return both values
+
+**Output**
+- Total and average
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+def total_and_average(____, ____, ____):  # mark1, mark2, mark3
+    total = ____
+    average = ____
+    return ____, ____
+
+m1, m2, m3 = ____, ____, ____  # e.g. 80, 70, 90
+total, average = ____(m1, m2, m3)
+print("Total:", ____)
+print("Average:", ____)
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `80`, `70`, `90` |
+| **Example output** | `Total: 240`<br>`Average: 80.0` |
+
+<a href="../.faculty/solutions/w6c0dm.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3d-task-4"></a>
+
+## Unit 3D Task 4: Simple interest with default arguments
+
+Defines a function with a default rate and calls it with and without an explicit rate.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Principal, time, and optionally rate
+
+**Process**
+- Simple interest = (principal × time × rate) / 100
+- Give `rate` a default value of `5` in the function definition
+- Call once without rate (uses default) and once with an explicit rate
+
+**Output**
+- Simple interest for each call
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+def simple_interest(principal, time, rate=____):  # default rate 5
+    return ____  # (principal * time * rate) / 100
+
+print("SI (default rate):", ____(1000, 2))  # uses rate=5
+print("SI (rate=8):", ____(1000, 2, ____))  # explicit rate
+```
+
+> **Hint:** Parameters with defaults must come after parameters without defaults.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | principal `1000`, time `2`; calls with default rate and with rate `8` |
+| **Example output** | `SI (default rate): 100.0`<br>`SI (rate=8): 160.0` |
+
+<a href="../.faculty/solutions/x7d1en.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3d-task-5"></a>
+
+## Unit 3D Task 5: print_details with **kwargs
+
+Defines `print_details(**kwargs)` and prints each key–value pair.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Keyword arguments such as name, age, city
+
+**Process**
+- `**kwargs` collects keyword arguments into a dictionary
+- Loop over `kwargs.items()` and print each pair
+
+**Output**
+- Each key and its value
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+def print_details(____):  # **kwargs
+    for key, value in ____.items():
+        print(f"{key}: {value}")
+
+print_details(name="____", age=____, city="____")  # Krishna, 26, Guntur
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `print_details(name="Krishna", age=26, city="Guntur")` |
+| **Example output** | `name: Krishna`<br>`age: 26`<br>`city: Guntur` |
+
+<a href="../.faculty/solutions/y8e2fo.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3d-task-6"></a>
+
+## Unit 3D Task 6: shopping_cart with **products
+
+Defines `shopping_cart(**products)`, prints each item with price in ₹, and shows the total.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Product names and prices as keyword arguments
+
+**Process**
+- Start `total` at 0
+- For each item and price in `products.items()`, print and add to total
+- Print the total
+
+**Output**
+- Each item with ₹ price, then total
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+def shopping_cart(____):  # **products
+    total = ____
+    print("Items Purchased:")
+    for item, price in ____.items():
+        print(f"{item}: ₹{price}")
+        total = ____
+    print(f"Total: ₹{total}")
+
+# multiple keyword arguments
+shopping_cart(apple=____, orange=____, mango=____)  # 15, 12, 10
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `shopping_cart(apple=15, orange=12, mango=10)` |
+| **Example output** | `Items Purchased:`<br>`apple: ₹15`<br>`orange: ₹12`<br>`mango: ₹10`<br>`Total: ₹37` |
+
+<a href="../.faculty/solutions/z9f3gp.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3d-task-7"></a>
+
+## Unit 3D Task 7: Student details with **kwargs
+
+Defines a function using `**kwargs` to display a student's name and subject marks.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Keyword arguments for name and subject marks
+
+**Process**
+- Accept details with `**kwargs`
+- Print each key and value (name and marks)
+
+**Output**
+- Student details
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+def student_details(____):  # **kwargs
+    for key, value in ____.items():
+        print(f"{key}: {value}")
+
+student_details(name="____", maths=____, science=____)  # e.g. Anu, 85, 90
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `student_details(name="Anu", maths=85, science=90)` |
+| **Example output** | `name: Anu`<br>`maths: 85`<br>`science: 90` |
+
+<a href="../.faculty/solutions/a0g4hq.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3d-task-8"></a>
+
+## Unit 3D Task 8: Sum using *args
+
+Defines a function with `*args` that returns the sum of any number of values.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Any number of numeric values passed to the function
+
+**Process**
+- `*args` collects positional arguments into a tuple
+- Sum the values in `args` and return the result
+
+**Output**
+- The sum
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+def sum_values(____):  # *args
+    total = ____
+    for value in ____:
+        total = ____
+    return ____
+
+print(sum_values(1, 2, 3))
+print(sum_values(10, 20, 30, 40))
+```
+
+> **Hint:** You may also use `return sum(args)`.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `sum_values(1, 2, 3)` and `sum_values(10, 20, 30, 40)` |
+| **Example output** | `6`<br>`100` |
+
+<a href="../.faculty/solutions/b1h5ir.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3d-task-9"></a>
+
+## Unit 3D Task 9: Product order with *args and **kwargs
+
+Defines a function that takes item names via `*args` and optional details via `**kwargs`.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Item names as positional arguments
+- Optional details (for example qty, price) as keyword arguments
+
+**Process**
+- Print the items from `args`
+- Print each key–value pair from `kwargs`
+
+**Output**
+- Order items and optional details
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+def print_order(____, ____):  # *args, **kwargs
+    print("Items:")
+    for item in ____:
+        print("-", item)
+    print("Details:")
+    for key, value in ____.items():
+        print(f"{key}: {value}")
+
+print_order("pen", "notebook", qty=____, price=____)  # e.g. 2, 50
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `print_order("pen", "notebook", qty=2, price=50)` |
+| **Example output** | `Items:`<br>`- pen`<br>`- notebook`<br>`Details:`<br>`qty: 2`<br>`price: 50` |
+
+<a href="../.faculty/solutions/c2i6js.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3d-task-10"></a>
+
+## Unit 3D Task 10: Local does not change global
+
+Shows that a local variable with the same name does not change the global variable.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A global variable (for example `x`)
+
+**Process**
+- Inside a function, assign to a variable with the same name (this creates a **local** variable)
+- Do not use `global`
+- Print the value inside the function and again outside
+
+**Output**
+- Local value inside the function; global value unchanged outside
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+x = ____  # e.g. 10
+
+def demo():
+    x = ____  # local assignment, e.g. 20
+    print("Inside function, x =", ____)
+
+demo()
+print("Outside function, x =", ____)
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | global `x = 10`; local `x = 20` inside the function |
+| **Example output** | `Inside function, x = 20`<br>`Outside function, x = 10` |
+
+<a href="../.faculty/solutions/d3j7kt.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3d-task-11"></a>
+
+## Unit 3D Task 11: Global counter increment
+
+Increments a global counter inside a function using the `global` keyword.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A global counter starting at a known value
+
+**Process**
+- Declare `global counter` inside the function before changing it
+- Increment the counter
+- Call the function and print the counter before and after
+
+**Output**
+- Counter values showing the update
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+counter = ____  # e.g. 0
+
+def increment():
+    ____ counter  # global keyword
+    counter = ____
+    print("Inside function, counter =", ____)
+
+print("Before:", ____)
+increment()
+print("After:", ____)
+```
+
+> **Hint:** Without `global`, assigning to `counter` inside the function would create a local variable (or cause an error if you read then write).
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `counter = 0`, then call `increment()` once |
+| **Example output** | `Before: 0`<br>`Inside function, counter = 1`<br>`After: 1` |
+
+<a href="../.faculty/solutions/e4k8lu.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3d-task-12"></a>
+
+## Unit 3D Task 12: Bank balance global vs local
+
+Uses a global `balance` with a deposit function (`global`), and another function with a local `balance` that does not update the account.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Starting global balance and a deposit amount
+
+**Process**
+- `deposit`: use `global balance` and add the amount
+- `show_local_balance`: assign a local `balance` (no `global`) so the account is unchanged
+- Print the global balance after each call
+
+**Output**
+- Balance after deposit; balance still the same after the local-only function
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+balance = ____  # e.g. 1000
+
+def deposit(amount):
+    ____ balance
+    balance = ____
+    print("After deposit, balance =", ____)
+
+def show_local_balance():
+    balance = ____  # local only, e.g. 0
+    print("Inside local function, balance =", ____)
+
+print("Start:", ____)
+deposit(____)  # e.g. 500
+print("Account balance:", ____)
+show_local_balance()
+print("Account balance still:", ____)
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | start `1000`, deposit `500`, local `balance = 0` |
+| **Example output** | `Start: 1000`<br>`After deposit, balance = 1500`<br>`Account balance: 1500`<br>`Inside local function, balance = 0`<br>`Account balance still: 1500` |
+
+<a href="../.faculty/solutions/f5l9mv.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3d-task-13"></a>
+
+## Unit 3D Task 13: Factorial using recursion
+
+Finds the factorial of a number with a recursive function.
+
+**What is recursion?**
+- A function that calls itself
+- Needs a **base case** to stop
+- Needs a **recursive case** that moves toward the base case
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A non-negative integer `n`
+
+**Process**
+- Base case: `0! = 1` and `1! = 1`
+- Recursive case: `n! = n × (n - 1)!`
+
+**Output**
+- Factorial of `n`
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+def factorial(n):
+    if n == ____ or n == ____:  # base case
+        return ____
+    return n * ____(____)  # recursive call
+
+number = ____  # e.g. 5
+print("Factorial:", ____(number))
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 5` |
+| **Example output** | `Factorial: 120` |
+
+<a href="../.faculty/solutions/g6m0nw.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3d-task-14"></a>
+
+## Unit 3D Task 14: Fibonacci series using recursion
+
+Generates Fibonacci terms using a recursive function for the nth term.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Number of terms `n`
+
+**Process**
+- Recursive definition: `fib(0) = 0`, `fib(1) = 1`, `fib(k) = fib(k-1) + fib(k-2)`
+- Loop from `0` to `n-1` and print `fib(i)` for each term
+
+**Output**
+- First `n` Fibonacci numbers
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+def fib(k):
+    if k == ____:
+        return ____
+    if k == ____:
+        return ____
+    return ____(____) + ____(____)
+
+n = ____  # e.g. 7
+for i in range(____):
+    print(____(i), end=" ")
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 7` |
+| **Example output** | `0 1 1 2 3 5 8` |
+
+<a href="../.faculty/solutions/h7n1ox.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3d-task-15"></a>
+
+## Unit 3D Task 15: GCD using recursion
+
+Finds the GCD of two numbers with the Euclidean algorithm (recursive).
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Two integers `a` and `b`
+
+**Process**
+- Base case: if `b == 0`, GCD is `a`
+- Recursive case: `gcd(a, b) = gcd(b, a % b)`
+
+**Output**
+- GCD of the two numbers
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+def gcd(a, b):
+    if b == ____:
+        return ____
+    return ____(____, ____)  # gcd(b, a % b)
+
+x, y = ____, ____  # e.g. 48, 18
+print("GCD:", ____(x, y))
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `48`, `18` |
+| **Example output** | `GCD: 6` |
+
+<a href="../.faculty/solutions/i8o2py.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3d-task-16"></a>
+
+## Unit 3D Task 16: Lambda with map, filter, and reduce
+
+Uses lambda functions with `map()`, `filter()`, and `reduce()`.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A sample list of numbers
+
+**Process**
+- `map`: apply a lambda to every item (for example square each value)
+- `filter`: keep items that match a lambda condition (for example even numbers)
+- `reduce`: combine items with a lambda (for example sum); import from `functools`
+
+**Output**
+- Results of map, filter, and reduce
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+from functools import reduce
+
+numbers = ____  # e.g. [1, 2, 3, 4, 5]
+
+squares = list(map(lambda x: ____, numbers))
+evens = list(filter(lambda x: ____, numbers))
+total = reduce(lambda a, b: ____, numbers)
+
+print("Squares:", ____)
+print("Evens:", ____)
+print("Sum:", ____)
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `numbers = [1, 2, 3, 4, 5]` |
+| **Example output** | `Squares: [1, 4, 9, 16, 25]`<br>`Evens: [2, 4]`<br>`Sum: 15` |
+
+<a href="../.faculty/solutions/j9p3qz.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](lab-tasks.md).

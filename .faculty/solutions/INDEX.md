@@ -62,3 +62,19 @@ Not linked from student docs. Map task → cryptic file.
 | Unit 3C Task 1 — Set creation and basic operations | `r1d5eh.md` |
 | Unit 3C Task 2 — Set membership and methods | `s2e6fi.md` |
 | Unit 3C Task 3 — Remove duplicates using sets | `t3f7gj.md` |
+| Unit 3D Task 1 — Rectangle area and perimeter (function) | `u4a8bk.md` |
+| Unit 3D Task 2 — Celsius to Fahrenheit (function) | `v5b9cl.md` |
+| Unit 3D Task 3 — Marks total and average (function) | `w6c0dm.md` |
+| Unit 3D Task 4 — Simple interest with default arguments | `x7d1en.md` |
+| Unit 3D Task 5 — print_details with **kwargs | `y8e2fo.md` |
+| Unit 3D Task 6 — shopping_cart with **products | `z9f3gp.md` |
+| Unit 3D Task 7 — Student details with **kwargs | `a0g4hq.md` |
+| Unit 3D Task 8 — Sum using *args | `b1h5ir.md` |
+| Unit 3D Task 9 — Product order with *args and **kwargs | `c2i6js.md` |
+| Unit 3D Task 10 — Local does not change global | `d3j7kt.md` |
+| Unit 3D Task 11 — Global counter increment | `e4k8lu.md` |
+| Unit 3D Task 12 — Bank balance global vs local | `f5l9mv.md` |
+| Unit 3D Task 13 — Factorial using recursion | `g6m0nw.md` |
+| Unit 3D Task 14 — Fibonacci series using recursion | `h7n1ox.md` |
+| Unit 3D Task 15 — GCD using recursion | `i8o2py.md` |
+| Unit 3D Task 16 — Lambda with map, filter, and reduce | `j9p3qz.md` |
