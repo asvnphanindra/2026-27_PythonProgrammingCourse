@@ -1,4 +1,4 @@
-# Unit 3D Task 14 — Example solution
+# Unit 3D Task 13 — Example solution
 
 Fibonacci series using a recursive term function.
 
@@ -16,4 +16,4 @@ for i in range(n):
     print(fib(i), end=" ")
 ```
 
-[Back to hint](../../docs/hints.md#unit-3d-task-14) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3d-task-13) · [Back to lab tasks](../../docs/lab-tasks.md)

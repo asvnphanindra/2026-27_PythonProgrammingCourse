@@ -1,4 +1,4 @@
-# Unit 3D Task 6 — Example solution
+# Unit 3D Task 7 — Example solution
 
 `shopping_cart(**products)` with rupee prices and total.
 
@@ -16,4 +16,4 @@ def shopping_cart(**products):
 shopping_cart(apple=15, orange=12, mango=10)
 ```
 
-[Back to hint](../../docs/hints.md#unit-3d-task-6) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3d-task-7) · [Back to lab tasks](../../docs/lab-tasks.md)

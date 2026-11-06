@@ -25,7 +25,7 @@ Jump to a task:
 
 **Unit 3C:** [Task 1](#unit-3c-task-1) · [Task 2](#unit-3c-task-2) · [Task 3](#unit-3c-task-3)
 
-**Unit 3D:** [Task 1](#unit-3d-task-1) · [Task 2](#unit-3d-task-2) · [Task 3](#unit-3d-task-3) · [Task 4](#unit-3d-task-4) · [Task 5](#unit-3d-task-5) · [Task 6](#unit-3d-task-6) · [Task 7](#unit-3d-task-7) · [Task 8](#unit-3d-task-8) · [Task 9](#unit-3d-task-9) · [Task 10](#unit-3d-task-10) · [Task 11](#unit-3d-task-11) · [Task 12](#unit-3d-task-12) · [Task 13](#unit-3d-task-13) · [Task 14](#unit-3d-task-14) · [Task 15](#unit-3d-task-15) · [Task 16](#unit-3d-task-16)
+**Unit 3D:** [Task 1](#unit-3d-task-1) · [Task 2](#unit-3d-task-2) · [Task 3](#unit-3d-task-3) · [Task 4](#unit-3d-task-4) · [Task 5](#unit-3d-task-5) · [Task 6](#unit-3d-task-6) · [Task 7](#unit-3d-task-7) · [Task 8](#unit-3d-task-8) · [Task 9](#unit-3d-task-9) · [Task 10](#unit-3d-task-10) · [Task 11](#unit-3d-task-11) · [Task 12](#unit-3d-task-12) · [Task 13](#unit-3d-task-13) · [Task 14](#unit-3d-task-14) · [Task 15](#unit-3d-task-15)
 
 ---
 
@@ -4596,7 +4596,55 @@ Back to [Lab tasks](lab-tasks.md).
 
 <a id="unit-3d-task-5"></a>
 
-## Unit 3D Task 5: print_details with **kwargs
+## Unit 3D Task 5: Sum using *args
+
+Defines a function with `*args` that returns the sum of any number of values.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Any number of numeric values passed to the function
+
+**Process**
+- `*args` collects positional arguments into a tuple
+- Sum the values in `args` and return the result
+
+**Output**
+- The sum
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+def sum_values(____):  # *args
+    total = ____
+    for value in ____:
+        total = ____
+    return ____
+
+print(sum_values(1, 2, 3))
+print(sum_values(10, 20, 30, 40))
+```
+
+> **Hint:** You may also use `return sum(args)`.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `sum_values(1, 2, 3)` and `sum_values(10, 20, 30, 40)` |
+| **Example output** | `6`<br>`100` |
+
+<a href="../.faculty/solutions/b1h5ir.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3d-task-6"></a>
+
+## Unit 3D Task 6: print_details with **kwargs
 
 Defines `print_details(**kwargs)` and prints each key–value pair.
 
@@ -4637,9 +4685,9 @@ Back to [Lab tasks](lab-tasks.md).
 
 ---
 
-<a id="unit-3d-task-6"></a>
+<a id="unit-3d-task-7"></a>
 
-## Unit 3D Task 6: shopping_cart with **products
+## Unit 3D Task 7: shopping_cart with **products
 
 Defines `shopping_cart(**products)`, prints each item with price in ₹, and shows the total.
 
@@ -4686,9 +4734,9 @@ Back to [Lab tasks](lab-tasks.md).
 
 ---
 
-<a id="unit-3d-task-7"></a>
+<a id="unit-3d-task-8"></a>
 
-## Unit 3D Task 7: Student details with **kwargs
+## Unit 3D Task 8: Student details with **kwargs
 
 Defines a function using `**kwargs` to display a student's name and subject marks.
 
@@ -4729,105 +4777,9 @@ Back to [Lab tasks](lab-tasks.md).
 
 ---
 
-<a id="unit-3d-task-8"></a>
-
-## Unit 3D Task 8: Sum using *args
-
-Defines a function with `*args` that returns the sum of any number of values.
-
-### Analyse the problem: Identify Input, Process and Output
-
-**Input**
-- Any number of numeric values passed to the function
-
-**Process**
-- `*args` collects positional arguments into a tuple
-- Sum the values in `args` and return the result
-
-**Output**
-- The sum
-
-### Sample input and output messages
-
-**Program structure** (fill in the blanks):
-
-```python
-def sum_values(____):  # *args
-    total = ____
-    for value in ____:
-        total = ____
-    return ____
-
-print(sum_values(1, 2, 3))
-print(sum_values(10, 20, 30, 40))
-```
-
-> **Hint:** You may also use `return sum(args)`.
-
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `sum_values(1, 2, 3)` and `sum_values(10, 20, 30, 40)` |
-| **Example output** | `6`<br>`100` |
-
-<a href="../.faculty/solutions/b1h5ir.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
-
-Back to [Lab tasks](lab-tasks.md).
-
----
-
 <a id="unit-3d-task-9"></a>
 
-## Unit 3D Task 9: Product order with *args and **kwargs
-
-Defines a function that takes item names via `*args` and optional details via `**kwargs`.
-
-### Analyse the problem: Identify Input, Process and Output
-
-**Input**
-- Item names as positional arguments
-- Optional details (for example qty, price) as keyword arguments
-
-**Process**
-- Print the items from `args`
-- Print each key–value pair from `kwargs`
-
-**Output**
-- Order items and optional details
-
-### Sample input and output messages
-
-**Program structure** (fill in the blanks):
-
-```python
-def print_order(____, ____):  # *args, **kwargs
-    print("Items:")
-    for item in ____:
-        print("-", item)
-    print("Details:")
-    for key, value in ____.items():
-        print(f"{key}: {value}")
-
-print_order("pen", "notebook", qty=____, price=____)  # e.g. 2, 50
-```
-
-### Example
-
-| Item | Details |
-|------|---------|
-| **Example input** | `print_order("pen", "notebook", qty=2, price=50)` |
-| **Example output** | `Items:`<br>`- pen`<br>`- notebook`<br>`Details:`<br>`qty: 2`<br>`price: 50` |
-
-<a href="../.faculty/solutions/c2i6js.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
-
-Back to [Lab tasks](lab-tasks.md).
-
----
-
-<a id="unit-3d-task-10"></a>
-
-## Unit 3D Task 10: Local does not change global
+## Unit 3D Task 9: Local does not change global
 
 Shows that a local variable with the same name does not change the global variable.
 
@@ -4872,9 +4824,9 @@ Back to [Lab tasks](lab-tasks.md).
 
 ---
 
-<a id="unit-3d-task-11"></a>
+<a id="unit-3d-task-10"></a>
 
-## Unit 3D Task 11: Global counter increment
+## Unit 3D Task 10: Global counter increment
 
 Increments a global counter inside a function using the `global` keyword.
 
@@ -4923,9 +4875,9 @@ Back to [Lab tasks](lab-tasks.md).
 
 ---
 
-<a id="unit-3d-task-12"></a>
+<a id="unit-3d-task-11"></a>
 
-## Unit 3D Task 12: Bank balance global vs local
+## Unit 3D Task 11: Bank balance global vs local
 
 Uses a global `balance` with a deposit function (`global`), and another function with a local `balance` that does not update the account.
 
@@ -4978,9 +4930,9 @@ Back to [Lab tasks](lab-tasks.md).
 
 ---
 
-<a id="unit-3d-task-13"></a>
+<a id="unit-3d-task-12"></a>
 
-## Unit 3D Task 13: Factorial using recursion
+## Unit 3D Task 12: Factorial using recursion
 
 Finds the factorial of a number with a recursive function.
 
@@ -5028,9 +4980,9 @@ Back to [Lab tasks](lab-tasks.md).
 
 ---
 
-<a id="unit-3d-task-14"></a>
+<a id="unit-3d-task-13"></a>
 
-## Unit 3D Task 14: Fibonacci series using recursion
+## Unit 3D Task 13: Fibonacci series using recursion
 
 Generates Fibonacci terms using a recursive function for the nth term.
 
@@ -5076,9 +5028,9 @@ Back to [Lab tasks](lab-tasks.md).
 
 ---
 
-<a id="unit-3d-task-15"></a>
+<a id="unit-3d-task-14"></a>
 
-## Unit 3D Task 15: GCD using recursion
+## Unit 3D Task 14: GCD using recursion
 
 Finds the GCD of two numbers with the Euclidean algorithm (recursive).
 
@@ -5121,9 +5073,9 @@ Back to [Lab tasks](lab-tasks.md).
 
 ---
 
-<a id="unit-3d-task-16"></a>
+<a id="unit-3d-task-15"></a>
 
-## Unit 3D Task 16: Lambda with map, filter, and reduce
+## Unit 3D Task 15: Lambda with map, filter, and reduce
 
 Uses lambda functions with `map()`, `filter()`, and `reduce()`.
 

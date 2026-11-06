@@ -1,4 +1,4 @@
-# Unit 3D Task 5 — Example solution
+# Unit 3D Task 6 — Example solution
 
 `print_details(**kwargs)` printing each key–value pair.
 
@@ -11,4 +11,4 @@ def print_details(**kwargs):
 print_details(name="Krishna", age=26, city="Guntur")
 ```
 
-[Back to hint](../../docs/hints.md#unit-3d-task-5) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3d-task-6) · [Back to lab tasks](../../docs/lab-tasks.md)

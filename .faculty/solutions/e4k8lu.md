@@ -1,4 +1,4 @@
-# Unit 3D Task 11 — Example solution
+# Unit 3D Task 10 — Example solution
 
 Global counter incremented with the `global` keyword.
 
@@ -16,4 +16,4 @@ increment()
 print("After:", counter)
 ```
 
-[Back to hint](../../docs/hints.md#unit-3d-task-11) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3d-task-10) · [Back to lab tasks](../../docs/lab-tasks.md)

@@ -1,4 +1,4 @@
-# Unit 3D Task 16 — Example solution
+# Unit 3D Task 15 — Example solution
 
 Lambda with `map()`, `filter()`, and `reduce()`.
 
@@ -17,4 +17,4 @@ print("Evens:", evens)
 print("Sum:", total)
 ```
 
-[Back to hint](../../docs/hints.md#unit-3d-task-16) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3d-task-15) · [Back to lab tasks](../../docs/lab-tasks.md)

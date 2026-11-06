@@ -1,4 +1,4 @@
-# Unit 3D Task 12 — Example solution
+# Unit 3D Task 11 — Example solution
 
 Bank balance: deposit updates global; local assignment does not.
 
@@ -22,4 +22,4 @@ show_local_balance()
 print("Account balance still:", balance)
 ```
 
-[Back to hint](../../docs/hints.md#unit-3d-task-12) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3d-task-11) · [Back to lab tasks](../../docs/lab-tasks.md)

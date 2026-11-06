@@ -1,4 +1,4 @@
-# Unit 3D Task 8 — Example solution
+# Unit 3D Task 5 — Example solution
 
 Sum of any number of values using `*args`.
 
@@ -14,4 +14,4 @@ print(sum_values(1, 2, 3))
 print(sum_values(10, 20, 30, 40))
 ```
 
-[Back to hint](../../docs/hints.md#unit-3d-task-8) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3d-task-5) · [Back to lab tasks](../../docs/lab-tasks.md)
