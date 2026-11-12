@@ -4992,10 +4992,16 @@ Back to [Lab tasks](lab-tasks/README.md).
 
 Finds the factorial of a number with a recursive function.
 
+**What is factorial?**
+- `n!` means multiply all whole numbers from `n` down to `1`
+- Example: `5! = 5 × 4 × 3 × 2 × 1 = 120`
+- Also: `0! = 1` and `1! = 1`
+
 **What is recursion?**
 - A function that calls itself
 - Needs a **base case** to stop
 - Needs a **recursive case** that moves toward the base case
+- For factorial: `n! = n × (n - 1)!`
 
 ### Analyse the problem: Identify Input, Process and Output
 
@@ -5041,6 +5047,17 @@ Back to [Lab tasks](lab-tasks/README.md).
 ## Unit 3D Task 13: Fibonacci series using recursion
 
 Generates Fibonacci terms using a recursive function for the nth term.
+
+**What is the Fibonacci series?**
+- Each term is the **sum of the previous two** terms
+- Start with: `0, 1`
+- Next terms: `0+1=1`, `1+1=2`, `1+2=3`, `2+3=5`, …
+- First 7 terms: `0 1 1 2 3 5 8`
+
+**Recursive rule**
+- `fib(0) = 0`
+- `fib(1) = 1`
+- `fib(k) = fib(k-1) + fib(k-2)`
 
 ### Analyse the problem: Identify Input, Process and Output
 
@@ -5089,6 +5106,27 @@ Back to [Lab tasks](lab-tasks/README.md).
 ## Unit 3D Task 14: GCD using recursion
 
 Finds the GCD of two numbers with the Euclidean algorithm (recursive).
+
+**What is GCD?**
+- GCD = Greatest Common Divisor = largest number that divides both numbers exactly
+- Example: GCD of 48 and 18 is **6** (because `48 = 6×8` and `18 = 6×3`)
+
+**Euclidean algorithm with remainder**
+1. Divide `a` by `b` and take remainder: `r = a % b`
+2. Replace: `a ← b`, `b ← r`
+3. Repeat until `b` becomes `0`
+4. Then GCD is `a`
+
+Example: `gcd(48, 18)`
+
+| Step | a | b | a % b |
+|------|---|---|-------|
+| 1 | 48 | 18 | 12 |
+| 2 | 18 | 12 | 6 |
+| 3 | 12 | 6 | 0 |
+| 4 | 6 | 0 | stop → GCD = 6 |
+
+Recursive form: `gcd(a, b) = a` if `b == 0`, else `gcd(b, a % b)`.
 
 ### Analyse the problem: Identify Input, Process and Output
 
