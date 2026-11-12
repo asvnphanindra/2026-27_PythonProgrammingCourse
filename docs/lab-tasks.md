@@ -146,16 +146,17 @@ Click **Lab observation expectations** in a row for Full / Short / Will be infor
 |------|-----------|------------------------------|-----------|---------------------|------|
 | 4 | Write a python program that defines a function to calculate simple interest with parameters principal, time, and rate (default rate = 5); call it using the default rate and also with an explicit rate | [Short](lab-expectations.md#short) | `Unit-3D_Task-4_Simple_Interest_Default_Args.py` | Will be updated later | [View hint](hints.md#unit-3d-task-4) |
 
+#### Program to demonstrate keyword arguments in functions
+
+| S No | Task name | Lab observation expectations | File name | Record expectations | Hint |
+|------|-----------|------------------------------|-----------|---------------------|------|
+| 4a | Write a python program that defines a function `divide(a, b)` returning `a / b`; call it with keyword arguments `divide(b=10, a=20)` and with positional arguments `divide(10, 20)`, and print both results | [Short](lab-expectations.md#short) | `Unit-3D_Task-4a_Divide_Keyword_Positional_Args.py` | Will be updated later | [View hint](hints.md#unit-3d-task-4a) |
+
 #### Program to demonstrate variable-length arguments (*args, **kwargs)
 
 | S No | Task name | Lab observation expectations | File name | Record expectations | Hint |
 |------|-----------|------------------------------|-----------|---------------------|------|
 | 5 | Write a python program that defines a function using `*args` to find the sum of any number of values | [Short](lab-expectations.md#short) | `Unit-3D_Task-5_Sum_Using_Args.py` | Will be updated later | [View hint](hints.md#unit-3d-task-5) |
-
-#### Program to demonstrate keyword arguments in functions
-
-| S No | Task name | Lab observation expectations | File name | Record expectations | Hint |
-|------|-----------|------------------------------|-----------|---------------------|------|
 | 6 | Write a python program that defines a function `print_details(**kwargs)` to print each key and value from `kwargs`; call it as `print_details(name="Krishna", age=26, city="Guntur")` | [Short](lab-expectations.md#short) | `Unit-3D_Task-6_Print_Details_Kwargs.py` | Will be updated later | [View hint](hints.md#unit-3d-task-6) |
 | 7 | Write a python program that defines a function `shopping_cart(**products)` to print each item with its price in ₹, compute the total, and call it as `shopping_cart(apple=15, orange=12, mango=10)` | [Short](lab-expectations.md#short) | `Unit-3D_Task-7_Shopping_Cart_Kwargs.py` | Will be updated later | [View hint](hints.md#unit-3d-task-7) |
 | 8 | Write a python program that defines a function using `**kwargs` to display a student's name and subject marks | [Short](lab-expectations.md#short) | `Unit-3D_Task-8_Student_Details_Kwargs.py` | Will be updated later | [View hint](hints.md#unit-3d-task-8) |

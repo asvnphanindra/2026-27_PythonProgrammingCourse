@@ -25,7 +25,7 @@ Jump to a task:
 
 **Unit 3C:** [Task 1](#unit-3c-task-1) · [Task 2](#unit-3c-task-2) · [Task 3](#unit-3c-task-3)
 
-**Unit 3D:** [Task 1](#unit-3d-task-1) · [Task 2](#unit-3d-task-2) · [Task 3](#unit-3d-task-3) · [Task 4](#unit-3d-task-4) · [Task 5](#unit-3d-task-5) · [Task 6](#unit-3d-task-6) · [Task 7](#unit-3d-task-7) · [Task 8](#unit-3d-task-8) · [Task 9](#unit-3d-task-9) · [Task 10](#unit-3d-task-10) · [Task 11](#unit-3d-task-11) · [Task 12](#unit-3d-task-12) · [Task 13](#unit-3d-task-13) · [Task 14](#unit-3d-task-14) · [Task 15](#unit-3d-task-15)
+**Unit 3D:** [Task 1](#unit-3d-task-1) · [Task 2](#unit-3d-task-2) · [Task 3](#unit-3d-task-3) · [Task 4](#unit-3d-task-4) · [Task 4a](#unit-3d-task-4a) · [Task 5](#unit-3d-task-5) · [Task 6](#unit-3d-task-6) · [Task 7](#unit-3d-task-7) · [Task 8](#unit-3d-task-8) · [Task 9](#unit-3d-task-9) · [Task 10](#unit-3d-task-10) · [Task 11](#unit-3d-task-11) · [Task 12](#unit-3d-task-12) · [Task 13](#unit-3d-task-13) · [Task 14](#unit-3d-task-14) · [Task 15](#unit-3d-task-15)
 
 ---
 
@@ -4589,6 +4589,62 @@ print("SI (rate=8):", ____(1000, 2, ____))  # explicit rate
 | **Example output** | `SI (default rate): 100.0`<br>`SI (rate=8): 160.0` |
 
 <a href="../.faculty/solutions/x7d1en.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks.md).
+
+---
+
+<a id="unit-3d-task-4a"></a>
+
+## Unit 3D Task 4a: Keyword vs positional arguments (`divide`)
+
+Defines `divide(a, b)` and calls it with keyword arguments and with positional arguments to compare the results.
+
+**What are keyword arguments?**
+- You pass values by **parameter name**, for example `divide(b=10, a=20)`
+- Order does not matter when names are used
+- Positional arguments follow definition order: `divide(10, 20)` means `a=10`, `b=20`
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Two numbers used as `a` and `b`
+
+**Process**
+- Define `divide(a, b)` that returns `a / b`
+- Call with keyword arguments: `divide(b=10, a=20)` → `20 / 10`
+- Call with positional arguments: `divide(10, 20)` → `10 / 20`
+- Print both results
+
+**Output**
+- `2.0` for the keyword call; `0.5` for the positional call
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+# Example: function defined using two parameters
+def divide(____, ____):  # a, b are 2 parameters
+    return ____
+
+result = divide(____=10, ____=20)  # with keyword arguments
+print(result)  # Output: 2.0
+
+result = divide(____, ____)  # positional arguments
+print(result)  # Output: 0.5
+```
+
+> **Hint:** With keywords, `a` and `b` are matched by name even if the order is swapped.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `divide(b=10, a=20)` and `divide(10, 20)` |
+| **Example output** | `2.0`<br>`0.5` |
+
+<a href="../.faculty/solutions/k0q4ra.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](lab-tasks.md).
 

@@ -66,6 +66,7 @@ Not linked from student docs. Map task → cryptic file.
 | Unit 3D Task 2 — Celsius to Fahrenheit (function) | `v5b9cl.md` |
 | Unit 3D Task 3 — Marks total and average (function) | `w6c0dm.md` |
 | Unit 3D Task 4 — Simple interest with default arguments | `x7d1en.md` |
+| Unit 3D Task 4a — Keyword vs positional arguments (divide) | `k0q4ra.md` |
 | Unit 3D Task 5 — Sum using *args | `b1h5ir.md` |
 | Unit 3D Task 6 — print_details with **kwargs | `y8e2fo.md` |
 | Unit 3D Task 7 — shopping_cart with **products | `z9f3gp.md` |
