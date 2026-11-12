@@ -30,4 +30,4 @@ while number <= n:
     number = number + 1
 ```
 
-[Back to hint](../../docs/hints.md#unit-2b-task-13-approach-1) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-2b-task-13-approach-1) · [Back to lab tasks](../../docs/lab-tasks/README.md)

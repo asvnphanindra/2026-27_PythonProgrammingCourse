@@ -23,4 +23,4 @@ list_data.reverse()
 print("After reverse:", list_data)
 ```
 
-[Back to hint](../../docs/hints.md#unit-3a-task-2) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3a-task-2) · [Back to lab tasks](../../docs/lab-tasks/README.md)

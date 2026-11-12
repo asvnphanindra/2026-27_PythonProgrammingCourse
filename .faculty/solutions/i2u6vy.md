@@ -13,4 +13,4 @@ for item in list_data:
     print(item)
 ```
 
-[Back to hint](../../docs/hints.md#unit-3a-task-1) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3a-task-1) · [Back to lab tasks](../../docs/lab-tasks/README.md)

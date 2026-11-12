@@ -12,4 +12,4 @@ else:
     print("Not a palindrome")
 ```
 
-[Back to hint](../../docs/hints.md#unit-2d-task-3) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-2d-task-3) · [Back to lab tasks](../../docs/lab-tasks/README.md)

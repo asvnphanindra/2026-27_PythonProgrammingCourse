@@ -12,4 +12,4 @@ else:
     print(f"Age {age_in_years} years: Not eligible to vote")
 ```
 
-[Back to hint](../../docs/hints.md#unit-2a-task-2) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-2a-task-2) · [Back to lab tasks](../../docs/lab-tasks/README.md)

@@ -12,4 +12,4 @@ print(f"My name is {name} and I am {age} years old.")
 print("My name is %s and I am %d years old." % (name, age))
 ```
 
-[Back to hint](../../docs/hints.md#unit-2d-task-6) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-2d-task-6) · [Back to lab tasks](../../docs/lab-tasks/README.md)

@@ -14,4 +14,4 @@ print("Intersection:", set_a & set_b)
 print("Difference (A - B):", set_a - set_b)
 ```
 
-[Back to hint](../../docs/hints.md#unit-3c-task-1) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3c-task-1) · [Back to lab tasks](../../docs/lab-tasks/README.md)

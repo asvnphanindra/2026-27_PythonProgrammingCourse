@@ -22,4 +22,4 @@ show_local_balance()
 print("Account balance still:", balance)
 ```
 
-[Back to hint](../../docs/hints.md#unit-3d-task-11) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3d-task-11) · [Back to lab tasks](../../docs/lab-tasks/README.md)

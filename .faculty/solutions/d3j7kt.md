@@ -14,4 +14,4 @@ demo()
 print("Outside function, x =", x)
 ```
 
-[Back to hint](../../docs/hints.md#unit-3d-task-9) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3d-task-9) · [Back to lab tasks](../../docs/lab-tasks/README.md)

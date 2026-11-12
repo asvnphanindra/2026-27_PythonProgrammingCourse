@@ -14,4 +14,4 @@ print("Unique set:", unique_set)
 print("Unique list:", unique_list)
 ```
 
-[Back to hint](../../docs/hints.md#unit-3c-task-3) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3c-task-3) · [Back to lab tasks](../../docs/lab-tasks/README.md)

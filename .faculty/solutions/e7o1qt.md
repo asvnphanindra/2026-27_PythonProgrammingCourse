@@ -27,4 +27,4 @@ print("Digits:", digits)
 print("Spaces:", spaces)
 ```
 
-[Back to hint](../../docs/hints.md#unit-2d-task-5) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-2d-task-5) · [Back to lab tasks](../../docs/lab-tasks/README.md)

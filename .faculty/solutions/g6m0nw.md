@@ -13,4 +13,4 @@ number = 5
 print("Factorial:", factorial(number))
 ```
 
-[Back to hint](../../docs/hints.md#unit-3d-task-12) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3d-task-12) · [Back to lab tasks](../../docs/lab-tasks/README.md)

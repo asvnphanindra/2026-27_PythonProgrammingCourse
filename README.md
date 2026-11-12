@@ -17,7 +17,7 @@ See [ActivityBasedLearning-1](ActivityBasedLearning-1/).
 | ----------------------------------------------- | ------------------------------------------------------------------- |
 | [Student README format](docs/student-readme.md) | How to put your details in `README.md` (dashboard-compatible)       |
 | [Lab expectations](docs/lab-expectations.md)    | Before lab (observation), during lab (GitHub), after lab (record)   |
-| [Lab tasks](docs/lab-tasks.md)                  | Unit 1, Unit 2, and Unit 3 tasks, observation level, and file names |
+| [Lab tasks](docs/lab-tasks/README.md)                  | Unit I–III lab tasks (by unit), observation level, and file names |
 | [Hints](docs/hints.md)                          | Input, process, output, and worked examples for selected tasks      |
 | [Commit messages](docs/commit-messages.md)      | Four-commit structure and message pattern per task                  |
 

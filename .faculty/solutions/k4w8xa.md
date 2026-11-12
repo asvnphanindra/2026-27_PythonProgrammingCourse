@@ -14,4 +14,4 @@ print("Largest:", largest)
 print("Smallest:", smallest)
 ```
 
-[Back to hint](../../docs/hints.md#unit-3a-task-3) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3a-task-3) · [Back to lab tasks](../../docs/lab-tasks/README.md)

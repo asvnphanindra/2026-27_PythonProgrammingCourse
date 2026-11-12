@@ -16,4 +16,4 @@ for count in range(n):
     second = next_term
 ```
 
-[Back to hint](../../docs/hints.md#unit-2b-task-7) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-2b-task-7) · [Back to lab tasks](../../docs/lab-tasks/README.md)

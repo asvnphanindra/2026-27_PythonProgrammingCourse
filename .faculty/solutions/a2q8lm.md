@@ -25,4 +25,4 @@ else:
     )
 ```
 
-[Back to hint](../../docs/hints.md#unit-2a-task-1) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-2a-task-1) · [Back to lab tasks](../../docs/lab-tasks/README.md)

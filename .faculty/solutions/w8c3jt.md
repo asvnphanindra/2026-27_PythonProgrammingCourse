@@ -18,4 +18,4 @@ print(f"Sum of {total_input_numbers} numbers is {total_sum}")
 print(f"Average of {total_input_numbers} numbers (sum {total_sum}) is {average}")
 ```
 
-[Back to hint](../../docs/hints.md#unit-2b-task-3) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-2b-task-3) · [Back to lab tasks](../../docs/lab-tasks/README.md)

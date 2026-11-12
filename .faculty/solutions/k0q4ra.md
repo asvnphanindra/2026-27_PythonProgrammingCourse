@@ -15,4 +15,4 @@ result = divide(10, 20)  # positional arguments
 print(result)  # Output: 0.5
 ```
 
-[Back to hint](../../docs/hints.md#unit-3d-task-4a) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3d-task-4a) · [Back to lab tasks](../../docs/lab-tasks/README.md)

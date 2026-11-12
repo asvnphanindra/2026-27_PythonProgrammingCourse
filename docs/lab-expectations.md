@@ -6,7 +6,7 @@ Every task has **three** expectations. Open this page from the task list when yo
 - [During lab — GitHub code](#during-lab)
 - [After lab — Lab record](#after-lab)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -25,7 +25,7 @@ Prepare lab observation for every **Unit 2A** and **Unit 2B** task marked **Full
 | 2A | 1, 3, 4, 5 |
 | 2B | 3, 7, 8, 11 |
 
-See the [lab tasks](lab-tasks.md) list for file names and [Full](#full) details.
+See the [lab tasks](lab-tasks/README.md) list for file names and [Full](#full) details.
 
 ---
 
@@ -47,7 +47,7 @@ For all **Unit 2** tasks marked **Full**:
 | 2B | 3, 7, 8, 11 |
 | 2C | 4, 5, 6, 13 |
 
-See the [lab tasks](lab-tasks.md) list for file names and [Full](#full) details.
+See the [lab tasks](lab-tasks/README.md) list for file names and [Full](#full) details.
 
 ---
 
@@ -110,7 +110,7 @@ Lab observation details for this task will be announced later. Still follow [dur
 
 Upload **fully functional** Python code to your course GitHub repository.
 
-- Use the **exact file name** from the [lab tasks](lab-tasks.md) list
+- Use the **exact file name** from the [lab tasks](lab-tasks/README.md) list
 - One task per file
 - Follow the [commit message](commit-messages.md) stages
 

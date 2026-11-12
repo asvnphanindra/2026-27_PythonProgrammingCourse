@@ -18,4 +18,4 @@ for ch, count in frequency.items():
     print(ch, ":", count)
 ```
 
-[Back to hint](../../docs/hints.md#unit-2d-task-7) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-2d-task-7) · [Back to lab tasks](../../docs/lab-tasks/README.md)

@@ -16,4 +16,4 @@ print("Area:", area)
 print("Perimeter:", perimeter)
 ```
 
-[Back to hint](../../docs/hints.md#unit-3d-task-1) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3d-task-1) · [Back to lab tasks](../../docs/lab-tasks/README.md)

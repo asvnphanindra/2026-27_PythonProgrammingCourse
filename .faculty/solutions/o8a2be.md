@@ -16,4 +16,4 @@ a, b, c = tuple_data
 print("Unpacked:", a, b, c)
 ```
 
-[Back to hint](../../docs/hints.md#unit-3b-task-2) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3b-task-2) · [Back to lab tasks](../../docs/lab-tasks/README.md)

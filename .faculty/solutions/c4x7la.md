@@ -19,4 +19,4 @@ else:
 print(f"Number of digits in {original_number} is {digit_count}")
 ```
 
-[Back to hint](../../docs/hints.md#unit-2b-task-9) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-2b-task-9) · [Back to lab tasks](../../docs/lab-tasks/README.md)

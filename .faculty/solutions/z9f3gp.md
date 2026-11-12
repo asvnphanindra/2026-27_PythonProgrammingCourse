@@ -16,4 +16,4 @@ def shopping_cart(**products):
 shopping_cart(apple=15, orange=12, mango=10)
 ```
 
-[Back to hint](../../docs/hints.md#unit-3d-task-7) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3d-task-7) · [Back to lab tasks](../../docs/lab-tasks/README.md)

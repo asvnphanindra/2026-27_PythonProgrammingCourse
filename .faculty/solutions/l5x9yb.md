@@ -15,4 +15,4 @@ print("Original:", list_data)
 print("Without duplicates:", unique)
 ```
 
-[Back to hint](../../docs/hints.md#unit-3a-task-4) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3a-task-4) · [Back to lab tasks](../../docs/lab-tasks/README.md)

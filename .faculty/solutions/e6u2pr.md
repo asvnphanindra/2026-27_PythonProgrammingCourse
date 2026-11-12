@@ -48,4 +48,4 @@ else:
     print(f"{year} is not a leap year")
 ```
 
-[Back to hint](../../docs/hints.md#unit-2a-task-7-approach-1) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-2a-task-7-approach-1) · [Back to lab tasks](../../docs/lab-tasks/README.md)

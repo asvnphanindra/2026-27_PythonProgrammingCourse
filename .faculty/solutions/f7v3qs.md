@@ -16,4 +16,4 @@ else:
     print(f"Marks {marks}: Grade D")
 ```
 
-[Back to hint](../../docs/hints.md#unit-2a-task-4) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-2a-task-4) · [Back to lab tasks](../../docs/lab-tasks/README.md)

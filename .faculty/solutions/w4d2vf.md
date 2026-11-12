@@ -15,4 +15,4 @@ while row_loop_var <= 3:
     row_loop_var = row_loop_var + 1
 ```
 
-[Back to hint](../../docs/hints.md#unit-2c-task-4) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-2c-task-4) · [Back to lab tasks](../../docs/lab-tasks/README.md)

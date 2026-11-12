@@ -20,4 +20,4 @@ set_data.discard(99)
 print("After discard:", set_data)
 ```
 
-[Back to hint](../../docs/hints.md#unit-3c-task-2) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3c-task-2) · [Back to lab tasks](../../docs/lab-tasks/README.md)

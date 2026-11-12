@@ -15,4 +15,4 @@ print("Total:", total)
 print("Average:", average)
 ```
 
-[Back to hint](../../docs/hints.md#unit-3d-task-3) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3d-task-3) · [Back to lab tasks](../../docs/lab-tasks/README.md)

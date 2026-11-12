@@ -13,4 +13,4 @@ x, y = 48, 18
 print("GCD:", gcd(x, y))
 ```
 
-[Back to hint](../../docs/hints.md#unit-3d-task-14) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3d-task-14) · [Back to lab tasks](../../docs/lab-tasks/README.md)

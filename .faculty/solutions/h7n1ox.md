@@ -16,4 +16,4 @@ for i in range(n):
     print(fib(i), end=" ")
 ```
 
-[Back to hint](../../docs/hints.md#unit-3d-task-13) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3d-task-13) · [Back to lab tasks](../../docs/lab-tasks/README.md)

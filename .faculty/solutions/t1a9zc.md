@@ -12,4 +12,4 @@ for row_loop_var in range(1, 4):
     print(0)
 ```
 
-[Back to hint](../../docs/hints.md#unit-2c-task-1) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-2c-task-1) · [Back to lab tasks](../../docs/lab-tasks/README.md)

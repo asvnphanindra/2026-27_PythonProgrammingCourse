@@ -15,4 +15,4 @@ print("Replace:", s.replace("Python", "Java"))
 print("Find:", s.find("Python"))
 ```
 
-[Back to hint](../../docs/hints.md#unit-2d-task-2) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-2d-task-2) · [Back to lab tasks](../../docs/lab-tasks/README.md)

@@ -14,4 +14,4 @@ first_number, second_number = second_number, first_number
 print("After:", first_number, second_number)
 ```
 
-[Back to hint](../../docs/hints.md#unit-3b-task-3) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3b-task-3) · [Back to lab tasks](../../docs/lab-tasks/README.md)

@@ -2,7 +2,7 @@
 
 Use these hints to plan each program (input, process, output) and to check your results with the sample values.
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 > **Important:** In the **Process** section and in sample code, hints show only the **structure** (for example `if` / `else` shape). They do **not** give the full logic.  
 > Look for blanks such as `____` and fill in your own code. A short comment next to each blank tells you what to write there. Use the **Example** values to check whether your logic is correct.
@@ -66,7 +66,7 @@ print(f"Sum of the two numbers is {sum_of_numbers}")
 | **Example calculation** | `sum_of_numbers = 10 + 20 = 30` |
 | **Example output** | `sum_of_numbers = 30` |
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -106,7 +106,7 @@ print(f"Square of the number is {square_of_number}")
 | **Example calculation** | `square_of_number = 5 ** 2 = 25` |
 | **Example output** | `square_of_number = 25` |
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -150,7 +150,7 @@ print(f"Perimeter of the rectangle is {perimeter_in_cm} cm")
 | **Example calculation** | `area_in_square_cm = 10 * 5 = 50`<br>`perimeter_in_cm = 2 * (10 + 5) = 30` |
 | **Example output** | `area_in_square_cm = 50`, `perimeter_in_cm = 30` |
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -192,7 +192,7 @@ print(f"Temperature in Fahrenheit is {temperature_in_fahrenheit}")
 | **Example calculation** | `(25 * 9 / 5) + 32 = 77` |
 | **Example output** | `temperature_in_fahrenheit = 77` |
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -234,7 +234,7 @@ print(f"After swapping, first number is {number1} and second number is {number2}
 | **Example calculation (Approach 2)** | `number1 = 10 + 20 = 30`<br>`number2 = 30 - 20 = 10`<br>`number1 = 30 - 10 = 20` |
 | **Example output** | `number1 = 20`, `number2 = 10` |
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -283,7 +283,7 @@ print(f"Simple interest is {simple_interest_in_rupees} rupees")
 | **Example calculation** | `(10000 * 5 * 2) / 100 = 1000` |
 | **Example output** | `simple_interest_in_rupees = 1000` |
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -328,7 +328,7 @@ print(f"Compound interest is {compound_interest_in_rupees} rupees")
 | **Example calculation** | `10000 * (1.05) ** 2 = 11025`<br>`11025 - 10000 = 1025` |
 | **Example output** | `total_amount_in_rupees = 11025`, `compound_interest_in_rupees = 1025` |
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -368,7 +368,7 @@ print(f"Sum of first {n} natural numbers is {sum_of_natural_numbers}")
 | **Example calculation** | `10 * (10 + 1) / 2 = 55` |
 | **Example output** | `sum_of_natural_numbers = 55` |
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -407,7 +407,7 @@ print(f"Exponent: {exponent}")
 | **Example calculation** | `10 + 3 = 13`<br>`10 - 3 = 7`<br>`10 * 3 = 30`<br>`10 / 3 = 3.333...`<br>`10 // 3 = 3`<br>`10 % 3 = 1`<br>`10 ** 3 = 1000` |
 | **Example output** | `13`, `7`, `30`, `3.333...`, `3`, `1`, `1000` |
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -445,7 +445,7 @@ print(f"{number1} <= {number2} is {number1 <= number2}")
 | **Example calculation** | `10 == 20 → False`<br>`10 != 20 → True`<br>`10 > 20 → False`<br>`10 < 20 → True`<br>`10 >= 20 → False`<br>`10 <= 20 → True` |
 | **Example output** | `False`, `True`, `False`, `True`, `False`, `True` |
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -480,7 +480,7 @@ print(f"not ({number1} > 50) is {not (number1 > 50)}")
 | **Example calculation** | `(10 > 5) and (20 > 15) → True`<br>`(10 > 50) or (20 > 15) → True`<br>`not (10 > 50) → True` |
 | **Example output** | `True`, `True`, `True` |
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -524,7 +524,7 @@ list_b = list_a      # same object as list_a
 list_c = [1, 2, 3]   # same values, but a different object
 ```
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -586,7 +586,7 @@ print(f"'Ada' not in {student} is {'Ada' not in student}")
 | **dictionary (`dict`)** | `"name" in {"name": "Ada", "age": 20}` | `True` (checks **keys**) |
 | **dictionary (`dict`)** | `"Ada" not in {"name": "Ada", "age": 20}` | `True` (values are not checked by default) |
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -616,7 +616,7 @@ print(f"10 - 4 - 2 = {10 - 4 - 2}")
 | **Example calculation** | `2 + 3 * 4 = 2 + 12 = 14` (`*` before `+`)<br>`2 ** 3 ** 2 = 2 ** 9 = 512` (`**` is right-associative)<br>`10 - 4 - 2 = 6 - 2 = 4` (`-` is left-associative) |
 | **Example output** | `14`, `512`, `4` |
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -658,7 +658,7 @@ print(f"String value: {str_num}, type: {type(str_num)}")
 | **Example calculation** | `int_num = int("25") → 25`<br>`float_num = float("25") → 25.0`<br>`str_num = str(25) → "25"` |
 | **Example output** | `int_num = 25`, `float_num = 25.0`, `str_num = "25"` |
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -709,7 +709,7 @@ else:
 
 <a href="../.faculty/solutions/a2q8lm.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -758,7 +758,7 @@ else:
 
 <a href="../.faculty/solutions/b3r9mn.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -807,7 +807,7 @@ else:
 
 <a href="../.faculty/solutions/c4s0np.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -876,7 +876,7 @@ else:
 
 <a href="../.faculty/solutions/f7v3qs.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -954,7 +954,7 @@ print(f"Largest = {largest} (among {x}, {y}, {z})")
 
 <a href="../.faculty/solutions/d5t1oq.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -1032,7 +1032,7 @@ print(f"Smallest = {smallest} (among {x}, {y}, {z})")
 
 <a href="../.faculty/solutions/g8w4rt.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -1096,7 +1096,7 @@ else:
 
 <a href="../.faculty/solutions/e6u2pr.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -1158,7 +1158,7 @@ else:
 
 <a href="../.faculty/solutions/e6u2pr.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -1216,7 +1216,7 @@ else:
 
 <a href="../.faculty/solutions/e6u2pr.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -1297,7 +1297,7 @@ else:
 
 <a href="../.faculty/solutions/j5p8wv.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -1347,7 +1347,7 @@ for ____ in ____:  # loop variable; use range(...) from 1 to n
 
 <a href="../.faculty/solutions/k7m2xq.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -1399,7 +1399,7 @@ while ____:  # continue while the counter is within 1 to n
 
 <a href="../.faculty/solutions/k7m2xq.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -1451,7 +1451,7 @@ for ____ in ____:  # multiplier; use range(...) for 1 to 10
 
 <a href="../.faculty/solutions/p4n9rw.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -1505,7 +1505,7 @@ while ____:  # continue while multiplier is within 1 to 10
 
 <a href="../.faculty/solutions/p4n9rw.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -1568,7 +1568,7 @@ print(f"Average of {total_input_numbers} numbers (sum {total_sum}) is {average}"
 
 <a href="../.faculty/solutions/w8c3jt.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -1627,7 +1627,7 @@ print(f"Largest among {total_input_numbers} numbers is {largest}")
 
 <a href="../.faculty/solutions/h2v6ys.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -1687,7 +1687,7 @@ print(f"Factorial of {number} is {factorial}")
 
 <a href="../.faculty/solutions/m9q4bd.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -1763,7 +1763,7 @@ else:
 
 <a href="../.faculty/solutions/r5t1zk.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -1829,7 +1829,7 @@ for ____ in ____:  # repeat n times (use range)
 
 <a href="../.faculty/solutions/b6j2qm.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -1890,7 +1890,7 @@ print(f"Sum of digits of {original_number} is {digit_sum}")
 
 <a href="../.faculty/solutions/v3n8wp.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -1953,7 +1953,7 @@ print(f"Number of digits in {original_number} is {digit_count}")
 
 <a href="../.faculty/solutions/c4x7la.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -2014,7 +2014,7 @@ print(f"Reverse of {original_number} is {reversed_number}")
 
 <a href="../.faculty/solutions/d9f2mh.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -2095,7 +2095,7 @@ else:
 
 <a href="../.faculty/solutions/e1g5nk.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -2168,7 +2168,7 @@ else:
 
 <a href="../.faculty/solutions/f8h3pj.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -2221,7 +2221,7 @@ for ____ in ____:  # numbers from 1 to n (use range)
 
 <a href="../.faculty/solutions/g2k6qs.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -2278,7 +2278,7 @@ while ____:  # continue while counter <= n
 
 <a href="../.faculty/solutions/g2k6qs.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -2331,7 +2331,7 @@ for ____ in ____:  # numbers from 1 to n (use range)
 
 <a href="../.faculty/solutions/h7m1rt.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -2389,7 +2389,7 @@ while ____:  # continue while counter <= n
 
 <a href="../.faculty/solutions/h7m1rt.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -2443,7 +2443,7 @@ for ____ in ____:  # numbers from 1 to n (use range)
 
 <a href="../.faculty/solutions/i4n9su.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -2498,7 +2498,7 @@ while ____:  # continue while counter <= n
 
 <a href="../.faculty/solutions/i4n9su.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -2544,7 +2544,7 @@ for ____ in ____:  # row_loop_var; range starts at 1, repeat 3 times
 
 <a href="../.faculty/solutions/t1a9zc.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -2587,7 +2587,7 @@ for ____ in ____:  # row_loop_var; range(1, 4) — each row
 
 <a href="../.faculty/solutions/u2b0yd.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -2634,7 +2634,7 @@ for ____ in ____:  # row_loop_var; range(1, 4) — each row
 
 <a href="../.faculty/solutions/v3c1xe.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -2683,7 +2683,7 @@ while ____:  # keep going while row_loop_var is within 1..3
 
 <a href="../.faculty/solutions/w4d2vf.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -2738,7 +2738,7 @@ for ____ in ____:  # row_loop_var; range(1, rows + 1)
 
 <a href="../.faculty/solutions/i6p3cr.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -2796,7 +2796,7 @@ for ____ in ____:  # row_loop_var; range(1, rows + 1)
 
 <a href="../.faculty/solutions/j7q4ds.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -2855,7 +2855,7 @@ for ____ in ____:  # row_loop_var; range(1, rows + 1)
 
 <a href="../.faculty/solutions/a8h6rj.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -2906,7 +2906,7 @@ for ____ in ____:  # row_loop_var; range(rows, 0, -1)
 
 <a href="../.faculty/solutions/b9i7pk.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -2954,7 +2954,7 @@ for ____ in ____:  # row_loop_var; range(1, rows + 1)
 
 <a href="../.faculty/solutions/f3m0zo.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -3015,7 +3015,7 @@ for ____ in ____:  # row_loop_var; range(rows - 1, 0, -1)
 
 <a href="../.faculty/solutions/c0j8ql.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -3078,7 +3078,7 @@ for ____ in ____:
 
 <a href="../.faculty/solutions/h5o2bq.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -3128,7 +3128,7 @@ for ____ in ____:  # row_loop_var; range(1, rows + 1)
 
 <a href="../.faculty/solutions/x5e3ug.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -3201,7 +3201,7 @@ for ____ in ____:  # row_loop_var; range(1, rows + 1)
 
 <a href="../.faculty/solutions/y6f4th.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -3260,7 +3260,7 @@ for ____ in ____:  # row_loop_var; range(1, rows + 1)
 
 <a href="../.faculty/solutions/z7g5si.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -3307,7 +3307,7 @@ for ____ in ____:  # row_loop_var; range(1, rows + 1)
 
 <a href="../.faculty/solutions/e2l9yn.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -3361,7 +3361,7 @@ print("Characters from index 1 to 4:", ____)  # s[1:5]
 
 <a href="../.faculty/solutions/a3k7mp.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -3410,7 +3410,7 @@ print("Find:", ____)  # find index of "Python"
 
 <a href="../.faculty/solutions/b4l8nq.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -3467,7 +3467,7 @@ else:
 
 <a href="../.faculty/solutions/c5m9or.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -3546,7 +3546,7 @@ print("Reversed string:", ____)
 
 <a href="../.faculty/solutions/d6n0ps.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -3617,7 +3617,7 @@ print("Spaces:", ____)
 
 <a href="../.faculty/solutions/e7o1qt.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -3669,7 +3669,7 @@ print(____)  # "My name is %s and I am %d years old." % (name, age)
 
 <a href="../.faculty/solutions/f8p2ru.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -3728,7 +3728,7 @@ for ____, ____ in ____:  # items in frequency
 
 <a href="../.faculty/solutions/g9q3sv.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -3786,7 +3786,7 @@ else:
 
 <a href="../.faculty/solutions/h0r4tw.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -3834,7 +3834,7 @@ for ____ in ____:  # each item in list_data
 
 <a href="../.faculty/solutions/i2u6vy.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -3893,7 +3893,7 @@ print("After reverse:", ____)
 
 <a href="../.faculty/solutions/j3v7wz.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -3940,7 +3940,7 @@ print("Smallest:", ____)
 
 <a href="../.faculty/solutions/k4w8xa.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -3990,7 +3990,7 @@ print("Without duplicates:", ____)
 
 <a href="../.faculty/solutions/l5x9yb.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -4051,7 +4051,7 @@ print("Sum:", ____)
 
 <a href="../.faculty/solutions/m6y0zc.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -4097,7 +4097,7 @@ print("Length:", ____)  # len(tuple_data)
 
 <a href="../.faculty/solutions/n7z1ad.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -4148,7 +4148,7 @@ print("Unpacked:", ____, ____, ____)
 
 <a href="../.faculty/solutions/o8a2be.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -4195,7 +4195,7 @@ print("After:", ____, ____)
 
 <a href="../.faculty/solutions/p9b3cf.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -4240,7 +4240,7 @@ print("Minimum:", ____)
 
 <a href="../.faculty/solutions/q0c4dg.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -4294,7 +4294,7 @@ print("Difference (A - B):", ____)  # set_a - set_b
 
 <a href="../.faculty/solutions/r1d5eh.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -4350,7 +4350,7 @@ print("After discard:", ____)
 
 <a href="../.faculty/solutions/s2e6fi.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -4399,7 +4399,7 @@ print("Unique list:", ____)
 
 <a href="../.faculty/solutions/t3f7gj.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -4451,7 +4451,7 @@ print("Perimeter:", ____)
 
 <a href="../.faculty/solutions/u4a8bk.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -4496,7 +4496,7 @@ print("Fahrenheit:", ____)
 
 <a href="../.faculty/solutions/v5b9cl.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -4544,7 +4544,7 @@ print("Average:", ____)
 
 <a href="../.faculty/solutions/w6c0dm.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -4590,7 +4590,7 @@ print("SI (rate=8):", ____(1000, 2, ____))  # explicit rate
 
 <a href="../.faculty/solutions/x7d1en.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -4646,7 +4646,7 @@ print(result)  # Output: 0.5
 
 <a href="../.faculty/solutions/k0q4ra.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -4694,7 +4694,7 @@ print(sum_values(10, 20, 30, 40))
 
 <a href="../.faculty/solutions/b1h5ir.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -4737,7 +4737,7 @@ print_details(name="____", age=____, city="____")  # Krishna, 26, Guntur
 
 <a href="../.faculty/solutions/y8e2fo.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -4786,7 +4786,7 @@ shopping_cart(apple=____, orange=____, mango=____)  # 15, 12, 10
 
 <a href="../.faculty/solutions/z9f3gp.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -4829,7 +4829,7 @@ student_details(name="____", maths=____, science=____)  # e.g. Anu, 85, 90
 
 <a href="../.faculty/solutions/a0g4hq.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -4876,7 +4876,7 @@ print("Outside function, x =", ____)
 
 <a href="../.faculty/solutions/d3j7kt.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -4927,7 +4927,7 @@ print("After:", ____)
 
 <a href="../.faculty/solutions/e4k8lu.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -4982,7 +4982,7 @@ print("Account balance still:", ____)
 
 <a href="../.faculty/solutions/f5l9mv.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -5032,7 +5032,7 @@ print("Factorial:", ____(number))
 
 <a href="../.faculty/solutions/g6m0nw.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -5080,7 +5080,7 @@ for i in range(____):
 
 <a href="../.faculty/solutions/h7n1ox.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -5125,7 +5125,7 @@ print("GCD:", ____(x, y))
 
 <a href="../.faculty/solutions/i8o2py.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).
 
 ---
 
@@ -5175,4 +5175,4 @@ print("Sum:", ____)
 
 <a href="../.faculty/solutions/j9p3qz.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
-Back to [Lab tasks](lab-tasks.md).
+Back to [Lab tasks](lab-tasks/README.md).

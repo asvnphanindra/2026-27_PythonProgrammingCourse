@@ -22,4 +22,4 @@ print("Matrix B:", matrix_b)
 print("Sum:", result)
 ```
 
-[Back to hint](../../docs/hints.md#unit-3a-task-5) · [Back to lab tasks](../../docs/lab-tasks.md)
+[Back to hint](../../docs/hints.md#unit-3a-task-5) · [Back to lab tasks](../../docs/lab-tasks/README.md)
