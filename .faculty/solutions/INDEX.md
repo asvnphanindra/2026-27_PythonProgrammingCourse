@@ -72,8 +72,8 @@ Not linked from student docs. Map task → cryptic file.
 | Unit 3D Task 7 — shopping_cart with **products | `z9f3gp.md` |
 | Unit 3D Task 8 — Student details with **kwargs | `a0g4hq.md` |
 | Unit 3D Task 9 — Local does not change global | `d3j7kt.md` |
-| Unit 3D Task 10 — Global counter increment | `e4k8lu.md` |
-| Unit 3D Task 11 — Bank balance global vs local | `f5l9mv.md` |
+| Unit 3D Task 10 (Optional) — Global counter increment | `e4k8lu.md` |
+| Unit 3D Task 11 (Optional) — Bank balance global vs local | `f5l9mv.md` |
 | Unit 3D Task 12 — Factorial using recursion | `g6m0nw.md` |
 | Unit 3D Task 13 — Fibonacci series using recursion | `h7n1ox.md` |
 | Unit 3D Task 14 — GCD using recursion | `i8o2py.md` |

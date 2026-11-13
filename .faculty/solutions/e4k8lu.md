@@ -1,4 +1,4 @@
-# Unit 3D Task 10 — Example solution
+# Unit 3D Task 10 (Optional) — Example solution
 
 Global counter incremented with the `global` keyword.
 

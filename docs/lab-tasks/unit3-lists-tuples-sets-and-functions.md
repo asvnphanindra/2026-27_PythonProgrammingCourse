@@ -4,7 +4,7 @@ Create **one Python file per task**. Use the file names below so faculty can fin
 
 **Every task has three expectations:** [before lab (observation)](../lab-expectations.md#before-lab) · [during lab (GitHub)](../lab-expectations.md#during-lab) · [after lab (record)](../lab-expectations.md#after-lab)
 
-Click **Lab observation expectations** in a row for Full / Short / Will be informed later. Click **View hint** for input, process, output, and a worked example (where available).
+Click **Lab observation expectations** in a row for Full / Short / Optional / Will be informed later. Click **View hint** for input, process, output, and a worked example (where available).
 
 Back to [Lab tasks index](README.md).
 
@@ -72,8 +72,8 @@ Back to [Lab tasks index](README.md).
 | S No | Task name | Lab observation expectations | File name | Record expectations | Hint |
 |------|-----------|------------------------------|-----------|---------------------|------|
 | 9 | Write a python program that shows a local variable inside a function does not change a global variable with the same name | [Short](../lab-expectations.md#short) | `Unit-3D_Task-9_Local_Does_Not_Change_Global.py` | Will be updated later | [View hint](../hints.md#unit-3d-task-9) |
-| 10 | Write a python program that uses a global counter and increments it inside a function using the `global` keyword | [Short](../lab-expectations.md#short) | `Unit-3D_Task-10_Global_Counter_Increment.py` | Will be updated later | [View hint](../hints.md#unit-3d-task-10) |
-| 11 | Write a python program for a simple bank balance: a global `balance`, a function to deposit (uses `global`), and a function that uses a local `balance` to show it does not update the account | [Short](../lab-expectations.md#short) | `Unit-3D_Task-11_Bank_Balance_Global_Local.py` | Will be updated later | [View hint](../hints.md#unit-3d-task-11) |
+| 10 | **(Optional)** Write a python program that uses a global counter and increments it inside a function using the `global` keyword | [Optional](../lab-expectations.md#optional) | `Unit-3D_Task-10_Global_Counter_Increment.py` | Will be updated later | [View hint](../hints.md#unit-3d-task-10) |
+| 11 | **(Optional)** Write a python program for a simple bank balance: a global `balance`, a function to deposit (uses `global`), and a function that uses a local `balance` to show it does not update the account | [Optional](../lab-expectations.md#optional) | `Unit-3D_Task-11_Bank_Balance_Global_Local.py` | Will be updated later | [View hint](../hints.md#unit-3d-task-11) |
 
 | S No | Task name | Lab observation expectations | File name | Record expectations | Hint |
 |------|-----------|------------------------------|-----------|---------------------|------|

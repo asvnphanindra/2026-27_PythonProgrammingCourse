@@ -25,7 +25,7 @@ Jump to a task:
 
 **Unit 3C:** [Task 1](#unit-3c-task-1) · [Task 2](#unit-3c-task-2) · [Task 3](#unit-3c-task-3)
 
-**Unit 3D:** [Task 1](#unit-3d-task-1) · [Task 2](#unit-3d-task-2) · [Task 3](#unit-3d-task-3) · [Task 4](#unit-3d-task-4) · [Task 4a](#unit-3d-task-4a) · [Task 5](#unit-3d-task-5) · [Task 6](#unit-3d-task-6) · [Task 7](#unit-3d-task-7) · [Task 8](#unit-3d-task-8) · [Task 9](#unit-3d-task-9) · [Task 10](#unit-3d-task-10) · [Task 11](#unit-3d-task-11) · [Task 12](#unit-3d-task-12) · [Task 13](#unit-3d-task-13) · [Task 14](#unit-3d-task-14) · [Task 15](#unit-3d-task-15)
+**Unit 3D:** [Task 1](#unit-3d-task-1) · [Task 2](#unit-3d-task-2) · [Task 3](#unit-3d-task-3) · [Task 4](#unit-3d-task-4) · [Task 4a](#unit-3d-task-4a) · [Task 5](#unit-3d-task-5) · [Task 6](#unit-3d-task-6) · [Task 7](#unit-3d-task-7) · [Task 8](#unit-3d-task-8) · [Task 9](#unit-3d-task-9) · [Task 10 (Optional)](#unit-3d-task-10) · [Task 11 (Optional)](#unit-3d-task-11) · [Task 12](#unit-3d-task-12) · [Task 13](#unit-3d-task-13) · [Task 14](#unit-3d-task-14) · [Task 15](#unit-3d-task-15)
 
 ---
 
@@ -4882,7 +4882,7 @@ Back to [Lab tasks](lab-tasks/README.md).
 
 <a id="unit-3d-task-10"></a>
 
-## Unit 3D Task 10: Global counter increment
+## Unit 3D Task 10 (Optional): Global counter increment
 
 Increments a global counter inside a function using the `global` keyword.
 
@@ -4933,7 +4933,7 @@ Back to [Lab tasks](lab-tasks/README.md).
 
 <a id="unit-3d-task-11"></a>
 
-## Unit 3D Task 11: Bank balance global vs local
+## Unit 3D Task 11 (Optional): Bank balance global vs local
 
 Uses a global `balance` with a deposit function (`global`), and another function with a local `balance` that does not update the account.
 

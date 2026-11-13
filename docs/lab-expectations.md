@@ -63,6 +63,7 @@ The task list column **Lab observation expectations** shows one of:
 |-------|---------|
 | [Full](#full) | Full observation write-up |
 | [Short](#short) | Short observation write-up |
+| [Optional](#optional) | Lab observation is optional for this task |
 | [Will be informed later](#will-be-informed-later) | Faculty will announce later |
 
 <a id="full"></a>
@@ -95,6 +96,12 @@ Prepare only these:
 | | Saved file location |
 
 **Test cases:** at least **5** cases; at least **2** must be tricky. For each case write Input, Expected output, and Actual output.
+
+<a id="optional"></a>
+
+### Optional
+
+Lab observation is **not required** for this task. You may still write a Short observation if you want practice. Still follow [during lab](#during-lab) and [after lab](#after-lab) when those apply.
 
 <a id="will-be-informed-later"></a>
 
