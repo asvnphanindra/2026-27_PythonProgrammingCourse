@@ -27,6 +27,8 @@ Jump to a task:
 
 **Unit 3D:** [Task 1](#unit-3d-task-1) · [Task 2](#unit-3d-task-2) · [Task 3](#unit-3d-task-3) · [Task 4](#unit-3d-task-4) · [Task 4a](#unit-3d-task-4a) · [Task 5](#unit-3d-task-5) · [Task 6](#unit-3d-task-6) · [Task 7](#unit-3d-task-7) · [Task 8](#unit-3d-task-8) · [Task 9](#unit-3d-task-9) · [Task 10 (Optional)](#unit-3d-task-10) · [Task 11 (Optional)](#unit-3d-task-11) · [Task 12](#unit-3d-task-12) · [Task 13](#unit-3d-task-13) · [Task 14](#unit-3d-task-14) · [Task 15](#unit-3d-task-15)
 
+**Unit 4A:** [Task 1](#unit-4a-task-1) · [Task 2](#unit-4a-task-2) · [Task 3](#unit-4a-task-3) · [Task 4](#unit-4a-task-4) · [Task 5](#unit-4a-task-5) · [Task 6](#unit-4a-task-6) · [Task 7](#unit-4a-task-7) · [Task 8](#unit-4a-task-8) · [Task 9](#unit-4a-task-9) · [Task 10](#unit-4a-task-10)
+
 ---
 
 <a id="unit-1-task-1"></a>
@@ -5214,3 +5216,496 @@ print("Sum:", ____)
 <a href="../.faculty/solutions/j9p3qz.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](lab-tasks/README.md).
+
+---
+
+<a id="unit-4a-task-1"></a>
+
+## Unit 4A Task 1: Create, access and update a dictionary
+
+Creates a dictionary, reads values by key, and updates or adds entries.
+
+**What is a dictionary?**
+- A collection of **key–value** pairs written with `{ }`
+- Keys are usually unique; look up a value with `dict[key]`
+- Useful for labelled data (name → value)
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Sample keys and values (for example student details)
+
+**Process**
+- Create a dictionary with `{ key: value, ... }`
+- Access a value with `d[key]` or `d.get(key)`
+- Update an existing key with assignment; add a new key the same way
+
+**Output**
+- Dictionary before and after updates, plus selected values
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+student = {
+    "name": ____,  # e.g. "Anu"
+    "age": ____,  # e.g. 20
+    "course": ____,  # e.g. "Python"
+}
+print("Student:", ____)
+print("Name:", student[____])
+
+student[____] = ____  # update age, e.g. 21
+student[____] = ____  # add a new key, e.g. "city": "Guntur"
+print("Updated:", ____)
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `name="Anu"`, `age=20`, then set `age=21`, add `city="Guntur"` |
+| **Example output** | `Student: {'name': 'Anu', 'age': 20, 'course': 'Python'}`<br>`Name: Anu`<br>`Updated: {'name': 'Anu', 'age': 21, 'course': 'Python', 'city': 'Guntur'}` |
+
+<a href="../.faculty/solutions/l1r5sb.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).
+
+---
+
+<a id="unit-4a-task-2"></a>
+
+## Unit 4A Task 2: Dictionary methods
+
+Demonstrates `keys`, `values`, `items`, `get`, `update`, and `pop`.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A sample dictionary
+
+**Process**
+- `keys()` — all keys
+- `values()` — all values
+- `items()` — key–value pairs
+- `get(key)` — value or `None` if missing (no error)
+- `update({...})` — merge/overwrite entries
+- `pop(key)` — remove a key and return its value
+
+**Output**
+- Results of each method
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+data = {"a": 1, "b": 2, "c": 3}
+print("Keys:", ____)  # data.keys()
+print("Values:", ____)
+print("Items:", ____)
+print("get b:", data.____("b"))
+print("get z:", data.____("z"))  # missing key
+
+data.____({"b": 20, "d": 4})  # update
+print("After update:", ____)
+
+removed = data.____("a")  # pop
+print("Removed:", ____)
+print("After pop:", ____)
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `data = {"a": 1, "b": 2, "c": 3}` |
+| **Example output** | `Keys: dict_keys(['a', 'b', 'c'])`<br>`get b: 2`<br>`get z: None`<br>`After update:` includes `b: 20` and `d: 4`<br>`Removed: 1` |
+
+<a href="../.faculty/solutions/m2s6tc.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).
+
+---
+
+<a id="unit-4a-task-3"></a>
+
+## Unit 4A Task 3: Word frequency using a dictionary
+
+Counts how many times each word appears in a sentence.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A sentence (string)
+
+**Process**
+- Split the sentence into words (`split()`)
+- For each word, increase its count in a dictionary
+- Use `freq.get(word, 0) + 1` or check membership
+
+**Output**
+- Dictionary of word → count
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+sentence = ____  # e.g. "to be or not to be"
+words = sentence.____()  # split into words
+freq = {}
+
+for word in words:
+    freq[word] = freq.____(word, 0) + 1
+
+print("Frequency:", ____)
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `"to be or not to be"` |
+| **Example output** | `Frequency: {'to': 2, 'be': 2, 'or': 1, 'not': 1}` |
+
+<a href="../.faculty/solutions/n3t7ud.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).
+
+---
+
+<a id="unit-4a-task-4"></a>
+
+## Unit 4A Task 4: Nested dictionary
+
+Creates a dictionary whose values are dictionaries, then accesses nested values.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Nested structure (for example students → details)
+
+**Process**
+- Outer key selects an inner dictionary
+- Access with `outer[key1][key2]`
+
+**Output**
+- Selected nested values and/or the full structure
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+students = {
+    "S1": {"name": ____, "marks": ____},  # e.g. "Ram", 85
+    "S2": {"name": ____, "marks": ____},  # e.g. "Sita", 90
+}
+print("All:", ____)
+print("S1 name:", students[____][____])
+print("S2 marks:", students[____][____])
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `S1: Ram/85`, `S2: Sita/90` |
+| **Example output** | `S1 name: Ram`<br>`S2 marks: 90` |
+
+<a href="../.faculty/solutions/o4u8ve.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).
+
+---
+
+<a id="unit-4a-task-5"></a>
+
+## Unit 4A Task 5: Iterate through a dictionary
+
+Loops over keys, values, and items.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A sample dictionary
+
+**Process**
+- `for key in d:` — keys
+- `for value in d.values():` — values
+- `for key, value in d.items():` — pairs
+
+**Output**
+- Printed keys, values, and pairs
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+scores = {"maths": 80, "science": 75, "english": 90}
+
+print("Keys:")
+for key in ____:
+    print(key)
+
+print("Values:")
+for value in scores.____():
+    print(value)
+
+print("Items:")
+for key, value in scores.____():
+    print(key, "→", value)
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `scores = {"maths": 80, "science": 75, "english": 90}` |
+| **Example output** | prints each key, each value, then each `key → value` pair |
+
+<a href="../.faculty/solutions/p5v9wf.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).
+
+---
+
+<a id="unit-4a-task-6"></a>
+
+## Unit 4A Task 6: List comprehension
+
+Builds lists of squares and even numbers using list comprehension.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A range or list of numbers (for example 1 to 10)
+
+**Process**
+- Squares: `[x * x for x in ...]`
+- Evens: `[x for x in ... if x % 2 == 0]`
+
+**Output**
+- List of squares and list of even numbers
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+numbers = range(____, ____)  # e.g. 1 to 10 inclusive → range(1, 11)
+
+squares = [____ for x in numbers]
+evens = [____ for x in numbers if ____]
+
+print("Squares:", ____)
+print("Evens:", ____)
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | numbers 1 through 10 |
+| **Example output** | `Squares: [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]`<br>`Evens: [2, 4, 6, 8, 10]` |
+
+<a href="../.faculty/solutions/q6w0xg.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).
+
+---
+
+<a id="unit-4a-task-7"></a>
+
+## Unit 4A Task 7: Dictionary comprehension
+
+Builds a dictionary using a comprehension (for example number → square).
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A range or list of numbers
+
+**Process**
+- Form: `{key_expr: value_expr for item in sequence}`
+- Example: `{x: x * x for x in range(1, 6)}`
+
+**Output**
+- The resulting dictionary
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+squares = {____: ____ for x in range(1, 6)}
+print("Squares dict:", ____)
+
+# optional: only even keys
+even_squares = {____: ____ for x in range(1, 11) if ____}
+print("Even squares:", ____)
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `range(1, 6)` for squares |
+| **Example output** | `Squares dict: {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}` |
+
+<a href="../.faculty/solutions/r7x1yh.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).
+
+---
+
+<a id="unit-4a-task-8"></a>
+
+## Unit 4A Task 8: Merge two dictionaries
+
+Combines two dictionaries into one.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Two dictionaries
+
+**Process**
+- One way: `{**dict1, **dict2}` (later keys overwrite earlier ones on clash)
+- Another: copy then `update()`
+- Or `dict1 | dict2` (Python 3.9+)
+
+**Output**
+- The merged dictionary
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+dict1 = ____  # e.g. {"a": 1, "b": 2}
+dict2 = ____  # e.g. {"b": 3, "c": 4}
+
+merged = {**____, **____}  # dict1, dict2 — or use update / |
+print("Merged:", ____)
+```
+
+> **Hint:** If both have the same key, the second dictionary’s value is kept when you write `{**dict1, **dict2}`.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `dict1 = {"a": 1, "b": 2}`, `dict2 = {"b": 3, "c": 4}` |
+| **Example output** | `Merged: {'a': 1, 'b': 3, 'c': 4}` |
+
+<a href="../.faculty/solutions/s8y2zi.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).
+
+---
+
+<a id="unit-4a-task-9"></a>
+
+## Unit 4A Task 9: Student records with a dictionary
+
+Stores name, marks, and grade in a dictionary and displays them.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Student name and marks (grade may be computed or given)
+
+**Process**
+- Store fields in a dictionary
+- Optionally compute grade from marks with `if` / `elif`
+- Print each field
+
+**Output**
+- Student record (name, marks, grade)
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+name = ____  # e.g. "Krishna"
+marks = ____  # e.g. 86
+
+if marks >= 90:
+    grade = ____
+elif marks >= 80:
+    grade = ____
+elif marks >= 70:
+    grade = ____
+else:
+    grade = ____
+
+student = {"name": ____, "marks": ____, "grade": ____}
+print("Record:", ____)
+for key, value in student.____():
+    print(f"{key}: {value}")
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | name `Krishna`, marks `86` |
+| **Example output** | `name: Krishna`<br>`marks: 86`<br>`grade: B` (if 80–89 → B) |
+
+<a href="../.faculty/solutions/t9z3aj.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).
+
+---
+
+<a id="unit-4a-task-10"></a>
+
+## Unit 4A Task 10: Sort a list of dictionaries
+
+Sorts a list of dictionaries by a chosen key.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A list of dictionaries (for example students with `name` and `marks`)
+
+**Process**
+- Use `sorted(list, key=lambda d: d["marks"])` (or another key)
+- `reverse=True` for descending order if needed
+
+**Output**
+- Sorted list of dictionaries
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+students = [
+    {"name": "Anu", "marks": 75},
+    {"name": "Ravi", "marks": 90},
+    {"name": "Sita", "marks": 82},
+]
+
+by_marks = sorted(students, key=lambda d: d[____])
+print("By marks ascending:", ____)
+
+by_marks_desc = sorted(students, key=lambda d: d[____], reverse=____)
+print("By marks descending:", ____)
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | Anu 75, Ravi 90, Sita 82 |
+| **Example output** | ascending: Anu, Sita, Ravi · descending: Ravi, Sita, Anu |
+
+<a href="../.faculty/solutions/u1b5ck.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).

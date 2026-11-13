@@ -78,3 +78,13 @@ Not linked from student docs. Map task → cryptic file.
 | Unit 3D Task 13 — Fibonacci series using recursion | `h7n1ox.md` |
 | Unit 3D Task 14 — GCD using recursion | `i8o2py.md` |
 | Unit 3D Task 15 — Lambda with map, filter, and reduce | `j9p3qz.md` |
+| Unit 4A Task 1 — Create, access and update a dictionary | `l1r5sb.md` |
+| Unit 4A Task 2 — Dictionary methods | `m2s6tc.md` |
+| Unit 4A Task 3 — Word frequency using a dictionary | `n3t7ud.md` |
+| Unit 4A Task 4 — Nested dictionary | `o4u8ve.md` |
+| Unit 4A Task 5 — Iterate through a dictionary | `p5v9wf.md` |
+| Unit 4A Task 6 — List comprehension | `q6w0xg.md` |
+| Unit 4A Task 7 — Dictionary comprehension | `r7x1yh.md` |
+| Unit 4A Task 8 — Merge two dictionaries | `s8y2zi.md` |
+| Unit 4A Task 9 — Student records with a dictionary | `t9z3aj.md` |
+| Unit 4A Task 10 — Sort a list of dictionaries | `u1b5ck.md` |
