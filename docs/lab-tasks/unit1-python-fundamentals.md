@@ -4,21 +4,21 @@ Create **one Python file per task**. Use the file names below so faculty can fin
 
 **Every task has three expectations:** [before lab (observation)](../lab-expectations.md#before-lab) · [during lab (GitHub)](../lab-expectations.md#during-lab) · [after lab (record)](../lab-expectations.md#after-lab)
 
-Click **Lab observation expectations** in a row for Full / Short / Optional / Will be informed later. Click **View hint** for input, process, output, and a worked example (where available).
+Click **Lab observation expectations** in a row for Full / Short / Optional / Will be informed later. For **Full** tasks, click **Example observation** for a complete sample write-up. Click **View hint** for input, process, output, and a worked example (where available).
 
 Back to [Lab tasks index](README.md).
 
 
 | S No | Task name | Lab observation expectations | File name | Record expectations | Hint |
 |------|-----------|------------------------------|-----------|---------------------|------|
-| 1 | Write a python program to read two numbers and display their sum | [Full](../lab-expectations.md#full) | `Unit-1_Task-1_Sum_of_Two_Numbers.py` | Will be updated later | [View hint](../hints.md#unit-1-task-1) |
-| 2 | Write a python program to display the square of a number | [Full](../lab-expectations.md#full) | `Unit-1_Task-2_Square_of_a_Number.py` | Will be updated later | [View hint](../hints.md#unit-1-task-2) |
-| 3 | Write a python program to calculate area and perimeter of a rectangle | [Full](../lab-expectations.md#full) | `Unit-1_Task-3_Rectangle_Area_Perimeter.py` | Will be updated later | [View hint](../hints.md#unit-1-task-3) |
-| 4 | Write a python program to convert temperature from Celsius to Fahrenheit | [Full](../lab-expectations.md#full) | `Unit-1_Task-4_Celsius_to_Fahrenheit.py` | Will be updated later | [View hint](../hints.md#unit-1-task-4) |
-| 5 | Write a python program to swap two numbers without using a third variable | [Full](../lab-expectations.md#full) | `Unit-1_Task-5_Swap_Two_Numbers.py` | Will be updated later | [View hint](../hints.md#unit-1-task-5) |
-| 6 | Write a python program to calculate simple interest | [Full](../lab-expectations.md#full) | `Unit-1_Task-6_Simple_Interest.py` | Will be updated later | [View hint](../hints.md#unit-1-task-6) |
-| 7 | Write a python program to calculate compound interest | [Full](../lab-expectations.md#full) | `Unit-1_Task-7_Compound_Interest.py` | Will be updated later | [View hint](../hints.md#unit-1-task-7) |
-| 8 | Write a python program to find the sum of first N natural numbers using a formula | [Full](../lab-expectations.md#full) | `Unit-1_Task-8_Sum_of_N_Natural_Numbers.py` | Will be updated later | [View hint](../hints.md#unit-1-task-8) |
+| 1 | Write a python program to read two numbers and display their sum | [Full](../lab-expectations.md#full) · [Example observation](../../.faculty/observations/u1t1sum.md) | `Unit-1_Task-1_Sum_of_Two_Numbers.py` | Will be updated later | [View hint](../hints.md#unit-1-task-1) |
+| 2 | Write a python program to display the square of a number | [Full](../lab-expectations.md#full) · [Example observation](../../.faculty/observations/u1t2sqr.md) | `Unit-1_Task-2_Square_of_a_Number.py` | Will be updated later | [View hint](../hints.md#unit-1-task-2) |
+| 3 | Write a python program to calculate area and perimeter of a rectangle | [Full](../lab-expectations.md#full) · [Example observation](../../.faculty/observations/u1t3rec.md) | `Unit-1_Task-3_Rectangle_Area_Perimeter.py` | Will be updated later | [View hint](../hints.md#unit-1-task-3) |
+| 4 | Write a python program to convert temperature from Celsius to Fahrenheit | [Full](../lab-expectations.md#full) · [Example observation](../../.faculty/observations/u1t4c2f.md) | `Unit-1_Task-4_Celsius_to_Fahrenheit.py` | Will be updated later | [View hint](../hints.md#unit-1-task-4) |
+| 5 | Write a python program to swap two numbers without using a third variable | [Full](../lab-expectations.md#full) · [Example observation](../../.faculty/observations/u1t5swp.md) | `Unit-1_Task-5_Swap_Two_Numbers.py` | Will be updated later | [View hint](../hints.md#unit-1-task-5) |
+| 6 | Write a python program to calculate simple interest | [Full](../lab-expectations.md#full) · [Example observation](../../.faculty/observations/u1t6si.md) | `Unit-1_Task-6_Simple_Interest.py` | Will be updated later | [View hint](../hints.md#unit-1-task-6) |
+| 7 | Write a python program to calculate compound interest | [Full](../lab-expectations.md#full) · [Example observation](../../.faculty/observations/u1t7ci.md) | `Unit-1_Task-7_Compound_Interest.py` | Will be updated later | [View hint](../hints.md#unit-1-task-7) |
+| 8 | Write a python program to find the sum of first N natural numbers using a formula | [Full](../lab-expectations.md#full) · [Example observation](../../.faculty/observations/u1t8nat.md) | `Unit-1_Task-8_Sum_of_N_Natural_Numbers.py` | Will be updated later | [View hint](../hints.md#unit-1-task-8) |
 | 9 | Write a python program to perform arithmetic operations (+, -, *, /, //, %, **) on two numbers | [Short](../lab-expectations.md#short) | `Unit-1_Task-9_Arithmetic_Operators.py` | Will be updated later | [View hint](../hints.md#unit-1-task-9) |
 | 10 | Write a python program to demonstrate relational operators (print comparison results) | [Short](../lab-expectations.md#short) | `Unit-1_Task-10_Relational_Operators.py` | Will be updated later | [View hint](../hints.md#unit-1-task-10) |
 | 11 | Write a python program to demonstrate logical operators (and, or, not) | [Short](../lab-expectations.md#short) | `Unit-1_Task-11_Logical_Operators.py` | Will be updated later | [View hint](../hints.md#unit-1-task-11) |

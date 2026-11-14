@@ -4,7 +4,7 @@ Create **one Python file per task**. Use the file names in each unit page so fac
 
 **Every task has three expectations:** [before lab (observation)](../lab-expectations.md#before-lab) · [during lab (GitHub)](../lab-expectations.md#during-lab) · [after lab (record)](../lab-expectations.md#after-lab)
 
-Click **Lab observation expectations** in a row for [Full](../lab-expectations.md#full) / [Short](../lab-expectations.md#short) / [Optional](../lab-expectations.md#optional) / [Will be informed later](../lab-expectations.md#will-be-informed-later). Click **View hint** for input, process, output, and a worked example (where available).
+Click **Lab observation expectations** in a row for [Full](../lab-expectations.md#full) / [Short](../lab-expectations.md#short) / [Optional](../lab-expectations.md#optional) / [Will be informed later](../lab-expectations.md#will-be-informed-later). For **Full** tasks, click **Example observation** for a complete sample write-up. Click **View hint** for input, process, output, and a worked example (where available).
 
 **Last updated:** Friday, November 13, 2026, 12:37 PM (UTC+05:30)
 

@@ -1,6 +1,6 @@
 # Faculty full-observation index
 
-Not linked from student docs. Example **Full** lab observations (all required sections).
+Example **Full** lab observations (all required sections). Linked from unit lab-task pages as **Example observation**.
 Map task → cryptic file.
 
 | Task | File |
