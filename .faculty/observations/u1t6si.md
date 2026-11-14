@@ -43,15 +43,14 @@ print(f"Simple interest is {simple_interest_in_rupees} rupees")
 
 ```mermaid
 flowchart TD
-    N0(["Start"])
-    N1[/"Read P, R, T"/]
-    N2["SI = (P * R * T) / 100"]
-    N3[/"Print SI"/]
-    N4(["Stop"])
-    N0 --> N1
-    N1 --> N2
-    N2 --> N3
-    N3 --> N4
+Start(["Start"])
+R1[/"Read principal_amount_in_rupees"/]
+R2[/"Read rate_of_interest_in_percent"/]
+R3[/"Read time_in_years"/]
+P1["simple_interest_in_rupees = (P * R * T) / 100"]
+O1[/"Print: Simple interest is simple_interest_in_rupees rupees"/]
+Stop(["Stop"])
+Start --> R1 --> R2 --> R3 --> P1 --> O1 --> Stop
 ```
 
 ### Pseudocode

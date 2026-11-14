@@ -39,15 +39,12 @@ print(f"Sum of first {n} natural numbers is {sum_of_natural_numbers}")
 
 ```mermaid
 flowchart TD
-    N0(["Start"])
-    N1[/"Read n"/]
-    N2["sum = n * (n + 1) / 2"]
-    N3[/"Print sum"/]
-    N4(["Stop"])
-    N0 --> N1
-    N1 --> N2
-    N2 --> N3
-    N3 --> N4
+Start(["Start"])
+R1[/"Read n (integer)"/]
+P1["sum_of_natural_numbers = n * (n + 1) / 2"]
+O1[/"Print: Sum of first n natural numbers is sum_of_natural_numbers"/]
+Stop(["Stop"])
+Start --> R1 --> P1 --> O1 --> Stop
 ```
 
 ### Pseudocode

@@ -43,18 +43,19 @@ else:
 
 ```mermaid
 flowchart TD
-    S(["Start"])
-    A0[/"Read number"/]
-    D{"number > 0?"}
-    Y0[/"Print positive"/]
-    N0["Check if number < 0; print negative or zero"]
-    E(["Stop"])
-    S --> A0
-    A0 --> D
-    D -->|Yes| Y0
-    D -->|No| N0
-    Y0 --> E
-    N0 --> E
+Start(["Start"])
+R1[/"Read number (float)"/]
+D1{"number > 0?"}
+D2{"number < 0?"}
+Pos[/"Print: number is positive"/]
+Neg[/"Print: number is negative"/]
+Zero[/"Print: number is zero"/]
+Stop(["Stop"])
+Start --> R1 --> D1
+D1 -->|Yes| Pos --> Stop
+D1 -->|No| D2
+D2 -->|Yes| Neg --> Stop
+D2 -->|No| Zero --> Stop
 ```
 
 ### Pseudocode

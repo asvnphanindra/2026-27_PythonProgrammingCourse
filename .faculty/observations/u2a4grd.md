@@ -46,15 +46,23 @@ else:
 
 ```mermaid
 flowchart TD
-    N0(["Start"])
-    N1[/"Read marks"/]
-    N2["Choose grade with elif ladder"]
-    N3[/"Print grade"/]
-    N4(["Stop"])
-    N0 --> N1
-    N1 --> N2
-    N2 --> N3
-    N3 --> N4
+Start(["Start"])
+R1[/"Read marks (float)"/]
+D1{"marks >= 90?"}
+D2{"marks >= 80?"}
+D3{"marks >= 70?"}
+A[/"Print Grade A"/]
+B[/"Print Grade B"/]
+C[/"Print Grade C"/]
+D[/"Print Grade D"/]
+Stop(["Stop"])
+Start --> R1 --> D1
+D1 -->|Yes| A --> Stop
+D1 -->|No| D2
+D2 -->|Yes| B --> Stop
+D2 -->|No| D3
+D3 -->|Yes| C --> Stop
+D3 -->|No| D --> Stop
 ```
 
 ### Pseudocode

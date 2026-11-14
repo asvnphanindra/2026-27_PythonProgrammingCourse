@@ -46,17 +46,16 @@ print(f"Compound interest is {compound_interest_in_rupees} rupees")
 
 ```mermaid
 flowchart TD
-    N0(["Start"])
-    N1[/"Read P, R, T"/]
-    N2["A = P * (1 + R/100) ** T"]
-    N3["CI = A - P"]
-    N4[/"Print A, CI"/]
-    N5(["Stop"])
-    N0 --> N1
-    N1 --> N2
-    N2 --> N3
-    N3 --> N4
-    N4 --> N5
+Start(["Start"])
+R1[/"Read principal_amount_in_rupees"/]
+R2[/"Read rate_of_interest_in_percent"/]
+R3[/"Read time_in_years"/]
+P1["total_amount_in_rupees = P * (1 + R/100) ** T"]
+P2["compound_interest_in_rupees = total_amount_in_rupees - P"]
+O1[/"Print total_amount_in_rupees"/]
+O2[/"Print compound_interest_in_rupees"/]
+Stop(["Stop"])
+Start --> R1 --> R2 --> R3 --> P1 --> P2 --> O1 --> O2 --> Stop
 ```
 
 ### Pseudocode

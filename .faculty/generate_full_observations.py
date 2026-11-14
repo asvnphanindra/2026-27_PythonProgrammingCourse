@@ -17,66 +17,11 @@ def tc(rows: list[tuple[str, str, str, str]]) -> str:
     return "\n".join(lines)
 
 
-def flowchart_linear(steps: list[str]) -> str:
-    """Simple top-to-bottom Mermaid flowchart."""
-    nodes = []
-    edges = []
-    for i, label in enumerate(steps):
-        shape = f'["{label}"]' if i not in (0, len(steps) - 1) else f'(["{label}"])'
-        if i == 0 or i == len(steps) - 1:
-            nodes.append(f"    N{i}{shape}")
-        else:
-            # parallelogram-ish via stadium for I/O, rectangle for process
-            if label.lower().startswith("read") or label.lower().startswith("print") or label.lower().startswith("display"):
-                nodes.append(f'    N{i}[/"{label}"/]')
-            else:
-                nodes.append(f'    N{i}["{label}"]')
-        if i > 0:
-            edges.append(f"    N{i-1} --> N{i}")
-    return "```mermaid\nflowchart TD\n" + "\n".join(nodes + edges) + "\n```"
+def fc(body: str) -> str:
+    """Wrap a detailed Mermaid flowchart body (no fences)."""
+    import textwrap
 
-
-def flowchart_decision(
-    start_io: list[str],
-    condition: str,
-    yes_path: list[str],
-    no_path: list[str],
-    end: str = "Stop",
-) -> str:
-    nodes = ['    S(["Start"])']
-    edges = []
-    prev = "S"
-    for i, label in enumerate(start_io):
-        nid = f"A{i}"
-        nodes.append(f'    {nid}[/"{label}"/]')
-        edges.append(f"    {prev} --> {nid}")
-        prev = nid
-    nodes.append(f'    D{{"{condition}"}}')
-    edges.append(f"    {prev} --> D")
-    for i, label in enumerate(yes_path):
-        nid = f"Y{i}"
-        nodes.append(f'    {nid}[/"{label}"/]' if label.lower().startswith("print") or label.lower().startswith("display") else f'    {nid}["{label}"]')
-        if i == 0:
-            edges.append(f'    D -->|Yes| {nid}')
-        else:
-            edges.append(f"    Y{i-1} --> {nid}")
-    for i, label in enumerate(no_path):
-        nid = f"N{i}"
-        nodes.append(f'    {nid}[/"{label}"/]' if label.lower().startswith("print") or label.lower().startswith("display") else f'    {nid}["{label}"]')
-        if i == 0:
-            edges.append(f'    D -->|No| {nid}')
-        else:
-            edges.append(f"    N{i-1} --> {nid}")
-    nodes.append(f'    E(["{end}"])')
-    if yes_path:
-        edges.append(f"    Y{len(yes_path)-1} --> E")
-    else:
-        edges.append("    D -->|Yes| E")
-    if no_path:
-        edges.append(f"    N{len(no_path)-1} --> E")
-    else:
-        edges.append("    D -->|No| E")
-    return "```mermaid\nflowchart TD\n" + "\n".join(nodes + edges) + "\n```"
+    return "```mermaid\nflowchart TD\n" + textwrap.dedent(body).strip() + "\n```"
 
 
 def doc(
@@ -166,15 +111,15 @@ add(
             "Display sum_of_numbers",
             "Stop",
         ],
-        flowchart_linear(
-            [
-                "Start",
-                "Read number1, number2",
-                "sum = number1 + number2",
-                "Print sum",
-                "Stop",
-            ]
-        ),
+fc("""
+    Start(["Start"])
+    R1[/"Read number1 (float)"/]
+    R2[/"Read number2 (float)"/]
+    P1["sum_of_numbers = number1 + number2"]
+    O1[/"Print: Sum of the two numbers is sum_of_numbers"/]
+    Stop(["Stop"])
+    Start --> R1 --> R2 --> P1 --> O1 --> Stop
+"""),
         """
 BEGIN
     READ number1, number2
@@ -217,9 +162,14 @@ add(
             "Display square_of_number",
             "Stop",
         ],
-        flowchart_linear(
-            ["Start", "Read number", "square = number ** 2", "Print square", "Stop"]
-        ),
+fc("""
+    Start(["Start"])
+    R1[/"Read number (float)"/]
+    P1["square_of_number = number ** 2"]
+    O1[/"Print: Square of the number is square_of_number"/]
+    Stop(["Stop"])
+    Start --> R1 --> P1 --> O1 --> Stop
+"""),
         """
 BEGIN
     READ number
@@ -262,16 +212,17 @@ add(
             "Display area and perimeter",
             "Stop",
         ],
-        flowchart_linear(
-            [
-                "Start",
-                "Read length, breadth",
-                "area = length * breadth",
-                "perimeter = 2*(length+breadth)",
-                "Print area, perimeter",
-                "Stop",
-            ]
-        ),
+fc("""
+    Start(["Start"])
+    R1[/"Read length_in_cm (float)"/]
+    R2[/"Read breadth_in_cm (float)"/]
+    P1["area_in_square_cm = length_in_cm * breadth_in_cm"]
+    P2["perimeter_in_cm = 2 * (length_in_cm + breadth_in_cm)"]
+    O1[/"Print area_in_square_cm square cm"/]
+    O2[/"Print perimeter_in_cm cm"/]
+    Stop(["Stop"])
+    Start --> R1 --> R2 --> P1 --> P2 --> O1 --> O2 --> Stop
+"""),
         """
 BEGIN
     READ length_in_cm, breadth_in_cm
@@ -317,15 +268,14 @@ add(
             "Display temperature_in_fahrenheit",
             "Stop",
         ],
-        flowchart_linear(
-            [
-                "Start",
-                "Read Celsius",
-                "F = (C * 9/5) + 32",
-                "Print Fahrenheit",
-                "Stop",
-            ]
-        ),
+fc("""
+    Start(["Start"])
+    R1[/"Read temperature_in_celsius (float)"/]
+    P1["temperature_in_fahrenheit = (temperature_in_celsius * 9 / 5) + 32"]
+    O1[/"Print: Temperature in Fahrenheit is temperature_in_fahrenheit"/]
+    Stop(["Stop"])
+    Start --> R1 --> P1 --> O1 --> Stop
+"""),
         """
 BEGIN
     READ temperature_in_celsius
@@ -369,17 +319,17 @@ add(
             "Display number1 and number2",
             "Stop",
         ],
-        flowchart_linear(
-            [
-                "Start",
-                "Read number1, number2",
-                "number1 = number1 + number2",
-                "number2 = number1 - number2",
-                "number1 = number1 - number2",
-                "Print swapped values",
-                "Stop",
-            ]
-        ),
+fc("""
+    Start(["Start"])
+    R1[/"Read number1 (float)"/]
+    R2[/"Read number2 (float)"/]
+    P1["number1 = number1 + number2"]
+    P2["number2 = number1 - number2"]
+    P3["number1 = number1 - number2"]
+    O1[/"Print swapped number1 and number2"/]
+    Stop(["Stop"])
+    Start --> R1 --> R2 --> P1 --> P2 --> P3 --> O1 --> Stop
+"""),
         """
 BEGIN
     READ number1, number2
@@ -426,15 +376,16 @@ add(
             "Display simple_interest_in_rupees",
             "Stop",
         ],
-        flowchart_linear(
-            [
-                "Start",
-                "Read P, R, T",
-                "SI = (P * R * T) / 100",
-                "Print SI",
-                "Stop",
-            ]
-        ),
+fc("""
+    Start(["Start"])
+    R1[/"Read principal_amount_in_rupees"/]
+    R2[/"Read rate_of_interest_in_percent"/]
+    R3[/"Read time_in_years"/]
+    P1["simple_interest_in_rupees = (P * R * T) / 100"]
+    O1[/"Print: Simple interest is simple_interest_in_rupees rupees"/]
+    Stop(["Stop"])
+    Start --> R1 --> R2 --> R3 --> P1 --> O1 --> Stop
+"""),
         """
 BEGIN
     READ principal_amount_in_rupees, rate_of_interest_in_percent, time_in_years
@@ -481,16 +432,18 @@ add(
             "Display total amount and compound interest",
             "Stop",
         ],
-        flowchart_linear(
-            [
-                "Start",
-                "Read P, R, T",
-                "A = P * (1 + R/100) ** T",
-                "CI = A - P",
-                "Print A, CI",
-                "Stop",
-            ]
-        ),
+fc("""
+    Start(["Start"])
+    R1[/"Read principal_amount_in_rupees"/]
+    R2[/"Read rate_of_interest_in_percent"/]
+    R3[/"Read time_in_years"/]
+    P1["total_amount_in_rupees = P * (1 + R/100) ** T"]
+    P2["compound_interest_in_rupees = total_amount_in_rupees - P"]
+    O1[/"Print total_amount_in_rupees"/]
+    O2[/"Print compound_interest_in_rupees"/]
+    Stop(["Stop"])
+    Start --> R1 --> R2 --> R3 --> P1 --> P2 --> O1 --> O2 --> Stop
+"""),
         """
 BEGIN
     READ principal_amount_in_rupees, rate_of_interest_in_percent, time_in_years
@@ -539,15 +492,14 @@ add(
             "Display sum_of_natural_numbers",
             "Stop",
         ],
-        flowchart_linear(
-            [
-                "Start",
-                "Read n",
-                "sum = n * (n + 1) / 2",
-                "Print sum",
-                "Stop",
-            ]
-        ),
+fc("""
+    Start(["Start"])
+    R1[/"Read n (integer)"/]
+    P1["sum_of_natural_numbers = n * (n + 1) / 2"]
+    O1[/"Print: Sum of first n natural numbers is sum_of_natural_numbers"/]
+    Stop(["Stop"])
+    Start --> R1 --> P1 --> O1 --> Stop
+"""),
         """
 BEGIN
     READ n
@@ -590,12 +542,30 @@ add(
             "If all angles > 0 and angle1 + angle2 + angle3 == 180, then print valid; else print not valid",
             "Stop",
         ],
-        flowchart_decision(
-            ["Read angle1, angle2, angle3"],
-            "all > 0 and sum == 180?",
-            ["Print valid triangle"],
-            ["Print not valid"],
-        ),
+fc("""
+    Start(["Start"])
+    R1[/"Read angle1_in_degrees"/]
+    R2[/"Read angle2_in_degrees"/]
+    R3[/"Read angle3_in_degrees"/]
+    D1{"angle1 > 0?"}
+    D2{"angle2 > 0?"}
+    D3{"angle3 > 0?"}
+    D4{"angle1 + angle2 + angle3 == 180?"}
+    Y[/"Print: triangle is valid"/]
+    N[/"Print: triangle is not valid"/]
+    Stop(["Stop"])
+    Start --> R1 --> R2 --> R3 --> D1
+    D1 -->|No| N
+    D1 -->|Yes| D2
+    D2 -->|No| N
+    D2 -->|Yes| D3
+    D3 -->|No| N
+    D3 -->|Yes| D4
+    D4 -->|No| N
+    D4 -->|Yes| Y
+    Y --> Stop
+    N --> Stop
+"""),
         """
 BEGIN
     READ angle1, angle2, angle3
@@ -655,12 +625,21 @@ add(
             "If number > 0 print positive; else if number < 0 print negative; else print zero",
             "Stop",
         ],
-        flowchart_decision(
-            ["Read number"],
-            "number > 0?",
-            ["Print positive"],
-            ["Check if number < 0; print negative or zero"],
-        ),
+fc("""
+    Start(["Start"])
+    R1[/"Read number (float)"/]
+    D1{"number > 0?"}
+    D2{"number < 0?"}
+    Pos[/"Print: number is positive"/]
+    Neg[/"Print: number is negative"/]
+    Zero[/"Print: number is zero"/]
+    Stop(["Stop"])
+    Start --> R1 --> D1
+    D1 -->|Yes| Pos --> Stop
+    D1 -->|No| D2
+    D2 -->|Yes| Neg --> Stop
+    D2 -->|No| Zero --> Stop
+"""),
         """
 BEGIN
     READ number
@@ -713,15 +692,25 @@ add(
             "Display the grade",
             "Stop",
         ],
-        flowchart_linear(
-            [
-                "Start",
-                "Read marks",
-                "Choose grade with elif ladder",
-                "Print grade",
-                "Stop",
-            ]
-        ),
+fc("""
+    Start(["Start"])
+    R1[/"Read marks (float)"/]
+    D1{"marks >= 90?"}
+    D2{"marks >= 80?"}
+    D3{"marks >= 70?"}
+    A[/"Print Grade A"/]
+    B[/"Print Grade B"/]
+    C[/"Print Grade C"/]
+    D[/"Print Grade D"/]
+    Stop(["Stop"])
+    Start --> R1 --> D1
+    D1 -->|Yes| A --> Stop
+    D1 -->|No| D2
+    D2 -->|Yes| B --> Stop
+    D2 -->|No| D3
+    D3 -->|Yes| C --> Stop
+    D3 -->|No| D --> Stop
+"""),
         """
 BEGIN
     READ marks
@@ -778,15 +767,29 @@ add(
             "Display largest",
             "Stop",
         ],
-        flowchart_linear(
-            [
-                "Start",
-                "Read x, y, z",
-                "Compare with nested if",
-                "Print largest",
-                "Stop",
-            ]
-        ),
+fc("""
+    Start(["Start"])
+    R1[/"Read x"/]
+    R2[/"Read y"/]
+    R3[/"Read z"/]
+    D1{"x >= y?"}
+    D2{"x >= z?"}
+    D3{"y >= z?"}
+    Sx["largest = x"]
+    Sz1["largest = z"]
+    Sy["largest = y"]
+    Sz2["largest = z"]
+    O1[/"Print largest among x, y, z"/]
+    Stop(["Stop"])
+    Start --> R1 --> R2 --> R3 --> D1
+    D1 -->|Yes| D2
+    D2 -->|Yes| Sx --> O1
+    D2 -->|No| Sz1 --> O1
+    D1 -->|No| D3
+    D3 -->|Yes| Sy --> O1
+    D3 -->|No| Sz2 --> O1
+    O1 --> Stop
+"""),
         """
 BEGIN
     READ x, y, z
@@ -857,17 +860,23 @@ add(
             "Display sum and average",
             "Stop",
         ],
-        flowchart_linear(
-            [
-                "Start",
-                "Read N",
-                "total_sum = 0",
-                "Loop N times: read number, add to sum",
-                "average = sum / N",
-                "Print sum, average",
-                "Stop",
-            ]
-        ),
+fc("""
+    Start(["Start"])
+    R1[/"Read total_input_numbers N"/]
+    P1["total_sum = 0"]
+    P2["count = 0"]
+    D1{"count < N?"}
+    R2[/"Read number"/]
+    P3["total_sum = total_sum + number"]
+    P4["count = count + 1"]
+    P5["average = total_sum / N"]
+    O1[/"Print sum"/]
+    O2[/"Print average"/]
+    Stop(["Stop"])
+    Start --> R1 --> P1 --> P2 --> D1
+    D1 -->|Yes| R2 --> P3 --> P4 --> D1
+    D1 -->|No| P5 --> O1 --> O2 --> Stop
+"""),
         """
 BEGIN
     READ N
@@ -923,15 +932,23 @@ add(
             "For count from 0 to n-1: print first; next_term = first + second; first = second; second = next_term",
             "Stop",
         ],
-        flowchart_linear(
-            [
-                "Start",
-                "Read n",
-                "first=0, second=1",
-                "Loop n times: print first, update pair",
-                "Stop",
-            ]
-        ),
+fc("""
+    Start(["Start"])
+    R1[/"Read n terms"/]
+    P1["first = 0"]
+    P2["second = 1"]
+    P3["count = 0"]
+    D1{"count < n?"}
+    O1[/"Print first as term count+1"/]
+    P4["next_term = first + second"]
+    P5["first = second"]
+    P6["second = next_term"]
+    P7["count = count + 1"]
+    Stop(["Stop"])
+    Start --> R1 --> P1 --> P2 --> P3 --> D1
+    D1 -->|Yes| O1 --> P4 --> P5 --> P6 --> P7 --> D1
+    D1 -->|No| Stop
+"""),
         """
 BEGIN
     READ n
@@ -986,16 +1003,21 @@ add(
             "Display digit_sum",
             "Stop",
         ],
-        flowchart_linear(
-            [
-                "Start",
-                "Read number",
-                "digit_sum = 0",
-                "While number > 0: add last digit, number //= 10",
-                "Print digit_sum",
-                "Stop",
-            ]
-        ),
+fc("""
+    Start(["Start"])
+    R1[/"Read number (integer)"/]
+    P1["original_number = number"]
+    P2["digit_sum = 0"]
+    D1{"number > 0?"}
+    P3["digit = number % 10"]
+    P4["digit_sum = digit_sum + digit"]
+    P5["number = number // 10"]
+    O1[/"Print digit_sum of original_number"/]
+    Stop(["Stop"])
+    Start --> R1 --> P1 --> P2 --> D1
+    D1 -->|Yes| P3 --> P4 --> P5 --> D1
+    D1 -->|No| O1 --> Stop
+"""),
         """
 BEGIN
     READ number
@@ -1052,12 +1074,25 @@ add(
             "If armstrong_sum == original print Armstrong; else print not Armstrong",
             "Stop",
         ],
-        flowchart_decision(
-            ["Read 3-digit number", "Compute sum of cubes of digits"],
-            "sum of cubes == original?",
-            ["Print is Armstrong"],
-            ["Print is not Armstrong"],
-        ),
+fc("""
+    Start(["Start"])
+    R1[/"Read 3-digit number"/]
+    P1["original_number = number"]
+    P2["armstrong_sum = 0"]
+    D1{"number > 0?"}
+    P3["digit = number % 10"]
+    P4["armstrong_sum = armstrong_sum + digit ** 3"]
+    P5["number = number // 10"]
+    D2{"armstrong_sum == original_number?"}
+    Y[/"Print: is an Armstrong number"/]
+    N[/"Print: is not an Armstrong number"/]
+    Stop(["Stop"])
+    Start --> R1 --> P1 --> P2 --> D1
+    D1 -->|Yes| P3 --> P4 --> P5 --> D1
+    D1 -->|No| D2
+    D2 -->|Yes| Y --> Stop
+    D2 -->|No| N --> Stop
+"""),
         """
 BEGIN
     READ number
@@ -1127,16 +1162,25 @@ add(
             "While row_loop_var <= 3: for each column 1..3 print num and increment; print newline; increment row",
             "Stop",
         ],
-        flowchart_linear(
-            [
-                "Start",
-                "num=1, row=1",
-                "While row <= 3",
-                "For col 1..3: print num, num++",
-                "Newline; row++",
-                "Stop",
-            ]
-        ),
+fc("""
+    Start(["Start"])
+    P1["num = 1"]
+    P2["row_loop_var = 1"]
+    D1{"row_loop_var <= 3?"}
+    P3["column_loop_var = 1"]
+    D2{"column_loop_var <= 3?"}
+    O1[/"Print num with space end"/]
+    P4["num = num + 1"]
+    P5["column_loop_var = column_loop_var + 1"]
+    O2[/"Print newline"/]
+    P6["row_loop_var = row_loop_var + 1"]
+    Stop(["Stop"])
+    Start --> P1 --> P2 --> D1
+    D1 -->|Yes| P3 --> D2
+    D2 -->|Yes| O1 --> P4 --> P5 --> D2
+    D2 -->|No| O2 --> P6 --> D1
+    D1 -->|No| Stop
+"""),
         """
 BEGIN
     num ← 1
@@ -1190,16 +1234,24 @@ add(
             "For each row 1..rows: for each column 1..rows print '* '; print newline",
             "Stop",
         ],
-        flowchart_linear(
-            [
-                "Start",
-                "Read rows",
-                "For r = 1 to rows",
-                "For c = 1 to rows: print *",
-                "Newline",
-                "Stop",
-            ]
-        ),
+fc("""
+    Start(["Start"])
+    R1[/"Read rows grid size"/]
+    P1["row_loop_var = 1"]
+    D1{"row_loop_var <= rows?"}
+    P2["column_loop_var = 1"]
+    D2{"column_loop_var <= rows?"}
+    O1[/"Print * with space end"/]
+    P3["column_loop_var = column_loop_var + 1"]
+    O2[/"Print newline"/]
+    P4["row_loop_var = row_loop_var + 1"]
+    Stop(["Stop"])
+    Start --> R1 --> P1 --> D1
+    D1 -->|Yes| P2 --> D2
+    D2 -->|Yes| O1 --> P3 --> D2
+    D2 -->|No| O2 --> P4 --> D1
+    D1 -->|No| Stop
+"""),
         """
 BEGIN
     READ rows
@@ -1247,15 +1299,28 @@ add(
             "For each row and column: if on border print '*', else print space",
             "Stop",
         ],
-        flowchart_linear(
-            [
-                "Start",
-                "Read rows",
-                "For each cell",
-                "If border: print *; else space",
-                "Stop",
-            ]
-        ),
+fc("""
+    Start(["Start"])
+    R1[/"Read rows grid size"/]
+    P1["row_loop_var = 1"]
+    D1{"row_loop_var <= rows?"}
+    P2["column_loop_var = 1"]
+    D2{"column_loop_var <= rows?"}
+    D3{"row==1 OR row==rows OR col==1 OR col==rows?"}
+    Ostar[/"Print * with space"/]
+    Ospace[/"Print space with space"/]
+    P3["column_loop_var = column_loop_var + 1"]
+    O2[/"Print newline"/]
+    P4["row_loop_var = row_loop_var + 1"]
+    Stop(["Stop"])
+    Start --> R1 --> P1 --> D1
+    D1 -->|Yes| P2 --> D2
+    D2 -->|Yes| D3
+    D3 -->|Yes| Ostar --> P3 --> D2
+    D3 -->|No| Ospace --> P3 --> D2
+    D2 -->|No| O2 --> P4 --> D1
+    D1 -->|No| Stop
+"""),
         """
 BEGIN
     READ rows
@@ -1315,15 +1380,32 @@ add(
             "For each row: print leading spaces; initialize value = 1; for each column print value and update value",
             "Stop",
         ],
-        flowchart_linear(
-            [
-                "Start",
-                "Read rows",
-                "For each row: spaces then values",
-                "Update value with binomial recurrence",
-                "Stop",
-            ]
-        ),
+fc("""
+    Start(["Start"])
+    R1[/"Read rows"/]
+    P1["row_loop_var = 1"]
+    D1{"row_loop_var <= rows?"}
+    P2["space_count = 1"]
+    D2{"space_count <= rows - row_loop_var?"}
+    Osp[/"Print one space"/]
+    P3["space_count = space_count + 1"]
+    P4["value = 1"]
+    P5["column_loop_var = 1"]
+    D3{"column_loop_var <= row_loop_var?"}
+    Oval[/"Print value with space"/]
+    P6["value = value * (row - col) // col"]
+    P7["column_loop_var = column_loop_var + 1"]
+    Onl[/"Print newline"/]
+    P8["row_loop_var = row_loop_var + 1"]
+    Stop(["Stop"])
+    Start --> R1 --> P1 --> D1
+    D1 -->|Yes| P2 --> D2
+    D2 -->|Yes| Osp --> P3 --> D2
+    D2 -->|No| P4 --> P5 --> D3
+    D3 -->|Yes| Oval --> P6 --> P7 --> D3
+    D3 -->|No| Onl --> P8 --> D1
+    D1 -->|No| Stop
+"""),
         """
 BEGIN
     READ rows
@@ -1371,7 +1453,7 @@ def main() -> None:
     index_lines = [
         "# Faculty full-observation index",
         "",
-        "Not linked from student docs. Example **Full** lab observations (all required sections).",
+        "Example **Full** lab observations (all required sections). Linked from unit lab-task pages as **Example observation**.",
         "Map task → cryptic file.",
         "",
         "| Task | File |",

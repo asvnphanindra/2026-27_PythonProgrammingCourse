@@ -50,19 +50,21 @@ print(f"Average of {total_input_numbers} numbers (sum {total_sum}) is {average}"
 
 ```mermaid
 flowchart TD
-    N0(["Start"])
-    N1[/"Read N"/]
-    N2["total_sum = 0"]
-    N3["Loop N times: read number, add to sum"]
-    N4["average = sum / N"]
-    N5[/"Print sum, average"/]
-    N6(["Stop"])
-    N0 --> N1
-    N1 --> N2
-    N2 --> N3
-    N3 --> N4
-    N4 --> N5
-    N5 --> N6
+Start(["Start"])
+R1[/"Read total_input_numbers N"/]
+P1["total_sum = 0"]
+P2["count = 0"]
+D1{"count < N?"}
+R2[/"Read number"/]
+P3["total_sum = total_sum + number"]
+P4["count = count + 1"]
+P5["average = total_sum / N"]
+O1[/"Print sum"/]
+O2[/"Print average"/]
+Stop(["Stop"])
+Start --> R1 --> P1 --> P2 --> D1
+D1 -->|Yes| R2 --> P3 --> P4 --> D1
+D1 -->|No| P5 --> O1 --> O2 --> Stop
 ```
 
 ### Pseudocode

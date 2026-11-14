@@ -43,17 +43,15 @@ print(f"Perimeter of the rectangle is {perimeter_in_cm} cm")
 
 ```mermaid
 flowchart TD
-    N0(["Start"])
-    N1[/"Read length, breadth"/]
-    N2["area = length * breadth"]
-    N3["perimeter = 2*(length+breadth)"]
-    N4[/"Print area, perimeter"/]
-    N5(["Stop"])
-    N0 --> N1
-    N1 --> N2
-    N2 --> N3
-    N3 --> N4
-    N4 --> N5
+Start(["Start"])
+R1[/"Read length_in_cm (float)"/]
+R2[/"Read breadth_in_cm (float)"/]
+P1["area_in_square_cm = length_in_cm * breadth_in_cm"]
+P2["perimeter_in_cm = 2 * (length_in_cm + breadth_in_cm)"]
+O1[/"Print area_in_square_cm square cm"/]
+O2[/"Print perimeter_in_cm cm"/]
+Stop(["Stop"])
+Start --> R1 --> R2 --> P1 --> P2 --> O1 --> O2 --> Stop
 ```
 
 ### Pseudocode

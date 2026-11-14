@@ -41,17 +41,22 @@ for row_loop_var in range(1, rows + 1):
 
 ```mermaid
 flowchart TD
-    N0(["Start"])
-    N1[/"Read rows"/]
-    N2["For r = 1 to rows"]
-    N3["For c = 1 to rows: print *"]
-    N4["Newline"]
-    N5(["Stop"])
-    N0 --> N1
-    N1 --> N2
-    N2 --> N3
-    N3 --> N4
-    N4 --> N5
+Start(["Start"])
+R1[/"Read rows grid size"/]
+P1["row_loop_var = 1"]
+D1{"row_loop_var <= rows?"}
+P2["column_loop_var = 1"]
+D2{"column_loop_var <= rows?"}
+O1[/"Print * with space end"/]
+P3["column_loop_var = column_loop_var + 1"]
+O2[/"Print newline"/]
+P4["row_loop_var = row_loop_var + 1"]
+Stop(["Stop"])
+Start --> R1 --> P1 --> D1
+D1 -->|Yes| P2 --> D2
+D2 -->|Yes| O1 --> P3 --> D2
+D2 -->|No| O2 --> P4 --> D1
+D1 -->|No| Stop
 ```
 
 ### Pseudocode

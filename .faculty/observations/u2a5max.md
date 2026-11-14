@@ -52,15 +52,27 @@ print(f"Largest = {largest} (among {x}, {y}, {z})")
 
 ```mermaid
 flowchart TD
-    N0(["Start"])
-    N1[/"Read x, y, z"/]
-    N2["Compare with nested if"]
-    N3[/"Print largest"/]
-    N4(["Stop"])
-    N0 --> N1
-    N1 --> N2
-    N2 --> N3
-    N3 --> N4
+Start(["Start"])
+R1[/"Read x"/]
+R2[/"Read y"/]
+R3[/"Read z"/]
+D1{"x >= y?"}
+D2{"x >= z?"}
+D3{"y >= z?"}
+Sx["largest = x"]
+Sz1["largest = z"]
+Sy["largest = y"]
+Sz2["largest = z"]
+O1[/"Print largest among x, y, z"/]
+Stop(["Stop"])
+Start --> R1 --> R2 --> R3 --> D1
+D1 -->|Yes| D2
+D2 -->|Yes| Sx --> O1
+D2 -->|No| Sz1 --> O1
+D1 -->|No| D3
+D3 -->|Yes| Sy --> O1
+D3 -->|No| Sz2 --> O1
+O1 --> Stop
 ```
 
 ### Pseudocode

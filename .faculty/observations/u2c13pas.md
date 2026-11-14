@@ -45,15 +45,30 @@ for row_loop_var in range(1, rows + 1):
 
 ```mermaid
 flowchart TD
-    N0(["Start"])
-    N1[/"Read rows"/]
-    N2["For each row: spaces then values"]
-    N3["Update value with binomial recurrence"]
-    N4(["Stop"])
-    N0 --> N1
-    N1 --> N2
-    N2 --> N3
-    N3 --> N4
+Start(["Start"])
+R1[/"Read rows"/]
+P1["row_loop_var = 1"]
+D1{"row_loop_var <= rows?"}
+P2["space_count = 1"]
+D2{"space_count <= rows - row_loop_var?"}
+Osp[/"Print one space"/]
+P3["space_count = space_count + 1"]
+P4["value = 1"]
+P5["column_loop_var = 1"]
+D3{"column_loop_var <= row_loop_var?"}
+Oval[/"Print value with space"/]
+P6["value = value * (row - col) // col"]
+P7["column_loop_var = column_loop_var + 1"]
+Onl[/"Print newline"/]
+P8["row_loop_var = row_loop_var + 1"]
+Stop(["Stop"])
+Start --> R1 --> P1 --> D1
+D1 -->|Yes| P2 --> D2
+D2 -->|Yes| Osp --> P3 --> D2
+D2 -->|No| P4 --> P5 --> D3
+D3 -->|Yes| Oval --> P6 --> P7 --> D3
+D3 -->|No| Onl --> P8 --> D1
+D1 -->|No| Stop
 ```
 
 ### Pseudocode

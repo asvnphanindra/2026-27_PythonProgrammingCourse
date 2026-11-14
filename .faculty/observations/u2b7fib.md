@@ -46,15 +46,21 @@ for count in range(n):
 
 ```mermaid
 flowchart TD
-    N0(["Start"])
-    N1[/"Read n"/]
-    N2["first=0, second=1"]
-    N3["Loop n times: print first, update pair"]
-    N4(["Stop"])
-    N0 --> N1
-    N1 --> N2
-    N2 --> N3
-    N3 --> N4
+Start(["Start"])
+R1[/"Read n terms"/]
+P1["first = 0"]
+P2["second = 1"]
+P3["count = 0"]
+D1{"count < n?"}
+O1[/"Print first as term count+1"/]
+P4["next_term = first + second"]
+P5["first = second"]
+P6["second = next_term"]
+P7["count = count + 1"]
+Stop(["Stop"])
+Start --> R1 --> P1 --> P2 --> P3 --> D1
+D1 -->|Yes| O1 --> P4 --> P5 --> P6 --> P7 --> D1
+D1 -->|No| Stop
 ```
 
 ### Pseudocode

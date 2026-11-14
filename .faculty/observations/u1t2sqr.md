@@ -39,15 +39,12 @@ print(f"Square of the number is {square_of_number}")
 
 ```mermaid
 flowchart TD
-    N0(["Start"])
-    N1[/"Read number"/]
-    N2["square = number ** 2"]
-    N3[/"Print square"/]
-    N4(["Stop"])
-    N0 --> N1
-    N1 --> N2
-    N2 --> N3
-    N3 --> N4
+Start(["Start"])
+R1[/"Read number (float)"/]
+P1["square_of_number = number ** 2"]
+O1[/"Print: Square of the number is square_of_number"/]
+Stop(["Stop"])
+Start --> R1 --> P1 --> O1 --> Stop
 ```
 
 ### Pseudocode

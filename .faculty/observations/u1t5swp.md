@@ -44,19 +44,15 @@ print(f"After swapping, first number is {number1} and second number is {number2}
 
 ```mermaid
 flowchart TD
-    N0(["Start"])
-    N1[/"Read number1, number2"/]
-    N2["number1 = number1 + number2"]
-    N3["number2 = number1 - number2"]
-    N4["number1 = number1 - number2"]
-    N5[/"Print swapped values"/]
-    N6(["Stop"])
-    N0 --> N1
-    N1 --> N2
-    N2 --> N3
-    N3 --> N4
-    N4 --> N5
-    N5 --> N6
+Start(["Start"])
+R1[/"Read number1 (float)"/]
+R2[/"Read number2 (float)"/]
+P1["number1 = number1 + number2"]
+P2["number2 = number1 - number2"]
+P3["number1 = number1 - number2"]
+O1[/"Print swapped number1 and number2"/]
+Stop(["Stop"])
+Start --> R1 --> R2 --> P1 --> P2 --> P3 --> O1 --> Stop
 ```
 
 ### Pseudocode

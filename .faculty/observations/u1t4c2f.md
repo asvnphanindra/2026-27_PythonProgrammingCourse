@@ -39,15 +39,12 @@ print(f"Temperature in Fahrenheit is {temperature_in_fahrenheit}")
 
 ```mermaid
 flowchart TD
-    N0(["Start"])
-    N1[/"Read Celsius"/]
-    N2["F = (C * 9/5) + 32"]
-    N3[/"Print Fahrenheit"/]
-    N4(["Stop"])
-    N0 --> N1
-    N1 --> N2
-    N2 --> N3
-    N3 --> N4
+Start(["Start"])
+R1[/"Read temperature_in_celsius (float)"/]
+P1["temperature_in_fahrenheit = (temperature_in_celsius * 9 / 5) + 32"]
+O1[/"Print: Temperature in Fahrenheit is temperature_in_fahrenheit"/]
+Stop(["Stop"])
+Start --> R1 --> P1 --> O1 --> Stop
 ```
 
 ### Pseudocode

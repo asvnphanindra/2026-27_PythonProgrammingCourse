@@ -44,17 +44,23 @@ while row_loop_var <= 3:
 
 ```mermaid
 flowchart TD
-    N0(["Start"])
-    N1["num=1, row=1"]
-    N2["While row <= 3"]
-    N3["For col 1..3: print num, num++"]
-    N4["Newline; row++"]
-    N5(["Stop"])
-    N0 --> N1
-    N1 --> N2
-    N2 --> N3
-    N3 --> N4
-    N4 --> N5
+Start(["Start"])
+P1["num = 1"]
+P2["row_loop_var = 1"]
+D1{"row_loop_var <= 3?"}
+P3["column_loop_var = 1"]
+D2{"column_loop_var <= 3?"}
+O1[/"Print num with space end"/]
+P4["num = num + 1"]
+P5["column_loop_var = column_loop_var + 1"]
+O2[/"Print newline"/]
+P6["row_loop_var = row_loop_var + 1"]
+Stop(["Stop"])
+Start --> P1 --> P2 --> D1
+D1 -->|Yes| P3 --> D2
+D2 -->|Yes| O1 --> P4 --> P5 --> D2
+D2 -->|No| O2 --> P6 --> D1
+D1 -->|No| Stop
 ```
 
 ### Pseudocode
