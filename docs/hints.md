@@ -31,6 +31,8 @@ Jump to a task:
 
 **Unit 4B:** [Task 1](#unit-4b-task-1) · [Task 2](#unit-4b-task-2) · [Task 3](#unit-4b-task-3) · [Task 4](#unit-4b-task-4) · [Task 5](#unit-4b-task-5) · [Task 6](#unit-4b-task-6) · [Task 7](#unit-4b-task-7)
 
+**Unit 4C:** [Task 1](#unit-4c-task-1) · [Task 2](#unit-4c-task-2) · [Task 3](#unit-4c-task-3) · [Task 4](#unit-4c-task-4) · [Task 5](#unit-4c-task-5)
+
 ---
 
 <a id="unit-1-task-1"></a>
@@ -6049,5 +6051,245 @@ print("You entered:", ____)
 | **Example output** | `Invalid input. Please enter an integer.`<br>`You entered: 12` |
 
 <a href="../.faculty/solutions/b8i2jr.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).
+
+---
+
+<a id="unit-4c-task-1"></a>
+
+## Unit 4C Task 1: Read a text file
+
+Opens a text file, reads its content, and displays it.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A text file name (for example `sample.txt`) that already exists
+
+**Process**
+- Open the file with `open(filename, "r")` (prefer `with open(...)`)
+- Read content with `read()` (or read line by line)
+- Close is automatic when using `with`
+
+**Output**
+- The full file content printed to the screen
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+filename = ____  # e.g. "sample.txt"
+with open(filename, ____) as file:  # "r"
+    content = file.____()
+print(____)
+```
+
+> **Hint:** Create a small `sample.txt` in the same folder before running, or ask the user for the file name.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example file** | `sample.txt` containing `Hello Python` |
+| **Example output** | `Hello Python` |
+
+<a href="../.faculty/solutions/c9j3ks.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).
+
+---
+
+<a id="unit-4c-task-2"></a>
+
+## Unit 4C Task 2: Write to a text file
+
+Writes text into a file (creates the file if it does not exist).
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- File name and the text to write (from the program or from the user)
+
+**Process**
+- Open with mode `"w"` (overwrite) or `"a"` (append)
+- Use `write()` or `writelines()`
+- Prefer `with open(...)` so the file closes safely
+
+**Output**
+- Confirmation message; the file on disk contains the written text
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+filename = ____  # e.g. "output.txt"
+text = ____  # e.g. "Learning file handling in Python."
+with open(filename, ____) as file:  # "w"
+    file.____(text)
+print("Data written to", ____)
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | write `Learning file handling in Python.` to `output.txt` |
+| **Example output** | `Data written to output.txt` (and the file holds that line) |
+
+<a href="../.faculty/solutions/d0k4lt.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).
+
+---
+
+<a id="unit-4c-task-3"></a>
+
+## Unit 4C Task 3: Count words, lines and characters
+
+Reads a text file and reports how many lines, words, and characters it has.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A text file name
+
+**Process**
+- Read all lines (or the full text)
+- Lines: number of lines (for example `len(readlines())`)
+- Words: split the text on whitespace and count
+- Characters: `len(text)` (decide whether to include spaces/newlines and stay consistent)
+
+**Output**
+- Counts for lines, words, and characters
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+filename = ____
+with open(filename, "r") as file:
+    text = file.____()
+
+line_count = len(text.____("\n"))  # or use readlines()
+word_count = len(text.____())
+char_count = len(____)
+
+print("Lines:", ____)
+print("Words:", ____)
+print("Characters:", ____)
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example file** | two lines: `Hello world` and `Python files` |
+| **Example output** | Lines `2`, Words `4`, Characters includes letters and spaces/newlines |
+
+<a href="../.faculty/solutions/e1l5mu.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).
+
+---
+
+<a id="unit-4c-task-4"></a>
+
+## Unit 4C Task 4: Copy file content
+
+Copies everything from a source text file into a destination file.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Source file name and destination file name
+
+**Process**
+- Open source in `"r"` and destination in `"w"`
+- Read from source and write to destination
+- You may use nested `with` statements
+
+**Output**
+- Destination file contains the same text; print a success message
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+source = ____  # e.g. "sample.txt"
+destination = ____  # e.g. "copy.txt"
+with open(source, "r") as src:
+    content = src.____()
+with open(destination, ____) as dest:  # "w"
+    dest.____(content)
+print("Copied from", source, "to", ____)
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | source `sample.txt`, destination `copy.txt` |
+| **Example output** | `Copied from sample.txt to copy.txt` |
+
+<a href="../.faculty/solutions/f2m6nv.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).
+
+---
+
+<a id="unit-4c-task-5"></a>
+
+## Unit 4C Task 5: Search and replace in a file
+
+Finds a word in a text file and replaces it with another word, then saves the result.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- File name, the word to find, and the replacement word
+
+**Process**
+- Read the full file content
+- Use `str.replace(old, new)` (or replace only the first occurrence if required)
+- Write the updated text back (same file or a new file — state which you chose)
+
+**Output**
+- Confirmation; opening the file shows the replaced text
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+filename = ____
+old_word = ____  # e.g. "Python"
+new_word = ____  # e.g. "Java"
+
+with open(filename, "r") as file:
+    content = file.____()
+
+updated = content.____(old_word, new_word)
+
+with open(filename, ____) as file:  # "w" to overwrite
+    file.____(updated)
+
+print("Replaced", old_word, "with", ____)
+```
+
+> **Hint:** `replace` changes every occurrence. Test with a small file first so you do not overwrite important data by mistake.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | file has `I love Python`, replace `Python` → `Java` |
+| **Example output** | file becomes `I love Java` |
+
+<a href="../.faculty/solutions/g3n7ow.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).

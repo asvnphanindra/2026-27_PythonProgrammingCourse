@@ -1,4 +1,4 @@
-# Unit IV: Dictionaries and Exception Handling
+# Unit IV: Dictionaries, Exception Handling and File Handling
 
 Create **one Python file per task**. Use the file names below so faculty can find your work by filename.
 
@@ -34,6 +34,16 @@ Back to [Lab tasks index](README.md).
 | 5 | Implement a Python program to demonstrate raising exceptions using raise | [Short](../lab-expectations.md#short) | `Unit-4B_Task-5_Raise_Exception.py` | Will be updated later | [View hint](../hints.md#unit-4b-task-5) |
 | 6 | Implement a Python program to create and raise a custom exception | [Short](../lab-expectations.md#short) | `Unit-4B_Task-6_Custom_Exception.py` | Will be updated later | [View hint](../hints.md#unit-4b-task-6) |
 | 7 | Implement a Python program to validate user input using exception handling (robust input program) | [Short](../lab-expectations.md#short) | `Unit-4B_Task-7_Robust_Input_Validation.py` | Will be updated later | [View hint](../hints.md#unit-4b-task-7) |
+
+### C. File Handling Programs
+
+| S No | Task name | Lab observation expectations | File name | Record expectations | Hint |
+|------|-----------|------------------------------|-----------|---------------------|------|
+| 1 | Implement a Python program to read data from a text file and display its content | [Short](../lab-expectations.md#short) | `Unit-4C_Task-1_Read_Text_File.py` | Will be updated later | [View hint](../hints.md#unit-4c-task-1) |
+| 2 | Implement a Python program to write data to a text file | [Short](../lab-expectations.md#short) | `Unit-4C_Task-2_Write_Text_File.py` | Will be updated later | [View hint](../hints.md#unit-4c-task-2) |
+| 3 | Implement a Python program to count words, lines and characters in a text file | [Short](../lab-expectations.md#short) | `Unit-4C_Task-3_Count_Words_Lines_Characters.py` | Will be updated later | [View hint](../hints.md#unit-4c-task-3) |
+| 4 | Implement a Python program to copy content from one file to another | [Short](../lab-expectations.md#short) | `Unit-4C_Task-4_Copy_File_Content.py` | Will be updated later | [View hint](../hints.md#unit-4c-task-4) |
+| 5 | Implement a Python program to search and replace a word in a text file | [Short](../lab-expectations.md#short) | `Unit-4C_Task-5_Search_Replace_in_File.py` | Will be updated later | [View hint](../hints.md#unit-4c-task-5) |
 
 ## Notes
 
