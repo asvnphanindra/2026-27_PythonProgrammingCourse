@@ -12,16 +12,28 @@ Back to [Lab tasks index](README.md).
 
 | S No | Task name | Lab observation expectations | File name | Record expectations | Hint |
 |------|-----------|------------------------------|-----------|---------------------|------|
-| 1 | Write a python program to create, access and update a dictionary | [Short](../lab-expectations.md#short) | `Unit-4A_Task-1_Create_Access_Update_Dictionary.py` | Will be updated later | [View hint](../hints.md#unit-4a-task-1) |
-| 2 | Write a python program to demonstrate dictionary methods (keys, values, items, get, update, pop) | [Short](../lab-expectations.md#short) | `Unit-4A_Task-2_Dictionary_Methods.py` | Will be updated later | [View hint](../hints.md#unit-4a-task-2) |
-| 3 | Write a python program to count the frequency of words in a sentence using a dictionary | [Short](../lab-expectations.md#short) | `Unit-4A_Task-3_Word_Frequency_Dictionary.py` | Will be updated later | [View hint](../hints.md#unit-4a-task-3) |
-| 4 | Write a python program to create and access a nested dictionary | [Short](../lab-expectations.md#short) | `Unit-4A_Task-4_Nested_Dictionary.py` | Will be updated later | [View hint](../hints.md#unit-4a-task-4) |
-| 5 | Write a python program to iterate through a dictionary using loops | [Short](../lab-expectations.md#short) | `Unit-4A_Task-5_Iterate_Dictionary_Loops.py` | Will be updated later | [View hint](../hints.md#unit-4a-task-5) |
-| 6 | Write a python program to demonstrate list comprehension (squares, filtering even numbers) | [Short](../lab-expectations.md#short) | `Unit-4A_Task-6_List_Comprehension.py` | Will be updated later | [View hint](../hints.md#unit-4a-task-6) |
-| 7 | Write a python program to demonstrate dictionary comprehension | [Short](../lab-expectations.md#short) | `Unit-4A_Task-7_Dictionary_Comprehension.py` | Will be updated later | [View hint](../hints.md#unit-4a-task-7) |
-| 8 | Write a python program to merge two dictionaries | [Short](../lab-expectations.md#short) | `Unit-4A_Task-8_Merge_Two_Dictionaries.py` | Will be updated later | [View hint](../hints.md#unit-4a-task-8) |
-| 9 | Write a python program to manage student records (name, marks, grade) using a dictionary | [Short](../lab-expectations.md#short) | `Unit-4A_Task-9_Student_Records_Dictionary.py` | Will be updated later | [View hint](../hints.md#unit-4a-task-9) |
-| 10 | Write a python program to sort a list of dictionaries based on a key | [Short](../lab-expectations.md#short) | `Unit-4A_Task-10_Sort_List_of_Dictionaries.py` | Will be updated later | [View hint](../hints.md#unit-4a-task-10) |
+| 1 | Implement a Python program to create, access and update a dictionary | [Short](../lab-expectations.md#short) | `Unit-4A_Task-1_Create_Access_Update_Dictionary.py` | Will be updated later | [View hint](../hints.md#unit-4a-task-1) |
+| 2 | Implement a Python program to demonstrate dictionary methods (keys, values, items, get, update, pop) | [Short](../lab-expectations.md#short) | `Unit-4A_Task-2_Dictionary_Methods.py` | Will be updated later | [View hint](../hints.md#unit-4a-task-2) |
+| 3 | Implement a Python program to count the frequency of words in a sentence using a dictionary | [Short](../lab-expectations.md#short) | `Unit-4A_Task-3_Word_Frequency_Dictionary.py` | Will be updated later | [View hint](../hints.md#unit-4a-task-3) |
+| 4 | Implement a Python program to create and access a nested dictionary | [Short](../lab-expectations.md#short) | `Unit-4A_Task-4_Nested_Dictionary.py` | Will be updated later | [View hint](../hints.md#unit-4a-task-4) |
+| 5 | Implement a Python program to iterate through a dictionary using loops | [Short](../lab-expectations.md#short) | `Unit-4A_Task-5_Iterate_Dictionary_Loops.py` | Will be updated later | [View hint](../hints.md#unit-4a-task-5) |
+| 6 | Implement a Python program to demonstrate list comprehension (squares, filtering even numbers) | [Short](../lab-expectations.md#short) | `Unit-4A_Task-6_List_Comprehension.py` | Will be updated later | [View hint](../hints.md#unit-4a-task-6) |
+| 7 | Implement a Python program to demonstrate dictionary comprehension | [Short](../lab-expectations.md#short) | `Unit-4A_Task-7_Dictionary_Comprehension.py` | Will be updated later | [View hint](../hints.md#unit-4a-task-7) |
+| 8 | Implement a Python program to merge two dictionaries | [Short](../lab-expectations.md#short) | `Unit-4A_Task-8_Merge_Two_Dictionaries.py` | Will be updated later | [View hint](../hints.md#unit-4a-task-8) |
+| 9 | Implement a Python program to manage student records (name, marks, grade) using a dictionary | [Short](../lab-expectations.md#short) | `Unit-4A_Task-9_Student_Records_Dictionary.py` | Will be updated later | [View hint](../hints.md#unit-4a-task-9) |
+| 10 | Implement a Python program to sort a list of dictionaries based on a key | [Short](../lab-expectations.md#short) | `Unit-4A_Task-10_Sort_List_of_Dictionaries.py` | Will be updated later | [View hint](../hints.md#unit-4a-task-10) |
+
+### B. Exception Handling Programs
+
+| S No | Task name | Lab observation expectations | File name | Record expectations | Hint |
+|------|-----------|------------------------------|-----------|---------------------|------|
+| 1 | Implement a Python program to demonstrate try-except block for handling exceptions | [Short](../lab-expectations.md#short) | `Unit-4B_Task-1_Try_Except_Block.py` | Will be updated later | [View hint](../hints.md#unit-4b-task-1) |
+| 2 | Implement a Python program to handle multiple exceptions using multiple except blocks | [Short](../lab-expectations.md#short) | `Unit-4B_Task-2_Multiple_Except_Blocks.py` | Will be updated later | [View hint](../hints.md#unit-4b-task-2) |
+| 3 | Implement a Python program to demonstrate try-except-else-finally blocks | [Short](../lab-expectations.md#short) | `Unit-4B_Task-3_Try_Except_Else_Finally.py` | Will be updated later | [View hint](../hints.md#unit-4b-task-3) |
+| 4 | Implement a Python program to handle ZeroDivisionError and ValueError | [Short](../lab-expectations.md#short) | `Unit-4B_Task-4_ZeroDivisionError_ValueError.py` | Will be updated later | [View hint](../hints.md#unit-4b-task-4) |
+| 5 | Implement a Python program to demonstrate raising exceptions using raise | [Short](../lab-expectations.md#short) | `Unit-4B_Task-5_Raise_Exception.py` | Will be updated later | [View hint](../hints.md#unit-4b-task-5) |
+| 6 | Implement a Python program to create and raise a custom exception | [Short](../lab-expectations.md#short) | `Unit-4B_Task-6_Custom_Exception.py` | Will be updated later | [View hint](../hints.md#unit-4b-task-6) |
+| 7 | Implement a Python program to validate user input using exception handling (robust input program) | [Short](../lab-expectations.md#short) | `Unit-4B_Task-7_Robust_Input_Validation.py` | Will be updated later | [View hint](../hints.md#unit-4b-task-7) |
 
 ## Notes
 
