@@ -6,16 +6,16 @@ Create **one Python file per task**. Use the file names in each unit page so fac
 
 Click **Lab observation expectations** in a row for [Full](../lab-expectations.md#full) / [Short](../lab-expectations.md#short) / [Optional](../lab-expectations.md#optional) / [Will be informed later](../lab-expectations.md#will-be-informed-later). For **Full** tasks, click **Example observation** for a complete sample write-up. Click **View hint** for input, process, output, and a worked example (where available).
 
-**Last updated:** Friday, November 13, 2026, 12:37 PM (UTC+05:30)
+**Last updated:** Wednesday, November 18, 2026, 12:52 PM (UTC+05:30)
 
 ## Summary
 
-**Total tasks listed:** 99 (Units I–IV)
+**Total tasks listed:** 106 (Units I–IV)
 
 | Lab observation | Count | Meaning |
 |-----------------|------:|---------|
 | [Full](../lab-expectations.md#full) | 20 | Full observation write-up before lab |
-| [Short](../lab-expectations.md#short) | 77 | Short observation write-up before lab |
+| [Short](../lab-expectations.md#short) | 84 | Short observation write-up before lab |
 | [Optional](../lab-expectations.md#optional) | 2 | Observation not required (task itself is also optional) |
 | [Will be informed later](../lab-expectations.md#will-be-informed-later) | 0 | Faculty will announce later |
 
@@ -26,7 +26,7 @@ Click **Lab observation expectations** in a row for [Full](../lab-expectations.m
 | I | Computational Thinking and Python Fundamentals | 15 | 8 | 7 | 0 | [Open](unit1-python-fundamentals.md) |
 | II | Control Structures and Strings | 46 | 12 | 34 | 0 | [Open](unit2-control-structures-and-strings.md) |
 | III | Lists, Tuples, Sets and Functions | 28 | 0 | 26 | 2 | [Open](unit3-lists-tuples-sets-and-functions.md) |
-| IV | Dictionaries and Exception Handling | 10 | 0 | 10 | 0 | [Open](unit4-dictionaries-and-exception-handling.md) |
+| IV | Dictionaries and Exception Handling | 17 | 0 | 17 | 0 | [Open](unit4-dictionaries-and-exception-handling.md) |
 | V | Object-Oriented Programming | — | — | — | — | Will be added later |
 
 **Unit III note:** Tasks 10 and 11 under User Defined Functions are **optional** (program and lab observation).

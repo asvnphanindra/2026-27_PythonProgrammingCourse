@@ -88,3 +88,10 @@ Not linked from student docs. Map task → cryptic file.
 | Unit 4A Task 8 — Merge two dictionaries | `s8y2zi.md` |
 | Unit 4A Task 9 — Student records with a dictionary | `t9z3aj.md` |
 | Unit 4A Task 10 — Sort a list of dictionaries | `u1b5ck.md` |
+| Unit 4B Task 1 — Try-except block | `v2c6dl.md` |
+| Unit 4B Task 2 — Multiple except blocks | `w3d7em.md` |
+| Unit 4B Task 3 — Try-except-else-finally | `x4e8fn.md` |
+| Unit 4B Task 4 — ZeroDivisionError and ValueError | `y5f9go.md` |
+| Unit 4B Task 5 — Raising exceptions with raise | `z6g0hp.md` |
+| Unit 4B Task 6 — Custom exception | `a7h1iq.md` |
+| Unit 4B Task 7 — Robust input validation | `b8i2jr.md` |

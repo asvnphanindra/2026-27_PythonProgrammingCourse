@@ -29,6 +29,8 @@ Jump to a task:
 
 **Unit 4A:** [Task 1](#unit-4a-task-1) · [Task 2](#unit-4a-task-2) · [Task 3](#unit-4a-task-3) · [Task 4](#unit-4a-task-4) · [Task 5](#unit-4a-task-5) · [Task 6](#unit-4a-task-6) · [Task 7](#unit-4a-task-7) · [Task 8](#unit-4a-task-8) · [Task 9](#unit-4a-task-9) · [Task 10](#unit-4a-task-10)
 
+**Unit 4B:** [Task 1](#unit-4b-task-1) · [Task 2](#unit-4b-task-2) · [Task 3](#unit-4b-task-3) · [Task 4](#unit-4b-task-4) · [Task 5](#unit-4b-task-5) · [Task 6](#unit-4b-task-6) · [Task 7](#unit-4b-task-7)
+
 ---
 
 <a id="unit-1-task-1"></a>
@@ -5248,16 +5250,16 @@ Creates a dictionary, reads values by key, and updates or adds entries.
 **Program structure** (fill in the blanks):
 
 ```python
-student = {
+dict_data = {
     "name": ____,  # e.g. "Anu"
     "age": ____,  # e.g. 20
     "course": ____,  # e.g. "Python"
 }
 print("Student:", ____)
-print("Name:", student[____])
+print("Name:", dict_data[____])
 
-student[____] = ____  # update age, e.g. 21
-student[____] = ____  # add a new key, e.g. "city": "Guntur"
+dict_data[____] = ____  # update age, e.g. 21
+dict_data[____] = ____  # add a new key, e.g. "city": "Guntur"
 print("Updated:", ____)
 ```
 
@@ -5301,17 +5303,17 @@ Demonstrates `keys`, `values`, `items`, `get`, `update`, and `pop`.
 **Program structure** (fill in the blanks):
 
 ```python
-data = {"a": 1, "b": 2, "c": 3}
-print("Keys:", ____)  # data.keys()
+dict_data = {"a": 1, "b": 2, "c": 3}
+print("Keys:", ____)  # dict_data.keys()
 print("Values:", ____)
 print("Items:", ____)
-print("get b:", data.____("b"))
-print("get z:", data.____("z"))  # missing key
+print("get b:", dict_data.____("b"))
+print("get z:", dict_data.____("z"))  # missing key
 
-data.____({"b": 20, "d": 4})  # update
+dict_data.____({"b": 20, "d": 4})  # update
 print("After update:", ____)
 
-removed = data.____("a")  # pop
+removed = dict_data.____("a")  # pop
 print("Removed:", ____)
 print("After pop:", ____)
 ```
@@ -5320,7 +5322,7 @@ print("After pop:", ____)
 
 | Item | Details |
 |------|---------|
-| **Example input** | `data = {"a": 1, "b": 2, "c": 3}` |
+| **Example input** | `dict_data = {"a": 1, "b": 2, "c": 3}` |
 | **Example output** | `Keys: dict_keys(['a', 'b', 'c'])`<br>`get b: 2`<br>`get z: None`<br>`After update:` includes `b: 20` and `d: 4`<br>`Removed: 1` |
 
 <a href="../.faculty/solutions/m2s6tc.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
@@ -5343,7 +5345,7 @@ Counts how many times each word appears in a sentence.
 **Process**
 - Split the sentence into words (`split()`)
 - For each word, increase its count in a dictionary
-- Use `freq.get(word, 0) + 1` or check membership
+- Use `dict_data.get(word, 0) + 1` or check membership
 
 **Output**
 - Dictionary of word → count
@@ -5355,10 +5357,10 @@ Counts how many times each word appears in a sentence.
 ```python
 sentence = ____  # e.g. "to be or not to be"
 words = sentence.____()  # split into words
-freq = {}
+dict_data = {}
 
 for word in words:
-    freq[word] = freq.____(word, 0) + 1
+    dict_data[word] = dict_data.____(word, 0) + 1
 
 print("Frequency:", ____)
 ```
@@ -5399,13 +5401,13 @@ Creates a dictionary whose values are dictionaries, then accesses nested values.
 **Program structure** (fill in the blanks):
 
 ```python
-students = {
+dict_data = {
     "S1": {"name": ____, "marks": ____},  # e.g. "Ram", 85
     "S2": {"name": ____, "marks": ____},  # e.g. "Sita", 90
 }
 print("All:", ____)
-print("S1 name:", students[____][____])
-print("S2 marks:", students[____][____])
+print("S1 name:", dict_data[____][____])
+print("S2 marks:", dict_data[____][____])
 ```
 
 ### Example
@@ -5445,18 +5447,18 @@ Loops over keys, values, and items.
 **Program structure** (fill in the blanks):
 
 ```python
-scores = {"maths": 80, "science": 75, "english": 90}
+dict_data = {"maths": 80, "science": 75, "english": 90}
 
 print("Keys:")
 for key in ____:
     print(key)
 
 print("Values:")
-for value in scores.____():
+for value in dict_data.____():
     print(value)
 
 print("Items:")
-for key, value in scores.____():
+for key, value in dict_data.____():
     print(key, "→", value)
 ```
 
@@ -5464,7 +5466,7 @@ for key, value in scores.____():
 
 | Item | Details |
 |------|---------|
-| **Example input** | `scores = {"maths": 80, "science": 75, "english": 90}` |
+| **Example input** | `dict_data = {"maths": 80, "science": 75, "english": 90}` |
 | **Example output** | prints each key, each value, then each `key → value` pair |
 
 <a href="../.faculty/solutions/p5v9wf.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
@@ -5496,10 +5498,10 @@ Builds lists of squares and even numbers using list comprehension.
 **Program structure** (fill in the blanks):
 
 ```python
-numbers = range(____, ____)  # e.g. 1 to 10 inclusive → range(1, 11)
+list_data = range(____, ____)  # e.g. 1 to 10 inclusive → range(1, 11)
 
-squares = [____ for x in numbers]
-evens = [____ for x in numbers if ____]
+list_squares = [____ for x in list_data]
+list_evens = [____ for x in list_data if ____]
 
 print("Squares:", ____)
 print("Evens:", ____)
@@ -5541,11 +5543,11 @@ Builds a dictionary using a comprehension (for example number → square).
 **Program structure** (fill in the blanks):
 
 ```python
-squares = {____: ____ for x in range(1, 6)}
+dict_data = {____: ____ for x in range(1, 6)}
 print("Squares dict:", ____)
 
 # optional: only even keys
-even_squares = {____: ____ for x in range(1, 11) if ____}
+dict_even_squares = {____: ____ for x in range(1, 11) if ____}
 print("Even squares:", ____)
 ```
 
@@ -5574,9 +5576,9 @@ Combines two dictionaries into one.
 - Two dictionaries
 
 **Process**
-- One way: `{**dict1, **dict2}` (later keys overwrite earlier ones on clash)
+- One way: `{**dict_data, **dict_extra}` (later keys overwrite earlier ones on clash)
 - Another: copy then `update()`
-- Or `dict1 | dict2` (Python 3.9+)
+- Or `dict_data | dict_extra` (Python 3.9+)
 
 **Output**
 - The merged dictionary
@@ -5586,20 +5588,20 @@ Combines two dictionaries into one.
 **Program structure** (fill in the blanks):
 
 ```python
-dict1 = ____  # e.g. {"a": 1, "b": 2}
-dict2 = ____  # e.g. {"b": 3, "c": 4}
+dict_data = ____  # e.g. {"a": 1, "b": 2}
+dict_extra = ____  # e.g. {"b": 3, "c": 4}
 
-merged = {**____, **____}  # dict1, dict2 — or use update / |
+dict_merged = {**____, **____}  # dict_data, dict_extra — or use update / |
 print("Merged:", ____)
 ```
 
-> **Hint:** If both have the same key, the second dictionary’s value is kept when you write `{**dict1, **dict2}`.
+> **Hint:** If both have the same key, the second dictionary’s value is kept when you write `{**dict_data, **dict_extra}`.
 
 ### Example
 
 | Item | Details |
 |------|---------|
-| **Example input** | `dict1 = {"a": 1, "b": 2}`, `dict2 = {"b": 3, "c": 4}` |
+| **Example input** | `dict_data = {"a": 1, "b": 2}`, `dict_extra = {"b": 3, "c": 4}` |
 | **Example output** | `Merged: {'a': 1, 'b': 3, 'c': 4}` |
 
 <a href="../.faculty/solutions/s8y2zi.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
@@ -5644,9 +5646,9 @@ elif marks >= 70:
 else:
     grade = ____
 
-student = {"name": ____, "marks": ____, "grade": ____}
+dict_data = {"name": ____, "marks": ____, "grade": ____}
 print("Record:", ____)
-for key, value in student.____():
+for key, value in dict_data.____():
     print(f"{key}: {value}")
 ```
 
@@ -5675,7 +5677,7 @@ Sorts a list of dictionaries by a chosen key.
 - A list of dictionaries (for example students with `name` and `marks`)
 
 **Process**
-- Use `sorted(list, key=lambda d: d["marks"])` (or another key)
+- Use `sorted(list_data, key=lambda d: d["marks"])` (or another key)
 - `reverse=True` for descending order if needed
 
 **Output**
@@ -5686,16 +5688,16 @@ Sorts a list of dictionaries by a chosen key.
 **Program structure** (fill in the blanks):
 
 ```python
-students = [
+list_data = [
     {"name": "Anu", "marks": 75},
     {"name": "Ravi", "marks": 90},
     {"name": "Sita", "marks": 82},
 ]
 
-by_marks = sorted(students, key=lambda d: d[____])
+list_by_marks = sorted(list_data, key=lambda d: d[____])
 print("By marks ascending:", ____)
 
-by_marks_desc = sorted(students, key=lambda d: d[____], reverse=____)
+list_by_marks_desc = sorted(list_data, key=lambda d: d[____], reverse=____)
 print("By marks descending:", ____)
 ```
 
@@ -5707,5 +5709,345 @@ print("By marks descending:", ____)
 | **Example output** | ascending: Anu, Sita, Ravi · descending: Ravi, Sita, Anu |
 
 <a href="../.faculty/solutions/u1b5ck.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).
+
+---
+
+<a id="unit-4b-task-1"></a>
+
+## Unit 4B Task 1: Try-except block
+
+Demonstrates catching an exception with `try` / `except` so the program does not crash.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Values that may cause an error (for example dividing by zero, or an invalid index)
+
+**Process**
+- Put risky code inside `try`
+- Catch the error with `except ExceptionType`
+- Print a clear message instead of letting the program stop
+
+**Output**
+- Either the normal result, or a handled error message
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+try:
+    a = ____  # e.g. 10
+    b = ____  # e.g. 0
+    result = a / b
+    print("Result:", ____)
+except ____:  # ZeroDivisionError
+    print("Cannot divide by zero.")
+```
+
+> **Hint:** Code after a successful `try` still runs only if no exception occurred. The `except` block runs only when that error happens.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `a = 10`, `b = 0` |
+| **Example output** | `Cannot divide by zero.` |
+
+<a href="../.faculty/solutions/v2c6dl.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).
+
+---
+
+<a id="unit-4b-task-2"></a>
+
+## Unit 4B Task 2: Multiple except blocks
+
+Handles different error types with separate `except` blocks.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- User values or sample data that can raise different exceptions
+
+**Process**
+- Use one `try` block
+- Add multiple `except` clauses (for example `ValueError`, `IndexError`, `ZeroDivisionError`)
+- Print a message specific to each error type
+
+**Output**
+- A message matching which exception occurred
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+list_data = [10, 20, 30]
+try:
+    index = int(____)  # e.g. input("Enter index: ")
+    value = list_data[____]
+    print("Value:", ____)
+except ____:  # ValueError — non-integer input
+    print("Please enter a valid integer index.")
+except ____:  # IndexError — index out of range
+    print("Index is out of range.")
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | index `5` (list has only 3 items) |
+| **Example output** | `Index is out of range.` |
+
+<a href="../.faculty/solutions/w3d7em.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).
+
+---
+
+<a id="unit-4b-task-3"></a>
+
+## Unit 4B Task 3: Try-except-else-finally
+
+Shows the full `try` / `except` / `else` / `finally` flow.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Two numbers for a safe division (or another operation)
+
+**Process**
+- `try`: attempt the operation
+- `except`: handle the error
+- `else`: runs only when no exception occurred
+- `finally`: always runs (cleanup / closing message)
+
+**Output**
+- Result or error message, plus a final message that always appears
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+try:
+    a = int(____)
+    b = int(____)
+    result = a / b
+except ____:
+    print("Division by zero is not allowed.")
+except ____:
+    print("Please enter valid numbers.")
+else:
+    print("Result:", ____)  # runs only if try succeeded
+finally:
+    print(____)  # e.g. "Program finished."
+```
+
+> **Hint:** `else` is for the success path. `finally` runs whether the code succeeded or failed.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `a = 20`, `b = 4` |
+| **Example output** | `Result: 5.0`<br>`Program finished.` |
+
+<a href="../.faculty/solutions/x4e8fn.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).
+
+---
+
+<a id="unit-4b-task-4"></a>
+
+## Unit 4B Task 4: ZeroDivisionError and ValueError
+
+Handles invalid number conversion and division by zero in one program.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Numerator and denominator from the user (as text)
+
+**Process**
+- Convert inputs with `int()` or `float()` (may raise `ValueError`)
+- Divide the numbers (may raise `ZeroDivisionError`)
+- Catch each exception separately
+
+**Output**
+- Quotient, or a specific error message
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+try:
+    num = ____(input("Enter numerator: "))  # int or float
+    den = ____(input("Enter denominator: "))
+    print("Quotient:", num / ____)
+except ____:
+    print("Denominator cannot be zero.")
+except ____:
+    print("Please enter valid numbers.")
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | numerator `12`, denominator `abc` |
+| **Example output** | `Please enter valid numbers.` |
+
+<a href="../.faculty/solutions/y5f9go.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).
+
+---
+
+<a id="unit-4b-task-5"></a>
+
+## Unit 4B Task 5: Raising exceptions with raise
+
+Uses `raise` to signal an invalid condition intentionally.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A value that must satisfy a rule (for example age must be positive)
+
+**Process**
+- Check the rule with `if`
+- Use `raise ValueError("message")` (or another exception) when the rule fails
+- Catch the raised exception with `try` / `except` and print the message
+
+**Output**
+- Confirmation if valid, or the raised error message if invalid
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+try:
+    age = int(____)
+    if age < ____:  # e.g. 0
+        raise ____("Age cannot be negative.")
+    print("Valid age:", ____)
+except ____ as err:
+    print("Error:", ____)
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | age `-3` |
+| **Example output** | `Error: Age cannot be negative.` |
+
+<a href="../.faculty/solutions/z6g0hp.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).
+
+---
+
+<a id="unit-4b-task-6"></a>
+
+## Unit 4B Task 6: Custom exception
+
+Defines a custom exception class and raises it when a rule fails.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A value to validate (for example marks must be between 0 and 100)
+
+**Process**
+- Define `class MyError(Exception): pass` (choose a clear name)
+- Raise your custom exception when the value is invalid
+- Catch that custom type in `except`
+
+**Output**
+- Success message, or the custom exception message
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+class ____(Exception):  # e.g. InvalidMarksError
+    pass
+
+try:
+    marks = int(____)
+    if marks < 0 or marks > ____:
+        raise ____("Marks must be between 0 and 100.")
+    print("Marks accepted:", ____)
+except ____ as err:
+    print("Custom error:", ____)
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | marks `120` |
+| **Example output** | `Custom error: Marks must be between 0 and 100.` |
+
+<a href="../.faculty/solutions/a7h1iq.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).
+
+---
+
+<a id="unit-4b-task-7"></a>
+
+## Unit 4B Task 7: Robust input validation
+
+Keeps asking until the user enters valid input, using exception handling.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Repeated user input until a valid integer (or other type) is entered
+
+**Process**
+- Loop with `while True`
+- Inside `try`, convert the input
+- On `ValueError`, print a message and continue the loop
+- `break` when conversion succeeds
+
+**Output**
+- Prompt(s) until success, then the accepted value
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+while ____:
+    try:
+        number = int(input(____))  # e.g. "Enter an integer: "
+        ____  # leave the loop when valid
+    except ____:
+        print("Invalid input. Please enter an integer.")
+
+print("You entered:", ____)
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | first `hi`, then `12` |
+| **Example output** | `Invalid input. Please enter an integer.`<br>`You entered: 12` |
+
+<a href="../.faculty/solutions/b8i2jr.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](lab-tasks/unit4-dictionaries-and-exception-handling.md).
