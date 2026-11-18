@@ -75,4 +75,4 @@ At least **5** cases; at least **2** tricky (edge / boundary / unusual). Actual 
 | 4 | 1000, 0, 5 | Simple interest is 0.0 rupees | Simple interest is 0.0 rupees | Tricky |
 | 5 | 10000, 5, 0.5 | Simple interest is 250.0 rupees | Simple interest is 250.0 rupees | Tricky |
 
-[Back to hint](../../docs/hints.md#unit-1-task-6) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit1-python-fundamentals.md#unit-1-task-6) · [Back to lab tasks](../../docs/lab-tasks/unit1-python-fundamentals.md)

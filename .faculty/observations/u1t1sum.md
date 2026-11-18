@@ -71,4 +71,4 @@ At least **5** cases; at least **2** tricky (edge / boundary / unusual). Actual 
 | 4 | 0, 0 | Sum of the two numbers is 0.0 | Sum of the two numbers is 0.0 | Tricky |
 | 5 | -10, -20 | Sum of the two numbers is -30.0 | Sum of the two numbers is -30.0 | Tricky |
 
-[Back to hint](../../docs/hints.md#unit-1-task-1) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit1-python-fundamentals.md#unit-1-task-1) · [Back to lab tasks](../../docs/lab-tasks/unit1-python-fundamentals.md)

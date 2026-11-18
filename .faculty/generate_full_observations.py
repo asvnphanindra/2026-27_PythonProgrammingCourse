@@ -24,6 +24,23 @@ def fc(body: str) -> str:
     return "```mermaid\nflowchart TD\n" + textwrap.dedent(body).strip() + "\n```"
 
 
+HINT_FILES = {
+    "1": "unit1-python-fundamentals.md",
+    "2": "unit2-control-structures-and-strings.md",
+    "3": "unit3-lists-tuples-sets-and-functions.md",
+    "4": "unit4-dictionaries-and-exception-handling.md",
+    "5": "unit5-object-oriented-programming.md",
+}
+
+LAB_FILES = {
+    "1": "unit1-python-fundamentals.md",
+    "2": "unit2-control-structures-and-strings.md",
+    "3": "unit3-lists-tuples-sets-and-functions.md",
+    "4": "unit4-dictionaries-and-exception-handling.md",
+    "5": "unit5-object-oriented-programming.md",
+}
+
+
 def doc(
     title: str,
     task: str,
@@ -36,6 +53,9 @@ def doc(
     test_cases: str,
     hint_anchor: str,
 ) -> str:
+    unit = hint_anchor.split("-")[1][0]
+    hint_file = HINT_FILES[unit]
+    lab_file = LAB_FILES[unit]
     algo = "\n".join(f"{i}. {step}" for i, step in enumerate(algorithm, 1))
     return f"""# {title} — Example full observation
 
@@ -83,7 +103,7 @@ At least **5** cases; at least **2** tricky (edge / boundary / unusual). Actual 
 
 {test_cases}
 
-[Back to hint](../../docs/hints.md#{hint_anchor}) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/{hint_file}#{hint_anchor}) · [Back to lab tasks](../../docs/lab-tasks/{lab_file})
 """
 
 

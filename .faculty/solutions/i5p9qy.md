@@ -17,4 +17,4 @@ s1 = Student("Ravi", 21)
 s1.display()
 ```
 
-[Back to hint](../../docs/hints.md#unit-5a-task-2) · [Back to lab tasks](../../docs/lab-tasks/unit5-object-oriented-programming.md)
+[Back to hint](../../docs/hints/unit5-object-oriented-programming.md#unit-5a-task-2) · [Back to lab tasks](../../docs/lab-tasks/unit5-object-oriented-programming.md)

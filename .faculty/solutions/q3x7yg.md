@@ -21,4 +21,4 @@ p2 = Point(3, 4)
 print(p1 + p2)
 ```
 
-[Back to hint](../../docs/hints.md#unit-5b-task-5) · [Back to lab tasks](../../docs/lab-tasks/unit5-object-oriented-programming.md)
+[Back to hint](../../docs/hints/unit5-object-oriented-programming.md#unit-5b-task-5) · [Back to lab tasks](../../docs/lab-tasks/unit5-object-oriented-programming.md)

@@ -1,0 +1,3144 @@
+# Unit II: Control Structures and Strings — Hints
+
+Use these hints to plan each program (input, process, output) and to check your results with the sample values.
+
+Back to [Hints index](README.md) · [Lab tasks for this unit](../lab-tasks/unit2-control-structures-and-strings.md)
+
+Jump to a task:
+
+**Unit 2A:** [Task 1](#unit-2a-task-1) · [Task 2](#unit-2a-task-2) · [Task 3](#unit-2a-task-3) · [Task 4](#unit-2a-task-4) · [Task 5](#unit-2a-task-5) · [Task 6](#unit-2a-task-6) · [Task 7 Approach 1](#unit-2a-task-7-approach-1) · [Task 7 Approach 2](#unit-2a-task-7-approach-2) · [Task 7 Approach 3](#unit-2a-task-7-approach-3) · [Task 8](#unit-2a-task-8)
+
+**Unit 2B:** [Task 1 Approach 1](#unit-2b-task-1-approach-1) · [Task 1 Approach 2](#unit-2b-task-1-approach-2) · [Task 2 Approach 1](#unit-2b-task-2-approach-1) · [Task 2 Approach 2](#unit-2b-task-2-approach-2) · [Task 3](#unit-2b-task-3) · [Task 4](#unit-2b-task-4) · [Task 5](#unit-2b-task-5) · [Task 6](#unit-2b-task-6) · [Task 7](#unit-2b-task-7) · [Task 8](#unit-2b-task-8) · [Task 9](#unit-2b-task-9) · [Task 10](#unit-2b-task-10) · [Task 11](#unit-2b-task-11) · [Task 12](#unit-2b-task-12) · [Task 13 Approach 1](#unit-2b-task-13-approach-1) · [Task 13 Approach 2](#unit-2b-task-13-approach-2) · [Task 14 Approach 1](#unit-2b-task-14-approach-1) · [Task 14 Approach 2](#unit-2b-task-14-approach-2) · [Task 15 Approach 1](#unit-2b-task-15-approach-1) · [Task 15 Approach 2](#unit-2b-task-15-approach-2)
+
+**Unit 2C:** [Task 1](#unit-2c-task-1) · [Task 2](#unit-2c-task-2) · [Task 3](#unit-2c-task-3) · [Task 4](#unit-2c-task-4) · [Task 5](#unit-2c-task-5) · [Task 6](#unit-2c-task-6) · [Task 7](#unit-2c-task-7) · [Task 8](#unit-2c-task-8) · [Task 9](#unit-2c-task-9) · [Task 10](#unit-2c-task-10) · [Task 11](#unit-2c-task-11) · [Task 12](#unit-2c-task-12) · [Task 13](#unit-2c-task-13) · [Task 14](#unit-2c-task-14) · [Task 15](#unit-2c-task-15)
+
+**Unit 2D:** [Task 1](#unit-2d-task-1) · [Task 2](#unit-2d-task-2) · [Task 3](#unit-2d-task-3) · [Task 4](#unit-2d-task-4) · [Task 5](#unit-2d-task-5) · [Task 6](#unit-2d-task-6) · [Task 7](#unit-2d-task-7) · [Task 8](#unit-2d-task-8)
+
+---
+
+<a id="unit-2a-task-1"></a>
+
+## Unit 2A Task 1: Valid triangle (three angles)
+
+Checks whether a triangle is valid when its three angles are given. Think about the rules a valid triangle must satisfy (use class notes and the example below).
+
+### Analyse the problem: Identify Input, Process and Output
+
+| Item | Details |
+|------|---------|
+| **Input** | `angle1_in_degrees`, `angle2_in_degrees`, `angle3_in_degrees` |
+| **Process** | Use an `if-else` structure. Write your own condition to decide whether the triangle is valid. |
+| **Output** | Message stating whether the triangle is valid or not |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+angle1_in_degrees = float(input("Enter first angle in degrees: "))
+angle2_in_degrees = float(input("Enter second angle in degrees: "))
+angle3_in_degrees = float(input("Enter third angle in degrees: "))
+```
+
+**Program structure** (fill in the blanks — do not copy a finished condition):
+
+```python
+if ____:  # check whether the triangle is valid
+    print(f"The triangle with angles {angle1_in_degrees}, {angle2_in_degrees}, and {angle3_in_degrees} is valid")
+else:
+    print(f"The triangle with angles {angle1_in_degrees}, {angle2_in_degrees}, and {angle3_in_degrees} is not valid")
+```
+
+> **Note on units:** Ask for angles in **degrees** in the `input()` message.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `angle1_in_degrees = 60`, `angle2_in_degrees = 60`, `angle3_in_degrees = 60` |
+| **Example calculation** | All angles > 0 → True<br>`60 + 60 + 60 = 180` → True<br>So the triangle is valid |
+| **Example output** | The triangle is valid |
+
+**Another example (invalid):** `angle1_in_degrees = 90`, `angle2_in_degrees = 90`, `angle3_in_degrees = 90` → sum = 270 ≠ 180 → The triangle is not valid
+
+<a href="../../.faculty/solutions/a2q8lm.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2a-task-2"></a>
+
+## Unit 2A Task 2: Voting eligibility
+
+Checks whether a person is eligible to vote using if-else. Decide the eligibility rule from the problem statement and class notes.
+
+### Analyse the problem: Identify Input, Process and Output
+
+| Item | Details |
+|------|---------|
+| **Input** | `age_in_years` |
+| **Process** | Use an `if-else` structure. Write your own condition to decide eligibility. |
+| **Output** | Message stating whether the person is eligible to vote or not |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+age_in_years = int(input("Enter age in years: "))
+```
+
+**Program structure** (fill in the blanks — do not copy a finished condition):
+
+```python
+if ____:  # check voting eligibility (use age_in_years)
+    print(f"Age {age_in_years} years: Eligible to vote")
+else:
+    print(f"Age {age_in_years} years: Not eligible to vote")
+```
+
+> **Note on units:** Ask for age in **years** in the `input()` message.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `age_in_years = 20` |
+| **Example calculation** | `20 >= 18` → True → Eligible to vote |
+| **Example output** | Eligible to vote |
+
+**Another example:** `age_in_years = 16` → `16 >= 18` → False → Not eligible to vote
+
+<a href="../../.faculty/solutions/b3r9mn.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2a-task-3"></a>
+
+## Unit 2A Task 3: Positive, negative, or zero
+
+Checks whether a given number is positive, negative, or zero.
+
+### Analyse the problem: Identify Input, Process and Output
+
+| Item | Details |
+|------|---------|
+| **Input** | `number` |
+| **Process** | Use an `if-elif-else` structure. Write your own conditions for positive, negative, and zero. |
+| **Output** | Message stating whether the number is positive, negative, or zero |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number = float(input("Enter a number: "))
+```
+
+**Program structure** (fill in the blanks — do not copy finished conditions):
+
+```python
+if ____:  # positive number?
+    print(f"The number {number} is positive")
+elif ____:  # negative number?
+    print(f"The number {number} is negative")
+else:
+    print(f"The number {number} is zero")  # remaining case
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 15` |
+| **Example calculation** | `15 > 0` → True → Positive |
+| **Example output** | The number is positive |
+
+**Other examples:** `number = -7` → The number is negative; `number = 0` → The number is zero
+
+<a href="../../.faculty/solutions/c4s0np.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2a-task-4"></a>
+
+## Unit 2A Task 4: Student grade (elif ladder)
+
+Prints the grade of a student from marks using an `if-elif-else` ladder.
+
+**What is an elif ladder?**
+- Use `if` for the first check
+- Use `elif` for the next checks (only tried if earlier ones were false)
+- Use `else` for the last remaining case
+- Only one branch runs
+
+**Grade rules for this task**
+- Marks `>= 90` → Grade A
+- Marks `>= 80` and `< 90` → Grade B
+- Marks `>= 70` and `< 80` → Grade C
+- Marks `< 70` → Grade D
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read marks from the user
+
+**Process**
+- Check the marks from highest grade to lowest using `if` / `elif` / `else`
+- Because of `elif`, once a true branch is found, lower grades are not checked
+
+**Output**
+- Show the grade for the given marks
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+marks = float(input("Enter marks: "))
+```
+
+**Program structure** (fill in the blanks — if-elif-else ladder):
+
+```python
+if ____:  # Grade A? (marks >= 90)
+    print(f"Marks {marks}: Grade A")
+elif ____:  # Grade B? (marks >= 80)
+    print(f"Marks {marks}: Grade B")
+elif ____:  # Grade C? (marks >= 70)
+    print(f"Marks {marks}: Grade C")
+else:
+    print(f"Marks {marks}: Grade D")  # remaining case (marks < 70)
+```
+
+> **Hint:** Start with the highest range first (`>= 90`). With `elif`, you do not need to write both `>= 80` and `< 90` — the earlier false check already means marks are below `90`.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `marks = 85` |
+| **Example calculation** | `85 >= 90` → False<br>`85 >= 80` → True → Grade B |
+| **Example output** | `Marks 85: Grade B` |
+
+**Other examples:** `92` → Grade A; `70` → Grade C; `55` → Grade D
+
+<a href="../../.faculty/solutions/f7v3qs.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2a-task-5"></a>
+
+## Unit 2A Task 5: Largest of three numbers (nested if)
+
+Finds the largest of three numbers using nested `if`.
+
+**What is a nested if?**
+- An `if` (or `else`) block can contain another `if` inside it
+- First compare two numbers (outer check)
+- Then compare the winner with the third number (inner check)
+- Only one inner block runs — the side that won the outer compare
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read three numbers `x`, `y`, and `z`
+
+**Process**
+- **Outer if:** compare `x` and `y` (`x >= y`)
+- **Outer else:** when `x < y`
+- **Inner under if:** compare `x` with `z` → `largest = x` or `z`
+- **Inner under else:** compare `y` with `z` → `largest = y` or `z`
+- Store that winner in `largest`, then print it
+
+**Process columns** (nested structure):
+
+| If `x >= y` | Else (`x < y`) |
+|-------------|----------------|
+| Compare `x` with `z` (`x >= z`). | Compare `y` with `z` (`y >= z`). |
+| True → `largest = x`. | True → `largest = y`. |
+| False → `largest = z`. | False → `largest = z`. |
+
+**Output**
+- Show the largest number among `x`, `y`, and `z`
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+x = int(input("Enter first number: "))
+y = int(input("Enter second number: "))
+z = int(input("Enter third number: "))
+```
+
+**Program structure** (fill in the blanks — nested if):
+
+```python
+if ____:  # outer: compare x with y
+    if ____:  # inner under if: compare x with z
+        largest = ____  # x wins
+    else:
+        largest = ____  # z wins on this side
+else:
+    if ____:  # inner under else: compare y with z
+        largest = ____  # y wins
+    else:
+        largest = ____  # z wins on this side
+
+print(f"Largest = {largest} (among {x}, {y}, {z})")
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `x = 10`, `y = 25`, `z = 7` |
+| **Example calculation** | `10 >= 25` → False → outer else → `25 >= 7` → True → `largest = 25` |
+| **Example output** | `Largest = 25 (among 10, 25, 7)` |
+
+**Another example:** `x = 9`, `y = 9`, `z = 4` → `9 >= 9` → True → `9 >= 4` → True → `Largest = 9 (among 9, 9, 4)`
+
+<a href="../../.faculty/solutions/d5t1oq.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2a-task-6"></a>
+
+## Unit 2A Task 6: Smallest of three numbers (nested if)
+
+Finds the smallest of three numbers using nested `if`.
+
+**What is a nested if?**
+- An `if` (or `else`) block can contain another `if` inside it
+- First compare two numbers (outer check)
+- Then compare the smaller one with the third number (inner check)
+- Only one inner block runs — the side that won the outer compare
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read three numbers `x`, `y`, and `z`
+
+**Process**
+- **Outer if:** compare `x` and `y` (`x <= y`)
+- **Outer else:** when `x > y`
+- **Inner under if:** compare `x` with `z` → `smallest = x` or `z`
+- **Inner under else:** compare `y` with `z` → `smallest = y` or `z`
+- Store that winner in `smallest`, then print it
+
+**Process columns** (nested structure):
+
+| If `x <= y` | Else (`x > y`) |
+|-------------|----------------|
+| Compare `x` with `z` (`x <= z`). | Compare `y` with `z` (`y <= z`). |
+| True → `smallest = x`. | True → `smallest = y`. |
+| False → `smallest = z`. | False → `smallest = z`. |
+
+**Output**
+- Show the smallest number among `x`, `y`, and `z`
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+x = int(input("Enter first number: "))
+y = int(input("Enter second number: "))
+z = int(input("Enter third number: "))
+```
+
+**Program structure** (fill in the blanks — nested if):
+
+```python
+if ____:  # outer: compare x with y (smaller side)
+    if ____:  # inner under if: compare x with z
+        smallest = ____  # x wins
+    else:
+        smallest = ____  # z wins on this side
+else:
+    if ____:  # inner under else: compare y with z
+        smallest = ____  # y wins
+    else:
+        smallest = ____  # z wins on this side
+
+print(f"Smallest = {smallest} (among {x}, {y}, {z})")
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `x = 10`, `y = 25`, `z = 7` |
+| **Example calculation** | `10 <= 25` → True → outer if → `10 <= 7` → False → `smallest = 7` |
+| **Example output** | `Smallest = 7 (among 10, 25, 7)` |
+
+**Another example:** `x = 9`, `y = 9`, `z = 4` → `9 <= 9` → True → `9 <= 4` → False → `Smallest = 4 (among 9, 9, 4)`
+
+<a href="../../.faculty/solutions/g8w4rt.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2a-task-7-approach-1"></a>
+
+## Unit 2A Task 7: Leap year — Approach 1 (nested if-else)
+
+Checks whether a year is a leap year using nested `if-else`. Write the conditions yourself; only the nesting structure is shown.
+
+**What is a leap year?**
+- A normal year has `365` days
+- A leap year has `366` days (February has one extra day)
+- Leap years follow simple calendar rules using divisible checks (`%`)
+
+**How to check if a year is a leap year?**
+- If the year is divisible by `400` → it **is** a leap year (example: `2000`)
+- Else if the year is divisible by `100` → it is **not** a leap year (example: `1900`)
+- Else if the year is divisible by `4` → it **is** a leap year (example: `2024`)
+- Else → it is **not** a leap year (example: `2023`)
+
+### Analyse the problem: Identify Input, Process and Output
+
+| Item | Details |
+|------|---------|
+| **Input** | `year` |
+| **Process** | Use nested `if-else`. Fill in each condition using the leap-year rules from class notes. |
+| **Output** | Message stating whether the year is a leap year or not |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+year = int(input("Enter a year: "))
+```
+
+**Program structure** (fill in the blanks — nested if-else):
+
+```python
+if ____:  # outer leap-year check
+    print(f"{year} is a leap year")
+else:
+    if ____:  # nested check
+        print(f"{year} is not a leap year")
+    else:
+        if ____:  # innermost check
+            print(f"{year} is a leap year")
+        else:
+            print(f"{year} is not a leap year")
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `year = 2000` |
+| **Example calculation** | `2000 % 400 == 0` → True → Leap year |
+| **Example output** | `2000 is a leap year` |
+
+**Other examples:** `1900` → Not a leap year; `2024` → Leap year; `2023` → Not a leap year
+
+<a href="../../.faculty/solutions/e6u2pr.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2a-task-7-approach-2"></a>
+
+## Unit 2A Task 7: Leap year — Approach 2 (if-elif-else ladder)
+
+Checks whether a year is a leap year using an `if-elif-else` ladder. Write each condition yourself.
+
+**What is a leap year?**
+- A normal year has `365` days
+- A leap year has `366` days (February has one extra day)
+- Leap years follow simple calendar rules using divisible checks (`%`)
+
+**How to check if a year is a leap year?**
+- If the year is divisible by `400` → it **is** a leap year (example: `2000`)
+- Else if the year is divisible by `100` → it is **not** a leap year (example: `1900`)
+- Else if the year is divisible by `4` → it **is** a leap year (example: `2024`)
+- Else → it is **not** a leap year (example: `2023`)
+
+### Analyse the problem: Identify Input, Process and Output
+
+| Item | Details |
+|------|---------|
+| **Input** | `year` |
+| **Process** | Use `if` / `elif` / `else`. Fill in each condition using the leap-year rules from class notes. |
+| **Output** | Message stating whether the year is a leap year or not |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+year = int(input("Enter a year: "))
+```
+
+**Program structure** (fill in the blanks — if-elif-else ladder):
+
+```python
+if ____:  # first leap-year condition
+    print(f"{year} is a leap year")
+elif ____:  # second condition
+    print(f"{year} is not a leap year")
+elif ____:  # third condition
+    print(f"{year} is a leap year")
+else:
+    print(f"{year} is not a leap year")
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `year = 1900` |
+| **Example calculation** | `1900 % 400 != 0`<br>`1900 % 100 == 0` → Not a leap year |
+| **Example output** | `1900 is not a leap year` |
+
+**Other examples:** `2000` → Leap year; `2024` → Leap year; `2023` → Not a leap year
+
+<a href="../../.faculty/solutions/e6u2pr.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2a-task-7-approach-3"></a>
+
+## Unit 2A Task 7: Leap year — Approach 3 (single if condition)
+
+Checks whether a year is a leap year using one combined condition with `or` / `and`. Write that condition yourself.
+
+**What is a leap year?**
+- A normal year has `365` days
+- A leap year has `366` days (February has one extra day)
+- Leap years follow simple calendar rules using divisible checks (`%`)
+
+**How to check if a year is a leap year?**
+- If the year is divisible by `400` → it **is** a leap year (example: `2000`)
+- Else if the year is divisible by `100` → it is **not** a leap year (example: `1900`)
+- Else if the year is divisible by `4` → it **is** a leap year (example: `2024`)
+- Else → it is **not** a leap year (example: `2023`)
+
+### Analyse the problem: Identify Input, Process and Output
+
+| Item | Details |
+|------|---------|
+| **Input** | `year` |
+| **Process** | Use a single `if-else`. Fill in one combined condition using the leap-year rules from class notes. |
+| **Output** | Message stating whether the year is a leap year or not |
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+year = int(input("Enter a year: "))
+```
+
+**Program structure** (fill in the blanks — single if condition):
+
+```python
+if ____:  # one combined leap-year condition (use and / or)
+    print(f"{year} is a leap year")
+else:
+    print(f"{year} is not a leap year")
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `year = 2024` |
+| **Example calculation** | `2024 % 400 != 0`<br>`2024 % 4 == 0` and `2024 % 100 != 0` → True → Leap year |
+| **Example output** | `2024 is a leap year` |
+
+**Other examples:** `2000` → Leap year; `1900` → Not a leap year; `2023` → Not a leap year
+
+<a href="../../.faculty/solutions/e6u2pr.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2a-task-8"></a>
+
+## Unit 2A Task 8: Prime number check (1 to 100)
+
+Checks whether a given number is prime or not using an `if-elif-else` ladder.
+
+For this task, **assume the input number is between `1` and `100`**.
+
+**What is a prime number?**
+- A prime number is a whole number greater than `1`
+- It can be divided evenly only by `1` and by itself
+- It has no other positive divisors
+- Examples: `2`, `3`, `5`, `7`, `11`, `97`
+- Not prime: `1` (too small), `4` (divisible by `2`), `9` (divisible by `3`), `100` (divisible by `2`, `4`, `5`, …)
+
+**How to check a number between 1 and 100 (using if-elif only)?**
+- First check that the number is from `1` to `100` (inclusive)
+- If it is outside that range, print a message
+- If the number is `1`, it is **not** prime
+- If the number is `2`, `3`, `5`, or `7`, it **is** prime
+- Else if the number is divisible by `2`, `3`, `5`, or `7`, it is **not** prime
+- Else it **is** prime
+- Why only `2`, `3`, `5`, `7`? For numbers up to `100`, these are enough to catch non-primes (no loop needed)
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number from the user (assume / check it is between `1` and `100`)
+
+**Process**
+- Use an `if-elif-else` ladder
+- Check the range, then the prime rules above
+- Print the message directly in each branch (do not use a `for` loop)
+
+**Output**
+- Show whether the number is prime or not (include the number in the message)
+- Or show that the number is outside the allowed range
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number = int(input("Enter a number between 1 and 100: "))
+```
+
+**Program structure** (fill in the blanks — if-elif-else ladder):
+
+```python
+if ____:  # number is outside 1 to 100?
+    print(f"{number} is not between 1 and 100")
+elif ____:  # 1 is not prime
+    print(f"{number} is not a prime number")
+elif ____:  # number is 2, 3, 5, or 7?
+    print(f"{number} is a prime number")
+elif ____:  # divisible by 2, 3, 5, or 7?
+    print(f"{number} is not a prime number")
+else:
+    print(f"{number} is a prime number")
+```
+
+> **Think about it:** This task assumes the input is between `1` and `100` (and the checks use only `2`, `3`, `5`, and `7`). How would you generalize this code so it works for **any** positive number, not only values between `1` and `100`?
+
+> **Hint:** Keep it as a simple `if` / `elif` / `else` ladder. Print the message in each branch. Do not use a `for` loop or an `is_prime` flag.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 17` |
+| **Example calculation** | `17` is between `1` and `100`<br>Not `1`, not `2/3/5/7`<br>Not divisible by `2`, `3`, `5`, or `7` → prime |
+| **Example output** | `17 is a prime number` |
+
+**Other examples:** `1` → not prime; `4` → not prime; `7` → prime; `97` → prime; `120` → not between 1 and 100
+
+<a href="../../.faculty/solutions/j5p8wv.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2b-task-1-approach-1"></a>
+
+## Unit 2B Task 1: Print numbers from 1 to N — Approach 1 (for loop)
+
+Prints all integers from 1 to N using a `for` loop.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number `n` from the user
+
+**Process**
+- Make a list of numbers from 1 to `n` using the `range` function
+- Use a `for` loop to take each number from that list
+- Print each number
+
+**Output**
+- Show all numbers from 1 to `n`, one on each line
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+n = int(input("Enter the value of N: "))
+```
+
+**Program structure** (fill in the blanks — for loop):
+
+```python
+for ____ in ____:  # loop variable; use range(...) from 1 to n
+    print(f"{____}")  # print the current number
+```
+
+> **Hint:** The sequence of numbers from 1 to N can be generated using the `range` function.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 5` |
+| **Example calculation** | Print `1`, then `2`, then `3`, then `4`, then `5` |
+| **Example output** | `1`<br>`2`<br>`3`<br>`4`<br>`5` |
+
+<a href="../../.faculty/solutions/k7m2xq.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2b-task-1-approach-2"></a>
+
+## Unit 2B Task 1: Print numbers from 1 to N — Approach 2 (while loop)
+
+Prints all integers from 1 to N using a `while` loop.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number `n` from the user
+
+**Process**
+- Start a counter with value `1`
+- Repeat these steps using a `while` loop while the counter is less than or equal to `n`:
+  - Print the counter
+  - Add `1` to the counter
+
+**Output**
+- Show all numbers from 1 to `n`, one on each line
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+n = int(input("Enter the value of N: "))
+```
+
+**Program structure** (fill in the blanks — while loop):
+
+```python
+____ = 1  # start a counter from 1
+
+while ____:  # continue while the counter is within 1 to n
+    print(f"{____}")  # print the current number
+    ____ = ____  # move to the next number
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 5` |
+| **Example calculation** | Counter goes `1 → 2 → 3 → 4 → 5`, printing each value |
+| **Example output** | `1`<br>`2`<br>`3`<br>`4`<br>`5` |
+
+<a href="../../.faculty/solutions/k7m2xq.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2b-task-2-approach-1"></a>
+
+## Unit 2B Task 2: Multiplication table — Approach 1 (for loop)
+
+Prints the multiplication table of a given number using a `for` loop (usually from 1 to 10).
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number from the user (the number for the table)
+
+**Process**
+- Make a list of multipliers from 1 to 10 using the `range` function
+- Use a `for` loop to take each multiplier from that list
+- Multiply the given number by the multiplier
+- Print the result in the form: `number x multiplier = product`
+
+**Output**
+- Show the multiplication table of the given number from 1 to 10
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number = int(input("Enter a number: "))
+```
+
+**Program structure** (fill in the blanks — for loop):
+
+```python
+for ____ in ____:  # multiplier; use range(...) for 1 to 10
+    ____ = ____  # multiply number by the current multiplier
+    print(f"{number} x {____} = {____}")  # show number, multiplier, and product
+```
+
+> **Hint:** The sequence of multipliers can be generated using the `range` function.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 5` |
+| **Example calculation** | `5 × 1 = 5`<br>`5 × 2 = 10`<br>…<br>`5 × 10 = 50` |
+| **Example output** | `5 x 1 = 5`<br>`5 x 2 = 10`<br>`5 x 3 = 15`<br>`5 x 4 = 20`<br>`5 x 5 = 25`<br>`5 x 6 = 30`<br>`5 x 7 = 35`<br>`5 x 8 = 40`<br>`5 x 9 = 45`<br>`5 x 10 = 50` |
+
+<a href="../../.faculty/solutions/p4n9rw.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2b-task-2-approach-2"></a>
+
+## Unit 2B Task 2: Multiplication table — Approach 2 (while loop)
+
+Prints the multiplication table of a given number using a `while` loop (usually from 1 to 10).
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number from the user (the number for the table)
+
+**Process**
+- Start a counter with value `1`
+- Repeat these steps using a `while` loop while the counter is less than or equal to `10`:
+  - Multiply the given number by the counter
+  - Print the result in the form: `number x counter = product`
+  - Add `1` to the counter
+
+**Output**
+- Show the multiplication table of the given number from 1 to 10
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number = int(input("Enter a number: "))
+```
+
+**Program structure** (fill in the blanks — while loop):
+
+```python
+____ = 1  # start multiplier from 1
+
+while ____:  # continue while multiplier is within 1 to 10
+    ____ = ____  # multiply number by the current multiplier
+    print(f"{number} x {____} = {____}")  # show number, multiplier, and product
+    ____ = ____  # move to the next multiplier
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 5` |
+| **Example calculation** | Counter goes `1 → 2 → … → 10`, printing `5 x counter = product` each time |
+| **Example output** | `5 x 1 = 5`<br>`5 x 2 = 10`<br>`5 x 3 = 15`<br>`5 x 4 = 20`<br>`5 x 5 = 25`<br>`5 x 6 = 30`<br>`5 x 7 = 35`<br>`5 x 8 = 40`<br>`5 x 9 = 45`<br>`5 x 10 = 50` |
+
+<a href="../../.faculty/solutions/p4n9rw.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2b-task-3"></a>
+
+## Unit 2B Task 3: Sum and average of N numbers (for loop)
+
+Finds the sum and average of several numbers entered by the user using a `for` loop.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read how many numbers to take (`total_input_numbers`)
+- Read `total_input_numbers` numbers from the user, one by one
+
+**Process**
+- Set `total_sum` to `0` at the start
+- Use a `for` loop that runs `total_input_numbers` times (you can use the `range` function)
+- Inside the loop:
+  - Read one number
+  - Add that number to `total_sum`
+- After the loop, find the average: `average = total_sum / total_input_numbers`
+
+**Output**
+- Show the sum of the numbers
+- Show the average of the numbers
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+total_input_numbers = int(input("Enter how many numbers: "))
+```
+
+**Program structure** (fill in the blanks — for loop):
+
+```python
+total_sum = 0  # start with zero
+
+for ____ in ____:  # repeat total_input_numbers times (use range)
+    ____ = float(input("Enter a number: "))  # read each number
+    total_sum = ____  # add the number to total_sum
+
+average = ____  # divide total_sum by total_input_numbers
+
+print(f"Sum of {total_input_numbers} numbers is {total_sum}")
+print(f"Average of {total_input_numbers} numbers (sum {total_sum}) is {average}")
+```
+
+> **Hint:** The loop can run `total_input_numbers` times using the `range` function.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `total_input_numbers = 3`<br>numbers: `10`, `20`, `30` |
+| **Example calculation** | `total_sum = 10 + 20 + 30 = 60`<br>`average = 60 / 3 = 20` |
+| **Example output** | `Sum of 3 numbers is 60`<br>`Average of 3 numbers (sum 60) is 20` |
+
+<a href="../../.faculty/solutions/w8c3jt.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2b-task-4"></a>
+
+## Unit 2B Task 4: Largest in a series of N numbers (for loop)
+
+Finds the largest number among several numbers entered by the user using a `for` loop.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read how many numbers to take (`total_input_numbers`)
+- Read `total_input_numbers` numbers from the user, one by one
+
+**Process**
+- Read the first number and store it in `largest`
+- Use a `for` loop for the remaining numbers (`total_input_numbers - 1` times)
+- Inside the loop:
+  - Read the next number
+  - If it is greater than `largest`, update `largest`
+
+**Output**
+- Show the largest number
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+total_input_numbers = int(input("Enter how many numbers: "))
+```
+
+**Program structure** (fill in the blanks — for loop):
+
+```python
+largest = float(input("Enter a number: "))  # start with the first number
+
+for ____ in ____:  # remaining numbers only (total_input_numbers - 1 times)
+    ____ = float(input("Enter a number: "))  # read the next number
+    if ____:  # is this number greater than largest?
+        largest = ____  # update largest
+
+print(f"Largest among {total_input_numbers} numbers is {largest}")
+```
+
+> **Hint:** After storing the first number in `largest`, the loop only needs to run for the remaining `total_input_numbers - 1` values.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `total_input_numbers = 4`<br>numbers: `10`, `25`, `7`, `18` |
+| **Example calculation** | Start with `largest = 10`<br>Compare `25` → update to `25`<br>Compare `7` → keep `25`<br>Compare `18` → keep `25` |
+| **Example output** | `Largest among 4 numbers is 25` |
+
+<a href="../../.faculty/solutions/h2v6ys.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2b-task-5"></a>
+
+## Unit 2B Task 5: Factorial of a number (for loop)
+
+Finds the factorial of a number using a `for` loop.
+
+**What is a factorial?**
+- The factorial of a whole number `n` is written as `n!`
+- It means: multiply all whole numbers from `1` up to `n`
+- Example: `5! = 1 × 2 × 3 × 4 × 5 = 120`
+- Special case: `0! = 1` (by definition)
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number from the user
+
+**Process**
+- Set `factorial` to `1` at the start
+- Use a `for` loop to multiply by each integer from `1` to the given number
+- After the loop, `factorial` holds the result
+
+**Output**
+- Show the factorial of the number
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number = int(input("Enter a number: "))
+```
+
+**Program structure** (fill in the blanks — for loop):
+
+```python
+factorial = 1  # start with 1
+
+for ____ in ____:  # values from 1 to number (use range)
+    factorial = ____  # multiply factorial by the current value
+
+print(f"Factorial of {number} is {factorial}")
+```
+
+> **Hint:** The numbers to multiply can be generated with `range` from `1` to `number` (inclusive).
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 5` |
+| **Example calculation** | `1 × 2 × 3 × 4 × 5 = 120` |
+| **Example output** | `Factorial of 5 is 120` |
+
+<a href="../../.faculty/solutions/m9q4bd.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2b-task-6"></a>
+
+## Unit 2B Task 6: Prime number check (for loop)
+
+Checks whether a given number is prime or not using a `for` loop and a divisor **count**.
+
+For this task, **assume the input number is between `1` and `100`**.
+
+**What is a prime number?**
+- A prime number is a whole number greater than `1`
+- It can be divided evenly only by `1` and by itself
+- So a prime number has **exactly 2 divisors**
+- Examples: `2`, `3`, `5`, `7`, `11`
+- Not prime: `1` (only one divisor), `4` (divisors `1`, `2`, `4` → count is `3`)
+
+**How to check using count logic?**
+- Set `count = 0`
+- Use a `for` loop from `1` to the number
+- Each time the number divides evenly (`%` gives `0`), add `1` to `count`
+- After the loop: if `count == 2`, the number is prime; otherwise it is not
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number from the user (assume it is between `1` and `100`)
+
+**Process**
+- Set `count` to `0`
+- Loop from `1` to the number
+- Whenever the number is divisible by the loop value, increase `count`
+- If `count` is `2`, it is prime; else it is not prime
+
+**Output**
+- Show whether the number is prime or not (include the number in the message)
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number = int(input("Enter a number between 1 and 100: "))
+```
+
+**Program structure** (fill in the blanks — for loop with count):
+
+```python
+count = 0
+
+for ____ in ____:  # values from 1 to number (use range)
+    if ____:  # does number divide evenly by this value?
+        count = ____  # increase count by 1
+
+if ____:  # is count exactly 2?
+    print(f"{number} is a prime number (divisor count = {count})")
+else:
+    print(f"{number} is not a prime number (divisor count = {count})")
+```
+
+> **Think about it:** This task assumes the input is between `1` and `100`. How would you generalize this code so it works for **any** positive number, not only values between `1` and `100`?
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 7` |
+| **Example calculation** | Divisors of `7`: `1` and `7` → `count = 2` → prime |
+| **Example output** | `7 is a prime number (divisor count = 2)` |
+
+**Other examples:** `1` → count `1` → not prime; `4` → count `3` → not prime; `11` → count `2` → prime
+
+<a href="../../.faculty/solutions/r5t1zk.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2b-task-7"></a>
+
+## Unit 2B Task 7: Fibonacci series up to N terms (for loop)
+
+Prints the Fibonacci series for the first N terms using a `for` loop.
+
+**What is the Fibonacci series?**
+- It is a list of numbers that follows a simple rule
+- Start with the first two numbers: `0` and `1`
+- Each next number is the sum of the two numbers before it
+- So: `0`, `1`, then `0 + 1 = 1`, then `1 + 1 = 2`, then `1 + 2 = 3`, and so on
+- Example (first 7 terms): `0`, `1`, `1`, `2`, `3`, `5`, `8`
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read how many terms to print (`n`)
+
+**Process**
+- Start with the first two Fibonacci values: `0` and `1`
+- Use a `for` loop that runs `n` times
+- In each iteration:
+  - Print the current first value
+  - Compute the next term as the sum of the two current values
+  - Shift the pair forward for the next iteration
+
+**Output**
+- Show the first `n` Fibonacci terms
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+n = int(input("Enter how many terms: "))
+```
+
+**Program structure** (fill in the blanks — for loop):
+
+```python
+first = 0
+second = 1
+
+for ____ in ____:  # repeat n times (use range)
+    print(f"Fibonacci series term {____} of {n} terms = {first}")  # term number (1 to n)
+    ____ = ____  # next term = first + second
+    first = second
+    second = ____  # store the next term
+```
+
+> **Hint:** Keep two variables for the current pair. After printing `first`, move the pair forward: `first` becomes the old `second`, and `second` becomes their sum.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 7` |
+| **Example calculation** | `0`, `1`, `0+1=1`, `1+1=2`, `1+2=3`, `2+3=5`, `3+5=8` |
+| **Example output** | `Fibonacci series term 1 of 7 terms = 0`<br>`Fibonacci series term 2 of 7 terms = 1`<br>`Fibonacci series term 3 of 7 terms = 1`<br>`Fibonacci series term 4 of 7 terms = 2`<br>`Fibonacci series term 5 of 7 terms = 3`<br>`Fibonacci series term 6 of 7 terms = 5`<br>`Fibonacci series term 7 of 7 terms = 8` |
+
+<a href="../../.faculty/solutions/b6j2qm.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2b-task-8"></a>
+
+## Unit 2B Task 8: Sum of digits (while loop)
+
+Finds the sum of digits of a number using a `while` loop.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number from the user
+
+**Process**
+- Keep a copy of the original number (for the final message)
+- Set `digit_sum` to `0`
+- While the number is greater than `0`:
+  - Take the last digit using `% 10`
+  - Add that digit to `digit_sum`
+  - Remove the last digit using `// 10`
+- Do **not** convert the number to a string to get digits
+
+**Output**
+- Show the sum of the digits
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number = int(input("Enter a number: "))
+```
+
+**Program structure** (fill in the blanks — while loop):
+
+```python
+original_number = number  # keep a copy for the output message
+digit_sum = 0
+
+while ____:  # continue while number still has digits
+    ____ = ____  # get the last digit with % 10
+    digit_sum = ____  # add the digit to digit_sum
+    number = ____  # remove the last digit with // 10
+
+print(f"Sum of digits of {original_number} is {digit_sum}")
+```
+
+> **Hint:** Peel digits with arithmetic only: `% 10` for the last digit and `// 10` to shorten the number. Avoid string methods for this task.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 123` |
+| **Example calculation** | Last digit `3` → sum `3`, number becomes `12`<br>Last digit `2` → sum `5`, number becomes `1`<br>Last digit `1` → sum `6`, number becomes `0` |
+| **Example output** | `Sum of digits of 123 is 6` |
+
+<a href="../../.faculty/solutions/v3n8wp.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2b-task-9"></a>
+
+## Unit 2B Task 9: Count digits (while loop)
+
+Counts how many digits a number has using a `while` loop.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number from the user
+
+**Process**
+- Keep a copy of the original number (for the final message)
+- Set `digit_count` to `0`
+- Special case: if the number is `0`, it has `1` digit
+- Otherwise, while the number is greater than `0`:
+  - Add `1` to `digit_count`
+  - Remove the last digit using `// 10`
+- Do **not** convert the number to a string to count digits
+
+**Output**
+- Show how many digits the number has
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number = int(input("Enter a number: "))
+```
+
+**Program structure** (fill in the blanks — while loop):
+
+```python
+original_number = number
+digit_count = 0
+
+if number == 0:
+    digit_count = 1
+else:
+    while ____:  # continue while number still has digits
+        digit_count = ____  # increase the count by 1
+        number = ____  # remove the last digit with // 10
+
+print(f"Number of digits in {original_number} is {digit_count}")
+```
+
+> **Hint:** Each `// 10` shortens the number by one digit. Count how many times you can do that until the number becomes `0`.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 1234` |
+| **Example calculation** | `1234 → 123 → 12 → 1 → 0` (four steps) |
+| **Example output** | `Number of digits in 1234 is 4` |
+
+<a href="../../.faculty/solutions/c4x7la.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2b-task-10"></a>
+
+## Unit 2B Task 10: Reverse a number (while loop)
+
+Reverses the digits of a number using a `while` loop.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number from the user
+
+**Process**
+- Keep a copy of the original number
+- Set `reversed_number` to `0`
+- While the number is greater than `0`:
+  - Take the last digit using `% 10`
+  - Attach it to `reversed_number` (multiply current reverse by `10`, then add the digit)
+  - Remove the last digit using `// 10`
+- Do **not** reverse with string slicing
+
+**Output**
+- Show the reversed number
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number = int(input("Enter a number: "))
+```
+
+**Program structure** (fill in the blanks — while loop):
+
+```python
+original_number = number
+reversed_number = 0
+
+while ____:  # continue while number still has digits
+    ____ = ____  # get the last digit with % 10
+    reversed_number = ____  # build reverse: reversed_number * 10 + digit
+    number = ____  # remove the last digit with // 10
+
+print(f"Reverse of {original_number} is {reversed_number}")
+```
+
+> **Hint:** Build the reverse from right to left: each new digit becomes the new ones place of `reversed_number`.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 1234` |
+| **Example calculation** | `0 → 4 → 43 → 432 → 4321` |
+| **Example output** | `Reverse of 1234 is 4321` |
+
+<a href="../../.faculty/solutions/d9f2mh.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2b-task-11"></a>
+
+## Unit 2B Task 11: Armstrong number (while loop)
+
+Checks whether a number is an Armstrong number using a `while` loop.
+
+For this task, **assume the number has 3 digits** (so each digit is raised to the power `3`).
+
+**What is an Armstrong number?**
+- Take each digit of the number
+- Raise each digit to a power
+- Add those powered values together
+- If that sum equals the original number, it is an Armstrong number
+- For a **3-digit** number, the power is `3`
+- Example: `153` → `1³ + 5³ + 3³ = 1 + 125 + 27 = 153` → Armstrong
+- Example: `370` → `3³ + 7³ + 0³ = 27 + 343 + 0 = 370` → Armstrong
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a 3-digit number from the user
+
+**Process**
+- Keep a copy of the original number
+- Set `armstrong_sum` to `0`
+- Peel each digit with `% 10` / `// 10`
+- Add `digit ** 3` to `armstrong_sum` (power is `3` because we assume 3 digits)
+- Compare `armstrong_sum` with the original number
+
+**Output**
+- Say whether the number is an Armstrong number, and show the computed sum
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number = int(input("Enter a 3-digit number: "))
+```
+
+**Program structure** (fill in the blanks — while loop):
+
+```python
+original_number = number
+armstrong_sum = 0
+
+while ____:  # peel digits from number
+    ____ = ____  # last digit with % 10
+    armstrong_sum = ____  # add digit ** 3
+    number = ____  # remove last digit with // 10
+
+if ____:  # compare armstrong_sum with original_number
+    print(
+        f"{original_number} is an Armstrong number "
+        f"(sum of cubes of digits is {armstrong_sum})"
+    )
+else:
+    print(
+        f"{original_number} is not an Armstrong number "
+        f"(sum of cubes of digits is {armstrong_sum})"
+    )
+```
+
+> **Think about it:** This task assumes the number has **3 digits** (power `3`). How would you generalize this code so it works for a number with **any** number of digits, not only 3-digit numbers?
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 153` |
+| **Example calculation** | `1³ + 5³ + 3³ = 1 + 125 + 27 = 153` |
+| **Example output** | `153 is an Armstrong number (sum of cubes of digits is 153)` |
+
+**Other examples:** `370` → Armstrong; `371` → Armstrong; `123` → not Armstrong
+
+<a href="../../.faculty/solutions/e1g5nk.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2b-task-12"></a>
+
+## Unit 2B Task 12: Palindrome number (while loop)
+
+Checks whether a number is a palindrome using a `while` loop.
+
+**What is a palindrome number?**
+- A palindrome reads the same from left to right and from right to left
+- For a number, reverse its digits and compare with the original
+- If both are the same, the number is a palindrome
+- Example: `121` → reverse is `121` → palindrome
+- Example: `123` → reverse is `321` → not a palindrome
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number from the user
+
+**Process**
+- Keep a copy of the original number
+- Reverse the number (same idea as Task 10)
+- If the reversed value equals the original, it is a palindrome
+
+**Output**
+- Say whether the number is a palindrome, and show the reversed value
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+number = int(input("Enter a number: "))
+```
+
+**Program structure** (fill in the blanks — while loop):
+
+```python
+original_number = number
+reversed_number = 0
+
+while ____:  # reverse digits into reversed_number (see Task 10)
+    ____ = ____  # last digit with % 10
+    reversed_number = ____  # build reverse: reversed_number * 10 + digit
+    number = ____  # remove last digit with // 10
+
+if ____:  # compare reversed_number with original_number
+    print(
+        f"{original_number} is a palindrome "
+        f"(reversed value is {reversed_number})"
+    )
+else:
+    print(
+        f"{original_number} is not a palindrome "
+        f"(reversed value is {reversed_number})"
+    )
+```
+
+> **Hint:** A palindrome number reads the same forwards and backwards. Reverse with `%` / `//`, then compare.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `number = 121` |
+| **Example calculation** | Reverse of `121` is `121` → equal → palindrome |
+| **Example output** | `121 is a palindrome (reversed value is 121)` |
+
+<a href="../../.faculty/solutions/f8h3pj.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2b-task-13-approach-1"></a>
+
+## Unit 2B Task 13: Break statement — Approach 1 (for loop)
+
+Demonstrates `break` to leave a `for` loop early.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number `n` (upper limit)
+
+**Process**
+- Loop from `1` to `n`
+- When the current number becomes `5`, print a break message and stop the loop with `break`
+- Otherwise print the current number
+
+**Output**
+- Numbers printed before breaking, plus a message that shows where the loop stopped
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+n = int(input("Enter N (print until N, stop early at 5): "))
+```
+
+**Program structure** (fill in the blanks — for loop):
+
+```python
+for ____ in ____:  # numbers from 1 to n (use range)
+    if ____:  # stop when the number is 5
+        print(f"Breaking for loop at number {____} (N was {n})")  # current number
+        break
+    print(f"for loop number = {____} (up to {n})")  # current number
+```
+
+> **Hint:** `break` exits the loop immediately. Code after `break` inside that loop body does not run for later values.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 8` |
+| **Example calculation** | Print `1`–`4`, then break at `5` (do not print `6`–`8`) |
+| **Example output** | `for loop number = 1 (up to 8)` … `for loop number = 4 (up to 8)`<br>`Breaking for loop at number 5 (N was 8)` |
+
+<a href="../../.faculty/solutions/g2k6qs.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2b-task-13-approach-2"></a>
+
+## Unit 2B Task 13: Break statement — Approach 2 (while loop)
+
+Demonstrates `break` to leave a `while` loop early.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number `n` (upper limit)
+
+**Process**
+- Start a counter at `1`
+- While the counter is less than or equal to `n`:
+  - If the counter is `5`, print a break message and `break`
+  - Otherwise print the counter and add `1`
+
+**Output**
+- Numbers printed before breaking, plus a message that shows where the loop stopped
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+n = int(input("Enter N (print until N, stop early at 5): "))
+```
+
+**Program structure** (fill in the blanks — while loop):
+
+```python
+____ = 1  # start a counter from 1
+
+while ____:  # continue while counter <= n
+    if ____:  # stop when counter is 5
+        print(f"Breaking while loop at number {____} (N was {n})")  # current counter
+        break
+    print(f"while loop number = {____} (up to {n})")  # current counter
+    ____ = ____  # move to the next number
+```
+
+> **Hint:** Same idea as the for-loop version: `break` ends the while loop right away.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 8` |
+| **Example calculation** | Print `1`–`4`, then break at `5` |
+| **Example output** | `while loop number = 1 (up to 8)` … `while loop number = 4 (up to 8)`<br>`Breaking while loop at number 5 (N was 8)` |
+
+<a href="../../.faculty/solutions/g2k6qs.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2b-task-14-approach-1"></a>
+
+## Unit 2B Task 14: Continue statement — Approach 1 (for loop)
+
+Demonstrates `continue` to skip the rest of one `for` loop iteration.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number `n`
+
+**Process**
+- Loop from `1` to `n`
+- If the number is even, print a skip message and `continue`
+- Otherwise print the odd number
+
+**Output**
+- Odd numbers from `1` to `n`, plus skip messages for even values
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+n = int(input("Enter N (print 1 to N, skip even numbers): "))
+```
+
+**Program structure** (fill in the blanks — for loop):
+
+```python
+for ____ in ____:  # numbers from 1 to n (use range)
+    if ____:  # is the number even?
+        print(f"Skipping even number {____} with continue (N is {n})")  # current number
+        continue
+    print(f"for loop odd number = {____} (up to {n})")  # current number
+```
+
+> **Hint:** `continue` jumps to the next iteration. The print for odd numbers is skipped for that even value.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 5` |
+| **Example calculation** | Print odds `1`, `3`, `5`; skip evens `2`, `4` |
+| **Example output** | `for loop odd number = 1 (up to 5)`<br>`Skipping even number 2 with continue (N is 5)` … |
+
+<a href="../../.faculty/solutions/h7m1rt.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2b-task-14-approach-2"></a>
+
+## Unit 2B Task 14: Continue statement — Approach 2 (while loop)
+
+Demonstrates `continue` to skip the rest of one `while` loop iteration.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number `n`
+
+**Process**
+- Start a counter at `1`
+- While the counter is less than or equal to `n`:
+  - If even: print skip message, increase the counter, then `continue`
+  - If odd: print the number, then increase the counter
+
+**Output**
+- Odd numbers from `1` to `n`, plus skip messages for even values
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+n = int(input("Enter N (print 1 to N, skip even numbers): "))
+```
+
+**Program structure** (fill in the blanks — while loop):
+
+```python
+____ = 1  # start a counter from 1
+
+while ____:  # continue while counter <= n
+    if ____:  # is the counter even?
+        print(f"Skipping even number {____} with continue (N is {n})")  # current counter
+        ____ = ____  # increase counter before continue
+        continue
+    print(f"while loop odd number = {____} (up to {n})")  # current counter
+    ____ = ____  # move to the next number
+```
+
+> **Hint:** In a while loop, update the counter **before** `continue`, or the loop may never move past that even value.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 5` |
+| **Example calculation** | Same as Approach 1, using a while loop |
+| **Example output** | `while loop odd number = 1 (up to 5)` … |
+
+<a href="../../.faculty/solutions/h7m1rt.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2b-task-15-approach-1"></a>
+
+## Unit 2B Task 15: Pass statement — Approach 1 (for loop)
+
+Demonstrates `pass` as a placeholder inside a `for` loop.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number `n`
+
+**Process**
+- Loop from `1` to `n`
+- If the number is a multiple of `3`, use `pass` (no special logic yet) and print that `pass` was used
+- Otherwise print the number normally
+
+**Output**
+- A message for multiples of `3` showing `pass`, and normal messages for other numbers
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+n = int(input("Enter N (use pass for multiples of 3): "))
+```
+
+**Program structure** (fill in the blanks — for loop):
+
+```python
+for ____ in ____:  # numbers from 1 to n (use range)
+    if ____:  # is it a multiple of 3?
+        pass  # do nothing here yet
+        print(f"Used pass for multiple of 3: {____} (N is {n})")  # current number
+    else:
+        print(f"for loop number = {____} (up to {n})")  # current number
+```
+
+> **Hint:** `pass` is a no-op. It keeps the `if` block valid when you are not ready to write real logic yet.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 6` |
+| **Example calculation** | `3` and `6` use `pass`; other values print normally |
+| **Example output** | `for loop number = 1 (up to 6)` … `Used pass for multiple of 3: 3 (N is 6)` … |
+
+<a href="../../.faculty/solutions/i4n9su.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2b-task-15-approach-2"></a>
+
+## Unit 2B Task 15: Pass statement — Approach 2 (while loop)
+
+Demonstrates `pass` as a placeholder inside a `while` loop.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a number `n`
+
+**Process**
+- Same idea as Approach 1, using a while loop and a counter
+
+**Output**
+- A message for multiples of `3` showing `pass`, and normal messages for other numbers
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+n = int(input("Enter N (use pass for multiples of 3): "))
+```
+
+**Program structure** (fill in the blanks — while loop):
+
+```python
+____ = 1  # start a counter from 1
+
+while ____:  # continue while counter <= n
+    if ____:  # is it a multiple of 3?
+        pass  # do nothing here yet
+        print(f"Used pass for multiple of 3: {____} (N is {n})")  # current counter
+    else:
+        print(f"while loop number = {____} (up to {n})")  # current counter
+    ____ = ____  # move to the next number
+```
+
+> **Hint:** `pass` does not skip the rest of the loop by itself — unlike `continue`. Here it only fills an empty branch.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `n = 6` |
+| **Example calculation** | Same behaviour as the for-loop version |
+| **Example output** | `while loop number = 1 (up to 6)` … `Used pass for multiple of 3: 3 (N is 6)` … |
+
+<a href="../../.faculty/solutions/i4n9su.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2c-task-1"></a>
+
+## Unit 2C Task 1: Three zeros in 1 row and 1 column
+
+Prints three zeros in one row, then three zeros in one column.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- No user input needed (fixed size: 3 zeros)
+
+**Process**
+- Print three zeros on the same line (one row)
+- Then print three zeros one under another (one column)
+
+**Output**
+- One row of zeros and one column of zeros
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+# One row: three zeros on the same line
+for ____ in ____:  # column_loop_var; range starts at 1, repeat 3 times
+    print(____, end=" ")  # print one zero, stay on same line
+print()  # move to next line after the row
+
+# One column: three zeros, each on its own line
+for ____ in ____:  # row_loop_var; range starts at 1, repeat 3 times
+    print(____)  # print one zero and go to next line
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | (none) |
+| **Example output** | `0 0 0`<br>`0`<br>`0`<br>`0` |
+
+<a href="../../.faculty/solutions/t1a9zc.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2c-task-2"></a>
+
+## Unit 2C Task 2: 3x3 grid of zeros
+
+Prints a 3 by 3 grid filled with zeros.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- No user input needed (fixed size: 3x3)
+
+**Process**
+- Outer loop controls the rows
+- Inner loop prints three zeros on each row
+- Move to the next line after each row
+
+**Output**
+- Three rows, each with three zeros
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks — nested for loops):
+
+```python
+for ____ in ____:  # row_loop_var; range(1, 4) — each row
+    for ____ in ____:  # column_loop_var; range(1, 4) — each column
+        print(____, end=" ")  # print one zero, stay on same line
+    print()  # move to next line after the row
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | (none) |
+| **Example output** | `0 0 0`<br>`0 0 0`<br>`0 0 0` |
+
+<a href="../../.faculty/solutions/u2b0yd.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2c-task-3"></a>
+
+## Unit 2C Task 3: 3x3 grid of numbers (for-for)
+
+Prints numbers `1` to `9` in a 3 by 3 grid using nested `for` loops.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- No user input needed (fixed size: 3x3)
+
+**Process**
+- Keep a running number that starts at `1`
+- Outer `for` loop for each row
+- Inner `for` loop for each column: print the current number, then increase it by 1
+- Move to the next line after each row
+
+**Output**
+- Numbers `1` to `9` shown as a 3x3 grid
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks — for-for nested loop):
+
+```python
+num = ____  # start counting from 1
+
+for ____ in ____:  # row_loop_var; range(1, 4) — each row
+    for ____ in ____:  # column_loop_var; range(1, 4) — each column
+        print(____, end=" ")  # print the current number
+        num = ____  # increase num by 1 for the next cell
+    print()  # move to next line after the row
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | (none) |
+| **Example output** | `1 2 3`<br>`4 5 6`<br>`7 8 9` |
+
+<a href="../../.faculty/solutions/v3c1xe.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2c-task-4"></a>
+
+## Unit 2C Task 4: 3x3 grid of numbers (while-for)
+
+Prints numbers `1` to `9` in a 3 by 3 grid using a `while` outer loop and a `for` inner loop.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- No user input needed (fixed size: 3x3)
+
+**Process**
+- Keep a running number that starts at `1`
+- Outer `while` loop for each row (use `row_loop_var` starting at `1`)
+- Inner `for` loop for each column (`column_loop_var`, range starts at `1`): print the current number, then increase it by 1
+- Move to the next line after each row and update `row_loop_var`
+
+**Output**
+- Numbers `1` to `9` shown as a 3x3 grid
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks — while-for nested loop):
+
+```python
+num = ____  # start counting from 1
+row_loop_var = ____  # start row_loop_var at 1
+
+while ____:  # keep going while row_loop_var is within 1..3
+    for ____ in ____:  # column_loop_var; range(1, 4) — each column
+        print(____, end=" ")  # print the current number
+        num = ____  # increase num by 1 for the next cell
+    print()  # move to next line after the row
+    row_loop_var = ____  # increase row_loop_var by 1
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | (none) |
+| **Example output** | `1 2 3`<br>`4 5 6`<br>`7 8 9` |
+
+<a href="../../.faculty/solutions/w4d2vf.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2c-task-5"></a>
+
+## Unit 2C Task 5: Star grid (5x5, then user input)
+
+Prints a square grid of stars. Start with a **5x5** grid, then generalize so the size comes from the user.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- First version: fixed size `rows = 5` (square grid: 5 rows and 5 columns)
+- Generalized version: read `rows` from the user (same number of rows and columns)
+
+**Process**
+- Outer loop: `row_loop_var` from `1` to `rows`
+- Inner loop: `column_loop_var` from `1` to `rows`
+- Print `*` on the same line; move to the next line after each row
+
+**Output**
+- A filled square grid of stars
+
+### Sample input and output messages
+
+**Input messages** (generalized version):
+
+```python
+rows = int(input("Enter grid size (rows and columns): "))
+```
+
+**Program structure** (fill in the blanks — nested for loops):
+
+```python
+rows = ____  # start with 5; later use int(input(...))
+
+for ____ in ____:  # row_loop_var; range(1, rows + 1)
+    for ____ in ____:  # column_loop_var; range(1, rows + 1)
+        print(____, end=" ")  # print one star
+    print()  # next line after the row
+```
+
+> **Think about it:** After the 5x5 version works, replace the fixed `rows` with a value read using `input()`.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `rows = 5` |
+| **Example output** | `* * * * *`<br>`* * * * *`<br>`* * * * *`<br>`* * * * *`<br>`* * * * *` |
+
+<a href="../../.faculty/solutions/i6p3cr.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2c-task-6"></a>
+
+## Unit 2C Task 6: Hollow star grid (5x5, then user input)
+
+Prints a hollow square grid of stars. Start with a **5x5** grid, then generalize so the size comes from the user.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- First version: fixed size `rows = 5`
+- Generalized version: read `rows` from the user
+
+**Process**
+- Outer loop: `row_loop_var` from `1` to `rows`
+- Inner loop: `column_loop_var` from `1` to `rows`
+- Print `*` on the first row, last row, first column, or last column; otherwise print a space
+- Move to the next line after each row
+
+**Output**
+- A hollow square grid of stars
+
+### Sample input and output messages
+
+**Input messages** (generalized version):
+
+```python
+rows = int(input("Enter grid size (rows and columns): "))
+```
+
+**Program structure** (fill in the blanks — nested for loops):
+
+```python
+rows = ____  # start with 5; later use int(input(...))
+
+for ____ in ____:  # row_loop_var; range(1, rows + 1)
+    for ____ in ____:  # column_loop_var; range(1, rows + 1)
+        if ____:  # first/last row or first/last column?
+            print(____, end=" ")  # print a star
+        else:
+            print(____, end=" ")  # print a space
+    print()  # next line after the row
+```
+
+> **Think about it:** Border cells use `row_loop_var == 1`, `row_loop_var == rows`, `column_loop_var == 1`, or `column_loop_var == rows`.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `rows = 5` |
+| **Example output** | `* * * * *`<br>`*       *`<br>`*       *`<br>`*       *`<br>`* * * * *` |
+
+<a href="../../.faculty/solutions/j7q4ds.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2c-task-7"></a>
+
+## Unit 2C Task 7: Right-angled triangle pattern (any symbol)
+
+Prints a right-angled triangle using one symbol (e.g. `*` or `0`). The **same nested loops** work for any symbol — only the value you print changes.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read how many rows to print
+- Read the symbol to print (one character, such as `*` or `0`)
+
+**Process**
+- Store the symbol in a variable (e.g. `symbol`)
+- Outer loop for each row
+- Inner loop prints that symbol for that row (row 1 → 1 symbol, row 2 → 2 symbols, ...)
+- Move to the next line after each row
+
+**Output**
+- A right-angled triangle of the chosen symbol
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+rows = int(input("Enter number of rows: "))
+symbol = input("Enter symbol to print (e.g. * or 0): ")
+```
+
+**Program structure** (fill in the blanks — nested for loops):
+
+```python
+rows = int(input("Enter number of rows: "))
+symbol = input("Enter symbol to print (e.g. * or 0): ")
+
+for ____ in ____:  # row_loop_var; range(1, rows + 1)
+    for ____ in ____:  # column_loop_var; range(1, row_loop_var + 1)
+        print(____, end=" ")  # print the symbol variable
+    print()  # next line after the row
+```
+
+> **Think about it:** Run the program with `symbol = '*'` and again with `symbol = '0'` — the loop structure stays the same.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `rows = 4`, `symbol = '*'` |
+| **Example output** | `*`<br>`* *`<br>`* * *`<br>`* * * *` |
+| **Example input** | `rows = 3`, `symbol = '0'` |
+| **Example output** | `0`<br>`0 0`<br>`0 0 0` |
+
+<a href="../../.faculty/solutions/a8h6rj.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2c-task-8"></a>
+
+## Unit 2C Task 8: Inverted right-angled triangle pattern
+
+Prints an inverted right-angled triangle made of stars (`*`).
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read how many rows to print
+
+**Process**
+- Outer loop for each row
+- Inner loop prints stars that decrease each row (first row has `n` stars, then `n-1`, ...)
+- Move to the next line after each row
+
+**Output**
+- An inverted right-angled triangle of stars
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+rows = int(input("Enter number of rows: "))
+```
+
+**Program structure** (fill in the blanks — nested for loops):
+
+```python
+rows = int(input("Enter number of rows: "))
+
+for ____ in ____:  # row_loop_var; range(rows, 0, -1)
+    for ____ in ____:  # column_loop_var; range(1, row_loop_var + 1)
+        print(____, end=" ")  # print one star
+    print()  # next line after the row
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `rows = 4` |
+| **Example output** | `* * * *`<br>`* * *`<br>`* *`<br>`*` |
+
+<a href="../../.faculty/solutions/b9i7pk.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2c-task-9"></a>
+
+## Unit 2C Task 9: Centered pyramid pattern of stars
+
+Prints a centered pyramid of stars (`*`). Leading spaces push each row toward the center; the number of stars grows as `1, 3, 5, ...`
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Number of rows (example: `rows = 3`), or read from the user
+
+**Process**
+- Outer loop: `row_loop_var` from `1` to `rows`
+- First inner loop: print leading spaces — `range(1, rows - row_loop_var + 1)`
+- Second inner loop: print stars — `range(1, 2 * row_loop_var)` (odd count: 1, 3, 5, ...)
+- Move to the next line after each row
+
+**Output**
+- A centered pyramid of stars
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks — nested for loops):
+
+```python
+rows = ____  # e.g. 3
+
+for ____ in ____:  # row_loop_var; range(1, rows + 1)
+    for ____ in ____:  # column_loop_var_spaces; range(1, rows - row_loop_var + 1)
+        print(" ", end=" ")
+    for ____ in ____:  # column_loop_var_dots; range(1, 2 * row_loop_var)
+        print(____, end=" ")  # print one star
+    print()
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `rows = 3` |
+| **Example output** | `    *`<br>`  * * *`<br>`* * * * *` |
+
+<a href="../../.faculty/solutions/f3m0zo.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2c-task-10"></a>
+
+## Unit 2C Task 10: Diamond pattern of stars
+
+Prints a diamond of stars. The **upper half** is a centered pyramid (including the middle row); the **lower half** is the same shape getting narrower.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Number of rows for the half diamond (including the middle). Example: `rows = 3`
+
+**Process**
+- Upper half: `row_loop_var` from `1` to `rows` — spaces, then `2 * row_loop_var - 1` stars
+- Lower half: `row_loop_var` from `rows - 1` down to `1` — same space and star loops
+
+**Output**
+- A diamond of stars
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+rows = int(input("Enter number of rows (half diamond): "))
+```
+
+**Program structure** (fill in the blanks):
+
+```python
+rows = int(input("Enter number of rows (half diamond): "))
+
+# Upper half (including middle)
+for ____ in ____:  # row_loop_var; range(1, rows + 1)
+    for ____ in ____:  # column_loop_var_spaces
+        print(" ", end=" ")
+    for ____ in ____:  # column_loop_var_dots; range(1, 2 * row_loop_var)
+        print(____, end=" ")
+    print()
+
+# Lower half
+for ____ in ____:  # row_loop_var; range(rows - 1, 0, -1)
+    for ____ in ____:  # column_loop_var_spaces
+        print(" ", end=" ")
+    for ____ in ____:  # column_loop_var_dots
+        print(____, end=" ")
+    print()
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `rows = 3` |
+| **Example output** | `    *`<br>`  * * *`<br>`* * * * *`<br>`  * * *`<br>`    *` |
+
+<a href="../../.faculty/solutions/c0j8ql.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2c-task-11"></a>
+
+## Unit 2C Task 11: Hollow diamond pattern of stars
+
+Same diamond shape as Task 10, but only the **outline** is stars; the inside is spaces.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Number of rows for the half diamond. Example: `rows = 3`
+
+**Process**
+- Same loops as the solid diamond (spaces + positions across the row)
+- For each star position, print `*` only on the **first** or **last** position of that row:
+  - `column_loop_var_dots == 1` or `column_loop_var_dots == 2 * row_loop_var - 1`
+- Otherwise print a space
+
+**Output**
+- A hollow diamond of stars
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+rows = ____  # e.g. 3
+
+# Upper half
+for ____ in ____:  # row_loop_var; range(1, rows + 1)
+    for ____ in ____:  # leading spaces
+        print(" ", end=" ")
+    for ____ in ____:  # column_loop_var_dots; range(1, 2 * row_loop_var)
+        if ____:  # first or last position in this row?
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+
+# Lower half (same idea with row_loop_var from rows-1 down to 1)
+for ____ in ____:
+    for ____ in ____:
+        print(" ", end=" ")
+    for ____ in ____:
+        if ____:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `rows = 3` |
+| **Example output** | `    *`<br>`  *   *`<br>`*       *`<br>`  *   *`<br>`    *` |
+
+<a href="../../.faculty/solutions/h5o2bq.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2c-task-12"></a>
+
+## Unit 2C Task 12: Centered pyramid pattern of numbers
+
+Prints a centered pyramid of numbers (`1`, `1 2 3`, `1 2 3 4 5`, ...). Same spacing idea as the star pyramid (Task 9): leading spaces push each row toward the center; numbers on a row are separated by spaces. Numbers restart from `1` on every row.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Number of rows (example: `rows = 5`), or read from the user
+
+**Process**
+- Outer loop: `row_loop_var` from `1` to `rows`
+- First inner loop: print leading spaces — `range(1, rows - row_loop_var + 1)` with `end=" "`
+- Second inner loop: print numbers `1` to `2 * row_loop_var - 1` with `end=" "` (space between numbers)
+- Move to the next line after each row
+
+**Output**
+- A centered number pyramid
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks — nested for loops):
+
+```python
+rows = ____  # e.g. 5
+
+for ____ in ____:  # row_loop_var; range(1, rows + 1)
+    for ____ in ____:  # column_loop_var_spaces; range(1, rows - row_loop_var + 1)
+        print(" ", end=" ")
+    for ____ in ____:  # column_loop_var; range(1, 2 * row_loop_var)
+        print(____, end=" ")  # print 1, 2, 3, ... with a space between
+    print()
+```
+
+> **Hint:** Same shape as Task 9, but print `column_loop_var` instead of `*`. Row `i` prints `(2 * i - 1)` numbers starting from `1`.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `rows = 5` |
+| **Example output** | `        1`<br>`      1 2 3`<br>`    1 2 3 4 5`<br>`  1 2 3 4 5 6 7`<br>`1 2 3 4 5 6 7 8 9` |
+
+<a href="../../.faculty/solutions/x5e3ug.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2c-task-13"></a>
+
+## Unit 2C Task 13: Pascal's triangle
+
+**What is Pascal's triangle?**
+- Pascal's triangle is a triangular number pattern named after Blaise Pascal
+- Each row starts and ends with `1`
+- Every other number is the **sum of the two numbers directly above it** (left + right from the previous row)
+- Row shapes grow like: `1` → `1 1` → `1 2 1` → `1 3 3 1` → `1 4 6 4 1`
+- The same values also appear in combinations / binomial coefficients: entry at row `n`, position `k` is often written as C(n, k)
+
+**How can we print it with nested loops?**
+- Outer loop for each row
+- Print leading spaces so the triangle looks centered
+- Start each row with `value = 1`
+- Inner loop prints the values in that row (with a space between numbers)
+- Update the next value with a formula (no need to store the previous row):
+  - With `row_loop_var` and `column_loop_var` starting at `1`:
+  - `value = value * (row_loop_var - column_loop_var) // column_loop_var`
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read how many rows to print
+
+**Process**
+- Outer loop for each row from `1` to `rows`
+- First inner loop: print leading spaces — count is `rows - row_loop_var` (use `end=""`)
+- Start `value = 1`
+- Second inner loop for each position in the row; print `value` with `end=" "`, then update it with the formula above
+- Move to the next line after each row
+
+**Output**
+- A centered Pascal's triangle with the requested number of rows
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+rows = int(input("Enter number of rows: "))
+```
+
+**Program structure** (fill in the blanks — nested for loops):
+
+```python
+rows = int(input("Enter number of rows: "))
+
+for ____ in ____:  # row_loop_var; range(1, rows + 1)
+    for ____ in ____:  # column_loop_var_spaces; range(1, rows - row_loop_var + 1)
+        print(" ", end="")  # single leading space for centering
+    value = ____  # first value in a Pascal row is 1
+    for ____ in ____:  # column_loop_var; range(1, row_loop_var + 1)
+        print(____, end=" ")  # print current Pascal value
+        value = ____  # update using the formula
+    print()
+```
+
+> **Hint:** One common update (1-based loops) is `value = value * (row_loop_var - column_loop_var) // column_loop_var`. Row `i` has `(rows - i)` leading spaces.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `rows = 5` |
+| **Example output** | `    1`<br>`   1 1`<br>`  1 2 1`<br>` 1 3 3 1`<br>`1 4 6 4 1` |
+
+<a href="../../.faculty/solutions/y6f4th.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2c-task-14"></a>
+
+## Unit 2C Task 14: Floyd's triangle
+
+**What is Floyd's triangle?**
+- Floyd's triangle is a right-angled triangle filled with **consecutive natural numbers** starting from `1`
+- Row 1 has **1** number, row 2 has **2** numbers, row 3 has **3** numbers, and so on
+- Numbers keep increasing across rows without restarting: `1` / `2 3` / `4 5 6` / `7 8 9 10`
+- It is named after Robert Floyd
+- Unlike a number triangle that reprints `1 2 3 ...` on each row, Floyd's triangle uses one running counter for the whole pattern
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read how many rows to print
+
+**Process**
+- Keep a running number `num` (or `print_val`) starting at `1`
+- Outer loop for each row
+- Inner loop prints as many numbers as the current row number
+- Increase the running number after each print
+
+**Output**
+- Floyd's triangle with the requested number of rows
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+rows = int(input("Enter number of rows: "))
+```
+
+**Program structure** (fill in the blanks — nested for loops):
+
+```python
+rows = int(input("Enter number of rows: "))
+num = ____  # start from 1
+
+for ____ in ____:  # row_loop_var; range(1, rows + 1)
+    for ____ in ____:  # column_loop_var; range(1, row_loop_var + 1)
+        print(____, end=" ")  # print current number
+        num = ____  # increase num by 1
+    print()
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `rows = 4` |
+| **Example output** | `1`<br>`2 3`<br>`4 5 6`<br>`7 8 9 10` |
+
+<a href="../../.faculty/solutions/z7g5si.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2c-task-15"></a>
+
+## Unit 2C Task 15: Number right-angled triangle pattern
+
+Prints a right-angled triangle where each row shows `1 2 3 ...` up to the row number (numbers restart each row).
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Number of rows (example: `rows = 6`), or read from the user
+
+**Process**
+- Outer loop: `row_loop_var` from `1` to `rows`
+- Inner loop: `column_loop_var` from `1` to `row_loop_var`
+- Print `column_loop_var` (not a running counter across rows)
+
+**Output**
+- A number right-angled triangle
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks — nested for loops):
+
+```python
+rows = ____  # e.g. 6
+
+for ____ in ____:  # row_loop_var; range(1, rows + 1)
+    for ____ in ____:  # column_loop_var; range(1, row_loop_var + 1)
+        print(____, end=" ")  # print column_loop_var
+    print()
+```
+
+> **Think about it:** Compare this with Floyd's triangle. Here each row starts again from `1`. In Floyd's triangle, numbers continue from where the previous row stopped.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `rows = 6` |
+| **Example output** | `1`<br>`1 2`<br>`1 2 3`<br>`1 2 3 4`<br>`1 2 3 4 5`<br>`1 2 3 4 5 6` |
+
+<a href="../../.faculty/solutions/e2l9yn.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2d-task-1"></a>
+
+## Unit 2D Task 1: String creation and basic operations
+
+Demonstrates creating a string and using concatenation (`+`), repetition (`*`), and slicing.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- You may use fixed sample strings in code (or read from the user)
+
+**Process**
+- Create a string
+- Concatenate two strings with `+`
+- Repeat a string with `*`
+- Slice parts of the string with `[start:stop]` (and negative indexes if useful)
+
+**Output**
+- Show the original string, concatenation, repetition, and sliced parts
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+s = ____  # e.g. "Python"
+print("String:", ____)
+
+s1 = ____  # e.g. "Hello"
+s2 = ____  # e.g. "World"
+print("Concatenation:", ____)  # join s1 and s2 with a space using +
+
+print("Repetition:", ____)  # repeat s three times using *
+
+print("First 3 characters:", ____)  # s[:3]
+print("Last 3 characters:", ____)  # s[-3:]
+print("Characters from index 1 to 4:", ____)  # s[1:5]
+```
+
+> **Hint:** Indexing starts at `0`. `s[1:5]` means from index `1` up to (but not including) index `5`.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `s = "Python"`, `s1 = "Hello"`, `s2 = "World"` |
+| **Example output** | `String: Python`<br>`Concatenation: Hello World`<br>`Repetition: PythonPythonPython`<br>`First 3 characters: Pyt`<br>`Last 3 characters: hon`<br>`Characters from index 1 to 4: ytho` |
+
+<a href="../../.faculty/solutions/a3k7mp.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2d-task-2"></a>
+
+## Unit 2D Task 2: String methods
+
+Demonstrates common string methods: `upper`, `lower`, `strip`, `split`, `join`, `replace`, and `find`.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- A sample string (fixed in code or read from the user)
+
+**Process**
+- Call each required method on the string (or on a list for `join`)
+- Print the result of each call
+
+**Output**
+- Uppercase, lowercase, stripped, split list, joined string, replaced string, and find index
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+s = ____  # e.g. "  Hello Python World  "
+
+print("Upper:", ____)  # s.upper()
+print("Lower:", ____)  # s.lower()
+print("Strip:", ____)  # s.strip()
+print("Split:", ____)  # s.split()
+print("Join:", ____)  # "-".join(["Hello", "Python"])
+print("Replace:", ____)  # replace "Python" with "Java"
+print("Find:", ____)  # find index of "Python"
+```
+
+> **Hint:** `strip()` removes leading and trailing spaces. `split()` (with no argument) splits on whitespace and returns a list. `find()` returns the starting index of a substring (or `-1` if not found).
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `s = "  Hello Python World  "` |
+| **Example output** | `Upper:   HELLO PYTHON WORLD  `<br>`Lower:   hello python world  `<br>`Strip: Hello Python World`<br>`Split: ['Hello', 'Python', 'World']`<br>`Join: Hello-Python`<br>`Replace:   Hello Java World  `<br>`Find: 8` |
+
+<a href="../../.faculty/solutions/b4l8nq.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2d-task-3"></a>
+
+## Unit 2D Task 3: String palindrome
+
+Checks whether a string reads the same forwards and backwards.
+
+**What is a palindrome string?**
+- It is the same from left to right and from right to left
+- Example: `madam` → reverse is `madam` → palindrome
+- Example: `python` → reverse is `nohtyp` → not a palindrome
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a string from the user
+
+**Process**
+- Compare the string with its reverse (`s[::-1]`)
+- If they are equal, it is a palindrome
+
+**Output**
+- Say whether the string is a palindrome or not
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+s = input("Enter a string: ")
+```
+
+**Program structure** (fill in the blanks):
+
+```python
+s = input("Enter a string: ")
+
+if ____:  # s equals its reverse s[::-1]
+    print(____)  # "Palindrome"
+else:
+    print(____)  # "Not a palindrome"
+```
+
+> **Hint:** `s[::-1]` reverses the string using slicing (step `-1`).
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `madam` |
+| **Example output** | `Palindrome` |
+
+<a href="../../.faculty/solutions/c5m9or.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2d-task-4"></a>
+
+## Unit 2D Task 4: Reverse a string
+
+Reads a string and prints it in reverse order.
+
+### How slicing works (simple idea)
+
+Slicing uses the form `s[start:stop:step]`:
+
+- **start** — where to begin (default: beginning of the string)
+- **stop** — where to stop, not included (default: end of the string)
+- **step** — how many characters to jump each time (default: `1`, forward)
+
+**Simple example** with `s = "Python"`:
+
+| Index | 0 | 1 | 2 | 3 | 4 | 5 |
+|-------|---|---|---|---|---|---|
+| Char | P | y | t | h | o | n |
+
+```python
+s = "Python"
+print(s[0:3])    # Pyt   → from index 0 up to (not including) 3
+print(s[1:5])    # ytho  → from index 1 up to (not including) 5
+print(s[:3])     # Pyt   → start omitted → begin at 0
+print(s[2:])     # thon  → stop omitted → go to the end
+print(s[::2])    # Pto   → every 2nd character forward
+print(s[::-1])   # nohtyP → step -1 means walk backwards
+```
+
+To reverse a string, leave start and stop empty and use step `-1`:
+
+```text
+s[::-1]  →  start at the end, move left by 1 each time, until the beginning
+"Python"[::-1]  →  "nohtyP"
+```
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a string from the user
+
+**Process**
+- Reverse the string with slicing `s[::-1]`
+
+**Output**
+- The reversed string
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+s = input("Enter a string: ")
+```
+
+**Program structure** (fill in the blanks):
+
+```python
+s = input("Enter a string: ")
+
+reverse = ____  # reverse s using slicing s[::-1]
+
+print("Reversed string:", ____)
+```
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `Python` |
+| **Example output** | `Reversed string: nohtyP` |
+
+<a href="../../.faculty/solutions/d6n0ps.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2d-task-5"></a>
+
+## Unit 2D Task 5: Count vowels, consonants, digits and spaces
+
+Counts how many vowels, consonants, digits, and spaces appear in a string.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a string from the user
+
+**Process**
+- Start four counters at `0`
+- Loop through each character
+- If it is a vowel (`a e i o u`, check lowercase) → increase vowels
+- Else if it is a letter → increase consonants
+- Else if it is a digit → increase digits
+- Else if it is a space → increase spaces
+
+**Output**
+- Print the four counts
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+s = input("Enter a string: ")
+```
+
+**Program structure** (fill in the blanks):
+
+```python
+s = input("Enter a string: ")
+
+vowels = ____
+consonants = ____
+digits = ____
+spaces = ____
+
+for ____ in ____:  # each character in s
+    if ____:  # ch.lower() in "aeiou"
+        vowels = ____
+    elif ____:  # ch.isalpha()
+        consonants = ____
+    elif ____:  # ch.isdigit()
+        digits = ____
+    elif ____:  # ch == " "
+        spaces = ____
+
+print("Vowels:", ____)
+print("Consonants:", ____)
+print("Digits:", ____)
+print("Spaces:", ____)
+```
+
+> **Hint:** Use `ch.lower()` so both `A` and `a` count as vowels. `isalpha()` is true for letters; `isdigit()` is true for `0`–`9`.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `Hello 123` |
+| **Example output** | `Vowels: 2`<br>`Consonants: 3`<br>`Digits: 3`<br>`Spaces: 1` |
+
+<a href="../../.faculty/solutions/e7o1qt.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2d-task-6"></a>
+
+## Unit 2D Task 6: String formatting
+
+Shows the same message using three formatting styles: `format()`, f-strings, and the `%` operator.
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Sample values such as `name` and `age` (fixed in code or read from the user)
+
+**Process**
+- Print one line with `.format(...)`
+- Print one line with an f-string `f"..."`
+- Print one line with `"..." % (values)`
+
+**Output**
+- The same sentence three times (one per style)
+
+### Sample input and output messages
+
+**Program structure** (fill in the blanks):
+
+```python
+name = ____  # e.g. "Anusha"
+age = ____  # e.g. 25
+
+# Using format()
+print(____)  # "My name is {} and I am {} years old.".format(name, age)
+
+# Using f-string
+print(____)  # f"My name is {name} and I am {age} years old."
+
+# Using % operator
+print(____)  # "My name is %s and I am %d years old." % (name, age)
+```
+
+> **Hint:** `%s` is for strings; `%d` is for integers. An f-string places expressions inside `{ }` after the `f` prefix.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `name = "Anusha"`, `age = 25` |
+| **Example output** (all three lines) | `My name is Anusha and I am 25 years old.` |
+
+<a href="../../.faculty/solutions/f8p2ru.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2d-task-7"></a>
+
+## Unit 2D Task 7: Character frequency
+
+Counts how many times each character appears in a string (often with a dictionary).
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read a string from the user
+
+**Process**
+- Start with an empty dictionary
+- For each character: if it is already a key, increase its count by `1`; otherwise store `1`
+- Print each character and its count
+
+**Output**
+- Frequency of every character in the string
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+s = input("Enter a string: ")
+```
+
+**Program structure** (fill in the blanks):
+
+```python
+s = input("Enter a string: ")
+
+frequency = ____  # empty dictionary {}
+
+for ____ in ____:  # each character in s
+    if ____:  # character already in frequency?
+        frequency[____] = ____  # increase by 1
+    else:
+        frequency[____] = ____  # first time: store 1
+
+for ____, ____ in ____:  # items in frequency
+    print(____, ":", ____)
+```
+
+> **Hint:** First time a character appears → store `1`. If it appears again → add `1` to the stored count.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `hello` |
+| **Example output** | `h : 1`<br>`e : 1`<br>`l : 2`<br>`o : 1` |
+
+<a href="../../.faculty/solutions/g9q3sv.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---
+
+<a id="unit-2d-task-8"></a>
+
+## Unit 2D Task 8: Anagram check
+
+Checks whether two strings are anagrams.
+
+**What are anagrams?**
+- Two strings that contain the **same characters** with the **same frequency**, but possibly in a different order
+- Example: `listen` and `silent` are anagrams
+
+### Analyse the problem: Identify Input, Process and Output
+
+**Input**
+- Read two strings from the user
+
+**Process**
+- One common way: compare `sorted(s1)` with `sorted(s2)`
+- If the sorted lists/strings match, they are anagrams
+
+**Output**
+- Say whether the two strings are anagrams or not
+
+### Sample input and output messages
+
+**Input messages** (use with `input()`):
+
+```python
+s1 = input("Enter first string: ")
+s2 = input("Enter second string: ")
+```
+
+**Program structure** (fill in the blanks):
+
+```python
+s1 = input("Enter first string: ")
+s2 = input("Enter second string: ")
+
+if ____:  # sorted(s1) equals sorted(s2)
+    print(____)  # "Anagrams"
+else:
+    print(____)  # "Not anagrams"
+```
+
+> **Hint:** `sorted("listen")` and `sorted("silent")` produce the same sequence of characters.
+
+### Example
+
+| Item | Details |
+|------|---------|
+| **Example input** | `listen`, `silent` |
+| **Example output** | `Anagrams` |
+
+<a href="../../.faculty/solutions/h0r4tw.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
+Back to [Lab tasks](../lab-tasks/unit2-control-structures-and-strings.md).
+
+---

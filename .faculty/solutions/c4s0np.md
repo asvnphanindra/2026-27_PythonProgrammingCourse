@@ -14,4 +14,4 @@ else:
     print(f"The number {number} is zero")
 ```
 
-[Back to hint](../../docs/hints.md#unit-2a-task-3) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit2-control-structures-and-strings.md#unit-2a-task-3) · [Back to lab tasks](../../docs/lab-tasks/README.md)

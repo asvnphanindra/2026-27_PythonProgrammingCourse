@@ -95,4 +95,4 @@ At least **5** cases; at least **2** tricky (edge / boundary / unusual). Actual 
 | 4 | 90 | Grade A (boundary) | Grade A | Tricky |
 | 5 | 69.9 | Grade D (just below 70) | Grade D | Tricky |
 
-[Back to hint](../../docs/hints.md#unit-2a-task-4) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit2-control-structures-and-strings.md#unit-2a-task-4) · [Back to lab tasks](../../docs/lab-tasks/unit2-control-structures-and-strings.md)

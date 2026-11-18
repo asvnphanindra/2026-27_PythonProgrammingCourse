@@ -85,4 +85,4 @@ At least **5** cases; at least **2** tricky (edge / boundary / unusual). Actual 
 | 4 | 1 | single * | * | Tricky |
 | 5 | 2 | * * / * * | 2×2 grid | Tricky |
 
-[Back to hint](../../docs/hints.md#unit-2c-task-5) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit2-control-structures-and-strings.md#unit-2c-task-5) · [Back to lab tasks](../../docs/lab-tasks/unit2-control-structures-and-strings.md)

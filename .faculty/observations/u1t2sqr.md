@@ -69,4 +69,4 @@ At least **5** cases; at least **2** tricky (edge / boundary / unusual). Actual 
 | 4 | -4 | Square of the number is 16.0 | Square of the number is 16.0 | Tricky |
 | 5 | 0.1 | Square of the number is 0.01 | Square of the number is 0.01 | Tricky |
 
-[Back to hint](../../docs/hints.md#unit-1-task-2) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit1-python-fundamentals.md#unit-1-task-2) · [Back to lab tasks](../../docs/lab-tasks/unit1-python-fundamentals.md)

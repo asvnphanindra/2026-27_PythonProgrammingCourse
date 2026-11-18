@@ -37,4 +37,4 @@ Click **Lab observation expectations** in a row for [Full](../lab-expectations.m
 - Do not put multiple tasks in one file.
 - Store the files in the root of your repository (or in a clear folder your instructor specifies).
 - Open [lab-expectations.md](../lab-expectations.md) for before / during / after lab expectations.
-- Open [hints.md](../hints.md) for input, process, output, and sample checks.
+- Open [hints](../hints/README.md) for input, process, output, and sample checks.

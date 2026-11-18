@@ -85,4 +85,4 @@ At least **5** cases; at least **2** tricky (edge / boundary / unusual). Actual 
 | 4 | 0 | zero | zero | Tricky |
 | 5 | -0.001 | negative | negative | Tricky |
 
-[Back to hint](../../docs/hints.md#unit-2a-task-3) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit2-control-structures-and-strings.md#unit-2a-task-3) · [Back to lab tasks](../../docs/lab-tasks/unit2-control-structures-and-strings.md)

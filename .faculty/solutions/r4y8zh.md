@@ -26,4 +26,4 @@ r = Rectangle(5, 3)
 print("Area:", r.area())
 ```
 
-[Back to hint](../../docs/hints.md#unit-5c-task-1) · [Back to lab tasks](../../docs/lab-tasks/unit5-object-oriented-programming.md)
+[Back to hint](../../docs/hints/unit5-object-oriented-programming.md#unit-5c-task-1) · [Back to lab tasks](../../docs/lab-tasks/unit5-object-oriented-programming.md)

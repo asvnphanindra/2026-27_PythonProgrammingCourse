@@ -22,4 +22,4 @@ else:
 print(f"Smallest = {smallest} (among {x}, {y}, {z})")
 ```
 
-[Back to hint](../../docs/hints.md#unit-2a-task-6) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit2-control-structures-and-strings.md#unit-2a-task-6) · [Back to lab tasks](../../docs/lab-tasks/README.md)

@@ -38,4 +38,4 @@ print(hello("Anu"))
 print("Sum:", add(2, 3))
 ```
 
-[Back to hint](../../docs/hints.md#unit-5c-task-3) · [Back to lab tasks](../../docs/lab-tasks/unit5-object-oriented-programming.md)
+[Back to hint](../../docs/hints/unit5-object-oriented-programming.md#unit-5c-task-3) · [Back to lab tasks](../../docs/lab-tasks/unit5-object-oriented-programming.md)

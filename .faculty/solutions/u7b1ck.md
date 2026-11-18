@@ -38,4 +38,4 @@ acc.display()
 
 > Students may instead implement a Library Management System with classes such as `Book` and `Library` (add / issue / return / list).
 
-[Back to hint](../../docs/hints.md#unit-5d-task-1) · [Back to lab tasks](../../docs/lab-tasks/unit5-object-oriented-programming.md)
+[Back to hint](../../docs/hints/unit5-object-oriented-programming.md#unit-5d-task-1) · [Back to lab tasks](../../docs/lab-tasks/unit5-object-oriented-programming.md)

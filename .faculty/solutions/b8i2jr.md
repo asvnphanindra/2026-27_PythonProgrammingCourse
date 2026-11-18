@@ -14,4 +14,4 @@ while True:
 print("You entered:", number)
 ```
 
-[Back to hint](../../docs/hints.md#unit-4b-task-7) · [Back to lab tasks](../../docs/lab-tasks/unit4-dictionaries-and-exception-handling.md)
+[Back to hint](../../docs/hints/unit4-dictionaries-and-exception-handling.md#unit-4b-task-7) · [Back to lab tasks](../../docs/lab-tasks/unit4-dictionaries-and-exception-handling.md)

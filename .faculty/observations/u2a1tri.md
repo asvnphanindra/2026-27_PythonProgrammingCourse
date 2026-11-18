@@ -103,4 +103,4 @@ At least **5** cases; at least **2** tricky (edge / boundary / unusual). Actual 
 | 4 | 90, 90, 90 | not valid (sum 270) | not valid | Tricky |
 | 5 | 0, 90, 90 | not valid (zero angle) | not valid | Tricky |
 
-[Back to hint](../../docs/hints.md#unit-2a-task-1) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit2-control-structures-and-strings.md#unit-2a-task-1) · [Back to lab tasks](../../docs/lab-tasks/unit2-control-structures-and-strings.md)

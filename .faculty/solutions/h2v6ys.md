@@ -16,4 +16,4 @@ for count in range(total_input_numbers - 1):
 print(f"Largest among {total_input_numbers} numbers is {largest}")
 ```
 
-[Back to hint](../../docs/hints.md#unit-2b-task-4) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit2-control-structures-and-strings.md#unit-2b-task-4) · [Back to lab tasks](../../docs/lab-tasks/README.md)

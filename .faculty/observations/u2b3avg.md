@@ -94,4 +94,4 @@ At least **5** cases; at least **2** tricky (edge / boundary / unusual). Actual 
 | 4 | N=1; 7 | Sum 7.0; Avg 7.0 | Sum 7.0; Avg 7.0 | Tricky |
 | 5 | N=3; -5, 0, 5 | Sum 0.0; Avg 0.0 | Sum 0.0; Avg 0.0 | Tricky |
 
-[Back to hint](../../docs/hints.md#unit-2b-task-3) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit2-control-structures-and-strings.md#unit-2b-task-3) · [Back to lab tasks](../../docs/lab-tasks/unit2-control-structures-and-strings.md)

@@ -18,4 +18,4 @@ print("Last 3 characters:", s[-3:])
 print("Characters from index 1 to 4:", s[1:5])
 ```
 
-[Back to hint](../../docs/hints.md#unit-2d-task-1) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit2-control-structures-and-strings.md#unit-2d-task-1) · [Back to lab tasks](../../docs/lab-tasks/README.md)

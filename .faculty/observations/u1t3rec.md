@@ -77,4 +77,4 @@ At least **5** cases; at least **2** tricky (edge / boundary / unusual). Actual 
 | 4 | 1, 100 | Area 100.0 sq cm; Perimeter 202.0 cm | Area 100.0 sq cm; Perimeter 202.0 cm | Tricky |
 | 5 | 0.5, 0.5 | Area 0.25 sq cm; Perimeter 2.0 cm | Area 0.25 sq cm; Perimeter 2.0 cm | Tricky |
 
-[Back to hint](../../docs/hints.md#unit-1-task-3) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit1-python-fundamentals.md#unit-1-task-3) · [Back to lab tasks](../../docs/lab-tasks/unit1-python-fundamentals.md)

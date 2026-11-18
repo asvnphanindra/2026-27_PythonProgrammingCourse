@@ -18,4 +18,4 @@ import math_utils
 print("Sum:", math_utils.add(10, 5))
 ```
 
-[Back to hint](../../docs/hints.md#unit-5c-task-2) · [Back to lab tasks](../../docs/lab-tasks/unit5-object-oriented-programming.md)
+[Back to hint](../../docs/hints/unit5-object-oriented-programming.md#unit-5c-task-2) · [Back to lab tasks](../../docs/lab-tasks/unit5-object-oriented-programming.md)

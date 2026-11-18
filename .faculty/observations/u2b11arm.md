@@ -107,4 +107,4 @@ At least **5** cases; at least **2** tricky (edge / boundary / unusual). Actual 
 | 4 | 100 | not Armstrong (1) | not Armstrong | Tricky |
 | 5 | 999 | not Armstrong (3*729=2187) | not Armstrong | Tricky |
 
-[Back to hint](../../docs/hints.md#unit-2b-task-11) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit2-control-structures-and-strings.md#unit-2b-task-11) · [Back to lab tasks](../../docs/lab-tasks/unit2-control-structures-and-strings.md)

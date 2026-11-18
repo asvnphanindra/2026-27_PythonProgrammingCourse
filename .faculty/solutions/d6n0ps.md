@@ -11,4 +11,4 @@ reverse = s[::-1]
 print("Reversed string:", reverse)
 ```
 
-[Back to hint](../../docs/hints.md#unit-2d-task-4) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit2-control-structures-and-strings.md#unit-2d-task-4) · [Back to lab tasks](../../docs/lab-tasks/README.md)

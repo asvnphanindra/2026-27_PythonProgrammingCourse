@@ -12,4 +12,4 @@ print("Last:", tuple_data[-1])
 print("Length:", len(tuple_data))
 ```
 
-[Back to hint](../../docs/hints.md#unit-3b-task-1) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit3-lists-tuples-sets-and-functions.md#unit-3b-task-1) · [Back to lab tasks](../../docs/lab-tasks/README.md)

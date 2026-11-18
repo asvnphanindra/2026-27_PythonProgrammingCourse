@@ -79,4 +79,4 @@ At least **5** cases; at least **2** tricky (edge / boundary / unusual). Actual 
 | 4 | 0, 15 | first 15.0, second 0.0 | first 15.0, second 0.0 | Tricky |
 | 5 | -8, -2 | first -2.0, second -8.0 | first -2.0, second -8.0 | Tricky |
 
-[Back to hint](../../docs/hints.md#unit-1-task-5) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit1-python-fundamentals.md#unit-1-task-5) · [Back to lab tasks](../../docs/lab-tasks/unit1-python-fundamentals.md)

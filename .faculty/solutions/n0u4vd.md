@@ -45,4 +45,4 @@ ch.skill_f()
 ch.skill_m()
 ```
 
-[Back to hint](../../docs/hints.md#unit-5b-task-2) · [Back to lab tasks](../../docs/lab-tasks/unit5-object-oriented-programming.md)
+[Back to hint](../../docs/hints/unit5-object-oriented-programming.md#unit-5b-task-2) · [Back to lab tasks](../../docs/lab-tasks/unit5-object-oriented-programming.md)

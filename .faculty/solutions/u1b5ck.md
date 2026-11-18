@@ -17,4 +17,4 @@ by_marks_desc = sorted(students, key=lambda d: d["marks"], reverse=True)
 print("By marks descending:", by_marks_desc)
 ```
 
-[Back to hint](../../docs/hints.md#unit-4a-task-10) · [Back to lab tasks](../../docs/lab-tasks/unit4-dictionaries-and-exception-handling.md)
+[Back to hint](../../docs/hints/unit4-dictionaries-and-exception-handling.md#unit-4a-task-10) · [Back to lab tasks](../../docs/lab-tasks/unit4-dictionaries-and-exception-handling.md)

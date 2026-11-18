@@ -92,4 +92,4 @@ At least **5** cases; at least **2** tricky (edge / boundary / unusual). Actual 
 | 4 | Spacing | spaces between numbers on a row | space-separated | Tricky |
 | 5 | First cell | first printed value is 1 | 1 | Tricky |
 
-[Back to hint](../../docs/hints.md#unit-2c-task-4) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit2-control-structures-and-strings.md#unit-2c-task-4) · [Back to lab tasks](../../docs/lab-tasks/unit2-control-structures-and-strings.md)

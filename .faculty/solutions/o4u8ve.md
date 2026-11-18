@@ -13,4 +13,4 @@ print("S1 name:", students["S1"]["name"])
 print("S2 marks:", students["S2"]["marks"])
 ```
 
-[Back to hint](../../docs/hints.md#unit-4a-task-4) · [Back to lab tasks](../../docs/lab-tasks/unit4-dictionaries-and-exception-handling.md)
+[Back to hint](../../docs/hints/unit4-dictionaries-and-exception-handling.md#unit-4a-task-4) · [Back to lab tasks](../../docs/lab-tasks/unit4-dictionaries-and-exception-handling.md)

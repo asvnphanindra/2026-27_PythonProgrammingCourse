@@ -109,4 +109,4 @@ At least **5** cases; at least **2** tricky (edge / boundary / unusual). Actual 
 | 4 | 5, 5, 5 | Largest = 5 (all equal) | Largest = 5 | Tricky |
 | 5 | -1, -5, -3 | Largest = -1 | Largest = -1 | Tricky |
 
-[Back to hint](../../docs/hints.md#unit-2a-task-5) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit2-control-structures-and-strings.md#unit-2a-task-5) · [Back to lab tasks](../../docs/lab-tasks/unit2-control-structures-and-strings.md)

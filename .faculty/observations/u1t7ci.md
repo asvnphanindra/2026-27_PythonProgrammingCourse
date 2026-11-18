@@ -81,4 +81,4 @@ At least **5** cases; at least **2** tricky (edge / boundary / unusual). Actual 
 | 4 | 10000, 0, 5 | Total 10000.0; CI 0.0 | Total 10000.0; CI 0.0 | Tricky |
 | 5 | 1000, 10, 0 | Total 1000.0; CI 0.0 | Total 1000.0; CI 0.0 | Tricky |
 
-[Back to hint](../../docs/hints.md#unit-1-task-7) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit1-python-fundamentals.md#unit-1-task-7) · [Back to lab tasks](../../docs/lab-tasks/unit1-python-fundamentals.md)

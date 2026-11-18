@@ -69,4 +69,4 @@ At least **5** cases; at least **2** tricky (edge / boundary / unusual). Actual 
 | 4 | -40 | Temperature in Fahrenheit is -40.0 | Temperature in Fahrenheit is -40.0 | Tricky |
 | 5 | 37 | Temperature in Fahrenheit is 98.6 | Temperature in Fahrenheit is 98.6 | Tricky |
 
-[Back to hint](../../docs/hints.md#unit-1-task-4) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit1-python-fundamentals.md#unit-1-task-4) · [Back to lab tasks](../../docs/lab-tasks/unit1-python-fundamentals.md)

@@ -11,4 +11,4 @@ even_squares = {x: x * x for x in range(1, 11) if x % 2 == 0}
 print("Even squares:", even_squares)
 ```
 
-[Back to hint](../../docs/hints.md#unit-4a-task-7) · [Back to lab tasks](../../docs/lab-tasks/unit4-dictionaries-and-exception-handling.md)
+[Back to hint](../../docs/hints/unit4-dictionaries-and-exception-handling.md#unit-4a-task-7) · [Back to lab tasks](../../docs/lab-tasks/unit4-dictionaries-and-exception-handling.md)

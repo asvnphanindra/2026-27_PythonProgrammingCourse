@@ -90,4 +90,4 @@ At least **5** cases; at least **2** tricky (edge / boundary / unusual). Actual 
 | 4 | 0 | Sum of digits of 0 is 0 (loop never runs) | Sum of digits of 0 is 0 | Tricky |
 | 5 | 7 | Sum of digits of 7 is 7 | Sum of digits of 7 is 7 | Tricky |
 
-[Back to hint](../../docs/hints.md#unit-2b-task-8) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit2-control-structures-and-strings.md#unit-2b-task-8) · [Back to lab tasks](../../docs/lab-tasks/unit2-control-structures-and-strings.md)

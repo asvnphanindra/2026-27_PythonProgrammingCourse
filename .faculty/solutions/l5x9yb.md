@@ -15,4 +15,4 @@ print("Original:", list_data)
 print("Without duplicates:", unique)
 ```
 
-[Back to hint](../../docs/hints.md#unit-3a-task-4) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit3-lists-tuples-sets-and-functions.md#unit-3a-task-4) · [Back to lab tasks](../../docs/lab-tasks/README.md)

@@ -69,4 +69,4 @@ At least **5** cases; at least **2** tricky (edge / boundary / unusual). Actual 
 | 4 | 0 | Sum of first 0 natural numbers is 0.0 | Sum of first 0 natural numbers is 0.0 | Tricky |
 | 5 | 2 | Sum of first 2 natural numbers is 3.0 | Sum of first 2 natural numbers is 3.0 | Tricky |
 
-[Back to hint](../../docs/hints.md#unit-1-task-8) · [Back to lab tasks](../../docs/lab-tasks/README.md)
+[Back to hint](../../docs/hints/unit1-python-fundamentals.md#unit-1-task-8) · [Back to lab tasks](../../docs/lab-tasks/unit1-python-fundamentals.md)
