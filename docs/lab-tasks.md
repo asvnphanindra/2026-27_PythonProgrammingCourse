@@ -10,3 +10,4 @@ Lab tasks are organized by unit:
 | II — Control Structures and Strings | [unit2-control-structures-and-strings.md](lab-tasks/unit2-control-structures-and-strings.md) |
 | III — Lists, Tuples, Sets and Functions | [unit3-lists-tuples-sets-and-functions.md](lab-tasks/unit3-lists-tuples-sets-and-functions.md) |
 | IV — Dictionaries, Exception Handling and File Handling | [unit4-dictionaries-and-exception-handling.md](lab-tasks/unit4-dictionaries-and-exception-handling.md) |
+| V — Object-Oriented Programming | [unit5-object-oriented-programming.md](lab-tasks/unit5-object-oriented-programming.md) |

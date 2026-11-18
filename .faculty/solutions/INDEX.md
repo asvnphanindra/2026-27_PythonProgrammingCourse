@@ -100,3 +100,17 @@ Not linked from student docs. Map task → cryptic file.
 | Unit 4C Task 3 — Count words, lines and characters | `e1l5mu.md` |
 | Unit 4C Task 4 — Copy file content | `f2m6nv.md` |
 | Unit 4C Task 5 — Search and replace in a file | `g3n7ow.md` |
+| Unit 5A Task 1 — Class and object | `h4o8px.md` |
+| Unit 5A Task 2 — Constructor __init__ | `i5p9qy.md` |
+| Unit 5A Task 3 — Instance, class and static methods | `j6q0rz.md` |
+| Unit 5A Task 4 — Encapsulation private/protected | `k7r1sa.md` |
+| Unit 5A Task 5 — Getter and setter methods | `l8s2tb.md` |
+| Unit 5B Task 1 — Single inheritance | `m9t3uc.md` |
+| Unit 5B Task 2 — Multiple and multilevel inheritance | `n0u4vd.md` |
+| Unit 5B Task 3 — Method overriding | `o1v5we.md` |
+| Unit 5B Task 4 — Polymorphism with method overriding | `p2w6xf.md` |
+| Unit 5B Task 5 — Operator overloading | `q3x7yg.md` |
+| Unit 5C Task 1 — Abstraction with ABC | `r4y8zh.md` |
+| Unit 5C Task 2 — User-defined module | `s5z9ai.md` |
+| Unit 5C Task 3 — Custom package with multiple modules | `t6a0bj.md` |
+| Unit 5D Task 1 — Mini application (OOP) | `u7b1ck.md` |
