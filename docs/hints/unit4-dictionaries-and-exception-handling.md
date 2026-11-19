@@ -361,7 +361,7 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 ## Unit 4A Task 8: Merge two dictionaries
 
-Combines two dictionaries into one.
+Combines two dictionaries into one using the `update()` method.
 
 ### Analyse the problem: Identify Input, Process and Output
 
@@ -369,9 +369,9 @@ Combines two dictionaries into one.
 - Two dictionaries
 
 **Process**
-- One way: `{**dict_data, **dict_extra}` (later keys overwrite earlier ones on clash)
-- Another: copy then `update()`
-- Or `dict_data | dict_extra` (Python 3.9+)
+- Make a copy of the first dictionary (so the original is not changed)
+- Call `update()` with the second dictionary
+- Keys already present are overwritten by values from the second dictionary
 
 **Output**
 - The merged dictionary
@@ -384,11 +384,12 @@ Combines two dictionaries into one.
 dict_data = ____  # e.g. {"a": 1, "b": 2}
 dict_extra = ____  # e.g. {"b": 3, "c": 4}
 
-dict_merged = {**____, **____}  # dict_data, dict_extra — or use update / |
+dict_merged = dict_data.____()  # copy
+dict_merged.____(dict_extra)  # update
 print("Merged:", ____)
 ```
 
-> **Hint:** If both have the same key, the second dictionary’s value is kept when you write `{**dict_data, **dict_extra}`.
+> **Hint:** `update()` changes the dictionary in place. Copy first if you need to keep `dict_data` unchanged. If both have the same key, the value from `dict_extra` is kept.
 
 ### Example
 

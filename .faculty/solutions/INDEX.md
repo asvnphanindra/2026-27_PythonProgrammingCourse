@@ -85,7 +85,7 @@ Not linked from student docs. Map task → cryptic file.
 | Unit 4A Task 5 — Iterate through a dictionary | `p5v9wf.md` |
 | Unit 4A Task 6 — List comprehension | `q6w0xg.md` |
 | Unit 4A Task 7 — Dictionary comprehension | `r7x1yh.md` |
-| Unit 4A Task 8 — Merge two dictionaries | `s8y2zi.md` |
+| Unit 4A Task 8 — Merge two dictionaries (update) | `s8y2zi.md` |
 | Unit 4A Task 9 — Student records with a dictionary | `t9z3aj.md` |
 | Unit 4A Task 10 — Sort a list of dictionaries | `u1b5ck.md` |
 | Unit 4B Task 1 — Try-except block | `v2c6dl.md` |
