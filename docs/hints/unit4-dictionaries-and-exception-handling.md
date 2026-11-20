@@ -804,18 +804,20 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 ## Unit 4B Task 7: Robust input validation
 
-Keeps asking until the user enters valid input, using exception handling.
+Keeps asking until the user enters valid input, using exception-handling best practices.
 
 ### Analyse the problem: Identify Input, Process and Output
 
 **Input**
-- Repeated user input until a valid integer (or other type) is entered
+- Repeated user input until a valid integer is entered
 
-**Process**
-- Loop with `while True`
-- Inside `try`, convert the input
-- On `ValueError`, print a message and continue the loop
-- `break` when conversion succeeds
+**Process** (best practices)
+- Loop with `while True` until input is accepted
+- Keep the `try` block **small** — only the risky conversion (`int(...)`)
+- Use `.strip()` so spaces around the number do not cause a false failure
+- Catch the **specific** exception `ValueError` (do not use bare `except:`)
+- Put the success path in `else:` (runs only when no exception occurred), then `break`
+- Print a clear message in `except` and let the loop ask again
 
 **Output**
 - Prompt(s) until success, then the accepted value
@@ -827,19 +829,23 @@ Keeps asking until the user enters valid input, using exception handling.
 ```python
 while ____:
     try:
-        number = int(input(____))  # e.g. "Enter an integer: "
-        ____  # leave the loop when valid
-    except ____:
+        # keep try small: only convert after stripping spaces
+        number = int(input(____).____())  # e.g. "Enter an integer: "
+    except ____:  # ValueError — catch the specific error
         print("Invalid input. Please enter an integer.")
+    else:
+        ____  # success path: leave the loop
 
 print("You entered:", ____)
 ```
+
+> **Hint:** Prefer `except ValueError:` over `except:` or `except Exception:`. Use `else` for code that should run only when `try` succeeded.
 
 ### Example
 
 | Item | Details |
 |------|---------|
-| **Example input** | first `hi`, then `12` |
+| **Example input** | first `hi`, then `  12  ` (with spaces) |
 | **Example output** | `Invalid input. Please enter an integer.`<br>`You entered: 12` |
 
 <a href="../../.faculty/solutions/b8i2jr.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)

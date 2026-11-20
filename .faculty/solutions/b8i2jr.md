@@ -1,15 +1,20 @@
 # Unit 4B Task 7 — Example solution
 
-Validate user input using exception handling (robust input).
+Validate user input using exception-handling best practices (robust input).
 
 ```python
-# Example solution: robust input validation
+# Example solution: robust input validation (best practices)
+# - small try block (only the conversion)
+# - specific except ValueError (not bare except)
+# - strip() so leading/trailing spaces are allowed
+# - else for the success path
 while True:
     try:
-        number = int(input("Enter an integer: "))
-        break
+        number = int(input("Enter an integer: ").strip())
     except ValueError:
         print("Invalid input. Please enter an integer.")
+    else:
+        break
 
 print("You entered:", number)
 ```
