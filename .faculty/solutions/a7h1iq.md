@@ -4,16 +4,16 @@ Create and raise a custom exception.
 
 ```python
 # Example solution: custom exception
-class InvalidMarksError(Exception):
+class InvalidSpeedError(Exception):
     pass
 
 
 try:
-    marks = int(input("Enter marks: "))
-    if marks < 0 or marks > 100:
-        raise InvalidMarksError("Marks must be between 0 and 100.")
-    print("Marks accepted:", marks)
-except InvalidMarksError as err:
+    speed = int(input("Enter speed (km/h): "))
+    if speed < 0 or speed > 120:
+        raise InvalidSpeedError("Speed must be between 0 and 120.")
+    print("Speed accepted:", speed)
+except InvalidSpeedError as err:
     print("Custom error:", err)
 except ValueError:
     print("Please enter a valid integer.")

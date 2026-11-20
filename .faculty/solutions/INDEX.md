@@ -93,7 +93,7 @@ Not linked from student docs. Map task → cryptic file.
 | Unit 4B Task 3 — Try-except-else-finally | `x4e8fn.md` |
 | Unit 4B Task 4 — ZeroDivisionError and ValueError | `y5f9go.md` |
 | Unit 4B Task 5 — Raising exceptions with raise | `z6g0hp.md` |
-| Unit 4B Task 6 — Custom exception | `a7h1iq.md` |
+| Unit 4B Task 6 — Custom exception (InvalidSpeedError) | `a7h1iq.md` |
 | Unit 4B Task 7 — Robust input validation (marks) | `b8i2jr.md` |
 | Unit 4C Task 1 — Read a text file | `c9j3ks.md` |
 | Unit 4C Task 2 — Write to a text file | `d0k4lt.md` |

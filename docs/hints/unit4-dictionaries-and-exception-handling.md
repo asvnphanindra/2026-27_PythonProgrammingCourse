@@ -760,10 +760,10 @@ Defines a custom exception class and raises it when a rule fails.
 ### Analyse the problem: Identify Input, Process and Output
 
 **Input**
-- A value to validate (for example marks must be between 0 and 100)
+- A vehicle speed in km/h (must be between 0 and 120)
 
 **Process**
-- Define `class MyError(Exception): pass` (choose a clear name)
+- Define `class MyError(Exception): pass` (choose a clear name, for example `InvalidSpeedError`)
 - Raise your custom exception when the value is invalid
 - Catch that custom type in `except`
 
@@ -775,14 +775,14 @@ Defines a custom exception class and raises it when a rule fails.
 **Program structure** (fill in the blanks):
 
 ```python
-class ____(Exception):  # e.g. InvalidMarksError
+class ____(Exception):  # e.g. InvalidSpeedError
     pass
 
 try:
-    marks = int(____)
-    if marks < 0 or marks > ____:
-        raise ____("Marks must be between 0 and 100.")
-    print("Marks accepted:", ____)
+    speed = int(____)  # e.g. input("Enter speed (km/h): ")
+    if speed < 0 or speed > ____:  # e.g. 120
+        raise ____("Speed must be between 0 and 120.")
+    print("Speed accepted:", ____)
 except ____ as err:
     print("Custom error:", ____)
 ```
@@ -791,8 +791,8 @@ except ____ as err:
 
 | Item | Details |
 |------|---------|
-| **Example input** | marks `120` |
-| **Example output** | `Custom error: Marks must be between 0 and 100.` |
+| **Example input** | speed `150` |
+| **Example output** | `Custom error: Speed must be between 0 and 120.` |
 
 <a href="../../.faculty/solutions/a7h1iq.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
