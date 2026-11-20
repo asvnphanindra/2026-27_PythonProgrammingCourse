@@ -804,48 +804,61 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 ## Unit 4B Task 7: Robust input validation
 
-Keeps asking until the user enters valid input, using exception-handling best practices.
+Validates student marks with a custom exception, `ValueError`, and a `finally` block (Pass / Fail).
 
 ### Analyse the problem: Identify Input, Process and Output
 
 **Input**
-- Repeated user input until a valid integer is entered
+- Student marks entered as text (must be a number between 0 and 100)
 
-**Process** (best practices)
-- Loop with `while True` until input is accepted
-- Keep the `try` block **small** — only the risky conversion (`int(...)`)
-- Catch the **specific** exception `ValueError` (do not use bare `except:`)
-- Put the success path in `else:` (runs only when no exception occurred), then `break`
-- Print a clear message in `except` and let the loop ask again
+**Process**
+- Define a custom exception class (for example `InvalidMarksError`)
+- Convert input with `int()` (may raise `ValueError`)
+- If marks are outside 0–100, `raise` the custom exception
+- If marks are valid: print Pass when marks ≥ 40, otherwise Fail
+- Catch `ValueError` and the custom exception separately (specific exceptions)
+- Use `finally` for a message that always runs
 
 **Output**
-- Prompt(s) until success, then the accepted value
+- Pass / Fail, or an error message; then the `finally` message
 
 ### Sample input and output messages
 
 **Program structure** (fill in the blanks):
 
 ```python
-while ____:
-    try:
-        # keep try small: only the conversion
-        number = int(input(____))  # e.g. "Enter an integer: "
-    except ____:  # ValueError — catch the specific error
-        print("Invalid input. Please enter an integer.")
-    else:
-        ____  # success path: leave the loop
+class ____(Exception):  # e.g. InvalidMarksError
+    pass
 
-print("You entered:", ____)
+try:
+    marks = int(input(____))  # e.g. "Enter student marks: "
+    if marks < ____ or marks > ____:
+        raise ____("Marks must be between 0 and 100")
+    if marks >= ____:  # e.g. 40
+        print("Result: Pass")
+    else:
+        print("Result: Fail")
+except ____:
+    print("Error: Please enter numbers only.")
+except ____ as e:
+    print("Invalid Input:", ____)
+finally:
+    print(____)  # e.g. "Marks processing completed."
 ```
 
-> **Hint:** Prefer `except ValueError:` over `except:` or `except Exception:`. Use `else` for code that should run only when `try` succeeded.
+> **Hint:** Catch `ValueError` for non-numeric input and your custom exception for out-of-range marks. `finally` runs whether the result was Pass, Fail, or an error.
 
 ### Example
 
-| Item | Details |
-|------|---------|
-| **Example input** | first `hi`, then `12` |
-| **Example output** | `Invalid input. Please enter an integer.`<br>`You entered: 12` |
+| Input | Expected output |
+|-------|-----------------|
+| `75` | `Result: Pass`<br>`Marks processing completed.` |
+| `25` | `Result: Fail`<br>`Marks processing completed.` |
+| `abc` | `Error: Please enter numbers only.`<br>`Marks processing completed.` |
+| `120` | `Invalid Input: Marks must be between 0 and 100`<br>`Marks processing completed.` |
+| `-5` | `Invalid Input: Marks must be between 0 and 100`<br>`Marks processing completed.` |
+
+> **Note:** The `finally` block always prints `Marks processing completed.` after the result or error message.
 
 <a href="../../.faculty/solutions/b8i2jr.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 

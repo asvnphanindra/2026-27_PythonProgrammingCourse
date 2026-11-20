@@ -33,7 +33,7 @@ Back to [Lab tasks index](README.md).
 | 4 | Implement a Python program to handle ZeroDivisionError and ValueError | [Short](../lab-expectations.md#short) | `Unit-4B_Task-4_ZeroDivisionError_ValueError.py` | Will be updated later | [View hint](../hints/unit4-dictionaries-and-exception-handling.md#unit-4b-task-4) |
 | 5 | Implement a Python program to demonstrate raising exceptions using raise | [Short](../lab-expectations.md#short) | `Unit-4B_Task-5_Raise_Exception.py` | Will be updated later | [View hint](../hints/unit4-dictionaries-and-exception-handling.md#unit-4b-task-5) |
 | 6 | Implement a Python program to create and raise a custom exception | [Short](../lab-expectations.md#short) | `Unit-4B_Task-6_Custom_Exception.py` | Will be updated later | [View hint](../hints/unit4-dictionaries-and-exception-handling.md#unit-4b-task-6) |
-| 7 | Implement a Python program to validate user input using exception handling best practices (robust input program) | [Short](../lab-expectations.md#short) | `Unit-4B_Task-7_Robust_Input_Validation.py` | Will be updated later | [View hint](../hints/unit4-dictionaries-and-exception-handling.md#unit-4b-task-7) |
+| 7 | Implement a Python program to validate user input using exception handling (robust input program for student marks: custom exception, ValueError, Pass/Fail, finally) | [Short](../lab-expectations.md#short) | `Unit-4B_Task-7_Robust_Input_Validation.py` | Will be updated later | [View hint](../hints/unit4-dictionaries-and-exception-handling.md#unit-4b-task-7) |
 
 ### C. File Handling Programs
 

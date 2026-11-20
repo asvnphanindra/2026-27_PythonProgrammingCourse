@@ -1,21 +1,37 @@
 # Unit 4B Task 7 — Example solution
 
-Validate user input using exception-handling best practices (robust input).
+Validate user input using exception handling (robust marks input).
 
 ```python
-# Example solution: robust input validation (best practices)
-# - small try block (only the conversion)
-# - specific except ValueError (not bare except)
-# - else for the success path
-while True:
-    try:
-        number = int(input("Enter an integer: "))
-    except ValueError:
-        print("Invalid input. Please enter an integer.")
-    else:
-        break
+# Example solution: robust input validation for student marks
+class InvalidMarksError(Exception):
+    pass
 
-print("You entered:", number)
+
+try:
+    marks = int(input("Enter student marks: "))
+    if marks < 0 or marks > 100:
+        raise InvalidMarksError("Marks must be between 0 and 100")
+    if marks >= 40:
+        print("Result: Pass")
+    else:
+        print("Result: Fail")
+except ValueError:
+    print("Error: Please enter numbers only.")
+except InvalidMarksError as e:
+    print("Invalid Input:", e)
+finally:
+    print("Marks processing completed.")
 ```
+
+**Sample checks**
+
+| Input | Expected output |
+|-------|-----------------|
+| `75` | `Result: Pass` then `Marks processing completed.` |
+| `25` | `Result: Fail` then `Marks processing completed.` |
+| `abc` | `Error: Please enter numbers only.` then `Marks processing completed.` |
+| `120` | `Invalid Input: Marks must be between 0 and 100` then `Marks processing completed.` |
+| `-5` | `Invalid Input: Marks must be between 0 and 100` then `Marks processing completed.` |
 
 [Back to hint](../../docs/hints/unit4-dictionaries-and-exception-handling.md#unit-4b-task-7) · [Back to lab tasks](../../docs/lab-tasks/unit4-dictionaries-and-exception-handling.md)
