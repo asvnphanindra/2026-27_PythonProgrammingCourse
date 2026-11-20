@@ -1,6 +1,6 @@
 # Unit 4B Task 3 — Example solution
 
-Demonstrate try-except-else-finally blocks.
+Divide two numbers with try-except-else-finally and always print Program finished.
 
 ```python
 # Example solution: try-except-else-finally

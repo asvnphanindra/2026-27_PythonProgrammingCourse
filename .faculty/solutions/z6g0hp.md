@@ -1,6 +1,6 @@
 # Unit 4B Task 5 — Example solution
 
-Demonstrate raising exceptions using raise.
+Raise ValueError if the entered age is negative.
 
 ```python
 # Example solution: raise an exception

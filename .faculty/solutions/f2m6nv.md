@@ -1,6 +1,6 @@
 # Unit 4C Task 4 — Example solution
 
-Copy content from one file to another.
+Copy the content of sample.txt into copy.txt.
 
 ```python
 # Example solution: copy file content

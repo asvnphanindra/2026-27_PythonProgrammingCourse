@@ -1,6 +1,6 @@
 # Unit 4B Task 1 — Example solution
 
-Demonstrate a try-except block for handling exceptions.
+Catch ZeroDivisionError when dividing 10 by 0.
 
 ```python
 # Example solution: try-except block

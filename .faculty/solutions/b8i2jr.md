@@ -1,6 +1,6 @@
 # Unit 4B Task 7 — Example solution
 
-Validate user input using exception handling (robust marks input).
+Validate student marks 0–100 with InvalidMarksError, print Pass/Fail (≥40), and use finally.
 
 ```python
 # Example solution: robust input validation for student marks

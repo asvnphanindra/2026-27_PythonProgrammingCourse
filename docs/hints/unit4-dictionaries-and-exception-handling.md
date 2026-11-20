@@ -16,7 +16,7 @@ Jump to a task:
 
 <a id="unit-4a-task-1"></a>
 
-## Unit 4A Task 1: Create, access and update a dictionary
+## Unit 4A Task 1: Create a student dictionary, update age, and add city
 
 Creates a dictionary, reads values by key, and updates or adds entries.
 
@@ -71,7 +71,7 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 <a id="unit-4a-task-2"></a>
 
-## Unit 4A Task 2: Dictionary methods
+## Unit 4A Task 2: Use keys, values, items, get, update and pop
 
 Demonstrates `keys`, `values`, `items`, `get`, `update`, and `pop`.
 
@@ -126,7 +126,7 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 <a id="unit-4a-task-3"></a>
 
-## Unit 4A Task 3: Word frequency using a dictionary
+## Unit 4A Task 3: Count word frequency in a sentence
 
 Counts how many times each word appears in a sentence.
 
@@ -173,7 +173,7 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 <a id="unit-4a-task-4"></a>
 
-## Unit 4A Task 4: Nested dictionary
+## Unit 4A Task 4: Nested student dictionary (name and marks)
 
 Creates a dictionary whose values are dictionaries, then accesses nested values.
 
@@ -218,7 +218,7 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 <a id="unit-4a-task-5"></a>
 
-## Unit 4A Task 5: Iterate through a dictionary
+## Unit 4A Task 5: Print keys, values and items with loops
 
 Loops over keys, values, and items.
 
@@ -270,7 +270,7 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 <a id="unit-4a-task-6"></a>
 
-## Unit 4A Task 6: List comprehension
+## Unit 4A Task 6: Squares and even numbers with list comprehension
 
 Builds lists of squares and even numbers using list comprehension.
 
@@ -315,7 +315,7 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 <a id="unit-4a-task-7"></a>
 
-## Unit 4A Task 7: Dictionary comprehension
+## Unit 4A Task 7: Number-to-square dictionary comprehension
 
 Builds a dictionary using a comprehension (for example number → square).
 
@@ -359,7 +359,7 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 <a id="unit-4a-task-8"></a>
 
-## Unit 4A Task 8: Merge two dictionaries
+## Unit 4A Task 8: Merge two dictionaries with update()
 
 Combines two dictionaries into one using the `update()` method.
 
@@ -406,7 +406,7 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 <a id="unit-4a-task-9"></a>
 
-## Unit 4A Task 9: Student records with a dictionary
+## Unit 4A Task 9: Student name, marks and grade record
 
 Stores name, marks, and grade in a dictionary and displays them.
 
@@ -461,7 +461,7 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 <a id="unit-4a-task-10"></a>
 
-## Unit 4A Task 10: Sort a list of dictionaries
+## Unit 4A Task 10: Sort student dictionaries by marks
 
 Sorts a list of dictionaries by a chosen key.
 
@@ -510,9 +510,9 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 <a id="unit-4b-task-1"></a>
 
-## Unit 4B Task 1: Try-except block
+## Unit 4B Task 1: Catch ZeroDivisionError when dividing by zero
 
-Demonstrates catching an exception with `try` / `except` so the program does not crash.
+Catches `ZeroDivisionError` with `try` / `except` when dividing 10 by 0.
 
 ### Analyse the problem: Identify Input, Process and Output
 
@@ -558,9 +558,9 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 <a id="unit-4b-task-2"></a>
 
-## Unit 4B Task 2: Multiple except blocks
+## Unit 4B Task 2: Handle ValueError and IndexError for a list index
 
-Handles different error types with separate `except` blocks.
+Reads a list index from the user and handles `ValueError` and `IndexError` with separate `except` blocks.
 
 ### Analyse the problem: Identify Input, Process and Output
 
@@ -606,9 +606,9 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 <a id="unit-4b-task-3"></a>
 
-## Unit 4B Task 3: Try-except-else-finally
+## Unit 4B Task 3: Divide two numbers with try-except-else-finally
 
-Shows the full `try` / `except` / `else` / `finally` flow.
+Divides two numbers using `try` / `except` / `else` / `finally` and always prints `Program finished.`
 
 ### Analyse the problem: Identify Input, Process and Output
 
@@ -660,9 +660,9 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 <a id="unit-4b-task-4"></a>
 
-## Unit 4B Task 4: ZeroDivisionError and ValueError
+## Unit 4B Task 4: Read numerator/denominator with ZeroDivisionError and ValueError
 
-Handles invalid number conversion and division by zero in one program.
+Reads numerator and denominator from the user and handles invalid conversion and division by zero.
 
 ### Analyse the problem: Identify Input, Process and Output
 
@@ -707,9 +707,9 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 <a id="unit-4b-task-5"></a>
 
-## Unit 4B Task 5: Raising exceptions with raise
+## Unit 4B Task 5: Raise ValueError if age is negative
 
-Uses `raise` to signal an invalid condition intentionally.
+Uses `raise ValueError` when the entered age is negative.
 
 ### Analyse the problem: Identify Input, Process and Output
 
@@ -753,9 +753,9 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 <a id="unit-4b-task-6"></a>
 
-## Unit 4B Task 6: Custom exception
+## Unit 4B Task 6: Raise InvalidSpeedError for invalid vehicle speed
 
-Defines a custom exception class and raises it when a rule fails.
+Raises a custom `InvalidSpeedError` when vehicle speed is outside 0–120 km/h.
 
 ### Analyse the problem: Identify Input, Process and Output
 
@@ -802,9 +802,9 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 <a id="unit-4b-task-7"></a>
 
-## Unit 4B Task 7: Robust input validation
+## Unit 4B Task 7: Validate marks 0–100 with InvalidMarksError and Pass/Fail
 
-Validates student marks with a custom exception, `ValueError`, and a `finally` block (Pass / Fail).
+Validates student marks (0–100) with `InvalidMarksError`, prints Pass/Fail (≥40), and uses `finally`.
 
 ### Analyse the problem: Identify Input, Process and Output
 
@@ -868,9 +868,9 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 <a id="unit-4c-task-1"></a>
 
-## Unit 4C Task 1: Read a text file
+## Unit 4C Task 1: Read and display sample.txt
 
-Opens a text file, reads its content, and displays it.
+Opens `sample.txt`, reads its content, and displays it.
 
 ### Analyse the problem: Identify Input, Process and Output
 
@@ -913,9 +913,9 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 <a id="unit-4c-task-2"></a>
 
-## Unit 4C Task 2: Write to a text file
+## Unit 4C Task 2: Write a line of text to output.txt
 
-Writes text into a file (creates the file if it does not exist).
+Writes a line of text into `output.txt` (creates the file if it does not exist).
 
 ### Analyse the problem: Identify Input, Process and Output
 
@@ -957,7 +957,7 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 <a id="unit-4c-task-3"></a>
 
-## Unit 4C Task 3: Count words, lines and characters
+## Unit 4C Task 3: Count lines, words and characters in a file
 
 Reads a text file and reports how many lines, words, and characters it has.
 
@@ -1008,9 +1008,9 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 <a id="unit-4c-task-4"></a>
 
-## Unit 4C Task 4: Copy file content
+## Unit 4C Task 4: Copy sample.txt into copy.txt
 
-Copies everything from a source text file into a destination file.
+Copies everything from `sample.txt` into `copy.txt`.
 
 ### Analyse the problem: Identify Input, Process and Output
 
@@ -1054,7 +1054,7 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 <a id="unit-4c-task-5"></a>
 
-## Unit 4C Task 5: Search and replace in a file
+## Unit 4C Task 5: Replace a word in a text file (e.g. Python → Java)
 
 Finds a word in a text file and replaces it with another word, then saves the result.
 

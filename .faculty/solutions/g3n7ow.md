@@ -1,6 +1,6 @@
 # Unit 4C Task 5 — Example solution
 
-Search and replace a word in a text file.
+Replace a word in a text file (for example Python with Java).
 
 ```python
 # Example solution: search and replace in a file

@@ -1,6 +1,6 @@
 # Unit 4C Task 1 — Example solution
 
-Read data from a text file and display its content.
+Read sample.txt and display its content.
 
 ```python
 # Example solution: read a text file

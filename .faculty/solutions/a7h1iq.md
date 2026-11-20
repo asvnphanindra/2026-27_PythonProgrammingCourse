@@ -1,9 +1,9 @@
 # Unit 4B Task 6 — Example solution
 
-Create and raise a custom exception.
+Raise `InvalidSpeedError` when vehicle speed is outside 0–120 km/h.
 
 ```python
-# Example solution: custom exception
+# Example solution: InvalidSpeedError for vehicle speed
 class InvalidSpeedError(Exception):
     pass
 

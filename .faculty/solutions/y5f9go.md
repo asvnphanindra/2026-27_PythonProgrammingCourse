@@ -1,6 +1,6 @@
 # Unit 4B Task 4 — Example solution
 
-Handle ZeroDivisionError and ValueError.
+Read numerator and denominator; handle ZeroDivisionError and ValueError.
 
 ```python
 # Example solution: ZeroDivisionError and ValueError

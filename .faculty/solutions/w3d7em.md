@@ -1,6 +1,6 @@
 # Unit 4B Task 2 — Example solution
 
-Handle multiple exceptions using multiple except blocks.
+Read a list index and handle ValueError and IndexError separately.
 
 ```python
 # Example solution: multiple except blocks

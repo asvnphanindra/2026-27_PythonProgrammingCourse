@@ -78,28 +78,28 @@ Not linked from student docs. Map task → cryptic file.
 | Unit 3D Task 13 — Fibonacci series using recursion | `h7n1ox.md` |
 | Unit 3D Task 14 — GCD using recursion | `i8o2py.md` |
 | Unit 3D Task 15 — Lambda with map, filter, and reduce | `j9p3qz.md` |
-| Unit 4A Task 1 — Create, access and update a dictionary | `l1r5sb.md` |
-| Unit 4A Task 2 — Dictionary methods | `m2s6tc.md` |
-| Unit 4A Task 3 — Word frequency using a dictionary | `n3t7ud.md` |
-| Unit 4A Task 4 — Nested dictionary | `o4u8ve.md` |
-| Unit 4A Task 5 — Iterate through a dictionary | `p5v9wf.md` |
-| Unit 4A Task 6 — List comprehension | `q6w0xg.md` |
-| Unit 4A Task 7 — Dictionary comprehension | `r7x1yh.md` |
-| Unit 4A Task 8 — Merge two dictionaries (update) | `s8y2zi.md` |
-| Unit 4A Task 9 — Student records with a dictionary | `t9z3aj.md` |
-| Unit 4A Task 10 — Sort a list of dictionaries | `u1b5ck.md` |
-| Unit 4B Task 1 — Try-except block | `v2c6dl.md` |
-| Unit 4B Task 2 — Multiple except blocks | `w3d7em.md` |
-| Unit 4B Task 3 — Try-except-else-finally | `x4e8fn.md` |
-| Unit 4B Task 4 — ZeroDivisionError and ValueError | `y5f9go.md` |
-| Unit 4B Task 5 — Raising exceptions with raise | `z6g0hp.md` |
-| Unit 4B Task 6 — Custom exception (InvalidSpeedError) | `a7h1iq.md` |
-| Unit 4B Task 7 — Robust input validation (marks) | `b8i2jr.md` |
-| Unit 4C Task 1 — Read a text file | `c9j3ks.md` |
-| Unit 4C Task 2 — Write to a text file | `d0k4lt.md` |
-| Unit 4C Task 3 — Count words, lines and characters | `e1l5mu.md` |
-| Unit 4C Task 4 — Copy file content | `f2m6nv.md` |
-| Unit 4C Task 5 — Search and replace in a file | `g3n7ow.md` |
+| Unit 4A Task 1 — Student dictionary create/update/add city | `l1r5sb.md` |
+| Unit 4A Task 2 — keys, values, items, get, update, pop | `m2s6tc.md` |
+| Unit 4A Task 3 — Count word frequency in a sentence | `n3t7ud.md` |
+| Unit 4A Task 4 — Nested student dictionary | `o4u8ve.md` |
+| Unit 4A Task 5 — Print keys, values and items with loops | `p5v9wf.md` |
+| Unit 4A Task 6 — Squares and evens with list comprehension | `q6w0xg.md` |
+| Unit 4A Task 7 — Number-to-square dictionary comprehension | `r7x1yh.md` |
+| Unit 4A Task 8 — Merge two dictionaries with update() | `s8y2zi.md` |
+| Unit 4A Task 9 — Student name, marks and grade record | `t9z3aj.md` |
+| Unit 4A Task 10 — Sort student dictionaries by marks | `u1b5ck.md` |
+| Unit 4B Task 1 — Catch ZeroDivisionError (10 / 0) | `v2c6dl.md` |
+| Unit 4B Task 2 — ValueError and IndexError for list index | `w3d7em.md` |
+| Unit 4B Task 3 — Divide with try-except-else-finally | `x4e8fn.md` |
+| Unit 4B Task 4 — Numerator/denominator ZeroDivisionError and ValueError | `y5f9go.md` |
+| Unit 4B Task 5 — Raise ValueError if age is negative | `z6g0hp.md` |
+| Unit 4B Task 6 — InvalidSpeedError for speed outside 0–120 | `a7h1iq.md` |
+| Unit 4B Task 7 — Validate marks 0–100 Pass/Fail with finally | `b8i2jr.md` |
+| Unit 4C Task 1 — Read and display sample.txt | `c9j3ks.md` |
+| Unit 4C Task 2 — Write a line to output.txt | `d0k4lt.md` |
+| Unit 4C Task 3 — Count lines, words and characters | `e1l5mu.md` |
+| Unit 4C Task 4 — Copy sample.txt into copy.txt | `f2m6nv.md` |
+| Unit 4C Task 5 — Replace a word in a file (Python → Java) | `g3n7ow.md` |
 | Unit 5A Task 1 — Class and object | `h4o8px.md` |
 | Unit 5A Task 2 — Constructor __init__ | `i5p9qy.md` |
 | Unit 5A Task 3 — Instance, class and static methods | `j6q0rz.md` |

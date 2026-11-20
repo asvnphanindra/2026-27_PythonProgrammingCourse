@@ -1,6 +1,6 @@
 # Unit 4C Task 3 — Example solution
 
-Count words, lines and characters in a text file.
+Count lines, words and characters in a text file.
 
 ```python
 # Example solution: count lines, words, characters

@@ -1,6 +1,6 @@
 # Unit 4C Task 2 — Example solution
 
-Write data to a text file.
+Write a line of text to output.txt.
 
 ```python
 # Example solution: write to a text file
