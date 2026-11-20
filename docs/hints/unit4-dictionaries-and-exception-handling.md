@@ -814,7 +814,6 @@ Keeps asking until the user enters valid input, using exception-handling best pr
 **Process** (best practices)
 - Loop with `while True` until input is accepted
 - Keep the `try` block **small** — only the risky conversion (`int(...)`)
-- Use `.strip()` so spaces around the number do not cause a false failure
 - Catch the **specific** exception `ValueError` (do not use bare `except:`)
 - Put the success path in `else:` (runs only when no exception occurred), then `break`
 - Print a clear message in `except` and let the loop ask again
@@ -829,8 +828,8 @@ Keeps asking until the user enters valid input, using exception-handling best pr
 ```python
 while ____:
     try:
-        # keep try small: only convert after stripping spaces
-        number = int(input(____).____())  # e.g. "Enter an integer: "
+        # keep try small: only the conversion
+        number = int(input(____))  # e.g. "Enter an integer: "
     except ____:  # ValueError — catch the specific error
         print("Invalid input. Please enter an integer.")
     else:
@@ -845,7 +844,7 @@ print("You entered:", ____)
 
 | Item | Details |
 |------|---------|
-| **Example input** | first `hi`, then `  12  ` (with spaces) |
+| **Example input** | first `hi`, then `12` |
 | **Example output** | `Invalid input. Please enter an integer.`<br>`You entered: 12` |
 
 <a href="../../.faculty/solutions/b8i2jr.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)

@@ -6,11 +6,10 @@ Validate user input using exception-handling best practices (robust input).
 # Example solution: robust input validation (best practices)
 # - small try block (only the conversion)
 # - specific except ValueError (not bare except)
-# - strip() so leading/trailing spaces are allowed
 # - else for the success path
 while True:
     try:
-        number = int(input("Enter an integer: ").strip())
+        number = int(input("Enter an integer: "))
     except ValueError:
         print("Invalid input. Please enter an integer.")
     else:
