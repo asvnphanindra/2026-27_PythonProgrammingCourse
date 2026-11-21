@@ -65,6 +65,29 @@ D3 -->|Yes| C --> Stop
 D3 -->|No| D --> Stop
 ```
 
+**Mermaid source (copy and paste):**
+
+```
+flowchart TD
+Start(["Start"])
+R1[/"Read marks (float)"/]
+D1{"marks >= 90?"}
+D2{"marks >= 80?"}
+D3{"marks >= 70?"}
+A[/"Print Grade A"/]
+B[/"Print Grade B"/]
+C[/"Print Grade C"/]
+D[/"Print Grade D"/]
+Stop(["Stop"])
+Start --> R1 --> D1
+D1 -->|Yes| A --> Stop
+D1 -->|No| D2
+D2 -->|Yes| B --> Stop
+D2 -->|No| D3
+D3 -->|Yes| C --> Stop
+D3 -->|No| D --> Stop
+```
+
 ### Pseudocode
 
 ```

@@ -73,6 +73,32 @@ D3 -->|Yes| NotP --> Stop
 D3 -->|No| YesP
 ```
 
+**Mermaid source (copy and paste):**
+
+```
+flowchart TD
+Start(["Start"])
+R1[/"Read number (1 to 100)"/]
+D0{"1 ≤ number ≤ 100?"}
+Out[/"Print: not between 1 and 100"/]
+D1{"number == 1?"}
+Not1[/"Print: not a prime number"/]
+D2{"number is 2, 3, 5, or 7?"}
+YesP[/"Print: is a prime number"/]
+D3{"divisible by 2, 3, 5, or 7?"}
+NotP[/"Print: not a prime number"/]
+Stop(["Stop"])
+Start --> R1 --> D0
+D0 -->|No| Out --> Stop
+D0 -->|Yes| D1
+D1 -->|Yes| Not1 --> Stop
+D1 -->|No| D2
+D2 -->|Yes| YesP --> Stop
+D2 -->|No| D3
+D3 -->|Yes| NotP --> Stop
+D3 -->|No| YesP
+```
+
 ### Pseudocode
 
 ```

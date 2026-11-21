@@ -49,6 +49,19 @@ Stop(["Stop"])
 Start --> R1 --> R2 --> P1 --> O1 --> Stop
 ```
 
+**Mermaid source (copy and paste):**
+
+```
+flowchart TD
+Start(["Start"])
+R1[/"Read number1 (float)"/]
+R2[/"Read number2 (float)"/]
+P1["sum_of_numbers = number1 + number2"]
+O1[/"Print: Sum of the two numbers is sum_of_numbers"/]
+Stop(["Stop"])
+Start --> R1 --> R2 --> P1 --> O1 --> Stop
+```
+
 ### Pseudocode
 
 ```

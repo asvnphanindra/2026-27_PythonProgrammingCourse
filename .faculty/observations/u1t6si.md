@@ -53,6 +53,20 @@ Stop(["Stop"])
 Start --> R1 --> R2 --> R3 --> P1 --> O1 --> Stop
 ```
 
+**Mermaid source (copy and paste):**
+
+```
+flowchart TD
+Start(["Start"])
+R1[/"Read principal_amount_in_rupees"/]
+R2[/"Read rate_of_interest_in_percent"/]
+R3[/"Read time_in_years"/]
+P1["simple_interest_in_rupees = (P * R * T) / 100"]
+O1[/"Print: Simple interest is simple_interest_in_rupees rupees"/]
+Stop(["Stop"])
+Start --> R1 --> R2 --> R3 --> P1 --> O1 --> Stop
+```
+
 ### Pseudocode
 
 ```

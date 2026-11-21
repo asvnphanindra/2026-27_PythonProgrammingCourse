@@ -55,6 +55,21 @@ Stop(["Stop"])
 Start --> R1 --> R2 --> P1 --> P2 --> P3 --> O1 --> Stop
 ```
 
+**Mermaid source (copy and paste):**
+
+```
+flowchart TD
+Start(["Start"])
+R1[/"Read number1 (float)"/]
+R2[/"Read number2 (float)"/]
+P1["number1 = number1 + number2"]
+P2["number2 = number1 - number2"]
+P3["number1 = number1 - number2"]
+O1[/"Print swapped number1 and number2"/]
+Stop(["Stop"])
+Start --> R1 --> R2 --> P1 --> P2 --> P3 --> O1 --> Stop
+```
+
 ### Pseudocode
 
 ```

@@ -54,6 +54,21 @@ Stop(["Stop"])
 Start --> R1 --> R2 --> P1 --> P2 --> O1 --> O2 --> Stop
 ```
 
+**Mermaid source (copy and paste):**
+
+```
+flowchart TD
+Start(["Start"])
+R1[/"Read length_in_cm (float)"/]
+R2[/"Read breadth_in_cm (float)"/]
+P1["area_in_square_cm = length_in_cm * breadth_in_cm"]
+P2["perimeter_in_cm = 2 * (length_in_cm + breadth_in_cm)"]
+O1[/"Print area_in_square_cm square cm"/]
+O2[/"Print perimeter_in_cm cm"/]
+Stop(["Stop"])
+Start --> R1 --> R2 --> P1 --> P2 --> O1 --> O2 --> Stop
+```
+
 ### Pseudocode
 
 ```

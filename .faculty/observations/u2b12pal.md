@@ -75,6 +75,29 @@ D2 -->|Yes| Y --> Stop
 D2 -->|No| N --> Stop
 ```
 
+**Mermaid source (copy and paste):**
+
+```
+flowchart TD
+Start(["Start"])
+R1[/"Read number"/]
+P1["original_number = number"]
+P2["reversed_number = 0"]
+D1{"number > 0?"}
+P3["digit = number % 10"]
+P4["reversed_number = reversed_number * 10 + digit"]
+P5["number = number // 10"]
+D2{"reversed_number == original_number?"}
+Y[/"Print: is a palindrome"/]
+N[/"Print: is not a palindrome"/]
+Stop(["Stop"])
+Start --> R1 --> P1 --> P2 --> D1
+D1 -->|Yes| P3 --> P4 --> P5 --> D1
+D1 -->|No| D2
+D2 -->|Yes| Y --> Stop
+D2 -->|No| N --> Stop
+```
+
 ### Pseudocode
 
 ```

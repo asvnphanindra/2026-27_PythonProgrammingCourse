@@ -62,6 +62,25 @@ D1 -->|Yes| P3 --> P4 --> P5 --> D1
 D1 -->|No| O1 --> Stop
 ```
 
+**Mermaid source (copy and paste):**
+
+```
+flowchart TD
+Start(["Start"])
+R1[/"Read number (integer)"/]
+P1["original_number = number"]
+P2["digit_sum = 0"]
+D1{"number > 0?"}
+P3["digit = number % 10"]
+P4["digit_sum = digit_sum + digit"]
+P5["number = number // 10"]
+O1[/"Print digit_sum of original_number"/]
+Stop(["Stop"])
+Start --> R1 --> P1 --> P2 --> D1
+D1 -->|Yes| P3 --> P4 --> P5 --> D1
+D1 -->|No| O1 --> Stop
+```
+
 ### Pseudocode
 
 ```

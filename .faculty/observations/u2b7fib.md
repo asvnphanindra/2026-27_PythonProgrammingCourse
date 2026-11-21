@@ -63,6 +63,27 @@ D1 -->|Yes| O1 --> P4 --> P5 --> P6 --> P7 --> D1
 D1 -->|No| Stop
 ```
 
+**Mermaid source (copy and paste):**
+
+```
+flowchart TD
+Start(["Start"])
+R1[/"Read n terms"/]
+P1["first = 0"]
+P2["second = 1"]
+P3["count = 0"]
+D1{"count < n?"}
+O1[/"Print first as term count+1"/]
+P4["next_term = first + second"]
+P5["first = second"]
+P6["second = next_term"]
+P7["count = count + 1"]
+Stop(["Stop"])
+Start --> R1 --> P1 --> P2 --> P3 --> D1
+D1 -->|Yes| O1 --> P4 --> P5 --> P6 --> P7 --> D1
+D1 -->|No| Stop
+```
+
 ### Pseudocode
 
 ```

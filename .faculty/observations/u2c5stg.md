@@ -59,6 +59,28 @@ D2 -->|No| O2 --> P4 --> D1
 D1 -->|No| Stop
 ```
 
+**Mermaid source (copy and paste):**
+
+```
+flowchart TD
+Start(["Start"])
+R1[/"Read rows grid size"/]
+P1["row_loop_var = 1"]
+D1{"row_loop_var <= rows?"}
+P2["column_loop_var = 1"]
+D2{"column_loop_var <= rows?"}
+O1[/"Print * with space end"/]
+P3["column_loop_var = column_loop_var + 1"]
+O2[/"Print newline"/]
+P4["row_loop_var = row_loop_var + 1"]
+Stop(["Stop"])
+Start --> R1 --> P1 --> D1
+D1 -->|Yes| P2 --> D2
+D2 -->|Yes| O1 --> P3 --> D2
+D2 -->|No| O2 --> P4 --> D1
+D1 -->|No| Stop
+```
+
 ### Pseudocode
 
 ```

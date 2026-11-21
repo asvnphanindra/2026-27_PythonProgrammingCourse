@@ -69,6 +69,31 @@ D3 -->|Yes| Yes --> Stop
 D3 -->|No| No --> Stop
 ```
 
+**Mermaid source (copy and paste):**
+
+```
+flowchart TD
+Start(["Start"])
+R1[/"Read number (1 to 100)"/]
+P1["count = 0"]
+P2["i = 1"]
+D1{"i ≤ number?"}
+D2{"number % i == 0?"}
+P3["count = count + 1"]
+P4["i = i + 1"]
+D3{"count == 2?"}
+Yes[/"Print: is a prime number"/]
+No[/"Print: is not a prime number"/]
+Stop(["Stop"])
+Start --> R1 --> P1 --> P2 --> D1
+D1 -->|Yes| D2
+D2 -->|Yes| P3 --> P4 --> D1
+D2 -->|No| P4
+D1 -->|No| D3
+D3 -->|Yes| Yes --> Stop
+D3 -->|No| No --> Stop
+```
+
 ### Pseudocode
 
 ```

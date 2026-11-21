@@ -1,6 +1,7 @@
 # Faculty full-observation index
 
-Example **Full** lab observations (all required sections). Linked from the **Record expectations** column on unit lab-task pages as **Example observation**.
+Example **Full** lab observations (all required sections). Linked from unit lab-task pages as **Example observation** (Lab observation Full tasks, and Record Full tasks).
+Each flowchart includes a rendered Mermaid diagram and a plain **Mermaid source (copy and paste)** block for students.
 Map task → cryptic file.
 
 | Task | File |

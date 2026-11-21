@@ -67,6 +67,27 @@ D1 -->|Yes| R2 --> P3 --> P4 --> D1
 D1 -->|No| P5 --> O1 --> O2 --> Stop
 ```
 
+**Mermaid source (copy and paste):**
+
+```
+flowchart TD
+Start(["Start"])
+R1[/"Read total_input_numbers N"/]
+P1["total_sum = 0"]
+P2["count = 0"]
+D1{"count < N?"}
+R2[/"Read number"/]
+P3["total_sum = total_sum + number"]
+P4["count = count + 1"]
+P5["average = total_sum / N"]
+O1[/"Print sum"/]
+O2[/"Print average"/]
+Stop(["Stop"])
+Start --> R1 --> P1 --> P2 --> D1
+D1 -->|Yes| R2 --> P3 --> P4 --> D1
+D1 -->|No| P5 --> O1 --> O2 --> Stop
+```
+
 ### Pseudocode
 
 ```

@@ -58,6 +58,25 @@ D2 -->|Yes| Neg --> Stop
 D2 -->|No| Zero --> Stop
 ```
 
+**Mermaid source (copy and paste):**
+
+```
+flowchart TD
+Start(["Start"])
+R1[/"Read number (float)"/]
+D1{"number > 0?"}
+D2{"number < 0?"}
+Pos[/"Print: number is positive"/]
+Neg[/"Print: number is negative"/]
+Zero[/"Print: number is zero"/]
+Stop(["Stop"])
+Start --> R1 --> D1
+D1 -->|Yes| Pos --> Stop
+D1 -->|No| D2
+D2 -->|Yes| Neg --> Stop
+D2 -->|No| Zero --> Stop
+```
+
 ### Pseudocode
 
 ```

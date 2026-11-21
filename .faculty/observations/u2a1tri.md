@@ -78,6 +78,34 @@ Y --> Stop
 N --> Stop
 ```
 
+**Mermaid source (copy and paste):**
+
+```
+flowchart TD
+Start(["Start"])
+R1[/"Read angle1_in_degrees"/]
+R2[/"Read angle2_in_degrees"/]
+R3[/"Read angle3_in_degrees"/]
+D1{"angle1 > 0?"}
+D2{"angle2 > 0?"}
+D3{"angle3 > 0?"}
+D4{"angle1 + angle2 + angle3 == 180?"}
+Y[/"Print: triangle is valid"/]
+N[/"Print: triangle is not valid"/]
+Stop(["Stop"])
+Start --> R1 --> R2 --> R3 --> D1
+D1 -->|No| N
+D1 -->|Yes| D2
+D2 -->|No| N
+D2 -->|Yes| D3
+D3 -->|No| N
+D3 -->|Yes| D4
+D4 -->|No| N
+D4 -->|Yes| Y
+Y --> Stop
+N --> Stop
+```
+
 ### Pseudocode
 
 ```

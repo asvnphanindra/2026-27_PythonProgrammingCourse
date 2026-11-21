@@ -47,6 +47,18 @@ Stop(["Stop"])
 Start --> R1 --> P1 --> O1 --> Stop
 ```
 
+**Mermaid source (copy and paste):**
+
+```
+flowchart TD
+Start(["Start"])
+R1[/"Read number (float)"/]
+P1["square_of_number = number ** 2"]
+O1[/"Print: Square of the number is square_of_number"/]
+Stop(["Stop"])
+Start --> R1 --> P1 --> O1 --> Stop
+```
+
 ### Pseudocode
 
 ```

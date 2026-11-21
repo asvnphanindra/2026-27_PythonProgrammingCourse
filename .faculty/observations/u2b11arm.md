@@ -75,6 +75,29 @@ D2 -->|Yes| Y --> Stop
 D2 -->|No| N --> Stop
 ```
 
+**Mermaid source (copy and paste):**
+
+```
+flowchart TD
+Start(["Start"])
+R1[/"Read 3-digit number"/]
+P1["original_number = number"]
+P2["armstrong_sum = 0"]
+D1{"number > 0?"}
+P3["digit = number % 10"]
+P4["armstrong_sum = armstrong_sum + digit ** 3"]
+P5["number = number // 10"]
+D2{"armstrong_sum == original_number?"}
+Y[/"Print: is an Armstrong number"/]
+N[/"Print: is not an Armstrong number"/]
+Stop(["Stop"])
+Start --> R1 --> P1 --> P2 --> D1
+D1 -->|Yes| P3 --> P4 --> P5 --> D1
+D1 -->|No| D2
+D2 -->|Yes| Y --> Stop
+D2 -->|No| N --> Stop
+```
+
 ### Pseudocode
 
 ```

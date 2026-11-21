@@ -47,6 +47,18 @@ Stop(["Stop"])
 Start --> R1 --> P1 --> O1 --> Stop
 ```
 
+**Mermaid source (copy and paste):**
+
+```
+flowchart TD
+Start(["Start"])
+R1[/"Read temperature_in_celsius (float)"/]
+P1["temperature_in_fahrenheit = (temperature_in_celsius * 9 / 5) + 32"]
+O1[/"Print: Temperature in Fahrenheit is temperature_in_fahrenheit"/]
+Stop(["Stop"])
+Start --> R1 --> P1 --> O1 --> Stop
+```
+
 ### Pseudocode
 
 ```

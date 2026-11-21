@@ -47,6 +47,18 @@ Stop(["Stop"])
 Start --> R1 --> P1 --> O1 --> Stop
 ```
 
+**Mermaid source (copy and paste):**
+
+```
+flowchart TD
+Start(["Start"])
+R1[/"Read n (integer)"/]
+P1["sum_of_natural_numbers = n * (n + 1) / 2"]
+O1[/"Print: Sum of first n natural numbers is sum_of_natural_numbers"/]
+Stop(["Stop"])
+Start --> R1 --> P1 --> O1 --> Stop
+```
+
 ### Pseudocode
 
 ```

@@ -58,6 +58,22 @@ Stop(["Stop"])
 Start --> R1 --> R2 --> R3 --> P1 --> P2 --> O1 --> O2 --> Stop
 ```
 
+**Mermaid source (copy and paste):**
+
+```
+flowchart TD
+Start(["Start"])
+R1[/"Read principal_amount_in_rupees"/]
+R2[/"Read rate_of_interest_in_percent"/]
+R3[/"Read time_in_years"/]
+P1["total_amount_in_rupees = P * (1 + R/100) ** T"]
+P2["compound_interest_in_rupees = total_amount_in_rupees - P"]
+O1[/"Print total_amount_in_rupees"/]
+O2[/"Print compound_interest_in_rupees"/]
+Stop(["Stop"])
+Start --> R1 --> R2 --> R3 --> P1 --> P2 --> O1 --> O2 --> Stop
+```
+
 ### Pseudocode
 
 ```
