@@ -1,19 +1,16 @@
 # Unit 4B Task 3 — Example solution
 
-Divide two numbers with try-except-else-finally and always print Program finished.
+Convert text to an integer, print its square in `else`, and always print Program finished in `finally`.
 
 ```python
-# Example solution: try-except-else-finally
+# Example solution: try-except-else-finally (square of an integer)
 try:
-    a = int(input("Enter numerator: "))
-    b = int(input("Enter denominator: "))
-    result = a / b
-except ZeroDivisionError:
-    print("Division by zero is not allowed.")
+    text = input("Enter a number: ")
+    number = int(text)
 except ValueError:
-    print("Please enter valid numbers.")
+    print("That is not a valid integer.")
 else:
-    print("Result:", result)
+    print("Square:", number * number)
 finally:
     print("Program finished.")
 ```

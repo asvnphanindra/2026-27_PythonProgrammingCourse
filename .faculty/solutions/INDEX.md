@@ -90,7 +90,7 @@ Not linked from student docs. Map task → cryptic file.
 | Unit 4A Task 10 — Sort student dictionaries by marks | `u1b5ck.md` |
 | Unit 4B Task 1 — Catch ZeroDivisionError (10 / 0) | `v2c6dl.md` |
 | Unit 4B Task 2 — ValueError and IndexError for list index | `w3d7em.md` |
-| Unit 4B Task 3 — Divide with try-except-else-finally | `x4e8fn.md` |
+| Unit 4B Task 3 — Square of int with else/finally | `x4e8fn.md` |
 | Unit 4B Task 4 — Numerator/denominator ZeroDivisionError and ValueError | `y5f9go.md` |
 | Unit 4B Task 5 — Raise ValueError if age is negative | `z6g0hp.md` |
 | Unit 4B Task 6 — InvalidSpeedError for speed outside 0–120 | `a7h1iq.md` |

@@ -606,23 +606,23 @@ Back to [Lab tasks](../lab-tasks/unit4-dictionaries-and-exception-handling.md).
 
 <a id="unit-4b-task-3"></a>
 
-## Unit 4B Task 3: Divide two numbers with try-except-else-finally
+## Unit 4B Task 3: Convert text to int, print square with else/finally
 
-Divides two numbers using `try` / `except` / `else` / `finally` and always prints `Program finished.`
+Converts entered text to an integer and prints its square using `try` / `except` / `else` / `finally` (focus: `else` and `finally`, not division).
 
 ### Analyse the problem: Identify Input, Process and Output
 
 **Input**
-- Two numbers for a safe division (or another operation)
+- Text that should represent an integer (for example `5` or `abc`)
 
 **Process**
-- `try`: attempt the operation
-- `except`: handle the error
-- `else`: runs only when no exception occurred
-- `finally`: always runs (cleanup / closing message)
+- `try`: convert with `int()`
+- `except ValueError`: handle non-integer text
+- `else`: runs only when conversion succeeded — print the square
+- `finally`: always runs (closing message)
 
 **Output**
-- Result or error message, plus a final message that always appears
+- Square of the number, or an error message, plus a final message that always appears
 
 ### Sample input and output messages
 
@@ -630,27 +630,26 @@ Divides two numbers using `try` / `except` / `else` / `finally` and always print
 
 ```python
 try:
-    a = int(____)
-    b = int(____)
-    result = a / b
-except ____:
-    print("Division by zero is not allowed.")
-except ____:
-    print("Please enter valid numbers.")
+    text = ____  # e.g. input("Enter a number: ")
+    number = int(____)
+except ____:  # ValueError
+    print("That is not a valid integer.")
 else:
-    print("Result:", ____)  # runs only if try succeeded
+    print("Square:", ____)  # e.g. number * number
 finally:
     print(____)  # e.g. "Program finished."
 ```
 
-> **Hint:** `else` is for the success path. `finally` runs whether the code succeeded or failed.
+> **Hint:** `else` is for the success path. `finally` runs whether the code succeeded or failed. Division with `ZeroDivisionError` is covered in Task 4.
 
 ### Example
 
 | Item | Details |
 |------|---------|
-| **Example input** | `a = 20`, `b = 4` |
-| **Example output** | `Result: 5.0`<br>`Program finished.` |
+| **Example input** | `5` |
+| **Example output** | `Square: 25`<br>`Program finished.` |
+| **Example input** | `abc` |
+| **Example output** | `That is not a valid integer.`<br>`Program finished.` |
 
 <a href="../../.faculty/solutions/x4e8fn.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
