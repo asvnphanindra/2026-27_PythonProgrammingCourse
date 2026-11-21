@@ -1,6 +1,6 @@
 # Unit 2B Task 3 — Example full observation
 
-Faculty reference for a complete **Full** lab observation (Task, Aim, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
+Faculty reference for a complete **Full** lab observation (Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
 
 ## Right-hand page
 
@@ -11,6 +11,14 @@ Write a python program to find the sum and average of N numbers using for loop.
 ### Aim
 
 To read N numbers, compute their sum and average using a for loop.
+
+### Problem analysis
+
+| | |
+|---|---|
+| **Input** | `N` and then N numbers |
+| **Process** | Accumulate sum with a for loop; compute average = sum / N |
+| **Output** | Sum and average |
 
 ### Algorithm
 

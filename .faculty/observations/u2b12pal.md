@@ -1,6 +1,6 @@
 # Unit 2B Task 12 — Example full observation
 
-Faculty reference for a complete **Full** lab observation (Task, Aim, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
+Faculty reference for a complete **Full** lab observation (Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
 
 ## Right-hand page
 
@@ -11,6 +11,14 @@ Write a python program to check whether a number is a palindrome using while loo
 ### Aim
 
 To check whether a number reads the same forwards and backwards by reversing its digits with a while loop.
+
+### Problem analysis
+
+| | |
+|---|---|
+| **Input** | `number` |
+| **Process** | While loop: reverse digits; compare with original |
+| **Output** | Palindrome / not palindrome message |
 
 ### Algorithm
 

@@ -1,6 +1,6 @@
 # Unit 2A Task 4 — Example full observation
 
-Faculty reference for a complete **Full** lab observation (Task, Aim, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
+Faculty reference for a complete **Full** lab observation (Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
 
 ## Right-hand page
 
@@ -11,6 +11,14 @@ Write a python program to print the grade of a student using an elif ladder (Mar
 ### Aim
 
 To assign a grade from marks using an if-elif-else ladder.
+
+### Problem analysis
+
+| | |
+|---|---|
+| **Input** | `marks` |
+| **Process** | Elif ladder: >=90 → A; >=80 → B; >=70 → C; else → D |
+| **Output** | Grade letter |
 
 ### Algorithm
 

@@ -1,6 +1,6 @@
 # Unit 2A Task 3 — Example full observation
 
-Faculty reference for a complete **Full** lab observation (Task, Aim, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
+Faculty reference for a complete **Full** lab observation (Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
 
 ## Right-hand page
 
@@ -11,6 +11,14 @@ Write a python program to check whether a number is positive, negative, or zero.
 ### Aim
 
 To classify a given number as positive, negative, or zero using if-elif-else.
+
+### Problem analysis
+
+| | |
+|---|---|
+| **Input** | `number` (float or int) |
+| **Process** | Compare with 0 using if-elif-else |
+| **Output** | Message: positive, negative, or zero |
 
 ### Algorithm
 

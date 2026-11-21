@@ -1,6 +1,6 @@
 # Unit 1 Task 3 — Example full observation
 
-Faculty reference for a complete **Full** lab observation (Task, Aim, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
+Faculty reference for a complete **Full** lab observation (Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
 
 ## Right-hand page
 
@@ -11,6 +11,14 @@ Write a python program to calculate area and perimeter of a rectangle.
 ### Aim
 
 To calculate the area and perimeter of a rectangle from length and breadth.
+
+### Problem analysis
+
+| | |
+|---|---|
+| **Input** | `length_in_cm`, `breadth_in_cm` |
+| **Process** | `area_in_square_cm = length_in_cm * breadth_in_cm`; `perimeter_in_cm = 2 * (length_in_cm + breadth_in_cm)` |
+| **Output** | `area_in_square_cm`, `perimeter_in_cm` |
 
 ### Algorithm
 

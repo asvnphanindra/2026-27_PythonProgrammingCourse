@@ -1,6 +1,6 @@
 # Unit 2B Task 11 — Example full observation
 
-Faculty reference for a complete **Full** lab observation (Task, Aim, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
+Faculty reference for a complete **Full** lab observation (Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
 
 ## Right-hand page
 
@@ -11,6 +11,14 @@ Write a python program to check whether a number is an Armstrong number using wh
 ### Aim
 
 To check whether a 3-digit number is an Armstrong number (sum of cubes of digits equals the number).
+
+### Problem analysis
+
+| | |
+|---|---|
+| **Input** | 3-digit `number` |
+| **Process** | While loop: sum of cubes of digits; compare with original |
+| **Output** | Armstrong / not Armstrong message |
 
 ### Algorithm
 

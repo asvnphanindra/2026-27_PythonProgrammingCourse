@@ -1,6 +1,6 @@
 # Unit 2C Task 5 — Example full observation
 
-Faculty reference for a complete **Full** lab observation (Task, Aim, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
+Faculty reference for a complete **Full** lab observation (Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
 
 ## Right-hand page
 
@@ -11,6 +11,14 @@ Write a python program to print a 5x5 grid of stars (*); generalize so the grid 
 ### Aim
 
 To print an N×N grid of stars where N is read from the user (example: 5×5).
+
+### Problem analysis
+
+| | |
+|---|---|
+| **Input** | `rows` (grid size) |
+| **Process** | Nested loops print `*` in a square grid |
+| **Output** | Star grid of size rows × rows |
 
 ### Algorithm
 

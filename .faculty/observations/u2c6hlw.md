@@ -1,6 +1,6 @@
 # Unit 2C Task 6 — Example full observation
 
-Faculty reference for a complete **Full** lab observation (Task, Aim, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
+Faculty reference for a complete **Full** lab observation (Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
 
 ## Right-hand page
 
@@ -11,6 +11,14 @@ Write a python program to print a 5x5 hollow grid of stars (*); generalize so th
 ### Aim
 
 To print an N×N hollow star grid (border only) where N is read from the user.
+
+### Problem analysis
+
+| | |
+|---|---|
+| **Input** | `rows` (grid size) |
+| **Process** | Nested loops print `*` only on borders (hollow square) |
+| **Output** | Hollow star grid |
 
 ### Algorithm
 

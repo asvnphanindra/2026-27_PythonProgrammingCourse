@@ -1,6 +1,6 @@
 # Unit 2A Task 8 — Example full observation
 
-Faculty reference for a complete **Full** lab observation (Task, Aim, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
+Faculty reference for a complete **Full** lab observation (Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
 
 ## Right-hand page
 
@@ -11,6 +11,14 @@ Write a python program to check whether a given number is prime or not (assume t
 ### Aim
 
 To check whether a number between 1 and 100 is prime using an if-elif ladder (no for loop).
+
+### Problem analysis
+
+| | |
+|---|---|
+| **Input** | `number` between 1 and 100 |
+| **Process** | If-elif ladder using small primes 2, 3, 5, 7 (no for loop) |
+| **Output** | Prime / not prime / out of range message |
 
 ### Algorithm
 

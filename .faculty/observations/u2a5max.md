@@ -1,6 +1,6 @@
 # Unit 2A Task 5 — Example full observation
 
-Faculty reference for a complete **Full** lab observation (Task, Aim, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
+Faculty reference for a complete **Full** lab observation (Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
 
 ## Right-hand page
 
@@ -11,6 +11,14 @@ Write a python program to find the largest of three numbers using nested if.
 ### Aim
 
 To find the largest among three numbers using nested if statements.
+
+### Problem analysis
+
+| | |
+|---|---|
+| **Input** | Three numbers |
+| **Process** | Nested if comparisons to find the largest |
+| **Output** | Largest number |
 
 ### Algorithm
 

@@ -1,6 +1,6 @@
 # Unit 1 Task 8 — Example full observation
 
-Faculty reference for a complete **Full** lab observation (Task, Aim, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
+Faculty reference for a complete **Full** lab observation (Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
 
 ## Right-hand page
 
@@ -11,6 +11,14 @@ Write a python program to find the sum of first N natural numbers using a formul
 ### Aim
 
 To find the sum of the first N natural numbers using the formula N*(N+1)/2.
+
+### Problem analysis
+
+| | |
+|---|---|
+| **Input** | `n` (positive integer) |
+| **Process** | `sum_of_natural_numbers = n * (n + 1) / 2` |
+| **Output** | `sum_of_natural_numbers` |
 
 ### Algorithm
 

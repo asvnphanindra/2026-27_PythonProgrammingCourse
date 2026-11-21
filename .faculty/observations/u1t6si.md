@@ -1,6 +1,6 @@
 # Unit 1 Task 6 — Example full observation
 
-Faculty reference for a complete **Full** lab observation (Task, Aim, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
+Faculty reference for a complete **Full** lab observation (Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
 
 ## Right-hand page
 
@@ -11,6 +11,14 @@ Write a python program to calculate simple interest.
 ### Aim
 
 To calculate simple interest from principal, rate, and time.
+
+### Problem analysis
+
+| | |
+|---|---|
+| **Input** | `principal_amount_in_rupees`, `rate_of_interest_in_percent`, `time_in_years` |
+| **Process** | `simple_interest_in_rupees = (principal * rate * time) / 100` |
+| **Output** | `simple_interest_in_rupees` |
 
 ### Algorithm
 

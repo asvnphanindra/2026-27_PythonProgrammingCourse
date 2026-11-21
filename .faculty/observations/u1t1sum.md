@@ -1,6 +1,6 @@
 # Unit 1 Task 1 — Example full observation
 
-Faculty reference for a complete **Full** lab observation (Task, Aim, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
+Faculty reference for a complete **Full** lab observation (Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
 
 ## Right-hand page
 
@@ -11,6 +11,14 @@ Write a python program to read two numbers and display their sum.
 ### Aim
 
 To read two numbers from the user and display their sum.
+
+### Problem analysis
+
+| | |
+|---|---|
+| **Input** | `number1`, `number2` |
+| **Process** | `sum_of_numbers = number1 + number2` |
+| **Output** | `sum_of_numbers` |
 
 ### Algorithm
 

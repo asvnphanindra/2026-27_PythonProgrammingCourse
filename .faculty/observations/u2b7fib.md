@@ -1,6 +1,6 @@
 # Unit 2B Task 7 — Example full observation
 
-Faculty reference for a complete **Full** lab observation (Task, Aim, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
+Faculty reference for a complete **Full** lab observation (Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
 
 ## Right-hand page
 
@@ -11,6 +11,14 @@ Write a python program to print Fibonacci series up to N terms using for loop.
 ### Aim
 
 To print the first N terms of the Fibonacci series using a for loop.
+
+### Problem analysis
+
+| | |
+|---|---|
+| **Input** | `N` (number of terms) |
+| **Process** | Generate Fibonacci series up to N terms using a for loop |
+| **Output** | Fibonacci sequence printed |
 
 ### Algorithm
 

@@ -1,6 +1,6 @@
 # Faculty full-observation index
 
-Example **Full** lab observations (all required sections). Linked from unit lab-task pages as **Example observation** (Lab observation Full tasks, and Record Full tasks).
+Example **Full** lab observations (all required sections: Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Linked from unit lab-task pages as **Example observation** (Lab observation Full tasks, and Record Full tasks).
 Each flowchart includes a rendered Mermaid diagram and a plain **Mermaid source (copy and paste)** block for students.
 Map task → cryptic file.
 

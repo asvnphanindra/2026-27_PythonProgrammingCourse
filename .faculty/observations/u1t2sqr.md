@@ -1,6 +1,6 @@
 # Unit 1 Task 2 — Example full observation
 
-Faculty reference for a complete **Full** lab observation (Task, Aim, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
+Faculty reference for a complete **Full** lab observation (Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
 
 ## Right-hand page
 
@@ -11,6 +11,14 @@ Write a python program to display the square of a number.
 ### Aim
 
 To read a number and display its square.
+
+### Problem analysis
+
+| | |
+|---|---|
+| **Input** | `number` |
+| **Process** | `square_of_number = number ** 2` |
+| **Output** | `square_of_number` |
 
 ### Algorithm
 

@@ -1,6 +1,6 @@
 # Unit 2A Task 1 — Example full observation
 
-Faculty reference for a complete **Full** lab observation (Task, Aim, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
+Faculty reference for a complete **Full** lab observation (Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
 
 ## Right-hand page
 
@@ -11,6 +11,14 @@ Write a python program to check whether a triangle is valid given its three angl
 ### Aim
 
 To check whether three given angles form a valid triangle (all positive and sum to 180°).
+
+### Problem analysis
+
+| | |
+|---|---|
+| **Input** | Three angles of a triangle |
+| **Process** | Check whether the sum of angles is 180 and each angle is positive |
+| **Output** | Valid triangle or not valid |
 
 ### Algorithm
 

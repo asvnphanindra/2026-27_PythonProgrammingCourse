@@ -1,6 +1,6 @@
 # Unit 2B Task 6 — Example full observation
 
-Faculty reference for a complete **Full** lab observation (Task, Aim, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
+Faculty reference for a complete **Full** lab observation (Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
 
 ## Right-hand page
 
@@ -11,6 +11,14 @@ Write a python program to check whether a given number is prime or not using for
 ### Aim
 
 To check whether a number between 1 and 100 is prime by counting divisors with a for loop.
+
+### Problem analysis
+
+| | |
+|---|---|
+| **Input** | `number` between 1 and 100 |
+| **Process** | Count divisors with a for loop; prime if count == 2 |
+| **Output** | Prime / not prime (with divisor count) |
 
 ### Algorithm
 

@@ -1,6 +1,6 @@
 # Unit 1 Task 5 — Example full observation
 
-Faculty reference for a complete **Full** lab observation (Task, Aim, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
+Faculty reference for a complete **Full** lab observation (Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
 
 ## Right-hand page
 
@@ -11,6 +11,14 @@ Write a python program to swap two numbers without using a third variable.
 ### Aim
 
 To exchange the values of two numbers without using a third variable (arithmetic approach).
+
+### Problem analysis
+
+| | |
+|---|---|
+| **Input** | `number1`, `number2` |
+| **Process** | Swap using tuple assignment or arithmetic without a third variable |
+| **Output** | `number1`, `number2` (after swap) |
 
 ### Algorithm
 

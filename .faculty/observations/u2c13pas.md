@@ -1,6 +1,6 @@
 # Unit 2C Task 13 — Example full observation
 
-Faculty reference for a complete **Full** lab observation (Task, Aim, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
+Faculty reference for a complete **Full** lab observation (Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
 
 ## Right-hand page
 
@@ -11,6 +11,14 @@ Write a python program to print Pascal's triangle.
 ### Aim
 
 To print Pascal's triangle for a given number of rows (centered), computing each value from the previous.
+
+### Problem analysis
+
+| | |
+|---|---|
+| **Input** | `rows` |
+| **Process** | Compute binomial coefficients row by row for Pascal's triangle |
+| **Output** | Pascal's triangle printed |
 
 ### Algorithm
 

@@ -1,6 +1,6 @@
 # Unit 1 Task 7 — Example full observation
 
-Faculty reference for a complete **Full** lab observation (Task, Aim, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
+Faculty reference for a complete **Full** lab observation (Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
 
 ## Right-hand page
 
@@ -11,6 +11,14 @@ Write a python program to calculate compound interest.
 ### Aim
 
 To calculate compound interest and total amount from principal, rate, and time.
+
+### Problem analysis
+
+| | |
+|---|---|
+| **Input** | `principal_amount_in_rupees`, `rate_of_interest_in_percent`, `time_in_years` |
+| **Process** | `total = principal * (1 + rate/100) ** time`; `compound_interest = total - principal` |
+| **Output** | `compound_interest_in_rupees` (optionally total amount) |
 
 ### Algorithm
 

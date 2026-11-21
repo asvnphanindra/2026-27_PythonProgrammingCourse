@@ -76,7 +76,8 @@ Prepare all of these:
 |----------------|-----------------|
 | Flowchart | Task |
 | Pseudocode | Aim |
-| Test cases | Algorithm |
+| Test cases | Problem analysis (Input, Process, Output) |
+| | Algorithm |
 | | Python program |
 | | Saved file location |
 

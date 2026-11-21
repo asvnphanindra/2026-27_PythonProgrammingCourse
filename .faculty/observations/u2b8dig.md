@@ -1,6 +1,6 @@
 # Unit 2B Task 8 — Example full observation
 
-Faculty reference for a complete **Full** lab observation (Task, Aim, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
+Faculty reference for a complete **Full** lab observation (Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
 
 ## Right-hand page
 
@@ -11,6 +11,14 @@ Write a python program to find the sum of digits of a number using while loop.
 ### Aim
 
 To find the sum of digits of a positive integer using a while loop.
+
+### Problem analysis
+
+| | |
+|---|---|
+| **Input** | `number` |
+| **Process** | Extract digits with while loop and add them |
+| **Output** | Sum of digits |
 
 ### Algorithm
 

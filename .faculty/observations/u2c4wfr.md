@@ -1,6 +1,6 @@
 # Unit 2C Task 4 — Example full observation
 
-Faculty reference for a complete **Full** lab observation (Task, Aim, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
+Faculty reference for a complete **Full** lab observation (Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
 
 ## Right-hand page
 
@@ -11,6 +11,14 @@ Write a python program to print numbers in a 3x3 grid using while-for nested loo
 ### Aim
 
 To print numbers 1 to 9 in a 3×3 grid using an outer while loop and an inner for loop.
+
+### Problem analysis
+
+| | |
+|---|---|
+| **Input** | Fixed 3×3 layout (no extra input beyond loop control) |
+| **Process** | While-for nested loops to print numbers 1–9 in a grid |
+| **Output** | 3×3 number grid |
 
 ### Algorithm
 

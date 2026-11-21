@@ -1,6 +1,6 @@
 # Unit 1 Task 4 — Example full observation
 
-Faculty reference for a complete **Full** lab observation (Task, Aim, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
+Faculty reference for a complete **Full** lab observation (Task, Aim, Problem analysis, Algorithm, Flowchart, Pseudocode, Python program, Saved file location, Test cases). Students prepare their own write-up before lab.
 
 ## Right-hand page
 
@@ -11,6 +11,14 @@ Write a python program to convert temperature from Celsius to Fahrenheit.
 ### Aim
 
 To convert a temperature from Celsius to Fahrenheit using the standard formula.
+
+### Problem analysis
+
+| | |
+|---|---|
+| **Input** | `temperature_in_celsius` |
+| **Process** | `temperature_in_fahrenheit = (temperature_in_celsius * 9 / 5) + 32` |
+| **Output** | `temperature_in_fahrenheit` |
 
 ### Algorithm
 
