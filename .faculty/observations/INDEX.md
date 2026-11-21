@@ -1,6 +1,6 @@
 # Faculty full-observation index
 
-Example **Full** lab observations (all required sections). Linked from unit lab-task pages as **Example observation**.
+Example **Full** lab observations (all required sections). Linked from the **Record expectations** column on unit lab-task pages as **Example observation**.
 Map task → cryptic file.
 
 | Task | File |
@@ -17,10 +17,13 @@ Map task → cryptic file.
 | Unit 2A Task 3 — Positive, negative, or zero | `u2a3pnz.md` |
 | Unit 2A Task 4 — Student grade (elif ladder) | `u2a4grd.md` |
 | Unit 2A Task 5 — Largest of three (nested if) | `u2a5max.md` |
+| Unit 2A Task 8 — Prime number (if-elif, 1 to 100) | `u2a8prm.md` |
 | Unit 2B Task 3 — Sum and average of N numbers | `u2b3avg.md` |
+| Unit 2B Task 6 — Prime number check (for loop) | `u2b6prm.md` |
 | Unit 2B Task 7 — Fibonacci series up to N terms | `u2b7fib.md` |
 | Unit 2B Task 8 — Sum of digits | `u2b8dig.md` |
 | Unit 2B Task 11 — Armstrong number (3 digits) | `u2b11arm.md` |
+| Unit 2B Task 12 — Palindrome number (while loop) | `u2b12pal.md` |
 | Unit 2C Task 4 — 3x3 numbers (while-for) | `u2c4wfr.md` |
 | Unit 2C Task 5 — Star grid (user input) | `u2c5stg.md` |
 | Unit 2C Task 6 — Hollow star grid (user input) | `u2c6hlw.md` |
