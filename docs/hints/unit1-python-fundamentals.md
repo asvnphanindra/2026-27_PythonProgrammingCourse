@@ -388,6 +388,8 @@ print(f"Exponent: {exponent}")
 | **Example calculation** | `10 + 3 = 13`<br>`10 - 3 = 7`<br>`10 * 3 = 30`<br>`10 / 3 = 3.333...`<br>`10 // 3 = 3`<br>`10 % 3 = 1`<br>`10 ** 3 = 1000` |
 | **Example output** | `13`, `7`, `30`, `3.333...`, `3`, `1`, `1000` |
 
+<a href="../../.faculty/solutions/d4x2ar.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
 Back to [Lab tasks](../lab-tasks/unit1-python-fundamentals.md).
 
 ---
@@ -426,6 +428,8 @@ print(f"{number1} <= {number2} is {number1 <= number2}")
 | **Example calculation** | `10 == 20 → False`<br>`10 != 20 → True`<br>`10 > 20 → False`<br>`10 < 20 → True`<br>`10 >= 20 → False`<br>`10 <= 20 → True` |
 | **Example output** | `False`, `True`, `False`, `True`, `False`, `True` |
 
+<a href="../../.faculty/solutions/e5y3rl.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
 Back to [Lab tasks](../lab-tasks/unit1-python-fundamentals.md).
 
 ---
@@ -460,6 +464,8 @@ print(f"not ({number1} > 50) is {not (number1 > 50)}")
 | **Example input** | `number1 = 10`, `number2 = 20` |
 | **Example calculation** | `(10 > 5) and (20 > 15) → True`<br>`(10 > 50) or (20 > 15) → True`<br>`not (10 > 50) → True` |
 | **Example output** | `True`, `True`, `True` |
+
+<a href="../../.faculty/solutions/f6z4lg.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](../lab-tasks/unit1-python-fundamentals.md).
 
@@ -504,6 +510,8 @@ list_a = [1, 2, 3]
 list_b = list_a      # same object as list_a
 list_c = [1, 2, 3]   # same values, but a different object
 ```
+
+<a href="../../.faculty/solutions/h8b6id.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](../lab-tasks/unit1-python-fundamentals.md).
 
@@ -567,6 +575,8 @@ print(f"'Ada' not in {student} is {'Ada' not in student}")
 | **dictionary (`dict`)** | `"name" in {"name": "Ada", "age": 20}` | `True` (checks **keys**) |
 | **dictionary (`dict`)** | `"Ada" not in {"name": "Ada", "age": 20}` | `True` (values are not checked by default) |
 
+<a href="../../.faculty/solutions/g7a5mb.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
+
 Back to [Lab tasks](../lab-tasks/unit1-python-fundamentals.md).
 
 ---
@@ -596,6 +606,8 @@ print(f"10 - 4 - 2 = {10 - 4 - 2}")
 | **Example expressions** | `2 + 3 * 4`<br>`2 ** 3 ** 2`<br>`10 - 4 - 2` |
 | **Example calculation** | `2 + 3 * 4 = 2 + 12 = 14` (`*` before `+`)<br>`2 ** 3 ** 2 = 2 ** 9 = 512` (`**` is right-associative)<br>`10 - 4 - 2 = 6 - 2 = 4` (`-` is left-associative) |
 | **Example output** | `14`, `512`, `4` |
+
+<a href="../../.faculty/solutions/i9c7pr.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](../lab-tasks/unit1-python-fundamentals.md).
 
@@ -638,6 +650,8 @@ print(f"String value: {str_num}, type: {type(str_num)}")
 | **Example input** | `str_num = "25"` |
 | **Example calculation** | `int_num = int("25") → 25`<br>`float_num = float("25") → 25.0`<br>`str_num = str(25) → "25"` |
 | **Example output** | `int_num = 25`, `float_num = 25.0`, `str_num = "25"` |
+
+<a href="../../.faculty/solutions/c3w1tc.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 
 Back to [Lab tasks](../lab-tasks/unit1-python-fundamentals.md).
 

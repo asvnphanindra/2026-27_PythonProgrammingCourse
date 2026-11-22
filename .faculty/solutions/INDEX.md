@@ -4,6 +4,15 @@ Not linked from student docs. Map task → cryptic file.
 
 | Task | File |
 |------|------|
+| Unit 1 Task 9 — Arithmetic operators | `d4x2ar.md` |
+| Unit 1 Task 10 — Relational operators | `e5y3rl.md` |
+| Unit 1 Task 11 — Logical operators | `f6z4lg.md` |
+| Unit 1 Task 12 — Identity operators | `h8b6id.md` |
+| Unit 1 Task 13 — Membership operators | `g7a5mb.md` |
+| Unit 1 Task 14 — Operator precedence and associativity | `i9c7pr.md` |
+| Unit 1 Task 15 — Type conversion | `c3w1tc.md` |
+| Unit 1 Task 16 — Hello World (lab record Exp 1) | `a1u9hw.md` |
+| Unit 1 Task 17 — Name and age formatted output (lab record Exp 2) | `b2v0na.md` |
 | Unit 2A Task 1 — Valid triangle | `a2q8lm.md` |
 | Unit 2A Task 2 — Voting eligibility | `b3r9mn.md` |
 | Unit 2A Task 3 — Positive, negative, or zero | `c4s0np.md` |
