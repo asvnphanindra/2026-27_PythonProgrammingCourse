@@ -108,7 +108,7 @@ Lab observation is **not required** for this task. You may still write a Short o
 
 ### Will be informed later
 
-Lab observation details for this task will be announced later. Still follow [during lab](#during-lab) and [after lab](#after-lab) when those apply.
+Details for this task (lab observation and/or lab record) will be announced later. Still follow [during lab](#during-lab) and [after lab](#after-lab) when those apply.
 
 ---
 
