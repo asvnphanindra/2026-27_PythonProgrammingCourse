@@ -5,7 +5,7 @@ Demonstrate instance methods, class methods and static methods.
 ```python
 # Example solution: instance, class, and static methods
 class Demo:
-    college = "RVRJC"
+    college = "NRIU"
 
     def set_name(self, name):
         self.name = name

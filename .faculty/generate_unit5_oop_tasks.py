@@ -82,7 +82,7 @@ cells_a += task_block(
     "- Class method: `@classmethod` and `cls`\n"
     "- Static method: `@staticmethod` (no `self` / `cls` required)",
     '''class Demo:
-    college = ____  # e.g. "RVRJC"
+    college = ____  # e.g. "NRIU"
 
     def ____(self, name):  # instance method
         self.name = name

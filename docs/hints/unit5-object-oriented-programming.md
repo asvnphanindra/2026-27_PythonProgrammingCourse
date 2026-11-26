@@ -138,7 +138,7 @@ Shows the three common method types in one class.
 
 ```python
 class Demo:
-    college = ____  # e.g. "RVRJC"
+    college = ____  # e.g. "NRIU"
 
     def ____(self, name):  # instance method
         self.name = name
@@ -162,7 +162,7 @@ Demo.____()
 
 | Item | Details |
 |------|---------|
-| **Example output** | `Instance: Anu`<br>`Class: RVRJC`<br>`Static: utility message` |
+| **Example output** | `Instance: Anu`<br>`Class: NRIU`<br>`Static: utility message` |
 
 <a href="../../.faculty/solutions/j6q0rz.md" target="_blank" rel="noopener noreferrer">View solution</a> (try the task first)
 

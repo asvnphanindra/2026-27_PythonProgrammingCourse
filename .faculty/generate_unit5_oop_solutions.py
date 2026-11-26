@@ -61,7 +61,7 @@ s1.display()'''),
         md("**Task 3**\n\nDemonstrate instance methods, class methods and static methods.\n\n**File:** `Unit-5A_Task-3_Instance_Class_Static_Methods.py`"),
         code('''# Example solution: instance, class, and static methods
 class Demo:
-    college = "RVRJC"
+    college = "NRIU"
 
     def set_name(self, name):
         self.name = name
